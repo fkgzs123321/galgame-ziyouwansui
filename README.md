@@ -29,7 +29,7 @@
 git update-index --skip-worktree .vscode/launch.json
 ```
 
-#### 自动打包、更新依赖和酒馆助手 `@types` 文件夹
+#### 自动打包、自动更新依赖和酒馆助手 `@types` 文件夹
 
 本仓库在 `.github/workflows` 文件夹中设置了几个 CI 工作流来完成这些功能, 你也可以在网页上方的 `Actions` 中手动运行它们:
 
