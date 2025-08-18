@@ -89,6 +89,9 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
       outputModule: true,
     },
     devtool: argv.mode === 'production' ? false : 'eval-source-map',
+    watchOptions: {
+      ignored: ['**/dist', '**/node_modules'],
+    },
     entry: path.join(__dirname, entry.script),
     target: 'browserslist',
     output: {
