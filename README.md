@@ -6,7 +6,8 @@
 
 你可以点击网页右上角的绿色 `Code` 按钮-`Download ZIP` 下载本模板的压缩包来只在本地使用, 也可以通过绿色 `Use this template` 按钮来创建一个基于这个模板的新仓库.
 
-无论哪种方式, 你都可以在[配置好后](https://n0vi028.github.io/JS-Slash-Runner-Doc/guide/基本用法/如何正确使用酒馆助手.html)使用这个模板, 在 src 文件夹内制作你的前端界面或脚本.
+无论哪种方式, 你都可以在[配置好后](https://n0vi028.github.io/JS-Slash-Runner-Doc/guide/基本用法/如何正确使用酒馆助手.html)使用这个模板, 在 src 文件夹内制作你的前端界面或脚本 (尤其是, 注意更改 `.vscode/launch.json` 中的地址为你的酒馆地址).
+
 打包程序将会自动检测 `src` 文件夹中的文件:
 
 - 如果一个文件夹里只有 `index.ts`, 则这个文件夹被视为**酒馆助手脚本**进行打包. 例如 `src/脚本示例` 会被打包为 `dist/脚本示例/index.js`
@@ -19,6 +20,14 @@
 如果你想作为仓库使用, 请先通过 [Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN) 学习 git 分支和合并.
 
 ### 如果创建为新仓库
+
+#### `.vscode/launch.json` 文件
+
+由于 `.vscode/launch.json` 文件中填写了你的酒馆地址, 你可能需要运行命令来忽略这个更改, 避免你的云酒馆 ip 地址暴露:
+
+```bash
+git update-index --skip-worktree .vscode/launch.json
+```
 
 #### 自动打包、更新依赖和酒馆助手 `@types` 文件夹
 
