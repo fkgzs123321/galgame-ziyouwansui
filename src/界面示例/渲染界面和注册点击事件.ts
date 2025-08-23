@@ -1,3 +1,5 @@
+import dedent from 'dedent';
+
 function capture_display_text() {
   // 通过 substitudeMacros 我们可以解析酒馆宏
   const character_name = substitudeMacros('{{char}}');
@@ -17,10 +19,19 @@ function capture_display_text() {
 
 function register_click_event() {
   // 为对 .clickdiv 类的点击事件添加响应函数
-  $('.clickdiv').on('click', () => {
-    triggerSlash(
-      `/send 查看日记\n<UpdateVariable>\n_.set('世界.下次响应界面选择判断', 1)\n</UpdateVariable> || /trigger`,
-    );
+  $('.clickdiv').on('click', async () => {
+    await createChatMessages([
+      {
+        role: 'user',
+        message: dedent(`
+                   查看日记
+                   <update>
+                   _.set('世界.下次响应界面选择判断', 1);
+                   </update>
+                 `),
+      },
+    ]);
+    triggerSlash('/trigger');
   });
 }
 
