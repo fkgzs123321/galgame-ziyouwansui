@@ -1,5 +1,5 @@
 ---
-description: 当需要与 MVU 变量进行交互时, 你应该参考本文件
+description: 当用户输入中明确提及 MVU 时, 你应该参考本文件
 ---
 # MVU 变量框架 ([MagVarUpdate](https://github.com/MagicalAstrogy/MagVarUpdate))
 
