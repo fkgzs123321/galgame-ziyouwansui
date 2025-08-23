@@ -82,9 +82,11 @@ import css_content from './style.scss?raw';
 - 使用 `getChatMessages()` 而不是 `SillyTavern.chat`
 - 使用 `replaceWorldbook()` 而不是 `triggerSlash('/setentryfield')`
 
-#### 正确在界面加载或卸载时执行功能
+#### 正确在加载、卸载前端界面或脚本时执行功能
 
-项目最终打包生成的 `dist/**/index.html` 或 `dist/**/index.js` 可能先上传到网上, 再以 `$('body').load(网络链接)` 或 `import '网络链接'` 的方式加载到酒馆中. `document.addEventListener("DOMContentLoaded", fn)` 在这个加载过程中不会被触发, 因此禁止使用 `DOMContentLoaded`.
+你应该总是在加载时才执行代码, 而不该直接在全局作用域中执行代码.
+
+项目最终打包生成的 `dist/**/index.html` 或 `dist/**/index.js` 可能先上传到网上, 再以 `$('body').load(网络链接)` 或 `import '网络链接'` 的方式加载到酒馆中. `document.addEventListener("DOMContentLoaded", fn)` 在这个加载过程中不会被触发, 因此禁止使用 `DOMContentLoaded` 作为加载时的执行时机.
 
 你应该使用 jquery 来在加载时执行功能:
 
