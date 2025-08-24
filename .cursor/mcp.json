@@ -8,7 +8,23 @@
         "dlx",
         "@agentdeskai/browser-tools-mcp@latest"
       ],
-      "transportType": "stdio"
+      "transportType": "stdio",
+      "autoApprove": [
+        "getConsoleLogs",
+        "getConsoleErrors",
+        "getNetworkErrors",
+        "getNetworkLogs",
+        "takeScreenshot",
+        "getSelectedElement",
+        "wipeLogs",
+        "runAccessibilityAudit",
+        "runPerformanceAudit",
+        "runSEOAudit",
+        "runNextJSAudit",
+        "runDebuggerMode",
+        "runAuditMode",
+        "runBestPracticesAudit"
+      ]
     }
   }
 }
