@@ -54,13 +54,6 @@
     "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "@tailwindcss/oxide",
-      "unrs-resolver"
-    ]
-  },
   "dependencies": {
     "dedent": "^1.6.0",
     "jquery": "^3.7.1",
@@ -69,5 +62,12 @@
     "toastr": "^2.1.4",
     "yaml": "^2.8.1",
     "zod": "^4.1.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@tailwindcss/oxide",
+      "unrs-resolver"
+    ]
   }
 }
