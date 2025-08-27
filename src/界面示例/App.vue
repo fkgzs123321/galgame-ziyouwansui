@@ -1,3 +1,51 @@
+<template>
+  <div class="clickdiv" tabindex="1" @click="handleClick">
+    <span class="message-content font-bold underline">{{ display_text }}</span>
+  </div>
+</template>
+
+<script setup lang="ts">
+import dedent from 'dedent';
+import { onMounted, ref } from 'vue';
+
+const display_text = ref('');
+
+function captureDisplayText() {
+  // 通过 substitudeMacros 我们可以解析酒馆宏
+  const character_name = substitudeMacros('{{char}}');
+
+  // 通过 getCurrentMessageId 我们可以获取界面所在的楼层号
+  const message_id = getCurrentMessageId();
+  // 通过 getChatMessages 我们可以获取楼层内容
+  const chat_message = getChatMessages(message_id)[0];
+  // 我们可以从楼层的消息中通过正则提取出对话内容, 由于这是在代码中做, 相比起直接用酒馆正则会更加方便: 我们完全可以用其他代码对文本进行更多处理
+  const dialogue = chat_message.message.match(/\[查看日记[:：]\s*(.+)\]/)?.[1] ?? '';
+
+  const text = `${character_name}: ${dialogue}`;
+  display_text.value = text;
+}
+
+async function handleClick() {
+  await createChatMessages([
+    {
+      role: 'user',
+      message: dedent(`
+                 查看日记
+                 <update>
+                 _.set('世界.下次响应界面选择判断', 1);
+                 </update>
+               `),
+    },
+  ]);
+  triggerSlash('/trigger');
+}
+
+onMounted(() => {
+  captureDisplayText();
+});
+</script>
+
+<style lang="scss">
 body {
   display: flex;
   justify-content: center;
@@ -73,3 +121,4 @@ body {
     max-width: 240px;
   }
 }
+</style>
