@@ -7,7 +7,7 @@ alwaysApply: true
 
 - 为角色卡提供更好的 UI 显示, 如将消息楼层中原本只是代码块纯文本的状态栏美化为有动态效果、有交互的 html 状态栏
 - 实现非纯文本的游玩体验, 如监听现实时间或酒馆事件来实现 meta 游戏、播放多媒体文件、自制游玩界面并与酒馆交互
-- 优化酒馆使用体验, 如用 jquery 为预设提示词条目新增复制按钮, 监听酒馆接收到消息事件并判断是否需要重新生成本楼层消息
+- 优化酒馆使用体验, 如用 jQuery 为预设提示词条目新增复制按钮, 监听酒馆接收到消息事件并判断是否需要重新生成本楼层消息
 - 连接外部应用程序, 如通过 socket.io-client 连接外部服务器, 进而实现外部应用程序与酒馆的通信
 - 新增额外功能, 如每 20 楼在后台调用一次 LLM 来生成对之前剧情的总结
 - ...
@@ -61,11 +61,11 @@ import css_content from './style.scss?raw';
 
 ### 导入 vue
 
-项目直接支持用 `import Component from './文件.vue'` 来导入 vue 组件.
+项目直接支持用 `import Component from './文件.vue'` 来导入 vue 组件, 如果要设计界面你应该优先使用 vue 组件.
 
 ### 为前端界面导入样式
 
-前端界面支持在 typescript 中 `import './index.scss'` 来导入 scss 文件, 并自动将它们打包到最终的 `dist/**/index.html` 中的 `<head>` 部分.
+前端界面支持在 typescript 中 `import './index.scss'` 来导入全局 scss 文件, 并自动将它们打包到最终的 `dist/**/index.html` 中的 `<head>` 部分.
 
 ## 最佳实践
 
