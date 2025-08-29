@@ -64,7 +64,6 @@ function glob_script_files() {
     results.push(file);
   };
   files.forEach(handle);
-  console.info(results);
   return results;
 }
 
@@ -97,28 +96,6 @@ function watch_it(compiler: webpack.Compiler) {
 
 function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Configuration {
   const script_filepath = path.parse(entry.script);
-
-  let plugins: webpack.Configuration['plugins'] = [];
-  if (entry.html === undefined) {
-    plugins.push(new MiniCssExtractPlugin());
-  } else {
-    plugins.push(
-      new HtmlWebpackPlugin({
-        template: path.join(__dirname, entry.html),
-        filename: path.parse(entry.html).base,
-        scriptLoading: 'module',
-        cache: false,
-      }),
-      new HtmlInlineScriptWebpackPlugin(),
-      new MiniCssExtractPlugin(),
-      new HTMLInlineCSSWebpackPlugin({
-        styleTagFactory({ style }: { style: string }) {
-          return `<style>${style}</style>`;
-        },
-      }),
-    );
-  }
-  plugins.push({ apply: watch_it }, new VueLoaderPlugin());
 
   return (_env, argv) => ({
     experiments: {
@@ -204,22 +181,43 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
               use: 'html-loader',
               exclude: /node_modules/,
             },
-            {
-              test: /\.(sa|sc)ss$/,
-              use: [
-                MiniCssExtractPlugin.loader,
-                { loader: 'css-loader', options: { url: false } },
-                'postcss-loader',
-                'sass-loader',
-              ],
-              exclude: /node_modules/,
-            },
-            {
-              test: /\.css$/,
-              use: [MiniCssExtractPlugin.loader, { loader: 'css-loader', options: { url: false } }, 'postcss-loader'],
-              exclude: /node_modules/,
-            },
-          ],
+          ].concat(
+            entry.html === undefined
+              ? <any[]>[
+                  {
+                    test: /\.vue\.s(a|c)ss$/,
+                    use: ['vue-style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+                    exclude: /node_modules/,
+                  },
+                  {
+                    test: /\.vue\.css$/,
+                    use: ['vue-style-loader', 'css-loader', 'postcss-loader'],
+                    exclude: /node_modules/,
+                  },
+                  {
+                    test: /\.s(a|c)ss$/,
+                    use: ['css-loader', 'postcss-loader', 'sass-loader'],
+                    exclude: /node_modules/,
+                  },
+                  {
+                    test: /\.css$/,
+                    use: ['css-loader', 'postcss-loader'],
+                    exclude: /node_modules/,
+                  },
+                ]
+              : <any[]>[
+                  {
+                    test: /\.s(a|c)ss$/,
+                    use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
+                    exclude: /node_modules/,
+                  },
+                  {
+                    test: /\.css$/,
+                    use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
+                    exclude: /node_modules/,
+                  },
+                ],
+          ),
         },
       ],
     },
@@ -233,7 +231,24 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
       ],
       alias: {},
     },
-    plugins: plugins,
+    plugins: (entry.html === undefined
+      ? [new MiniCssExtractPlugin()]
+      : [
+          new HtmlWebpackPlugin({
+            template: path.join(__dirname, entry.html),
+            filename: path.parse(entry.html).base,
+            scriptLoading: 'module',
+            cache: false,
+          }),
+          new HtmlInlineScriptWebpackPlugin(),
+          new MiniCssExtractPlugin(),
+          new HTMLInlineCSSWebpackPlugin({
+            styleTagFactory({ style }: { style: string }) {
+              return `<style>${style}</style>`;
+            },
+          }),
+        ]
+    ).concat({ apply: watch_it }, new VueLoaderPlugin()),
     optimization: {
       minimize: true,
       minimizer: [
@@ -281,6 +296,7 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
           request.startsWith('-') ||
           request.startsWith('.') ||
           request.startsWith('/') ||
+          request.startsWith('!') ||
           request.startsWith('http') ||
           path.isAbsolute(request) ||
           fs.existsSync(path.join(context, request)) ||

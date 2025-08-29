@@ -15,6 +15,34 @@ description: 当需要编写脚本时, 你应该参考本文件
 
 由于脚本运行在 iframe 中, 当需要在脚本中向酒馆页面挂载 vue 组件时, 你应该使用 `.mount($('#app')[0])` 来选择要挂载的位置, 而不是 `.mount('#app')`. 因为 `.mount('#app')` 将会在 iframe 内查找位置, 而不是在酒馆页面中.
 
+此外, vue-style-loader 会将样式注入到 iframe 的 `<head>` 中, 为了使样式生效, 你需要:
+
+- 在 vue 组件中使用 scoped style 从而让组件具有 `data-v-xxx` 属性
+- 在 mount 后获取该属性, 使用 `$('head > style:contains("data-v-xxx")', document)` 查找样式来尾附到组件所在的元素中.
+
+即,
+
+```typescript
+function apply_style(instance: ComponentPublicInstance) {
+  const element = instance.$el as HTMLElement;
+  const scoped_id = element.getAttributeNames().find(n => n.startsWith('data-v-'));
+  $(element).append($(`head > style:contains("${scoped_id}")`, document));
+}
+
+const app = createApp(panel);
+
+export function init_panel() {
+  $('酒馆页面中某元素').append(`<div id="vue组件要挂载的id"></div>`);
+  const instance = app.mount($('#vue组件要挂载的id')[0]);
+  apply_style(instance);
+}
+
+export function destroy_panel() {
+  $('#vue组件要挂载的id').remove();
+  app.unmount();
+}
+```
+
 ## 按钮
 
 脚本可以在酒馆助手脚本库界面中设置按钮, 用户点击按钮时将会触发对应的事件.
