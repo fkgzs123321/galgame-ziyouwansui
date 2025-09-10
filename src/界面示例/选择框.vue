@@ -1,12 +1,11 @@
 <template>
   <div class="roleplay_options">
     <div class="roleplay_options_back">
-      <div v-for="item in items" class="roleplay_options_item" tabindex="1"
-        @click="handle_item_click(item)">
+      <div class="roleplay_options_item" tabindex="1" v-for="item in items" @click="handle_item_click(item)">
         <span class="roleplay_options_title">
           <strong>{{ item.title }}</strong>
         </span>
-        <hr class="roleplay_options_hr">
+        <hr class="roleplay_options_hr" />
         <span class="roleplay_options_content">{{ item.content }}</span>
       </div>
     </div>
@@ -30,7 +29,7 @@ function extract_items(): RoleplayOption[] {
   const item_matches = [...text.matchAll(/(.+?)[:：]\s*(.+)/gm)];
   return item_matches.map(match => ({
     title: match[1],
-    content: match[2].replace(/^\$\{(.+)\}$/, '$1').replace(/^「(.+)」$/, '$1')
+    content: match[2].replace(/^\$\{(.+)\}$/, '$1').replace(/^「(.+)」$/, '$1'),
   }));
 }
 
@@ -83,7 +82,7 @@ async function handle_item_click(item: RoleplayOption) {
     overflow-wrap: anywhere;
 
     /* Long content will trigger this rule */
-    &:not(:empty):not(.short-content)~.roleplay_options_title {
+    &:not(:empty):not(.short-content) ~ .roleplay_options_title {
       width: 100%;
       margin-bottom: 8px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
