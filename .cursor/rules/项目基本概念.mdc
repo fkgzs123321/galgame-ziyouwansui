@@ -120,7 +120,7 @@ $(() => {
 });
 ```
 
-同样地, 使用 jquery 及 `'pagehide'` 事件来在卸载时执行功能:
+同样地, 使用 jquery 及 `'pagehide'` 事件 (而不是 `'unload'`) 来在卸载时执行功能:
 
 ```typescript
 $(window).on('pagehide', () => {
