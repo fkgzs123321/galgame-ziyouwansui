@@ -102,11 +102,7 @@ vue 相比于 jquery 或 DOM 操作更为简单, 因此你应该尽量使用 vue
 ```typescript
 const Settings = z.object({/*...*/}); // 用 zod 定义设置的类型和默认值
 const settings = ref(Settings.parse(getVariables({ type: 'script', script_id: getScriptId() })));
-watch(
-  settings,
-  new_settings => replaceVariables(_.cloneDeep(new_settings), { type: 'script', script_id: getScriptId() }),
-  { immediate: true },
-);
+watchEffect(() => replaceVariables(_.cloneDeep(settings.value), { type: 'script', script_id: getScriptId() }));
 ```
 
 前端界面和脚本都是 iframe, 因此你在使用 vue-router 时, 应该使用 `history: createMemoryHistory()` 来创建路由, 否则将无法正常路由.
