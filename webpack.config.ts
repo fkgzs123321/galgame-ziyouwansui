@@ -353,6 +353,9 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
       if (request in builtin) {
         return callback(null, 'var ' + builtin[request as keyof typeof builtin]);
       }
+      if (['vue3-pixi', 'vue-demi'].includes(request)) {
+        return callback();
+      }
       return callback(null, 'module-import https://testingcf.jsdelivr.net/npm/' + request + '/+esm');
     },
   });
