@@ -9,7 +9,7 @@ description: 当需要编写脚本时, 你应该参考本文件
 
 ## jquery
 
-脚本中的 jquery 将直接作用于整个酒馆页面而非仅作用于脚本所在的 iframe. 例如 `$('body')` 将选择酒馆网页的 `<body>` 标签, 而不是脚本所在的 iframe 的 `<body>` 标签.
+脚本中的 jquery 将直接作用于整个酒馆页面而非仅作用于脚本所在的 iframe. 例如 `$('body')` 将选择酒馆网页的 `<body>` 标签, 而不是脚本所在的 iframe 的 `<body>` 标签; 但 `appendTo` 等参数中的选择器依旧作用于脚本所在的 iframe, 因此请小心使用.
 
 ## vue
 
@@ -19,11 +19,14 @@ description: 当需要编写脚本时, 你应该参考本文件
 
 ```typescript
 export function teleport_vue_style() {
-  $(`<div id="style-${getScriptId()}">`).append($(`head > style[data-vue-ssr-id]`, document)).appendTo('head');
+  $(`<div>`)
+    .attr('script_id', getScriptId())
+    .append($(`head > style[data-vue-ssr-id]`, document).clone())
+    .appendTo('head');
 }
 
 export function deteleport_vue_style() {
-  $(`head > div[id="style-${getScriptId()}"]`).remove();
+  $(`head > div[script_id="${getScriptId()}"]`).remove();
 }
 ```
 
