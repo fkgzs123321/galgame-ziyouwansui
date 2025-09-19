@@ -59,6 +59,8 @@ import 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆�
 - `bump_deps.yaml`: 自动更新第三方库依赖和酒馆助手 `@types` 文件夹.
 - `sync_template.yaml`: 在你基于模板仓库创建新仓库后, 你的新仓库将不再和模板仓库有关联, 因此我设置了这个工作流用于同步模板仓库的更新 (如编程助手编写规则、MCP、slash_command.txt 文件等). 如果模板仓库中有文件是你不想继续同步的, 可以在 `.github/.templatesyncignore` 中添加它.
 
+为了让它们正常运行, 你需要在仓库 `Settings -> Actions -> General` 中将 `Workflow permissions` 设置为 `Read and write permissions`.
+
 #### 打包冲突问题
 
 为了自动更新和打包一些东西, 本项目直接打包源代码在 `dist/` 文件夹中并随仓库上传, 而这会让开发时经常出现分支冲突.
