@@ -1,5 +1,3 @@
-import dedent from 'dedent';
-
 $(async () => {
   const message_id = getLastMessageId();
   if (message_id !== 0) {
