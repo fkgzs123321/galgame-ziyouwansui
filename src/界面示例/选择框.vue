@@ -6,7 +6,7 @@
         :key="item.title"
         class="roleplay_options_item"
         tabindex="1"
-        @click="handle_item_click(item)"
+        @click="handleItemClick(item)"
       >
         <span class="roleplay_options_title">
           <strong>{{ item.title }}</strong>
@@ -26,7 +26,7 @@ interface RoleplayOption {
 
 const items = ref<RoleplayOption[]>([]);
 
-function extract_items(): RoleplayOption[] {
+function extractItems(): RoleplayOption[] {
   const chat_message = getChatMessages(getCurrentMessageId())[0];
   const text = chat_message.message.match(/<roleplay_options>(.*?)<\/roleplay_options>/s)?.[1] ?? '';
 
@@ -38,10 +38,10 @@ function extract_items(): RoleplayOption[] {
 }
 
 onMounted(() => {
-  items.value = extract_items();
+  items.value = extractItems();
 });
 
-async function handle_item_click(item: RoleplayOption) {
+async function handleItemClick(item: RoleplayOption) {
   await createChatMessages([{ role: 'user', message: item.content }]);
   triggerSlash('/trigger');
 }
