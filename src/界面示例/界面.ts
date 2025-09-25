@@ -1,6 +1,6 @@
 import { createMemoryHistory, createRouter } from 'vue-router';
-import App from './app.vue';
 import Diary from './日记.vue';
+import App from './界面.vue';
 import RoleplayOptions from './选择框.vue';
 
 const router = createRouter({
