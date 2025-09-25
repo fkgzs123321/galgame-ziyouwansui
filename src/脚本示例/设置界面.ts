@@ -3,19 +3,19 @@ import 界面 from './设置界面.vue';
 const app = createApp(界面).use(createPinia());
 
 $(() => {
-  const $app = create_script_id_div();
+  const $app = createScriptIdDiv();
   $('#extensions_settings2').append($app);
-  teleport_style();
+  teleportStyle();
   app.mount($app[0]);
 });
 
 $(window).on('unload', () => {
   app.unmount();
-  deteleport_style();
-  destroy_script_id_div();
+  deteleportStyle();
+  destroyScriptIdDiv();
 });
 
-function teleport_style() {
+function teleportStyle() {
   if ($(`head > div[script_id="${getScriptId()}"]`).length > 0) {
     return;
   }
@@ -23,14 +23,14 @@ function teleport_style() {
   $('head').append($div);
 }
 
-function deteleport_style() {
+function deteleportStyle() {
   $(`head > div[script_id="${getScriptId()}"]`).remove();
 }
 
-function create_script_id_div(): JQuery<HTMLDivElement> {
+function createScriptIdDiv(): JQuery<HTMLDivElement> {
   return $('<div>').attr('script_id', getScriptId()) as JQuery<HTMLDivElement>;
 }
 
-function destroy_script_id_div(): void {
+function destroyScriptIdDiv(): void {
   $(`div[script_id="${getScriptId()}"]`).remove();
 }
