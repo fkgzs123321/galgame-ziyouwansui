@@ -191,6 +191,40 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
                   noUnusedParameters: false,
                 },
               },
+              resourceQuery: /url/,
+              type: 'asset/inline',
+              exclude: /node_modules/,
+            },
+            {
+              test: /\.(sa|sc)ss$/,
+              use: ['postcss-loader', 'sass-loader'],
+              resourceQuery: /url/,
+              type: 'asset/inline',
+              exclude: /node_modules/,
+            },
+            {
+              test: /\.css$/,
+              use: ['postcss-loader'],
+              resourceQuery: /url/,
+              type: 'asset/inline',
+              exclude: /node_modules/,
+            },
+            {
+              resourceQuery: /url/,
+              type: 'asset/inline',
+              exclude: /node_modules/,
+            },
+            {
+              test: /\.tsx?$/,
+              loader: 'ts-loader',
+              options: {
+                transpileOnly: true,
+                onlyCompileBundledFiles: true,
+                compilerOptions: {
+                  noUnusedLocals: false,
+                  noUnusedParameters: false,
+                },
+              },
               exclude: /node_modules/,
             },
             {
