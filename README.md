@@ -38,7 +38,7 @@ git update-index --skip-worktree .vscode/launch.json
 ```html
 <body>
   <script>
-    $('body').load('https://fastly.jsdelivr.net/gh/lolo-desu/lolocard/dist/日记络络/界面/介绍页/index.html')
+    $('body').load('https://testingcf.jsdelivr.net/gh/lolo-desu/lolocard/dist/日记络络/界面/介绍页/index.html')
   </script>
 </body>
 ```
@@ -46,7 +46,7 @@ git update-index --skip-worktree .vscode/launch.json
 或一个自动更新的脚本:
 
 ```typescript
-import 'https://fastly.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/场景感/index.js'
+import 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/场景感/index.js'
 ```
 
 更多请见于[文档](https://stagedog.github.io/青空莉/工具经验/实时编写前端界面或脚本/进阶技巧).
