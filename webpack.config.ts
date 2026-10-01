@@ -487,7 +487,13 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
       minimizer: [
         argv.mode === 'production'
           ? new TerserPlugin({
-              terserOptions: { format: { quote_style: 1 }, mangle: { reserved: ['_', 'toastr', 'YAML', '$', 'z'] } },
+              // output.module 的 ESM 顶层绑定会被 Terser 视为可删除作用域,
+              // 全 external 的 bundle 里 runtime 声明(只写不读)会被误删导致 ReferenceError
+              terserOptions: {
+                format: { quote_style: 1 },
+                compress: { toplevel: false },
+                mangle: { toplevel: false, reserved: ['_', 'toastr', 'YAML', '$', 'z'] },
+              },
             })
           : new TerserPlugin({
               extractComments: false,
@@ -498,6 +504,9 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
               },
             }),
       ],
+      // 全 external 的项目(如兽血沸腾)经模块级联后 runtime 无调用点,
+      // Terser 会把"只写不读"的 runtime 声明当死代码删除,导致界面 ReferenceError
+      concatenateModules: false,
       splitChunks: {
         chunks: 'async',
         minSize: 20000,
@@ -532,6 +541,15 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
         context.includes('欲望都市') &&
         context.includes('界面') &&
         ['vue', 'lodash', 'zod'].includes(request)
+      ) {
+        return callback();
+      }
+
+      // 兽血沸腾全 external 时 bundle 内没有 __webpack_require__ 调用,
+      // Terser 会误删 runtime 声明导致 ReferenceError, 故将 zod 打入 bundle
+      if (
+        context.includes('兽血沸腾') &&
+        request === 'zod'
       ) {
         return callback();
       }
