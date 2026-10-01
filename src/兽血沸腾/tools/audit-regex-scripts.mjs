@@ -32,7 +32,7 @@ for (const r of d.extensions?.regex_scripts || []) {
   const m = (r.replaceString || '').match(/https:\/\/[^"')]+/);
   if (!m) continue;
   const url = m[0];
-  const 本地 = url.replace('https://testingcf.jsdelivr.net/gh/StageDog/tavern_helper_template/', 'dist/');
+  const 本地 = url.replace(/^https:\/\/[a-z.]*jsdelivr\.net\/gh\/[^/]+\/tavern_helper_template\//, 'dist/');
   const 存在 = fs.existsSync(本地);
   console.log(`  ${存在 ? '✓' : '✗'} ${url}`);
   if (存在) console.log(`      → ${本地}  ${fs.statSync(本地).size} B`);
