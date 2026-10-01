@@ -181,6 +181,9 @@
       "default": {},
       "type": "object",
       "properties": {
+        "名称": {
+          "$ref": "#/$defs/__schema0"
+        },
         "身份": {
           "$ref": "#/$defs/__schema0"
         },

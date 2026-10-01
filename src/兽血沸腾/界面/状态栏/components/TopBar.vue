@@ -5,7 +5,7 @@
 
       <div class="who">
         <div class="name">
-          {{ 主角.身份 || '无名者' }}
+          {{ 主角.名称 ? `${主角.名称}（<user>）` : '<user>' }} · {{ 主角.身份 || '无名者' }}
           <span v-if="诅咒开" class="sb-curse" title="血之祭奠：战歌不再有神奇效果">血之祭奠</span>
         </div>
         <div class="sub sb-dim">

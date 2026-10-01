@@ -38,6 +38,7 @@
     <div class="sb-sec">
       <div class="sb-sec-title">当前状态与近期事务</div>
       <div class="kv">
+        <div><span class="sb-dim">扮演</span>{{ 主角.名称 || '<user>' }}</div>
         <div><span class="sb-dim">身份</span>{{ 主角.身份 }}</div>
         <div><span class="sb-dim">阶位</span>{{ 主角.阶位 }}</div>
         <div><span class="sb-dim">阵营声望</span>{{ 声望摘要 }}</div>
