@@ -78,7 +78,7 @@
           "id": "ce6da13c-4e35-4057-8964-3192b7903acc",
           "scriptName": "状态栏界面",
           "findRegex": "<StatusPlaceHolderImpl/>",
-          "replaceString": "```\n<body>\n<script>\n$('body').load('https://testingcf.jsdelivr.net/gh/StageDog/tavern_helper_template/dist/兽血沸腾/界面/状态栏/index.html')\n</script>\n</body>\n```\n",
+          "replaceString": "```\n<body>\n<script>\n$('body').load('https://testingcf.jsdelivr.net/gh/fkgzs123321/tavern_helper_template/dist/兽血沸腾/界面/状态栏/index.html')\n</script>\n</body>\n```\n",
           "trimStrings": [],
           "placement": [
             2
@@ -166,7 +166,7 @@
           "id": "7e099c46-7466-4513-a80c-27252f944f85",
           "scriptName": "开局表单界面",
           "findRegex": "<OpeningPlaceHolder/>",
-          "replaceString": "```\n<body>\n<script>\n$('body').load('https://testingcf.jsdelivr.net/gh/StageDog/tavern_helper_template/dist/兽血沸腾/界面/开局表单/index.html')\n</script>\n</body>\n```\n",
+          "replaceString": "```\n<body>\n<script>\n$('body').load('https://testingcf.jsdelivr.net/gh/fkgzs123321/tavern_helper_template/dist/兽血沸腾/界面/开局表单/index.html')\n</script>\n</body>\n```\n",
           "trimStrings": [],
           "placement": [
             2
