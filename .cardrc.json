@@ -30,7 +30,7 @@
         },
         "兽血沸腾": {
             "state_file": "src/兽血沸腾/tavern-cards-state.json",
-            "artifact": "src/兽血沸腾/兽血沸腾.json"
+            "artifact": "src/兽血沸腾/兽血沸腾.png"
         }
     },
     "default_part_order": {
