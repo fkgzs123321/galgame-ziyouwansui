@@ -1,0 +1,7 @@
+阿仙奴_基础信息 :: [{"content":"@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 105"},{"content":"---\n<character_basic character=\"阿仙奴\">"},{"file":"世界书/角色/阿仙奴/基础信息.yaml"},{"content":"</character_basic>"}]
+
+阿仙奴_私密档案 :: [{"content":"@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 105"},{"content":"---\n<character_other character=\"阿仙奴\">"},{"file":"世界书/角色/阿仙奴/私密.yaml"},{"content":"</character_other>"}]
+
+阿仙奴_私密阶段 :: undefined
+
+阿仙奴_性格调色盘 :: undefined

@@ -1,0 +1,6 @@
+﻿[
+ "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 105",
+ "---\n<character_basic character=\"阿仙奴\">",
+ "FILE:世界书/角色/阿仙奴/基础信息.yaml",
+ "</character_basic>"
+]

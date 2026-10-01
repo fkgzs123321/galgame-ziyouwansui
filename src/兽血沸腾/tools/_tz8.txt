@@ -1,0 +1,70 @@
+﻿TYPE 角色 KEY 唐蓓尔金娜_基础信息
+{
+ "scope": "specific",
+ "part": "basic",
+ "keywords": [
+  "唐蓓尔金娜"
+ ],
+ "abstract": "冰凰，孪生血婴的生母",
+ "contents": [
+  {
+   "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 246"
+  },
+  {
+   "content": "---\n<character_basic character=\"唐蓓尔金娜\">"
+  },
+  {
+   "file": "世界书/角色/唐蓓尔金娜/基础信息.yaml"
+  },
+  {
+   "content": "</character_basic>"
+  }
+ ],
+ "enabled": true,
+ "strategy": {
+  "type": "selective",
+  "keys": [
+   "唐蓓尔金娜"
+  ]
+ },
+ "position": {
+  "type": "after_character_definition",
+  "order": 1292
+ }
+}
+TYPE 角色 KEY 唐蓓尔金娜_私密档案
+{
+ "scope": "specific",
+ "part": "other",
+ "keywords": [
+  "唐蓓尔金娜",
+  "冰凰"
+ ],
+ "abstract": "唐蓓尔金娜的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+ "contents": [
+  {
+   "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 246"
+  },
+  {
+   "content": "---\n<character_other character=\"唐蓓尔金娜\">"
+  },
+  {
+   "file": "世界书/角色/唐蓓尔金娜/私密.yaml"
+  },
+  {
+   "content": "</character_other>"
+  }
+ ],
+ "enabled": true,
+ "strategy": {
+  "type": "selective",
+  "keys": [
+   "唐蓓尔金娜",
+   "冰凰"
+  ]
+ },
+ "position": {
+  "type": "after_character_definition",
+  "order": 1382
+ }
+}

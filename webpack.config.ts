@@ -524,6 +524,18 @@ function parse_configuration(entry: Entry): (_env: any, argv: any) => webpack.Co
         return callback();
       }
 
+      if (['pinia', 'async-wait-until', 'birpc', 'hookable', 'perfect-debounce'].includes(request)) {
+        return callback();
+      }
+
+      if (
+        context.includes('欲望都市') &&
+        context.includes('界面') &&
+        ['vue', 'lodash', 'zod'].includes(request)
+      ) {
+        return callback();
+      }
+
       if (
         request.startsWith('-') ||
         request.startsWith('.') ||

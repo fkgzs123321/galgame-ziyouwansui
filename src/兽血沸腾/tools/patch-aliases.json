@@ -1,0 +1,78 @@
+[
+  {
+    "op": "replace",
+    "path": "/entryManifest/角色/白素青_基础信息/keywords",
+    "value": [
+      "白素青",
+      "青雅",
+      "青雅.白玉"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/角色/白素青_基础信息/strategy/keys",
+    "value": [
+      "白素青",
+      "青雅",
+      "青雅.白玉"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/角色/白素青_性格调色盘/keywords",
+    "value": [
+      "白素青",
+      "青雅",
+      "青雅.白玉"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/角色/白素青_性格调色盘/strategy/keys",
+    "value": [
+      "白素青",
+      "青雅",
+      "青雅.白玉"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/角色/白素青_私密档案/keywords",
+    "value": [
+      "白素青",
+      "青玉灵蟒",
+      "青雅",
+      "青雅.白玉"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/角色/白素青_私密档案/strategy/keys",
+    "value": [
+      "白素青",
+      "青玉灵蟒",
+      "青雅",
+      "青雅.白玉"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/角色/白素青_私密阶段/keywords",
+    "value": [
+      "白素青",
+      "青玉灵蟒",
+      "青雅",
+      "青雅.白玉"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/角色/白素青_私密阶段/strategy/keys",
+    "value": [
+      "白素青",
+      "青玉灵蟒",
+      "青雅",
+      "青雅.白玉"
+    ]
+  }
+]

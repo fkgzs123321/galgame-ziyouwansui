@@ -1,0 +1,42 @@
+﻿条目 472
+含 @@ 的条目 157；含 <%_ 的 80；含 __ASSIGN__ 的 0；首行 @@if 的 77
+
+样（含 @@）：
+  「大陆历史」
+     "@@private"
+     "<%_ const chap = getvar('stat_data.剧情.章节序号', { defaults: 0 }); _%>"
+     "神魔大战:"
+  「主角前史」
+     "@@private"
+     "<%_ const chap = getvar('stat_data.剧情.章节序号', { defaults: 0 }); _%>"
+     "穿越前:"
+  「创世与神话纪」
+     "@@private"
+     "<%_ const chap = getvar('stat_data.剧情.章节序号', { defaults: 0 }); _%>"
+     "矿石生命创世:"
+  「神魔大战纪」
+     "@@private"
+     "<%_ const chap = getvar('stat_data.剧情.章节序号', { defaults: 0 }); _%>"
+     "黑龙逐入地底:"
+  「海加尔战役纪」
+     "@@private"
+     "<%_ const chap = getvar('stat_data.剧情.章节序号', { defaults: 0 }); _%>"
+     "战前格局:"
+  「战后千年对峙纪」
+     "@@private"
+     "<%_ const chap = getvar('stat_data.剧情.章节序号', { defaults: 0 }); _%>"
+     "荒原缓冲格局:"
+  「比蒙王国纪元」
+     "@@private"
+     "<%_ const chap = getvar('stat_data.剧情.章节序号', { defaults: 0 }); _%>"
+     "四大族长席议:"
+  「人类诸国兴替纪」
+     "@@private"
+     "<%_ const chap = getvar('stat_data.剧情.章节序号', { defaults: 0 }); _%>"
+     "芒克自立门户:"
+
+地理样本「荒岛篇编年」前 4 行:
+   "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 0 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 8"
+   "第一章·勇斗魔狼:"
+   "  时间: 荒岛篇第一章，穿越落点当夜"
+   "  事件:"

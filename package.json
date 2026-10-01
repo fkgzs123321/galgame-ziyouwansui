@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "build:dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch --progress",
+    "build:dev": "node --import tsx node_modules/webpack-cli/bin/cli.js --mode development",
+    "build": "node --import tsx node_modules/webpack-cli/bin/cli.js --mode production",
+    "watch": "node --import tsx node_modules/webpack-cli/bin/cli.js --mode development --watch --progress",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css,scss,html,vue}\" --no-error-on-unmatched-pattern",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
@@ -63,6 +63,7 @@
     "ts-node": "^10.9.2",
     "tsconfig-paths-webpack-plugin": "^4.2.0",
     "tslib": "^2.8.1",
+    "tsx": "^4.23.1",
     "type-fest": "^5.8.0",
     "typescript": "6.0.3",
     "typescript-eslint": "^8.66.0",
@@ -116,5 +117,6 @@
       "unrs-resolver",
       "vue-demi"
     ]
-  }
+  },
+  "packageManager": "pnpm@11.15.1+sha512.81350b07e53c9538a02f1f2303b4290fa2d7be04e56e2a970c4cc4b417dc761de196edabd49d55c7dc9580db81007c44143e4e3d7e462b3000d23c255122d065"
 }

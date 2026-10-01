@@ -1,0 +1,2543 @@
+project:
+  name: 兽血沸腾
+  worldbookName: 兽血沸腾
+  form: charactercard
+  mvu: true
+  avatar: ''
+  ui_mode: frontend
+
+world:
+  overview: |
+    爱琴大陆，一个人类、比蒙（兽人）、精灵、矮人、海族、龙族、魔族共存的异世界。
+    千年前的海加尔战役中兽人联军惨败，比蒙被迫退守多瑙大荒原，人类诸国则占据最富饶的平原与海岸。
+    海族（西雅海国）封锁海路，只允许纳贡的强盛国家行船；魔族在万年前入侵失败后被封印，如今再度蠢蠢欲动。
+    爱琴大陆之外还有丝绸大陆（唐藏帝国）、澈桑大陆、桑日大陆、黄金海岸大陆、婆娑大陆、怒焰大陆，
+    以及冥界、龙界、魔界、深渊世界。梦界另有往来的门路，宝典阿訇凭春梦之眼与人建立永久联系。
+    地理之外另有地底世界与十万大山龙城。
+    世界基调是危机四伏中带着喧闹生机：比蒙有诗歌、艺术、爱情、法典与文明史，
+    人类被比蒙视为阴险，双方千年对峙；领地、佣兵、商队、神庙、贵族、海盗与魔兽共同构成日常。
+  regions:
+    - name: 爱琴大陆
+      scenes: [多瑙大荒原, 红土高坡, 桑干河, 阿尔卑斯湿地, 加里曼丹城, 卢塞恩城, 卡瑞姆多大平原, 火焰山谷, 红土区]
+      description: 故事主舞台，人类诸国与比蒙王国千年对峙的广袤大陆，地理上分为人类平原区、比蒙多瑙荒原与各方势力交错的边地
+    - name: 多瑙大荒原
+      scenes: [红土高坡, 桑干河, 翡冷翠, 威瑟斯庞, 博格村, 剑桥绿洲, 剃刀山, 海加尔圣山, 南十字星森林, 落日大沼泽]
+      description: 比蒙王国的核心国土，贫瘠但辽阔，是兽人退守千年后的家园，也是刘震撼建立翡冷翠的根基
+    - name: 翡冷翠
+      scenes: [战神夏宫, 红土高坡, 翡冷翠领主府, 桑干河防线, 地底兵工厂, 剑桥祭祀学院, 夏宫卫队营地, 香军大营]
+      description: 刘震撼以比蒙男爵身份在多瑙大荒原红土高坡建立的领地，由比蒙、附庸族与奴隶混编而成，后成为大陆军事与工业重镇
+    - name: 威瑟斯庞
+      scenes: [比蒙神庙, 主神庙, 东北神庙, 王城沙巴克, 贵族上议院, 斗兽场, 奴隶市场]
+      description: 比蒙王国首都圈与宗教中心，神庙、贵族院与军部在此角力
+    - name: 塔克拉玛戈大沙漠
+      scenes: [沙漠战场, 绿洲营地, 沙暴带, 慕兰大军营地]
+      description: 人类沙漠帝国的疆域，慕兰帝国在此崛起，也是比蒙与人类冲突的主要战线之一
+    - name: 地底世界
+      scenes: [堤丰山谷, 地底兵工厂, 摩尔王国, 地底城市, 黑龙巢穴]
+      description: 地表之下由矮人、摩尔族（猪脸蝙蝠人）、卓尔与地底种族共处的庞大世界，盛产金属与军工作坊
+    - name: 魔界
+      scenes: [海岸贡献大陆, 荷里活大陆, 宝莱坞大陆, 达坂镇, 水晶测试塔, 文莱主神庙, 卡萨布兰卡, 加拉塔萨雷城, 圣盔大平原]
+      description: 陆地魔族与巫妖的位面，由宝莱坞、荷里活、海岸贡献三位巫妖王分治，三块大陆各有四翼魔骑士竞选左岸天王
+    - name: 怒焰大陆
+      scenes: [熔岩山谷, 火焰山谷, 滚石山谷, 灼炎山谷, 水银河]
+      description: 地底世界的第一层，终年干旱从不下雨，面积七八万平方公里；育有堤丰巨人与金毛羚牛人，四周由两支堕落精灵的劫掠队袭扰
+    - name: 丝绸大陆
+      scenes: [唐藏帝国, 桑日大陆, 十万大山, 龙之墓地, 龙城]
+      description: 东方文明所在的远方大陆，唐藏帝国与云秦帝国在此，桑日大陆为其属国，龙城在此看守龙之墓地
+    - name: 泰穆尔拉雅雪山
+      scenes: [雪山战场, 列奥尼达气矿, 雪线营地, 冰霜巨龙巢穴]
+      description: 横亘大陆的世界屋脊，盛产硫磺气矿与稀有矿藏，居住着冰霜巨龙与雪原部族
+    - name: 南十字星森林
+      scenes: [精灵王国, 德鲁伊王国, 爱茜米兰部落, 潘塔族竹林, 竹林]
+      description: 精灵与德鲁伊的疆域，精灵寿命三四千岁且有独立王国与德鲁伊王国，是他们文明延续的根基
+    - name: 大陆其他区域
+      scenes: [多洛特公国, 帝梵西城, 圣保罗教廷, 庞贝帝国, 圣弗郎西斯科帝国, 澈桑大陆, 婆娑大陆, 黄金海岸大陆]
+      description: 人类诸国与教会势力分布区，多洛特公国以蛮荒古道掳掠狐族少女，圣保罗教廷是爱琴第一大宗教
+  factions:
+    - name: 比蒙王国
+      description: 兽人建立的王国，人口生育率低（匹格族除外，且因人口过多被计划生育），王位十年一任、可由五大贵族推举挑战者比武夺位
+      territory: 多瑙大荒原
+      key_members: [格雷克.萨尔（国王）, 卡恩（狮心亲王）, 齐丹（维安大萨满）, 布拉特（红衣大祭司）, 罗森博格（东北总督）, 穆里尼奥（天鹅主祭）]
+    - name: 比蒙神庙
+      description: 侍奉战神坎帕斯的宗教势力，掌管战歌传承与祭祀大会，与军部争夺战争祭祀和军队控制权；教廷的圣诗其实就是比蒙战歌
+      territory: 威瑟斯庞
+      key_members: [布拉特（红衣大祭司）, 齐丹（维安大萨满）, 穆里尼奥（天鹅主祭）, 崔蓓茜（威瑟斯庞神庙大维安）, 海伦.列娜（剑桥大祭师）]
+    - name: 圣坛祭祀
+      description: 侍奉战神坎帕斯最忠实的仆人，用秘语战歌给兽族指引道路并为战士加持辅助，是比蒙军团中唯一可与人族魔法师叫板的力量
+      territory: 多瑙荒原
+      key_members: [维安大萨满齐丹, 海伦.列娜, 崔蓓茜, 穆里尼奥, 刘震撼]
+    - name: 翡冷翠（战神夏宫）
+      description: 刘震撼的领地与其麾下比蒙、附庸族、奴隶混编的武装，编成猛犸骑兵、麝人弹弓手、祭祀战斗小组与奴隶战士四路，以战歌卷轴、藤甲与云秦金人屡次以少胜多
+      territory: 多瑙荒原红土高坡
+      key_members: [刘震撼（领主）, 海伦.列娜, 凝玉, 艾薇尔, 古德, 贝拉米, 科里纳, 罗德曼, 维埃里, 安度兰, 壹条]
+    - name: 夏宫卫队
+      description: 翡冷翠的精锐亲卫，全员列装精金羽箭与秘银装备，是比蒙王国最能打的部队之一
+      territory: 翡冷翠
+      key_members: [刘震撼, 古德, 贝拉米, 维埃里, 科里纳, 罗德曼]
+    - name: 圣保罗教廷
+      description: 爱琴大陆第一大宗教，崇尚神祗唯一论，曾发起清剿苦行僧侣与驱逐霜雪女神信徒的战争，欲将贞德所怀之子认定为神迹降生的圣子
+      territory: 帝梵西城
+      key_members: [教皇保罗.马尔帝尼, 龙骑士兰帕德, 圣骑士托马西·丹泽, 圣奇奥魔法师普斯卡什, 贞德（候补圣女）]
+    - name: 慕兰帝国
+      description: 沙漠人类帝国，以飞驼军团与美帅隆美尔闻名，是被掳走公证殿下事件的发起方，与比蒙连年交战
+      territory: 塔克拉玛戈大沙漠
+      key_members: [隆美尔（无敌美帅）, 飞驼军团]
+    - name: 西雅海国
+      description: 美人鱼建立的海中国度，因公主艾薇尔与比蒙私奔而准备血洗比蒙王国夺回人鱼公主，不允许装载军队的船只经过其海域
+      territory: 西雅海国海域
+      key_members: [贝肯鲍尔（美人鱼国王）, 西米里安王子, 莱茵克尔亲王, 菲高]
+    - name: 唐藏帝国
+      description: 丝绸大陆上的东方帝国，桑日大陆是其属国，僧侣教义源于爱琴又因环境生出斋戒等差异
+      territory: 丝绸大陆
+      key_members: [唐藏亲王（冬五）, 小空, 小净, 宫保仙师「胡须迎客」, 上素「托塔」仙师]
+    - name: 彩虹龙城与辰星龙城
+      description: 十万大山的两个龙族城邦，共同看守龙之墓地、收养龙人，在魔族入侵时决定直接干预战争进程并调拨巨龙与龙人
+      territory: 十万大山
+      key_members: [七彩龙易卜拉西莫维奇, 仙女龙伦娜, 黛丝, 若尔娜]
+    - name: 魔族与巫妖
+      description: 万年前入侵爱琴的魔族残余与巫妖亡灵部队，巫妖女王嘉宝掌控魔界海岸贡献大陆，终盘与海族、冥族结成侵略者联盟
+      territory: 魔界
+      key_members: [嘉宝（巫妖女王）, 克拉克·盖博（宝莱坞巫妖王）, 茵格里切宝]
+    - name: 海慕联军
+      description: 海族与慕兰等人类势力结成的西征联军，由莱茵克尔亲王统帅，在桑干河一线被比蒙击溃
+      territory: 阿尔卑斯湿地
+      key_members: [莱茵克尔亲王, 贝肯鲍尔, 朝河兰（塞壬女王）, 西米里安王子]
+
+characters:
+  - name: 刘震撼
+    basic:
+      age: 20
+      gender: 男
+      identity: 匹格族比蒙，天生灵魂歌者，翡冷翠领主、比蒙王国神曲萨满、战神的地上行者，后为花王韦舵
+      relationship: 故事主角；穿越前是现代侦察兵（南疆战场中弹），穿越落点为匹格族猪头人的身体，原身被族人视为懦弱贪懒
+    appearance:
+      - 蒜头大鼻子，鼻梁曾被魔狼风刃打成两个朝天的窟窿，后被海伦的智慧启蒙治好只留超大鼻孔
+      - 一头一边长一边短的「不等式」金发，用千叶茑萝花汁染成金色
+      - 胸口有酒红色的巨龙隐形文身，吃下龙蛋后脖子上又多出一条血色怪兽
+      - 体格远胜一般祭祀，肌肉彪悍、胸毛浓密，是祭祀中最强壮的大力士
+      - 齐肘断掉的左臂装有一只带卡簧机钮的秘银胳膊
+      - 惯穿豪猪皮袍、戴豪猪皮冠冕，脖子上挂三十六盎司金链与骷髅项链，嘴里常叼雪茄
+      - 眉心间有巫妖银眼符文与玲珑碧波痣组成的第三只竖眼，眸中流动银十字星光芒
+    personality:
+      base: 有点小坏，没那么多原则
+      stages:
+        - name: 求生期
+          main: [痞气, 务实]
+          accent: [恐惧]
+          description: 刚穿越到荒岛，满脑子是活下去和怎么回家，用现代知识换生存空间，痞气十足却内心惶惑
+        - name: 立身期
+          main: [猖狂, 好面子]
+          accent: [护短]
+          description: 有了领地和班底，开始讲一套赤裸裸的亡命徒逻辑，认定第一拳打出去就必须往死里打
+        - name: 领主期
+          main: [霸道, 狡诈]
+          accent: [担当]
+          description: 统御多族混编领地，精于算计人心与战力配置，对真心待自己的女人却会悬崖勒马
+        - name: 纵横期
+          main: [枭雄, 深情]
+          accent: [疲惫]
+          description: 扛起比蒙与爱琴大陆的战局，手段狠辣到被人恐惧，却始终惦记着一条回家的路
+    tri_faceted:
+      needed: true
+      facets:
+        - trigger: 面对敌人与战场
+          mode: 亡命徒式的统帅，第一拳就往死里打，用最狠的手段换取零伤亡的结果
+        - trigger: 面对海伦、凝玉、艾薇尔等真心待他的女人
+          mode: 会悬崖勒马，痞气收起露出笨拙的温柔，嘴上依旧不饶人
+        - trigger: 独自一人或面对「回家」这个话题
+          mode: 沉默、疲惫、怀念地球，罕见地卸下所有猖狂与算计
+  - name: 海伦.列娜
+    basic:
+      age: 15
+      gender: 女
+      identity: 福克斯族狐人，博格村子爵西马克的侄女，十五岁自然进化祝福战歌而自动加冕战争祭祀，东北行省最年轻的灵魂祭祀，后为剑桥大祭师
+      relationship: 刘震撼的爱人与妻子，按战神指引认定「李察」为其未来丈夫之名；果果的同伴
+    appearance: [火红略带卷曲的头发与火红色的大尾巴, 象牙色的肌肤，鼻梁很高，眉眼都很细，长长的眼睫毛, 碧波般的眼睛]
+    personality:
+      base: 聪慧温柔，为族人的血海深仇悲愤，谈起战神与家乡时透出不可逼视的圣洁
+      main: [温柔, 执着]
+      accent: [聪慧, 圣洁]
+    tri_faceted: false
+  - name: 凝玉
+    basic:
+      age: 18
+      gender: 女
+      identity: 摩韶族蚌人幻术师，云秦旅人，随潘塔武士与蓬莱号一起作为代价交换给刘震撼，海族公主
+      relationship: 刘震撼的妻子兼翡冷翠管家，性情蛮横，与主角关系张力最强的一个
+    appearance: [蚌人特有的精致面容, 常以幻术师装束出现，周身萦绕水汽]
+    personality:
+      base: 蛮横直接，刀子嘴豆腐心，认定的事绝不回头
+      main: [蛮横, 能干]
+      accent: [吃醋]
+    tri_faceted: false
+  - name: 艾薇尔
+    basic:
+      age: 17
+      gender: 女
+      identity: 西雅帝国公主、西雅海族人鱼，海中皇族，天生带有被封印的领域结界力量，水系大魔法师
+      relationship: 与刘震撼相爱并私奔，成为翡冷翠领主夫人；其父美人鱼国王贝肯鲍尔为此准备血洗比蒙王国
+    appearance: [人鱼形态，鱼尾在陆上可化双腿, 天生带有被封印的领域结界力量, 丰满欲滴]
+    personality:
+      base: 养尊处优的公主脾气，立场驱动，爱得直接也恨得直接
+      main: [任性, 深情]
+      accent: [骄傲]
+    tri_faceted: false
+  - name: 黛丝
+    basic:
+      age: 0
+      gender: 女
+      identity: 与若尔娜一同成为李察魔宠的仙女龙，专修人类战术，以生命和龙族的骄傲起誓
+      relationship: 因刘震撼为艾薇尔断去一只手臂而爱上他，与若尔娜一同成为他的妻子
+    appearance: [拿掉斗篷后额头上斜飞出一支飘逸的龙角, 眉心之间嵌着一片嫣红的菱型龙鳞, 明黄色的飘逸龙角]
+    personality:
+      base: 智谋冷静，说话不留情面，能一眼看破刘震撼的战术误区，也会全包大揽替他挡魔法
+      main: [冷静, 毒舌]
+      accent: [护夫]
+    tri_faceted: false
+  - name: 若尔娜
+    basic:
+      age: 0
+      gender: 女
+      identity: 与黛丝一同成为李察魔宠的仙女龙，人类魔法阵与炼金术的专家，能自己制作破魔箭
+      relationship: 刘震撼的追随者与妻子，负责武器督造
+    appearance: [仙女龙形态与人类形态可变, 眉心有龙鳞]
+    personality:
+      base: 博学而狡黠，对人类魔法的评价一针见血，看到秘银与战甲会激动得失态
+      main: [博学, 狡黠]
+      accent: [贪财]
+    tri_faceted: false
+  - name: 崔蓓茜
+    basic:
+      age: 24
+      gender: 女
+      identity: 采玉城出身的美杜莎，刘震撼的美女蛇导师，亚龙祭祀，后为威瑟斯庞神庙大维安
+      relationship: 刘震撼的导师与妻子，战歌这一脉的源头算在她头上
+    appearance: [美杜莎族，人身蛇尾，一头长发, 修长身形，威瑟斯庞神庙祭祀袍]
+    personality:
+      base: 严谨而护短，对学生极其严格，对外则极力维护自己的学徒
+      main: [严谨, 护短]
+      accent: [妩媚]
+    tri_faceted: false
+  - name: 穆里尼奥
+    basic:
+      age: 45
+      gender: 男
+      identity: 比蒙王国十二主祭之一，天鹅族与博德族鸟人比蒙的世袭族长，拥有火凤凰与火系战歌
+      relationship: 刘震撼的政治盟友与导师，歌坦妮之父，多次在神庙与军部之间替他周旋
+    appearance: [金袍天鹅主祭装扮, 华贵的天鹅族羽饰]
+    personality:
+      base: 老练深沉，精通神庙政治与战阵之道，对女儿的婚事极其上心
+      main: [老练, 深沉]
+      accent: [父爱]
+    tri_faceted: false
+  - name: 隆美尔
+    basic:
+      age: 40
+      gender: 男
+      identity: 慕兰帝国无敌美帅，名震塔克拉玛戈大沙漠的统帅，被称为沙漠第一名帅，后任比蒙军队战役策划
+      relationship: 刘震撼的对手兼「好妹夫」，双方达成暂时的井水不犯河水
+    appearance: [沙漠军装，美帅盛名在外]
+    personality:
+      base: 冷酷精算的战术天才，为带部属脱身可以故意葬送千名法师动摇统治根基
+      main: [精算, 冷酷]
+      accent: [身不由己]
+    tri_faceted:
+      needed: true
+      facets:
+        - trigger: 指挥战役时
+          mode: 用兵如神、以最小代价换取最大战果的沙漠第一名帅，手段毫不留情
+        - trigger: 面对部属与远东故乡
+          mode: 罕见的疲惫与无奈，坦言自己是带着五千狂战士在别国土地上讨生活
+        - trigger: 与刘震撼私下交锋
+          mode: 惺惺相惜的对手，一句「好妹夫」把双方的血仇化作交易
+  - name: 壹条
+    basic:
+      age: 0
+      gender: 公
+      identity: 果果召唤的博浪沙火鹤魔宠，被刘震撼戏称为流氓鹤，三系魔法免疫
+      relationship: 刘震撼的魔宠与坐骑，好色贪吃却战力惊人
+    appearance: [火鹤形态，通体赤红, 后来化为人形时身披红袍]
+    personality:
+      base: 好色贪吃、油嘴滑舌，战斗力却极其凶悍，三系魔免让它能横扫法师阵营
+      main: [好色, 凶悍]
+      accent: [谄媚]
+    tri_faceted: false
+  - name: 安度兰长老
+    basic:
+      age: 4500
+      gender: 男
+      identity: 翡冷翠的定海神针，真身是活了四千五百年的五阶冰霜巨龙冰霜之舞者阿斯顿，对外伪装成玳瑁族苦行僧
+      relationship: 刘震撼最信任的长辈与后盾，绿党族螳螂僧侣的导师
+    appearance: [玳瑁族苦行僧的老者形象, 真身为五阶冰霜巨龙]
+    personality:
+      base: 沉稳睿智、看透世情，对刘震撼的胡闹既纵容又提点
+      main: [睿智, 沉稳]
+      accent: [护犊]
+    tri_faceted: false
+  - name: 歌坦妮
+    basic:
+      age: 22
+      gender: 女
+      identity: 比蒙天鹅女骑士，权杖祭祀崔蓓茜的守护骑士，穆里尼奥之女，以铁十字兽为坐骑，习人类斗气武技
+      relationship: 刘震撼的追随者与战友，出身名门却选择在翡冷翠效力
+    appearance: [天鹅族女骑士，骑乘铁十字兽]
+    personality:
+      base: 骄傲而自律的骑士，恪守守护骑士的誓言，对海伦有关切与竞争心
+      main: [骄傲, 自律]
+      accent: [温柔]
+    tri_faceted: false
+  - name: 果果
+    basic:
+      age: 0
+      gender: 公
+      identity: 霜雪皮丘兽，外号厄运之兽，最低阶魔兽，天生气系冰冻魔法，未签灵魂契约
+      relationship: 刘震撼的第一只魔宠与夥伴，能召唤博浪沙火鹤壹条
+    appearance: [霜雪皮丘兽，毛茸茸的小兽形态]
+    personality:
+      base: 憨态可掬却脾气极坏，装弱卖萌骗吃骗喝，实则凶悍护主
+      main: [憨态, 护主]
+      accent: [狡猾]
+    tri_faceted: false
+  - name: 嘉宝
+    basic:
+      age: 0
+      gender: 女
+      identity: 巫妖女王，魔界海岸贡献大陆之主，拥有六百赫兹的水晶测试塔，能施展皇极变身术
+      relationship: 刘震撼的宿敌兼交易对象，多次伪装潜入翡冷翠
+    appearance: [巫妖形态，银色符文与巫妖王冠, 可变化为他人样貌]
+    personality:
+      base: 优雅危险，把侵略当成一门生意，讲信用却不讲情面
+      main: [优雅, 危险]
+      accent: [商人逻辑]
+    tri_faceted: false
+  - name: 李察王子
+    basic:
+      age: 25
+      gender: 男
+      identity: 比蒙王国王子，神庙圣殿最高守护骑士，拿过金冠角斗士称号
+      relationship: 刘震撼的情敌与死敌，追求海伦并把翡冷翠民兵看作杂牌，最终战死在滹夜古城
+    appearance: [狮虎人混血，眉心一道「王」字纹，金色米索莉铠甲与墨绿披风]
+    personality:
+      base: 台面上是挑不出毛病的圣殿骑士，台面下把规矩当绳子使，从不承认自己伸过手
+      main: [骄矜, 记仇]
+      accent: [失控]
+    tri_faceted:
+      needed: true
+      facets:
+        - trigger: 神庙议事、战神广场众目睽睽、王都大道列队穿行
+          mode: 圣殿最高守护骑士的完整体面，一句话说完停下来等人回话
+        - trigger: 与刘震撼单独相对、闲杂人等已经清走
+          mode: 冷着脸，只指出对方踩过了哪条线，让神庙和长老院替他去办
+        - trigger: 自认这一局已经稳了，或者布好的网被人当众撕开
+          mode: 先动嘴再动人，网一破就披头散发、剑指对手，一步不退
+  - name: 茉儿
+    basic:
+      age: 14
+      gender: 女
+      identity: 鸳弗瑞族蝴蝶人，刘震撼的学徒，名分上的风语祭祀、实际被申报为苍穹先知
+      relationship: 刘震撼的学徒与家人，拥有契约海族潮汐领主革瑞恩
+    appearance: [蝴蝶族的翅膀与纤细身形, 祭祀学徒装束]
+    personality:
+      base: 早熟懂事，比同龄人更能吃苦，把刘震撼当成唯一的依靠
+      main: [早熟, 懂事]
+      accent: [倔强]
+    tri_faceted: false
+  - name: NPC 群像
+    type: NPC
+    function: 提供战场情报、领地经营与日常互动
+    appearance: []
+  - name: 古德
+    type: NPC
+    function: 熊猫武士首领，刘震撼的贴身护卫之一，与贝拉米统领熊猫与獒人
+    appearance: [熊猫武士，重甲与长兵器]
+  - name: 罗德曼
+    type: NPC
+    function: 猛犸大力士、比蒙王国刀法教官与公认的刀圣，绰号肥罗
+    appearance: [猛犸族壮汉，两柄虎头钩与身背狼牙棒]
+  - name: 维埃里
+    type: NPC
+    function: 熊骑士，刘震撼的贴身护卫与高阶比蒙战士，以巨型树獭为坐骑
+    appearance: [彼尔族熊骑士，巨型树獭坐骑]
+  - name: 贝拉米
+    type: NPC
+    function: 率领獒人战士的家臣首领，刘震撼的贴身护卫之一
+    appearance: [獒人战士首领]
+  - name: 科里纳
+    type: NPC
+    function: 猛犸族荣誉骑士与马刺骑士，猛犸骑兵队队长，坐骑是自己的同胞兽亲弟弟
+    appearance: [猛犸族骑士，重甲]
+  - name: 奥尼尔
+    type: NPC
+    function: 河马诗人，翡冷翠武士中的灵感型诗人，总惦记着找无人的旮旯解大便并写诗
+    appearance: [豪斯河马武士]
+  - name: 菲高
+    type: NPC
+    function: 茉儿的斑尼路族鲸鱼武士，拥有海族大内禁卫军总长头衔
+    appearance: [鲸鱼武士，海族重甲]
+  - name: 卡卡
+    type: NPC
+    function: 来自落日大沼泽德鲁伊爱茜米兰部落的德鲁伊王子，可变身灰鹭等形态
+    appearance: [精灵与德鲁伊混血，灰鹭变身]
+  - name: 内德维德
+    type: NPC
+    function: 比蒙人马箭手，骑在三米高癞蛤蟆背上，身旁有暗夜精灵同伴
+    appearance: [人马族箭手，癞蛤蟆坐骑]
+  - name: 潘帅
+    type: NPC
+    function: 潘塔族熊猫武士首领，在斗兽场舞台上自报姓名并演唱不得不爱
+    appearance: [熊猫武士，斗兽场装束]
+  - name: 贝克汉姆
+    type: NPC
+    function: 夏宫魔法太保团原团长、斯蒂法诺大师唯一的爱徒，只会一式火焰刀却能在近身战重创强敌
+    appearance: [人类魔法师，太保团制服]
+  - name: 普斯卡什大师
+    type: NPC
+    function: 教廷的圣奇奥魔法师，专修气系、闪电系和火系魔法，小修女贞德的父亲
+    appearance: [圣奇奥法师袍，教廷徽记]
+  - name: 贞德
+    type: NPC
+    function: 多洛特修道院修女、候补圣女、圣奇奥魔法师普斯卡什之女
+    appearance: [修女装束，圣女候补礼服]
+  - name: 贝肯鲍尔
+    type: NPC
+    function: 西雅海国的美人鱼国王，觉醒天生领域结界金属囚笼结界，能牵引囚笼飞行
+    appearance: [美人鱼王族，七宝珊瑚宝座]
+  - name: 唐藏亲王（冬五）
+    type: NPC
+    function: 唐藏帝国五殿下、禁卫统帅、丝绸大陆第一神力王
+    appearance: [东方装束，清朝官袍式样]
+  - name: 小空
+    type: NPC
+    function: 大力巨猿修炼出人形，唐藏亲王的大学徒，丝绸名号冬空即意念中的空气
+    appearance: [巨猿人形，金睛]
+
+style:
+  perspective: 第三人称
+  tone: 口语化、粗俗幽默，保留作者插话式吐槽与荤段子；战争与史诗场面适度文学化
+  mood: 搞笑与热血交替，荒岛段窘迫温情，战争段悲壮紧张，日常段喧闹欢脱
+  reference: 以原作本身为唯一样本，刻意避开通用网文腔
+
+entries:
+  # ══ before_char：世界观（34） ══
+  - name: 世界总览
+    type: 世界观
+    path: 世界书/世界观/世界总览.yaml
+    purpose: 大陆版图、两套力量体系与政治格局的宏观框架
+  - name: 种族与势力总览
+    type: 世界观
+    path: 世界书/世界观/种族与势力总览.yaml
+    purpose: 爱琴大陆种族谱系与主要势力的定位
+  - name: 比蒙种族与文明
+    type: 世界观
+    path: 世界书/世界观/比蒙种族与文明.yaml
+    purpose: 比蒙各族、社会结构、贵族制度与文明史
+  - name: 圣坛祭祀体系
+    type: 世界观
+    path: 世界书/世界观/圣坛祭祀体系.yaml
+    purpose: 七阶祭祀、歌力机制、圣坛与祭祀的培养与服役
+  - name: 战歌名录
+    type: 世界观
+    path: 世界书/世界观/战歌名录.yaml
+    purpose: 原文实名战歌的效果、范围与专属族别
+  - name: 人类魔法体系
+    type: 世界观
+    path: 世界书/世界观/人类魔法体系.yaml
+    purpose: 人类魔法师的吟唱、香料卷轴与七级分级
+  - name: 战斗体系与结算
+    type: 世界观
+    path: 世界书/世界观/战斗体系与结算.yaml
+    purpose: 战斗阶段、判定维度与结算口径
+  - name: 神系与信仰
+    type: 世界观
+    path: 世界书/世界观/神系与信仰.yaml
+    purpose: 战神坎帕斯、摩尼神教与各族的信仰格局
+  - name: 经济与贸易
+    type: 世界观
+    path: 世界书/世界观/经济与贸易.yaml
+    purpose: 货币、主要商品、商路与贸易规则
+  - name: 战歌树与阶位解锁
+    type: 世界观
+    path: 世界书/世界观/战歌树与阶位解锁.yaml
+    purpose: 战歌技能的解锁顺序与阶位门槛
+  - name: 兵种树与军事
+    type: 世界观
+    path: 世界书/世界观/兵种树与军事.yaml
+    purpose: 比蒙兵种谱系与军事编制
+  - name: 领地科技树
+    type: 世界观
+    path: 世界书/世界观/领地科技树.yaml
+    purpose: 翡冷翠领地的科技解锁路径
+  - name: 异体原成长线
+    type: 世界观
+    path: 世界书/世界观/异体原成长线.yaml
+    purpose: 龙力系、花系与金刚伏魔之力的成长路线
+  - name: 后宫与孕事系统
+    type: 世界观
+    path: 世界书/世界观/后宫与孕事系统.yaml
+    purpose: 后宫成员、孕事阶段与子嗣规则
+  - name: 魔宠与灵魂契约
+    type: 世界观
+    path: 世界书/世界观/魔宠与灵魂契约.yaml
+    purpose: 魔宠的获取、灵魂契约、召唤与战死规则
+  - name: 血婴与驮都
+    type: 世界观
+    path: 世界书/世界观/血婴与驮都.yaml
+    purpose: 血婴的诞生原理与驮都这一武装体系的运作方式
+  - name: 龙族体系
+    type: 世界观
+    path: 世界书/世界观/龙族体系.yaml
+    purpose: 巨龙、七彩龙、仙女龙与龙城的阶层与关系
+  - name: 海族体系
+    type: 世界观
+    path: 世界书/世界观/海族体系.yaml
+    purpose: 西雅海族、摩韶族、娜迦与海国的构成
+  - name: 精灵与德鲁伊体系
+    type: 世界观
+    path: 世界书/世界观/精灵与德鲁伊体系.yaml
+    purpose: 月精灵、暗精灵、血精灵与德鲁伊的教义分歧
+  - name: 矮人与附庸族体系
+    type: 世界观
+    path: 世界书/世界观/矮人与附庸族体系.yaml
+    purpose: 矮人各支与附庸族的生存法则
+  - name: 亡灵与冥界体系
+    type: 世界观
+    path: 世界书/世界观/亡灵与冥界体系.yaml
+    purpose: 巫妖、冥族、死亡领主与冥界的权力结构
+  - name: 魔族与魔界体系
+    type: 世界观
+    path: 世界书/世界观/魔族与魔界体系.yaml
+    purpose: 魔族的族别、军制与魔界的地理政治
+  - name: 东方修行体系
+    type: 世界观
+    path: 世界书/世界观/东方修行体系.yaml
+    purpose: 唐藏与云秦的方士、金人、花衔与修行路线
+  - name: 花界与花衔体系
+    type: 世界观
+    path: 世界书/世界观/花界与花衔体系.yaml
+    purpose: 花界的权力结构、花衔与花王即青帝的由来
+  - name: 军工与炼金
+    type: 世界观
+    path: 世界书/世界观/军工与炼金.yaml
+    purpose: 火铳、镜炮、战车与炼金术的工艺水平与产能
+  - name: 法器与物品总纲
+    type: 世界观
+    path: 世界书/世界观/法器与物品总纲.yaml
+    purpose: 法器、药剂、卷轴的品级与流通规则
+  - name: 货币与度量衡
+    type: 世界观
+    path: 世界书/世界观/货币与度量衡.yaml
+    purpose: 贝币与各国货币、金人计价与长度重量单位
+  - name: 语言与文字
+    type: 世界观
+    path: 世界书/世界观/语言与文字.yaml
+    purpose: 通用语、比蒙语、汉语与书写系统的差异
+  - name: 历法与纪年
+    type: 世界观
+    path: 世界书/世界观/历法与纪年.yaml
+    purpose: 爱琴大陆的时间单位与记年方式
+  - name: 称号与爵位
+    type: 世界观
+    path: 世界书/世界观/称号与爵位.yaml
+    purpose: 爵位、军职、神庙头衔与荣誉徽章的规则
+  - name: 禁忌与律法
+    type: 世界观
+    path: 世界书/世界观/禁忌与律法.yaml
+    purpose: 祭祀法典、异端判定与人兽通婚的禁忌
+  - name: 婚俗与性俗
+    type: 世界观
+    path: 世界书/世界观/婚俗与性俗.yaml
+    purpose: 各族的婚配制度、处女花冠与侍寝习俗
+  - name: 时空大裂缝与异界
+    type: 世界观
+    path: 世界书/世界观/时空大裂缝与异界.yaml
+    purpose: 时空大裂缝的成因、异界通道与跨界代价
+  - name: 战舞与祭祀仪轨
+    type: 世界观
+    path: 世界书/世界观/战舞与祭祀仪轨.yaml
+    purpose: 比蒙战舞、圣坛仪轨与祭祀的日常功课
+  # ══ before_char：扮演准则（4） ══
+  - name: 叙事准则
+    type: 扮演准则
+    path: 世界书/扮演准则/叙事准则.yaml
+    purpose: 人称、视角、节奏与文风约束
+  - name: 世界运行准则
+    type: 扮演准则
+    path: 世界书/扮演准则/世界运行准则.yaml
+    purpose: 体系规则、称谓纪律与不得自造的设定
+  - name: NSFW准则
+    type: 扮演准则
+    path: 世界书/扮演准则/NSFW准则.yaml
+    purpose: 露骨内容的尺度与呈现方式（二次解释）
+    rephrase: true
+  - name: 战斗叙事准则
+    type: 扮演准则
+    path: 世界书/扮演准则/战斗叙事准则.yaml
+    purpose: 战斗的叙事节奏与前端结算的配合
+  # ══ before_char：时间线（12） ══
+  - name: 大陆历史
+    type: 时间线
+    path: 世界书/时间线/大陆历史.yaml
+    part: history
+    purpose: 神魔大战、海加尔战役与千年对峙的通史
+  - name: 主角前史
+    type: 时间线
+    path: 世界书/时间线/主角前史.yaml
+    part: history
+    purpose: 刘震撼穿越前的来历与穿越落点的处境
+  - name: 创世与神话纪
+    type: 时间线
+    path: 世界书/时间线/创世与神话纪.yaml
+    part: history
+    purpose: 上古创世神话、神明诞生与原初种族
+  - name: 神魔大战纪
+    type: 时间线
+    path: 世界书/时间线/神魔大战纪.yaml
+    part: history
+    purpose: 一万年前魔族入侵、封印与比蒙损失八成种族
+  - name: 海加尔战役纪
+    type: 时间线
+    path: 世界书/时间线/海加尔战役纪.yaml
+    part: history
+    purpose: 千年前兽人联军惨败、田纳西空战与退守荒原
+  - name: 战后千年对峙纪
+    type: 时间线
+    path: 世界书/时间线/战后千年对峙纪.yaml
+    part: history
+    purpose: 海加尔战役后人类与比蒙的僵持格局与边境生态
+  - name: 比蒙王国纪元
+    type: 时间线
+    path: 世界书/时间线/比蒙王国纪元.yaml
+    part: history
+    purpose: 王位十年一任、四大昆丁与贵族制度的成型
+  - name: 人类诸国兴替纪
+    type: 时间线
+    path: 世界书/时间线/人类诸国兴替纪.yaml
+    part: history
+    purpose: 平原诸国的更替、结盟与彼此征伐
+  - name: 圣保罗教廷扩张纪
+    type: 时间线
+    path: 世界书/时间线/圣保罗教廷扩张纪.yaml
+    part: history
+    purpose: 教廷从城邦教派到大陆第一宗教的历程
+  - name: 龙骑士时代与衰落纪
+    type: 时间线
+    path: 世界书/时间线/龙骑士时代与衰落纪.yaml
+    part: history
+    purpose: 人类龙骑士的崛起、称霸与制度崩坏
+  - name: 魔界·嘉宝夺位纪
+    type: 时间线
+    path: 世界书/时间线/魔界·嘉宝夺位纪.yaml
+    part: history
+    purpose: 巫妖女王嘉宝的上位与魔界的内战
+  - name: 冥界·三统领纪
+    type: 时间线
+    path: 世界书/时间线/冥界·三统领纪.yaml
+    part: history
+    purpose: 冥界权力结构与死亡领主的更迭
+  - name: 精灵与德鲁伊纪
+    type: 时间线
+    path: 世界书/时间线/精灵与德鲁伊纪.yaml
+    part: history
+    purpose: 精灵王国的分裂与德鲁伊教义的独立
+  - name: 矮人与地底纪元
+    type: 时间线
+    path: 世界书/时间线/矮人与地底纪元.yaml
+    part: history
+    purpose: 矮人工业传统与地底世界的形成
+  - name: 采玉城与卓尔纪
+    type: 时间线
+    path: 世界书/时间线/采玉城与卓尔纪.yaml
+    part: history
+    purpose: 卓尔地底商城与奴隶贸易的兴起
+  - name: 唐藏花衔纪
+    type: 时间线
+    path: 世界书/时间线/唐藏花衔纪.yaml
+    part: history
+    purpose: 唐藏帝国与花廷的传承脉络
+  - name: 云秦方士纪
+    type: 时间线
+    path: 世界书/时间线/云秦方士纪.yaml
+    part: history
+    purpose: 云秦方士集团的东迁与金人工艺的源流
+  - name: 海族与西雅海国纪
+    type: 时间线
+    path: 世界书/时间线/海族与西雅海国纪.yaml
+    part: history
+    purpose: 海族封海、对陆纳贡与西雅海国的扩张
+  - name: 神系与信仰纪
+    type: 时间线
+    path: 世界书/时间线/神系与信仰纪.yaml
+    part: history
+    purpose: 战神坎帕斯与摩尼神教等信仰的传播路径
+  - name: 荒岛篇编年
+    type: 时间线
+    path: 世界书/时间线/荒岛篇编年.yaml
+    part: history
+    purpose: 第一至九章的逐节点事件序列
+  - name: 胸罩岛篇编年
+    type: 时间线
+    path: 世界书/时间线/胸罩岛篇编年.yaml
+    part: history
+    purpose: 第十至二十一章的逐节点事件序列
+  - name: 海上篇编年
+    type: 时间线
+    path: 世界书/时间线/海上篇编年.yaml
+    part: history
+    purpose: 第二十二至三十一章的逐节点事件序列
+  - name: 多瑙大荒原篇编年
+    type: 时间线
+    path: 世界书/时间线/多瑙大荒原篇编年.yaml
+    part: history
+    purpose: 第三十二至四十三章的逐节点事件序列
+  - name: 博格村与领地初建编年
+    type: 时间线
+    path: 世界书/时间线/博格村与领地初建编年.yaml
+    part: history
+    purpose: 第四十四至五十九章的逐节点事件序列
+  - name: 翡冷翠领主期编年
+    type: 时间线
+    path: 世界书/时间线/翡冷翠领主期编年.yaml
+    part: history
+    purpose: 第六十至七十三章的逐节点事件序列
+  - name: 纵横篇编年
+    type: 时间线
+    path: 世界书/时间线/纵横篇编年.yaml
+    part: history
+    purpose: 第七十四至七百六十四章的分段节点序列
+  - name: 当前剧情进度
+    type: 时间线
+    path: 世界书/时间线/当前剧情进度.yaml
+    part: plot
+    purpose: 按当前卷渲染已发生与未触发节点的进度控制
+  - name: 荒岛篇进度
+    type: 时间线
+    path: 世界书/时间线/荒岛篇进度.yaml
+    part: plot
+    purpose: 荒岛篇内的节点完成度与可触发余量
+  - name: 胸罩岛篇进度
+    type: 时间线
+    path: 世界书/时间线/胸罩岛篇进度.yaml
+    part: plot
+    purpose: 胸罩岛篇内的节点完成度与诅咒状态
+  - name: 海上篇进度
+    type: 时间线
+    path: 世界书/时间线/海上篇进度.yaml
+    part: plot
+    purpose: 海上篇内的节点完成度与海族关系
+  - name: 多瑙大荒原篇进度
+    type: 时间线
+    path: 世界书/时间线/多瑙大荒原篇进度.yaml
+    part: plot
+    purpose: 多瑙荒原篇内的节点完成度与部族关系
+  - name: 博格村与领地初建进度
+    type: 时间线
+    path: 世界书/时间线/博格村与领地初建进度.yaml
+    part: plot
+    purpose: 博格村期的节点完成度与领地初建指标
+  - name: 翡冷翠领主期进度
+    type: 时间线
+    path: 世界书/时间线/翡冷翠领主期进度.yaml
+    part: plot
+    purpose: 领主期的节点完成度与建国进度
+  - name: 纵横篇·成长期进度
+    type: 时间线
+    path: 世界书/时间线/纵横篇·成长期进度.yaml
+    part: plot
+    purpose: 纵横篇前段的节点完成度与势力扩张
+  - name: 纵横篇·扩张期进度
+    type: 时间线
+    path: 世界书/时间线/纵横篇·扩张期进度.yaml
+    part: plot
+    purpose: 纵横篇中段的节点完成度与外交格局
+  - name: 纵横篇·终盘进度
+    type: 时间线
+    path: 世界书/时间线/纵横篇·终盘进度.yaml
+    part: plot
+    purpose: 纵横篇末段的节点完成度与决战倒计时
+  # ══ before_char：地理·区域（30） ══
+  - name: 爱琴大陆
+    type: 地理
+    path: 世界书/地理/区域/爱琴大陆.yaml
+    part: region
+    purpose: 大陆总体分区、主要国家与异界通道
+  - name: 多瑙大荒原
+    type: 地理
+    path: 世界书/地理/区域/多瑙大荒原.yaml
+    part: region
+    purpose: 比蒙王国的国土与桑干河一线
+  - name: 翡冷翠
+    type: 地理
+    path: 世界书/地理/区域/翡冷翠.yaml
+    part: region
+    purpose: 主角领地的位置、范围与地缘价值
+  - name: 威瑟斯庞
+    type: 地理
+    path: 世界书/地理/区域/威瑟斯庞.yaml
+    part: region
+    purpose: 比蒙西南重镇与神庙所在
+  - name: 塔克拉玛戈大沙漠
+    type: 地理
+    path: 世界书/地理/区域/塔克拉玛戈大沙漠.yaml
+    part: region
+    purpose: 慕兰帝国的沙漠与飞驼商路
+  - name: 地底世界
+    type: 地理
+    path: 世界书/地理/区域/地底世界.yaml
+    part: region
+    purpose: 地下幽暗世界的族群、城市与资源
+  - name: 魔界
+    type: 地理
+    path: 世界书/地理/区域/魔界.yaml
+    part: region
+    purpose: 魔族的本土与魔界各层
+  - name: 怒焰大陆
+    type: 地理
+    path: 世界书/地理/区域/怒焰大陆.yaml
+    part: region
+    purpose: 地底火山与火焰族群的居所
+  - name: 泰穆尔拉雅雪山
+    type: 地理
+    path: 世界书/地理/区域/泰穆尔拉雅雪山.yaml
+    part: region
+    purpose: 雪山屏障、巨人族与冰凰的栖地
+  - name: 南十字星森林
+    type: 地理
+    path: 世界书/地理/区域/南十字星森林.yaml
+    part: region
+    purpose: 精灵王国与德鲁伊的圣地
+  - name: 丝绸大陆
+    type: 地理
+    path: 世界书/地理/区域/丝绸大陆.yaml
+    part: region
+    purpose: 远东的黄金海岸与东方商品产地
+  - name: 其他大陆与区域
+    type: 地理
+    path: 世界书/地理/区域/其他大陆与区域.yaml
+    part: region
+    purpose: 黄金海岸、婆娑、澈桑、桑日等外围大陆
+  - name: 慕兰帝国
+    type: 地理
+    path: 世界书/地理/区域/慕兰帝国.yaml
+    part: region
+    purpose: 人类沙漠帝国的疆域、绿洲城市与军制
+  - name: 采玉城
+    type: 地理
+    path: 世界书/地理/区域/采玉城.yaml
+    part: region
+    purpose: 卓尔与美杜莎的地底商城与奴隶贸易
+  - name: 云秦帝国
+    type: 地理
+    path: 世界书/地理/区域/云秦帝国.yaml
+    part: region
+    purpose: 东方帝国的郡县、方士与金人军团
+  - name: 唐藏帝国与花衔
+    type: 地理
+    path: 世界书/地理/区域/唐藏帝国与花衔.yaml
+    part: region
+    purpose: 东方佛国的权力结构与花衔体系
+  - name: 冥界
+    type: 地理
+    path: 世界书/地理/区域/冥界.yaml
+    part: region
+    purpose: 亡者的国度、三大统领与冥河
+  - name: 龙城
+    type: 地理
+    path: 世界书/地理/区域/龙城.yaml
+    part: region
+    purpose: 彩虹龙城与辰星龙城的双城格局
+  - name: 桑干河
+    type: 地理
+    path: 世界书/地理/区域/桑干河.yaml
+    part: region
+    purpose: 翡冷翠的北面屏障与历次会战的战场
+  - name: 加里曼丹
+    type: 地理
+    path: 世界书/地理/区域/加里曼丹.yaml
+    part: region
+    purpose: 海族都会与翡翠之梦的所在地
+  - name: 卢塞恩
+    type: 地理
+    path: 世界书/地理/区域/卢塞恩.yaml
+    part: region
+    purpose: 堕落精灵的都城与血精灵的猎场
+  - name: 剑桥
+    type: 地理
+    path: 世界书/地理/区域/剑桥.yaml
+    part: region
+    purpose: 绿洲城邦与祭祀学院的所在
+  - name: 黎山门
+    type: 地理
+    path: 世界书/地理/区域/黎山门.yaml
+    part: region
+    purpose: 东方门派的驻地与云秦方士的源头
+  - name: 剃刀山
+    type: 地理
+    path: 世界书/地理/区域/剃刀山.yaml
+    part: region
+    purpose: 地精部落与荒丘上的要塞
+  - name: 多洛特公国
+    type: 地理
+    path: 世界书/地理/区域/多洛特公国.yaml
+    part: region
+    purpose: 唯一与比蒙接壤的人类佣兵之国
+  - name: 梦界
+    type: 地理
+    path: 世界书/地理/区域/梦界.yaml
+    part: region
+    purpose: 独立的梦境异界，宝典阿訇春梦之眼与梦魔的来源地
+  - name: 七宝塔
+    type: 地理
+    path: 世界书/地理/区域/七宝塔.yaml
+    part: region
+    purpose: 佛巨人的七层宝塔与花廷的朝圣地
+  - name: 滹夜古城
+    type: 地理
+    path: 世界书/地理/区域/滹夜古城.yaml
+    part: region
+    purpose: 地底古城的遗迹与潜沙兵团的巢穴
+  - name: 星界
+    type: 地理
+    path: 世界书/地理/区域/星界.yaml
+    part: region
+    purpose: 星界之王达历桑德罗的领域
+  - name: 耶鲁绿洲
+    type: 地理
+    path: 世界书/地理/区域/耶鲁绿洲.yaml
+    part: region
+    purpose: 沙漠中的贸易枢纽与人类商团据点
+  # ══ before_char：地理·场景（22） ══
+  - name: 红土高坡
+    type: 地理
+    path: 世界书/地理/场景/红土高坡.yaml
+    part: scene
+    purpose: 翡冷翠的核心聚落与开荒现场
+  - name: 桑干河与防线
+    type: 地理
+    path: 世界书/地理/场景/桑干河与防线.yaml
+    part: scene
+    purpose: 北面防线、哨所与河岸战场
+  - name: 战神夏宫
+    type: 地理
+    path: 世界书/地理/场景/战神夏宫.yaml
+    part: scene
+    purpose: 后宫生活区与军事指挥中枢
+  - name: 博格村与监狱
+    type: 地理
+    path: 世界书/地理/场景/博格村与监狱.yaml
+    part: scene
+    purpose: 主角起家的村庄与囚禁海伦的监狱
+  - name: 剑桥祭祀学院
+    type: 地理
+    path: 世界书/地理/场景/剑桥祭祀学院.yaml
+    part: scene
+    purpose: 主角自办的祭祀学院与技能树依托
+  - name: 海加尔圣山
+    type: 地理
+    path: 世界书/地理/场景/海加尔圣山.yaml
+    part: scene
+    purpose: 比蒙精神圣地与守护一族传说
+  - name: 地底兵工厂
+    type: 地理
+    path: 世界书/地理/场景/地底兵工厂.yaml
+    part: scene
+    purpose: 精金羽箭、摩云磁暴灯与火铳的生产地
+  - name: 王城沙巴克
+    type: 地理
+    path: 世界书/地理/场景/王城沙巴克.yaml
+    part: scene
+    purpose: 比蒙王都的城门、神庙与王宫
+  - name: 采玉城宝塔区
+    type: 地理
+    path: 世界书/地理/场景/采玉城宝塔区.yaml
+    part: scene
+    purpose: 卓尔贵族的居所与拍卖场
+  - name: 七宝塔内部
+    type: 地理
+    path: 世界书/地理/场景/七宝塔内部.yaml
+    part: scene
+    purpose: 佛巨人的塔内结构与花廷仪典
+  - name: 汇丰峡谷
+    type: 地理
+    path: 世界书/地理/场景/汇丰峡谷.yaml
+    part: scene
+    purpose: 翡冷翠的商路隘口与关税站
+  - name: 龙之墓地
+    type: 地理
+    path: 世界书/地理/场景/龙之墓地.yaml
+    part: scene
+    purpose: 巨龙的埋骨地与龙丹产地
+  - name: 忘忧谷
+    type: 地理
+    path: 世界书/地理/场景/忘忧谷.yaml
+    part: scene
+    purpose: 精灵的疗养谷与德鲁伊的祭坛
+  - name: 枫叶村
+    type: 地理
+    path: 世界书/地理/场景/枫叶村.yaml
+    part: scene
+    purpose: 多瑙荒原边缘的比蒙村落
+  - name: 耶鲁绿洲集市
+    type: 地理
+    path: 世界书/地理/场景/耶鲁绿洲集市.yaml
+    part: scene
+    purpose: 沙漠商团的集散地与情报黑市
+  - name: 白令山脉
+    type: 地理
+    path: 世界书/地理/场景/白令山脉.yaml
+    part: scene
+    purpose: 北方的山脉屏障与矮人矿脉
+  - name: 落日大沼泽
+    type: 地理
+    path: 世界书/地理/场景/落日大沼泽.yaml
+    part: scene
+    purpose: 南方沼泽与巨兽的栖息地
+  - name: 火焰山谷
+    type: 地理
+    path: 世界书/地理/场景/火焰山谷.yaml
+    part: scene
+    purpose: 怒焰大陆的火山口与锻造场
+  - name: 加里曼丹城
+    type: 地理
+    path: 世界书/地理/场景/加里曼丹城.yaml
+    part: scene
+    purpose: 海族都会的珊瑚建筑与海底议会
+  - name: 卢塞恩城
+    type: 地理
+    path: 世界书/地理/场景/卢塞恩城.yaml
+    part: scene
+    purpose: 堕落精灵的黑曜石都城
+  - name: 伦敦城
+    type: 地理
+    path: 世界书/地理/场景/伦敦城.yaml
+    part: scene
+    purpose: 人类北境的雾都与人鱼贸易港
+  - name: 达坂镇
+    type: 地理
+    path: 世界书/地理/场景/达坂镇.yaml
+    part: scene
+    purpose: 唐藏边境的驿站与东方商队落脚地
+  # ══ before_char：地理·势力（32） ══
+  - name: 比蒙王国
+    type: 地理
+    path: 世界书/地理/势力/比蒙王国.yaml
+    part: faction
+    purpose: 王权、长老院、神庙与贵族监察院的三角结构
+  - name: 比蒙神庙与圣坛祭祀
+    type: 地理
+    path: 世界书/地理/势力/比蒙神庙与圣坛祭祀.yaml
+    part: faction
+    purpose: 神庙体系、圣坛与祭祀的培养和服役
+  - name: 十万大山与附庸族
+    type: 地理
+    path: 世界书/地理/势力/十万大山与附庸族.yaml
+    part: faction
+    purpose: 附庸族的生存法则与朝贡关系
+  - name: 唐藏帝国
+    type: 地理
+    path: 世界书/地理/势力/唐藏帝国.yaml
+    part: faction
+    purpose: 东方佛国的权力结构、花衔体系与对外扩张
+  - name: 圣保罗教廷
+    type: 地理
+    path: 世界书/地理/势力/圣保罗教廷.yaml
+    part: faction
+    purpose: 教廷的组织、圣殿骑士团与异端裁判
+  - name: 慕兰军部与飞驼军团
+    type: 地理
+    path: 世界书/地理/势力/慕兰军部与飞驼军团.yaml
+    part: faction
+    purpose: 沙漠帝国的军制、飞驼军团与沙舟部队
+  - name: 海慕联军
+    type: 地理
+    path: 世界书/地理/势力/海慕联军.yaml
+    part: faction
+    purpose: 海族与慕兰的联合及其终盘西征
+  - name: 精灵与德鲁伊
+    type: 地理
+    path: 世界书/地理/势力/精灵与德鲁伊.yaml
+    part: faction
+    purpose: 月精灵、暗精灵与德鲁伊的教义分歧
+  - name: 翡冷翠势力
+    type: 地理
+    path: 世界书/地理/势力/翡冷翠势力.yaml
+    part: faction
+    purpose: 领主武装、附庸族与家臣团
+  - name: 西雅海国
+    type: 地理
+    path: 世界书/地理/势力/西雅海国.yaml
+    part: faction
+    purpose: 西雅海族的王族、海军与对陆封锁
+  - name: 魔族与侵略者联盟
+    type: 地理
+    path: 世界书/地理/势力/魔族与侵略者联盟.yaml
+    part: faction
+    purpose: 魔族、冥族与巫妖的三方同盟
+  - name: 龙城与龙族
+    type: 地理
+    path: 世界书/地理/势力/龙城与龙族.yaml
+    part: faction
+    purpose: 双龙城的政体与巨龙同人类的关系
+  - name: 魔龙一族与卓别林
+    type: 地理
+    path: 世界书/地理/势力/魔龙一族与卓别林.yaml
+    part: faction
+    purpose: 魔龙的族别战力与魔龙皇帝的血脉
+  - name: 佛巨人与恩特牧树人
+    type: 地理
+    path: 世界书/地理/势力/佛巨人与恩特牧树人.yaml
+    part: faction
+    purpose: 佛巨人的军事传统与恩特牧树人的立场
+  - name: 花廷与花精灵
+    type: 地理
+    path: 世界书/地理/势力/花廷与花精灵.yaml
+    part: faction
+    purpose: 花廷的品级制度与花精灵的战力
+  - name: 采玉城卓尔
+    type: 地理
+    path: 世界书/地理/势力/采玉城卓尔.yaml
+    part: faction
+    purpose: 卓尔主母、美杜莎与血精灵的奴隶体系
+  - name: 冥界与冥族
+    type: 地理
+    path: 世界书/地理/势力/冥界与冥族.yaml
+    part: faction
+    purpose: 冥界三大统领、死亡领主与亡灵天灾
+  - name: 宝典阿訇与摩尼神教
+    type: 地理
+    path: 世界书/地理/势力/宝典阿訇与摩尼神教.yaml
+    part: faction
+    purpose: 沙漠宗教势力与摩尼女神信仰
+  - name: 淡水美人鱼与寇涛人鱼
+    type: 地理
+    path: 世界书/地理/势力/淡水美人鱼与寇涛人鱼.yaml
+    part: faction
+    purpose: 淡水族群的处境与人鱼王族的支系
+  - name: 斯迈族与禁空之歌
+    type: 地理
+    path: 世界书/地理/势力/斯迈族与禁空之歌.yaml
+    part: faction
+    purpose: 濒危的天鹅族与独有的禁空战歌
+  - name: 山丘之王与盾斧矮人
+    type: 地理
+    path: 世界书/地理/势力/山丘之王与盾斧矮人.yaml
+    part: faction
+    purpose: 矮人王权与盾斧矮人的地底工业
+  - name: 卢塞恩堕落精灵
+    type: 地理
+    path: 世界书/地理/势力/卢塞恩堕落精灵.yaml
+    part: faction
+    purpose: 堕落精灵的政体与对外掠夺
+  - name: 教廷与圣殿骑士团
+    type: 地理
+    path: 世界书/地理/势力/教廷与圣殿骑士团.yaml
+    part: faction
+    purpose: 教廷的军力、裁判所与护教征战
+  - name: 人类诸国与佣兵团
+    type: 地理
+    path: 世界书/地理/势力/人类诸国与佣兵团.yaml
+    part: faction
+    purpose: 诸国军力对比与佣兵之国的行业生态
+  - name: 云秦方士与金人
+    type: 地理
+    path: 世界书/地理/势力/云秦方士与金人.yaml
+    part: faction
+    purpose: 云秦的方士集团与金人军团的制造
+  - name: 星界与梦界势力
+    type: 地理
+    path: 世界书/地理/势力/星界与梦界势力.yaml
+    part: faction
+    purpose: 星界之王的从属、梦界的梦魔与两条位面通道的势力分布
+  - name: 黎山门与剃刀山
+    type: 地理
+    path: 世界书/地理/势力/黎山门与剃刀山.yaml
+    part: faction
+    purpose: 东方门派的修行传承与地精部落的武装
+  - name: 麝人与河马诗人
+    type: 地理
+    path: 世界书/地理/势力/麝人与河马诗人.yaml
+    part: faction
+    purpose: 荒原大族的部族政治与文化
+  - name: 夏宫卫队与翡冷翠民兵
+    type: 地理
+    path: 世界书/地理/势力/夏宫卫队与翡冷翠民兵.yaml
+    part: faction
+    purpose: 主角亲卫与领地常备军的编制装备
+  - name: 元素精灵使与邪眼暴君
+    type: 地理
+    path: 世界书/地理/势力/元素精灵使与邪眼暴君.yaml
+    part: faction
+    purpose: 元素精灵使的召唤体系与邪眼暴君的来历
+  - name: 魔界三大海族
+    type: 地理
+    path: 世界书/地理/势力/魔界三大海族.yaml
+    part: faction
+    purpose: 魔界海洋魔族的分支与内部争斗
+  - name: 长老院与贵族监察院
+    type: 地理
+    path: 世界书/地理/势力/长老院与贵族监察院.yaml
+    part: faction
+    purpose: 比蒙长老院、军部派系与贵族监察院的权柄
+  # ══ after_char：角色（68） ══
+  - name: 角色速览
+    type: 角色
+    path: 世界书/角色/角色速览.yaml
+    part: basic
+    scope: catalog
+    purpose: 全部核心角色的姓名、性别、年龄、身份索引，供 AI 快速定位谁是谁
+  - name: 刘震撼_基础信息
+    type: 角色
+    path: 世界书/角色/刘震撼/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 主角完整基础档案：身份、外貌、背景、能力与关系
+  - name: 刘震撼_性格调色盘
+    type: 角色
+    path: 世界书/角色/刘震撼/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 主角性格调色盘，按卷推进分阶段
+  - name: 刘震撼_三面性
+    type: 角色
+    path: 世界书/角色/刘震撼/三面性.yaml
+    part: tri_faceted
+    scope: catalog
+    purpose: 主角的四重自我定位与极端处境下的切换
+  - name: 刘震撼_二次解释
+    type: 角色
+    path: 世界书/角色/刘震撼/二次解释.yaml
+    part: personality
+    scope: catalog
+    rephrase: true
+    purpose: 二次解释：对角色的理解与思考
+  - name: 海伦.列娜_基础信息
+    type: 角色
+    path: 世界书/角色/海伦.列娜/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 狐人少女、战争祭祀，情感主线核心
+  - name: 海伦.列娜_性格调色盘
+    type: 角色
+    path: 世界书/角色/海伦.列娜/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 好感度分阶段调色盘
+  - name: 凝玉_基础信息
+    type: 角色
+    path: 世界书/角色/凝玉/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 摩韶族人鱼、海族公主
+  - name: 凝玉_性格调色盘
+    type: 角色
+    path: 世界书/角色/凝玉/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 好感度分阶段调色盘
+  - name: 艾薇尔_基础信息
+    type: 角色
+    path: 世界书/角色/艾薇尔/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 西雅帝国公主与人质身份
+  - name: 艾薇尔_性格调色盘
+    type: 角色
+    path: 世界书/角色/艾薇尔/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 好感度分阶段调色盘
+  - name: 穆里尼奥_基础信息
+    type: 角色
+    path: 世界书/角色/穆里尼奥/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 天鹅主祭、政治盟友与导师
+  - name: 穆里尼奥_性格调色盘
+    type: 角色
+    path: 世界书/角色/穆里尼奥/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 好感度分阶段调色盘
+  - name: 隆美尔_基础信息
+    type: 角色
+    path: 世界书/角色/隆美尔/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 慕兰无敌美帅、战场死敌与妹夫
+  - name: 隆美尔_三面性
+    type: 角色
+    path: 世界书/角色/隆美尔/三面性.yaml
+    part: tri_faceted
+    scope: catalog
+    purpose: 军中统帅、家族兄长与私交三重面目
+  - name: 李察王子_基础信息
+    type: 角色
+    path: 世界书/角色/李察王子/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 狮虎人混血王子与终盘幕后真相
+  - name: 李察王子_三面性
+    type: 角色
+    path: 世界书/角色/李察王子/三面性.yaml
+    part: tri_faceted
+    scope: catalog
+    purpose: 表面纨绔、幕后操盘与面对<user>时的三面
+  - name: 崔蓓茜_基础信息
+    type: 角色
+    path: 世界书/角色/崔蓓茜/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 采玉城美杜莎、主角的战歌导师
+  - name: 安度兰长老_基础信息
+    type: 角色
+    path: 世界书/角色/安度兰长老/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 伪装苦行僧的冰霜巨龙，长辈与后盾
+  - name: 歌坦妮_基础信息
+    type: 角色
+    path: 世界书/角色/歌坦妮/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 天鹅族女子、神庙与军部间的纽带
+  - name: 果果_基础信息
+    type: 角色
+    path: 世界书/角色/果果/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 第一只魔宠、霜雪皮丘兽
+  - name: 壹条_基础信息
+    type: 角色
+    path: 世界书/角色/壹条/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 果果召唤的博浪沙火鹤，魔宠兼坐骑
+  - name: 嘉宝_基础信息
+    type: 角色
+    path: 世界书/角色/嘉宝/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 巫妖女王、宿敌兼交易对象
+  - name: 嘉宝_性格调色盘
+    type: 角色
+    path: 世界书/角色/嘉宝/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 身份切换下的分阶段调色盘
+  - name: 茉儿_基础信息
+    type: 角色
+    path: 世界书/角色/茉儿/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 雷藏珍珠化生的少女与主角的贴身侍女
+  - name: 黛丝_基础信息
+    type: 角色
+    path: 世界书/角色/黛丝/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 仙女龙，因断臂事件倾心
+  - name: 若尔娜_基础信息
+    type: 角色
+    path: 世界书/角色/若尔娜/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 仙女龙，因断臂事件倾心
+  - name: 普斯卡什_基础信息
+    type: 角色
+    path: 世界书/角色/普斯卡什/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 人类传奇法师、主角的魔法导师与盟友
+  - name: 普斯卡什_性格调色盘
+    type: 角色
+    path: 世界书/角色/普斯卡什/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 分阶段调色盘
+  - name: 艾莉婕_基础信息
+    type: 角色
+    path: 世界书/角色/艾莉婕/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 花中皇后、花精灵的领袖
+  - name: 艾莉婕_性格调色盘
+    type: 角色
+    path: 世界书/角色/艾莉婕/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 分阶段调色盘
+  - name: 贞德_基础信息
+    type: 角色
+    path: 世界书/角色/贞德/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 教廷圣女与人类侧的信仰象征
+  - name: 贞德_性格调色盘
+    type: 角色
+    path: 世界书/角色/贞德/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 分阶段调色盘
+  - name: 喀秋莎_基础信息
+    type: 角色
+    path: 世界书/角色/喀秋莎/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 匹格族遗孤，主角的养女
+  - name: 唐蓓尔金娜_基础信息
+    type: 角色
+    path: 世界书/角色/唐蓓尔金娜/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 冰凰，孪生血婴的生母
+  - name: 唐家二少_基础信息
+    type: 角色
+    path: 世界书/角色/唐家二少/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 霜雪皮丘兽模样的血婴
+  - name: 唐家三少_基础信息
+    type: 角色
+    path: 世界书/角色/唐家三少/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 酷似穆里尼奥的血婴，与二少为鹣鲽
+  - name: 小空_基础信息
+    type: 角色
+    path: 世界书/角色/小空/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 唐藏花王九太子，控金与品玉的双系神恩者
+  - name: 邪眼暴君_基础信息
+    type: 角色
+    path: 世界书/角色/邪眼暴君/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 地底强敌与主角的早期苦主
+  - name: 革瑞恩_基础信息
+    type: 角色
+    path: 世界书/角色/革瑞恩/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 潮汐领主，海族侧的强敌与转圜者
+  - name: 许德拉_基础信息
+    type: 角色
+    path: 世界书/角色/许德拉/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 九头蛇，与革瑞恩并肩的海族战力
+  - name: 安瑞达_基础信息
+    type: 角色
+    path: 世界书/角色/安瑞达/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 魔族侧的强敌与侵略者联盟成员
+  - name: 白素青_基础信息
+    type: 角色
+    path: 世界书/角色/白素青/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 东方来客，云秦侧的修行者
+  - name: 白素青_性格调色盘
+    type: 角色
+    path: 世界书/角色/白素青/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 分阶段调色盘
+  - name: 梦露_基础信息
+    type: 角色
+    path: 世界书/角色/梦露/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 巫妖女王嘉宝之女，宝莱坞公证殿下，终盘魔族空军统帅
+  - name: 梦露_性格调色盘
+    type: 角色
+    path: 世界书/角色/梦露/性格调色盘.yaml
+    part: personality
+    scope: catalog
+    purpose: 分阶段调色盘
+  - name: 塞壬_基础信息
+    type: 角色
+    path: 世界书/角色/塞壬/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 朝河兰之外的海族女王与歌者
+  - name: 海华丝_基础信息
+    type: 角色
+    path: 世界书/角色/海华丝/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 貂蝉美人，采玉城的头牌与情报源
+  - name: 谭雅_基础信息
+    type: 角色
+    path: 世界书/角色/谭雅/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 珊瑚美人谭雅，史前水晶人，矿物文明的活口供
+    keywords:
+      - 谭雅
+      - 珊瑚美人
+  - name: 小鹦鹉_基础信息
+    type: 角色
+    path: 世界书/角色/小鹦鹉/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 鹦鹉学舌螺化生的少女
+  - name: 歌莉妮_基础信息
+    type: 角色
+    path: 世界书/角色/歌莉妮/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 天鹅族女子与比蒙侧的配角
+  - name: 姬丝凯碧_基础信息
+    type: 角色
+    path: 世界书/角色/姬丝凯碧/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 卓尔主母，采玉城的掌权者
+  - name: 文泰克莱尔_基础信息
+    type: 角色
+    path: 世界书/角色/文泰克莱尔/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 人类龙骑士与教廷侧的强者
+  - name: 摩尔亲王_基础信息
+    type: 角色
+    path: 世界书/角色/摩尔亲王/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 海族王族与西雅海国的权贵
+  - name: 玉皇_基础信息
+    type: 角色
+    path: 世界书/角色/玉皇/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 唐藏皇权核心
+  - name: 耐温尔因克_基础信息
+    type: 角色
+    path: 世界书/角色/耐温尔因克/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 冥界大统领、血河的主宰
+  - name: 卡卡_基础信息
+    type: 角色
+    path: 世界书/角色/卡卡/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 主角班底中的里手与战场主力
+  - name: 内德维德_基础信息
+    type: 角色
+    path: 世界书/角色/内德维德/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 主角班底中的猛将
+  - name: 卡鲁_基础信息
+    type: 角色
+    path: 世界书/角色/卡鲁/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 主角班底中的斥候与射手
+  - name: 伊布_基础信息
+    type: 角色
+    path: 世界书/角色/伊布/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 七彩龙，主角的龙族伙伴
+  - name: 阿仙奴_基础信息
+    type: 角色
+    path: 世界书/角色/阿仙奴/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 主角麾下的女将
+  - name: 茜茜_基础信息
+    type: 角色
+    path: 世界书/角色/茜茜/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 主角身边的小妹与吉祥物
+  - name: 兰帕德_基础信息
+    type: 角色
+    path: 世界书/角色/兰帕德/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 人类龙骑士与战场对手
+  - name: 福格森.徐_基础信息
+    type: 角色
+    path: 世界书/角色/福格森.徐/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 人类侧的权谋者与老练政客
+  - name: 托蒂伯爵_基础信息
+    type: 角色
+    path: 世界书/角色/托蒂伯爵/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 人类贵族与地方实权人物
+  - name: 德塞利_基础信息
+    type: 角色
+    path: 世界书/角色/德塞利/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 沙漠酋长与慕兰侧的盟友
+  - name: 艾弗森_基础信息
+    type: 角色
+    path: 世界书/角色/艾弗森/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 人类侧的战士与同伴
+  - name: 克鲁伊夫_基础信息
+    type: 角色
+    path: 世界书/角色/克鲁伊夫/基础信息.yaml
+    part: basic
+    scope: catalog
+    purpose: 人类长老与元老院成员
+  # ══ after_char：NPC（20） ══
+  - name: 翡冷翠核心家臣
+    type: NPC
+    path: 世界书/NPC/翡冷翠核心家臣.yaml
+    purpose: 古德、贝拉米、维埃里、科里纳、罗德曼、潘帅等贴身护卫群像
+  - name: 翡冷翠文职与技术人员
+    type: NPC
+    path: 世界书/NPC/翡冷翠文职与技术人员.yaml
+    purpose: 罗比、贝克汉姆、诺查丹玛斯、奥特加、艾玛尔等幕僚与工匠
+  - name: 奥尼尔等附庸族代表
+    type: NPC
+    path: 世界书/NPC/奥尼尔等附庸族代表.yaml
+    purpose: 奥尼尔、麝人阿杜、杰拉德、古川、老波吉、文森特、穆托姆博
+  - name: 比蒙王室与军部
+    type: NPC
+    path: 世界书/NPC/比蒙王室与军部.yaml
+    purpose: 萨尔国王、卡恩亲王、罗森博格、雷耶斯将军
+  - name: 比蒙神庙高层
+    type: NPC
+    path: 世界书/NPC/比蒙神庙高层.yaml
+    purpose: 齐丹大萨满、布拉特红衣大祭司、布吕克纳老公爵
+  - name: 海族与人鱼王族
+    type: NPC
+    path: 世界书/NPC/海族与人鱼王族.yaml
+    purpose: 贝肯鲍尔、西米里安、莱茵克尔、朝河兰、菲高
+  - name: 人类诸国与教廷
+    type: NPC
+    path: 世界书/NPC/人类诸国与教廷.yaml
+    purpose: 教皇马尔蒂尼、托马西、卡佩罗等诸国与教廷要人
+  - name: 龙族与十万大山
+    type: NPC
+    path: 世界书/NPC/龙族与十万大山.yaml
+    purpose: 易卜拉西莫维奇、伦娜、黛丝族亲等龙族与附庸族头人
+  - name: 魔界与侵略者
+    type: NPC
+    path: 世界书/NPC/魔界与侵略者.yaml
+    purpose: 克拉克·盖博、茵格里切宝、六翼天王等魔族将领
+  - name: 唐藏与东方来客
+    type: NPC
+    path: 世界书/NPC/唐藏与东方来客.yaml
+    purpose: 唐藏亲王冬五、小净、宫保仙师、云秦使节
+  - name: 其他重要配角
+    type: NPC
+    path: 世界书/NPC/其他重要配角.yaml
+    purpose: 卡卡之外尚有戏份的次要人物与过场角色
+  - name: 采玉城与卓尔
+    type: NPC
+    path: 世界书/NPC/采玉城与卓尔.yaml
+    purpose: 采玉城的卓尔贵族、美杜莎巫医与拍卖场管事
+  - name: 冥界与死亡领主
+    type: NPC
+    path: 世界书/NPC/冥界与死亡领主.yaml
+    purpose: 冥界三大统领、死亡领主与巫妖
+  - name: 花廷品级成员与花精灵
+    type: NPC
+    path: 世界书/NPC/花廷品级成员与花精灵.yaml
+    purpose: 花廷的品级成员与花精灵将官
+  - name: 佛巨人与恩特
+    type: NPC
+    path: 世界书/NPC/佛巨人与恩特.yaml
+    purpose: 佛巨人的将领、教义与恩特的关系
+  - name: 山丘之王与灰矮人
+    type: NPC
+    path: 世界书/NPC/山丘之王与灰矮人.yaml
+    purpose: 矮人王、盾斧矮人与灰矮人工匠
+  - name: 沙漠诸族
+    type: NPC
+    path: 世界书/NPC/沙漠诸族.yaml
+    purpose: 宝典阿訇、哈里发、飞驼商队的头人
+  - name: 星界与梦界
+    type: NPC
+    path: 世界书/NPC/星界与梦界.yaml
+    purpose: 香君达历桑德罗的随从与梦界的梦魔
+  - name: 佣兵团与商团
+    type: NPC
+    path: 世界书/NPC/佣兵团与商团.yaml
+    purpose: 猛虎佣兵团、龙卷风佣兵团与夏尔巴商团
+  - name: 海族诸支
+    type: NPC
+    path: 世界书/NPC/海族诸支.yaml
+    purpose: 淡水美人鱼、寇涛人鱼与海娜迦的代表
+  # ══ depth：阶段指导（1） ══
+  - name: 游戏主持总指导
+    type: 阶段指导
+    path: 世界书/阶段指导/游戏主持总指导.yaml
+    purpose: 按当前卷渲染主持目标、叙事重点、互动方式与推进边界
+  # ══ depth：事件（14） ══
+  - name: 荒岛·醒来与斗狼
+    type: 事件
+    path: 世界书/事件/荒岛·醒来与斗狼.yaml
+    purpose: 荒岛篇前半：荒岛醒来、荒岛大采购、勇斗魔狼
+  - name: 荒岛·救狐与退烧
+    type: 事件
+    path: 世界书/事件/荒岛·救狐与退烧.yaml
+    purpose: 荒岛篇中段：救起狐狸女孩、毛手毛脚、冰块与椰汁退烧
+  - name: 荒岛·望乡与魔宠
+    type: 事件
+    path: 世界书/事件/荒岛·望乡与魔宠.yaml
+    purpose: 荒岛篇后半：望乡、果果与魔宠之议、扎筏离岛
+  - name: 胸罩岛·被困与果果发威
+    type: 事件
+    path: 世界书/事件/胸罩岛·被困与果果发威.yaml
+    purpose: 胸罩岛篇前半：流落胸罩岛、果果发威与物资搜刮
+  - name: 胸罩岛·血之祭奠的诅咒
+    type: 事件
+    path: 世界书/事件/胸罩岛·血之祭奠的诅咒.yaml
+    purpose: 胸罩岛篇中段：魔宠战死、血之祭奠与战歌失效
+  - name: 胸罩岛·自创战歌与受封
+    type: 事件
+    path: 世界书/事件/胸罩岛·自创战歌与受封.yaml
+    purpose: 胸罩岛篇后半：以汉语自创战歌、受封爵位与离岛
+  - name: 海上·艰难航程与凝玉
+    type: 事件
+    path: 世界书/事件/海上·艰难航程与凝玉.yaml
+    purpose: 海上篇前半：艰难的旅程、海上遇袭与凝玉登场
+  - name: 海上·拿仑角海峡对峙
+    type: 事件
+    path: 世界书/事件/海上·拿仑角海峡对峙.yaml
+    purpose: 海上篇中段：海族又至、拿仑角海峡对峙
+  - name: 海上·想唱就唱与靠岸
+    type: 事件
+    path: 世界书/事件/海上·想唱就唱与靠岸.yaml
+    purpose: 海上篇后半：海族退去、登陆多瑙荒原
+  - name: 荒原·前倨后恭与比蒙社会
+    type: 事件
+    path: 世界书/事件/荒原·前倨后恭与比蒙社会.yaml
+    purpose: 多瑙荒原篇前半：初入荒原、比蒙社会的规矩与人情
+  - name: 荒原·部族周旋与神庙
+    type: 事件
+    path: 世界书/事件/荒原·部族周旋与神庙.yaml
+    purpose: 多瑙荒原篇中段：部族周旋、神庙考核与祭祀身份
+  - name: 荒原·不厚道的妹夫
+    type: 事件
+    path: 世界书/事件/荒原·不厚道的妹夫.yaml
+    purpose: 多瑙荒原篇后半：与隆美尔家族的纠葛、向翡冷翠迁徙
+  - name: 博格村·劫狱与救出海伦
+    type: 事件
+    path: 世界书/事件/博格村·劫狱与救出海伦.yaml
+    purpose: 博格村期前半：攻入博格村监狱、救出海伦
+  - name: 博格村·受封红土高坡
+    type: 事件
+    path: 世界书/事件/博格村·受封红土高坡.yaml
+    purpose: 博格村期中段：受封领地、开荒与初建
+  - name: 博格村·闷棍一般的竹杠
+    type: 事件
+    path: 世界书/事件/博格村·闷棍一般的竹杠.yaml
+    purpose: 博格村期后半：与各路势力的第一次讨价还价
+  - name: 领主期·以自由的名义
+    type: 事件
+    path: 世界书/事件/领主期·以自由的名义.yaml
+    purpose: 领主期前半：立规、收编与领地秩序建立
+  - name: 领主期·剑桥祭祀学院
+    type: 事件
+    path: 世界书/事件/领主期·剑桥祭祀学院.yaml
+    purpose: 领主期中段：创办祭祀学院、培养祭祀班底
+  - name: 领主期·建国与外交
+    type: 事件
+    path: 世界书/事件/领主期·建国与外交.yaml
+    purpose: 领主期后半：建国、外交周旋与领主名分
+  - name: 纵横·领主班底与铁扫帚
+    type: 事件
+    path: 世界书/事件/纵横·领主班底与铁扫帚.yaml
+    purpose: idx 73-83：翡冷翠领主、铁扫帚扫尽天下穷鬼与顶梁柱回归
+  - name: 纵横·猎龙与藤甲创意
+    type: 事件
+    path: 世界书/事件/纵横·猎龙与藤甲创意.yaml
+    purpose: idx 84-93：猎龙、硬汉就得下猛药、藤甲的创意与老乡见老乡
+  - name: 纵横·巨象过河与骷髅旗
+    type: 事件
+    path: 世界书/事件/纵横·巨象过河与骷髅旗.yaml
+    purpose: idx 94-104：巨象过河、判刑、骷髅旗飘扬与以盗制盗
+  - name: 纵横·渡口恩仇与奴隶贸易
+    type: 事件
+    path: 世界书/事件/纵横·渡口恩仇与奴隶贸易.yaml
+    purpose: idx 105-114：渡口恩仇三部曲、我为奴隶狂与战斗这才算是开始
+  - name: 纵横·剃刀山与预备队之战
+    type: 事件
+    path: 世界书/事件/纵横·剃刀山与预备队之战.yaml
+    purpose: idx 115-124：天鹅女骑士之辱、前往剃刀山、独闯龙潭与翡翠之梦
+  - name: 纵横·点土成金与空军构想
+    type: 事件
+    path: 世界书/事件/纵横·点土成金与空军构想.yaml
+    purpose: idx 125-134：点土成金、翡冷翠空军构想、仙女龙的冷水与哨卡惊变
+  - name: 纵横·喋血桑干河
+    type: 事件
+    path: 世界书/事件/纵横·喋血桑干河.yaml
+    purpose: idx 135-144：火火火、喋血桑干河、战局如棋与夺面双雄
+  - name: 纵横·双龙祭祀与尖啸死神
+    type: 事件
+    path: 世界书/事件/纵横·双龙祭祀与尖啸死神.yaml
+    purpose: idx 145-154：双龙祭祀、矛与盾、尖啸死神与七箭下天山
+  - name: 纵横·神圣诅咒与陌生海族
+    type: 事件
+    path: 世界书/事件/纵横·神圣诅咒与陌生海族.yaml
+    purpose: idx 155-164：仙鹤神针、神圣诅咒、陌生海族与消灭灵魂的祭典
+  - name: 纵横·绝对力量与破阵子
+    type: 事件
+    path: 世界书/事件/纵横·绝对力量与破阵子.yaml
+    purpose: idx 165-174：绝对系列七连章、破阵子与倾城一笑
+  - name: 纵横·圣女和流氓与龙鳞道
+    type: 事件
+    path: 世界书/事件/纵横·圣女和流氓与龙鳞道.yaml
+    purpose: idx 175-184：圣女和流氓、狻猊舞、文斗武斗的结局与龙鳞道
+  - name: 纵横·血案迷情与遭遇不祥
+    type: 事件
+    path: 世界书/事件/纵横·血案迷情与遭遇不祥.yaml
+    purpose: idx 185-194：血案迷情、决定、遭遇不祥与朝贡
+  - name: 纵横·珊瑚美人与卷土重来
+    type: 事件
+    path: 世界书/事件/纵横·珊瑚美人与卷土重来.yaml
+    purpose: idx 195-204：阴招迭出、冬季到地底来看雨、堕落大串联与卷土重来
+  - name: 纵横·巨人之心与两岸连通
+    type: 事件
+    path: 世界书/事件/纵横·巨人之心与两岸连通.yaml
+    purpose: idx 205-214：外籍刀圣、巨人之心、两岸连通与拔鸟无情
+  - name: 纵横·守望者与裂缝的种子
+    type: 事件
+    path: 世界书/事件/纵横·守望者与裂缝的种子.yaml
+    purpose: idx 215-224：大棒与女神、血羽之心、守望者与裂缝的种子
+  - name: 纵横·电影传奇与屠魔
+    type: 事件
+    path: 世界书/事件/纵横·电影传奇与屠魔.yaml
+    purpose: idx 225-234：电影传奇、闷声大发财、屠魔不成反被屠与裸战
+  - name: 纵横·祭祀之血与圣奇奥
+    type: 事件
+    path: 世界书/事件/纵横·祭祀之血与圣奇奥.yaml
+    purpose: idx 235-244：祭祀之血熊熊燃烧、真兰乱舞、圣奇奥唐白虎与剑桥大祭师
+  - name: 纵横·驿马迫火行与分赃大会
+    type: 事件
+    path: 世界书/事件/纵横·驿马迫火行与分赃大会.yaml
+    purpose: idx 245-254：驿马迫火行、分赃大会与新一轮洗牌
+  - name: 纵横·淫亵战歌的后人
+    type: 事件
+    path: 世界书/事件/纵横·淫亵战歌的后人.yaml
+    purpose: idx 255-274：夜生活、淫亵战歌的后人与赖皮武术家
+  - name: 纵横·众星耀沙城
+    type: 事件
+    path: 世界书/事件/纵横·众星耀沙城.yaml
+    purpose: idx 275-294：众星耀沙城、死亡领主的四件套与巨龙失珠
+  - name: 纵横·全线突击与地底突袭
+    type: 事件
+    path: 世界书/事件/纵横·全线突击与地底突袭.yaml
+    purpose: idx 295-334：全线突击、风云始动、地底突袭与古怪的守城法
+  - name: 纵横·弑神与流氓的办法
+    type: 事件
+    path: 世界书/事件/纵横·弑神与流氓的办法.yaml
+    purpose: idx 335-394：蛮横公主、弑神、流氓自有流氓的办法与千载难逢的良机
+  - name: 纵横·龙人拜访与史前巨蚌
+    type: 事件
+    path: 世界书/事件/纵横·龙人拜访与史前巨蚌.yaml
+    purpose: idx 395-434：战神的绯闻女友、龙人拜访、史前巨蚌与旧日故人
+  - name: 纵横·霸王餐与语言陷阱
+    type: 事件
+    path: 世界书/事件/纵横·霸王餐与语言陷阱.yaml
+    purpose: idx 435-484：苦尽甘来、霸王餐、深挖内幕与语言陷阱
+  - name: 纵横·花相出世与战争来临
+    type: 事件
+    path: 世界书/事件/纵横·花相出世与战争来临.yaml
+    purpose: idx 485-554：强纳民女、淫糜之夜的终章、花相出世与终极进化
+  - name: 纵横·风潜火匿与假逢真时
+    type: 事件
+    path: 世界书/事件/纵横·风潜火匿与假逢真时.yaml
+    purpose: idx 555-594：风潜火匿、假逢真时真亦假与第二次握手
+  - name: 纵横·铁血狂化与晴天霹雳
+    type: 事件
+    path: 世界书/事件/纵横·铁血狂化与晴天霹雳.yaml
+    purpose: idx 595-634：铁血狂化、晴天霹雳、扑朔迷离与极道强者大派对
+  - name: 纵横·炮打司令部与底牌尽出
+    type: 事件
+    path: 世界书/事件/纵横·炮打司令部与底牌尽出.yaml
+    purpose: idx 635-704：炮打司令部、觊觎神器、底牌尽出与崛起之路
+  - name: 纵横·马蜂窝与决战倒计时
+    type: 事件
+    path: 世界书/事件/纵横·马蜂窝与决战倒计时.yaml
+    purpose: idx 705-744：马蜂窝与决战倒计时系列
+  - name: 纵横·终极决战与大结局
+    type: 事件
+    path: 世界书/事件/纵横·终极决战与大结局.yaml
+    purpose: idx 745-763：终极决战系列、时空大裂缝与大结局
+  # ══ depth：MVU（4） ══
+  - name: 变量列表
+    type: MVU
+    path: 世界书/变量/变量列表.txt
+    part: ${part}
+  - name: 变量更新规则
+    type: MVU
+    path: 世界书/变量/变量更新规则.yaml
+    part: ${part}
+  - name: 变量输出格式
+    type: MVU
+    path: 世界书/变量/变量输出格式.txt
+    part: ${part}
+  - name: 初始变量
+    type: MVU
+    path: 世界书/变量/initvar.yaml
+    part: ${part}
+
+mvu:
+  structure: |
+    顶层结构：
+    ├── 世界
+    │   ├── 日期
+    │   ├── 时段
+    │   ├── 当前区域
+    │   ├── 当前场景
+    │   ├── 天气
+    │   └── 近期事务
+    ├── 剧情
+    │   ├── 当前卷
+    │   ├── 章节序号
+    │   ├── 章节节点
+    │   ├── 主线进度
+    │   ├── 已触发事件
+    │   └── 分歧记录
+    ├── 主角
+    │   ├── 身份 / 阶位 / 阵营声望
+    │   ├── 生命 / 歌力 / 体力
+    │   ├── 属性（力量、敏捷、体质、感知、魅力、智慧）
+    │   ├── 状态
+    │   ├── 诅咒
+    │   ├── 战歌 / 自创战歌
+    │   ├── 异体原
+    │   ├── 装备 / 物品栏
+    │   └── 淫乱度 / 精力
+    ├── 技能树
+    │   ├── 战歌树
+    │   ├── 异体原
+    │   ├── 兵种树
+    │   ├── 领地科技树
+    │   └── 自定义
+    ├── 战斗
+    │   ├── 进行中 / 回合 / 阶段 / 环境（含结界）
+    │   ├── 环境（地形、天气、结界）
+    │   ├── 我方 / 敌方
+    │   ├── 战歌加持
+    │   └── 战报
+    ├── 领地
+    │   ├── 名称 / 等级 / 声望
+    │   ├── 人口 / 民心 / 治安
+    │   ├── 资源
+    │   ├── 建筑
+    │   ├── 兵力
+    │   └── 附庸族
+    ├── 魔宠
+    │   └── 各魔宠（种类、忠诚、阶位、技能、状态）
+    ├── 关系
+    │   └── 各角色（好感度、信任度、关系阶段、亲密、孕事、已触发互动）
+    ├── 后宫
+    │   ├── 成员
+    │   ├── 子嗣
+    │   └── 孕事
+    └── 系统
+        ├── 难度
+        ├── 规则开关
+        └── 玩家自定义
+  variables:
+    # ── 世界 ──
+    - path: 世界.日期
+      format: YYYY/MM/DD
+      description: 当前场景日期
+    - path: 世界.时段
+      enum: [凌晨, 清晨, 上午, 正午, 下午, 黄昏, 夜晚, 深夜]
+      description: 当前时段，影响场景光照与角色行动
+    - path: 世界.当前区域
+      description: 角色当前所在的大区域，控制地理条目的 EJS 显隐
+    - path: 世界.当前场景
+      description: 当前具体场景，控制场景条目的 EJS 显隐
+    - path: 世界.天气
+      enum: [晴, 阴, 雨, 雪, 雾, 沙暴, 风暴]
+      description: 当前天气，影响战斗环境修正
+    - path: 世界.近期事务
+      type: record
+      description: 进行中的主线与支线事件标记
+    # ── 剧情 ──
+    - path: 剧情.当前卷
+      enum: [荒岛篇, 胸罩岛篇, 海上篇, 多瑙大荒原篇, 博格村与领地初建, 翡冷翠领主期, 比蒙王国纵横]
+      description: 当前所处的原作卷，控制阶段指导的显隐
+    - path: 剧情.章节序号
+      type: number
+      range: 0~763
+      description: 当前推进到的原作章节序号，0 起算，控制 48 个事件条目的显隐
+    - path: 剧情.章节节点
+      description: 当前推进到的原作章节名，与 故事大纲.yaml 的 chapters 对应
+    - path: 剧情.主线进度
+      type: number
+      range: 0~100
+      description: 主线推进百分比，用于总览仪表盘进度条
+    - path: 剧情.已触发事件
+      type: record
+      description: 已触发的原作关键事件清单
+    - path: 剧情.分歧记录
+      type: record
+      description: 玩家造成的与原作不同的分歧，供剧情编年史回溯
+    # ── 主角 ──
+    - path: 主角.身份
+      description: 当前公开身份，如匹格族族人、比蒙男爵、翡冷翠领主、神曲萨满
+    - path: 主角.阶位
+      enum: [无, 风语祭祀, 灵魂祭祀, 战争祭祀, 权杖祭祀, 维安大萨满, 十二主祭, 红衣大祭司]
+      description: 圣坛祭祀七阶中的当前阶位，龙祭祀与神曲萨满等荣誉头衔记在身份字段
+    - path: 主角.生命
+      type: object
+      fields:
+        当前: number
+        上限: number
+    - path: 主角.歌力
+      type: object
+      fields:
+        当前: number
+        上限: number
+      description: 驱动战歌的能量，对应人类魔力，靠冥想恢复
+    - path: 主角.体力
+      type: number
+      range: 0~100
+      description: 体力，近身肉搏与长途行军消耗
+    - path: 主角.属性
+      type: object
+      fields:
+        力量: number
+        敏捷: number
+        体质: number
+        感知: number
+        魅力: number
+        智慧: number
+      description: 六维属性，影响战斗结算与对话选项
+    - path: 主角.状态
+      type: record
+      description: 当前状态标记，如负伤、狂化、加持、中毒
+    - path: 主角.诅咒
+      type: object
+      fields:
+        血之祭奠: boolean
+        说明: string
+      check: 默认为 true 且不可解除；仅当剧情推进到终盘并达成特定条件才可变更
+    - path: 主角.战歌
+      type: record
+      description: 已掌握的正牌战歌清单，由技能树解锁写入
+    - path: 主角.自创战歌
+      type: record
+      description: 以汉语自创的战歌，玩家与主角可自定义新增；效果等同正宗比蒙战歌但属异端
+    - path: 主角.异体原
+      type: object
+      fields:
+        龙力系: number
+        花系: number
+        金刚伏魔之力: number
+        秘银断臂: boolean
+      description: 主角独有的异体成长线，与技能树异体原联动
+    - path: 主角.装备
+      type: z.record
+      description: 装备栏，按部位记录，如 头盔/胸甲/武器/饰品
+    - path: 主角.物品栏
+      type: z.record
+      description: 背包，可动态增删键
+    - path: 主角.淫乱度
+      type: number
+      range: 0~100
+      check: 亲密行为累积增长，长期无亲密行为缓慢衰减；影响 NSFW 场景的主动程度与角色反应
+    - path: 主角.精力
+      type: number
+      range: 0~100
+      description: 亲密行为消耗，休息恢复；精力不足时影响判定
+    # ── 技能树 ──
+    - path: 技能树.战歌树
+      type: z.record
+      description: 以原文实名战歌为键，值为 解锁(bool)/熟练度(0~100)/层级；按祭祀七阶限制可解锁项，禁止新增原文未出现的战歌名
+    - path: 技能树.异体原
+      type: z.record
+      judge: 刘震撼专属成长线，节点为 龙力系/花系/金刚伏魔之力/秘银断臂 等；玩家自定义节点写入 技能树.自定义
+      description: 龙力系、花系、金刚伏魔之力的节点解锁状态
+    - path: 技能树.兵种树
+      type: z.record
+      description: 比蒙战士、猛犸骑兵、熊猫武士、麝人弹弓手等兵种的解锁与等级
+    - path: 技能树.领地科技树
+      type: z.record
+      description: 祭祀学院、祭坛、战歌图腾柱、摩云磁暴灯等建设节点
+    - path: 技能树.自定义
+      type: record
+      description: 玩家自定义的技能或成长节点，元素含 名称/说明/消耗/状态；支持战歌、异体原、兵种、科技树以外的任意扩展
+    # ── 战斗 ──
+    - path: 战斗.进行中
+      type: boolean
+      description: 是否处于战斗状态，控制战斗面板显隐
+    - path: 战斗.回合
+      type: number
+      description: 当前回合数
+    - path: 战斗.阶段
+      enum: [未开始, 布阵, 交锋, 鏖战, 追击, 撤退, 结算]
+      description: 战斗流程阶段
+    - path: 战斗.环境
+      type: object
+      fields:
+        地形: string
+        天气: string
+        结界: z.array
+      description: 战场环境与双方布下的结界
+    - path: 战斗.我方
+      type: record
+      description: 我方参战单位，元素含 名称/兵种/生命/状态/站位
+    - path: 战斗.敌方
+      type: record
+      description: 敌方参战单位，元素含 名称/兵种/生命/状态/站位
+    - path: 战斗.战歌加持
+      type: record
+      description: 当前生效的战歌光环，元素含 战歌/施法者/剩余时限
+    - path: 战斗.战报
+      type: record
+      description: 逐回合战报，供战斗面板回放与 AI 叙事取用
+    # ── 领地 ──
+    - path: 领地.名称
+      description: 领地名称，默认翡冷翠
+    - path: 领地.等级
+      type: number
+      range: 1~10
+      description: 领地规模等级，影响可建造项与人口上限
+    - path: 领地.声望
+      type: number
+      range: 0~100
+      description: 在爱琴大陆的声望，影响招揽与外交
+    - path: 领地.人口
+      type: number
+      description: 总人口，含比蒙、附庸族与奴隶
+    - path: 领地.民心
+      type: number
+      range: 0~100
+      description: 民心，影响生产与暴动风险
+    - path: 领地.治安
+      type: number
+      range: 0~100
+      description: 治安，影响商路与事件触发
+    - path: 领地.资源
+      type: object
+      fields:
+        金币: number
+        粮食: number
+        木材: number
+        石料: number
+        铁: number
+        精金: number
+        魔晶: number
+      description: 领地核心资源，供建造与军备消耗
+    - path: 领地.建筑
+      type: z.record
+      description: 以建筑名为键，值为等级与状态
+    - path: 领地.兵力
+      type: z.record
+      description: 以兵种为键，值为数量与训练度
+    - path: 领地.附庸族
+      type: record
+      description: 已归附的种族与部族清单
+    # ── 魔宠 ──
+    - path: 魔宠
+      type: z.record
+      description: 以魔宠名为键，值为 种类/忠诚/阶位/技能/状态/契约
+      check: 每个灵魂歌者终生只能有一只魔宠；果果未签灵魂契约，可与其他魔宠并存
+    # ── 关系 ──
+    - path: 关系
+      type: z.record
+      description: 以角色名为键，值为 好感度/信任度/关系阶段/亲密/孕事/已触发互动/印象
+    - path: 关系.海伦.好感度
+      type: number
+      range: 0~100
+      check: 关键事件触发跳升，日常互动小幅增长，冷落则缓慢衰减
+    - path: 关系.海伦.信任度
+      type: number
+      range: 0~100
+      check: 坦诚与帮助行为增长，隐瞒与伤害行为大幅下降；影响其分享心事与战歌心得的深度
+    - path: 关系.海伦.关系阶段
+      enum: [初识, 同伴, 相知, 相爱, 妻子, 疏离]
+      description: 关系阶段，控制角色条目的多阶段调色盘渲染
+    - path: 关系.海伦.孕事
+      type: object
+      fields:
+        状态: string
+        胎数: number
+        孕期: string
+        预产期: string
+      description: 怀孕状态，由亲密行为与判定写入，控制孕事面板
+    - path: 关系.凝玉.好感度
+      type: number
+      range: 0~100
+    - path: 关系.凝玉.信任度
+      type: number
+      range: 0~100
+    - path: 关系.凝玉.关系阶段
+      enum: [初识, 同伴, 相知, 相爱, 妻子, 疏离]
+    - path: 关系.艾薇尔.好感度
+      type: number
+      range: 0~100
+    - path: 关系.艾薇尔.信任度
+      type: number
+      range: 0~100
+    - path: 关系.艾薇尔.关系阶段
+      enum: [初识, 同伴, 相知, 相爱, 妻子, 疏离]
+    - path: 关系.黛丝.好感度
+      type: number
+      range: 0~100
+    - path: 关系.若尔娜.好感度
+      type: number
+      range: 0~100
+    - path: 关系.崔蓓茜.好感度
+      type: number
+      range: 0~100
+    - path: 关系.茉儿.好感度
+      type: number
+      range: 0~100
+    - path: 关系.歌坦妮.好感度
+      type: number
+      range: 0~100
+    # ── 后宫 ──
+    - path: 后宫.成员
+      type: record
+      description: 已确认的后宫成员清单，元素含 姓名/种族/身份/关系阶段/加入章节
+      check: 由 关系.{角色}.关系阶段 达到 相爱 或以上、且完成确认事件后写入；移出需明确的分歧或死亡事件
+    - path: 后宫.子嗣
+      type: record
+      description: 已出生的子嗣，元素含 姓名/母亲/种族/年龄/特征/天赋
+      check: 由 后宫.孕事 孕期走完自然分娩写入；种族与天赋按母系种族与父母属性衍生
+    - path: 后宫.孕事
+      type: record
+      description: 进行中的怀孕记录，元素含 母亲/胎数/孕期/预产期/受孕章节
+      check: 仅在 系统.规则开关.孕事系统 为 true 时更新；由亲密行为的受孕判定写入，孕期按 世界.日期 推进分期，分娩后移入 后宫.子嗣
+    - path: 后宫.亲密记录
+      type: record
+      description: 近期亲密行为记录，元素含 对象/日期/场景/摘要；供孕事判定与关系面板回看
+    # ── 系统 ──
+    - path: 系统.难度
+      enum: [轻松, 标准, 硬核]
+      description: 难度，影响受伤与资源判定
+    - path: 系统.规则开关
+      type: object
+      fields:
+        孕事系统: boolean
+        战斗自动结算: boolean
+        领地自动产出: boolean
+        作者插话: boolean
+    - path: 系统.玩家自定义
+      type: z.record
+      description: 玩家自定身份、种族、出身与任意扩展标记
+
+ejs:
+  entries:
+    - name: 当前剧情进度
+      complexity: 段落控制
+      stages:
+        - name: 荒岛篇
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '荒岛篇' }) === '荒岛篇'"
+        - name: 胸罩岛篇
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '胸罩岛篇'"
+        - name: 海上篇
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '海上篇'"
+        - name: 多瑙大荒原篇
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '多瑙大荒原篇'"
+        - name: 博格村与领地初建
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '博格村与领地初建'"
+        - name: 翡冷翠领主期
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '翡冷翠领主期'"
+        - name: 比蒙王国纵横
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '比蒙王国纵横'"
+    - name: 游戏主持总指导
+      complexity: 段落控制
+      stages:
+        - name: 荒岛篇
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '荒岛篇' }) === '荒岛篇'"
+        - name: 胸罩岛篇
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '胸罩岛篇'"
+        - name: 海上篇
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '海上篇'"
+        - name: 多瑙大荒原篇
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '多瑙大荒原篇'"
+        - name: 博格村与领地初建
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '博格村与领地初建'"
+        - name: 翡冷翠领主期
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '翡冷翠领主期'"
+        - name: 比蒙王国纵横
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '比蒙王国纵横'"
+    - name: 爱琴大陆
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('爱琴大陆') || getvar('stat_data.世界.当前区域', { defaults: '' }).includes('荒岛') || getvar('stat_data.世界.当前区域', { defaults: '' }).includes('西雅海域')"
+    - name: 多瑙大荒原
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('多瑙') || getvar('stat_data.世界.当前区域', { defaults: '' }).includes('桑干河') || getvar('stat_data.世界.当前场景', { defaults: '' }).includes('红土高坡')"
+    - name: 翡冷翠
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('翡冷翠') || getvar('stat_data.世界.当前场景', { defaults: '' }).includes('夏宫') || getvar('stat_data.世界.当前场景', { defaults: '' }).includes('红土高坡')"
+    - name: 威瑟斯庞
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('威瑟斯庞') || getvar('stat_data.世界.当前场景', { defaults: '' }).includes('沙巴克') || getvar('stat_data.世界.当前场景', { defaults: '' }).includes('威瑟斯庞')"
+    - name: 塔克拉玛戈大沙漠
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('塔克拉玛戈')"
+    - name: 地底世界
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('地底') || getvar('stat_data.世界.当前区域', { defaults: '' }).includes('怒焰')"
+    - name: 魔界
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('魔界')"
+    - name: 怒焰大陆
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('怒焰') || getvar('stat_data.世界.当前区域', { defaults: '' }).includes('地底')"
+    - name: 丝绸大陆
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('丝绸')"
+    - name: 泰穆尔拉雅雪山
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('泰穆尔拉雅') || getvar('stat_data.世界.当前场景', { defaults: '' }).includes('雪山')"
+    - name: 南十字星森林
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.当前区域', { defaults: '' }).includes('南十字星')"
+    - name: 刘震撼_性格调色盘
+      complexity: 段落控制
+      stages:
+        - name: 求生期
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '荒岛篇' }) === '荒岛篇'"
+        - name: 立身期
+          condition: "['胸罩岛篇','海上篇','多瑙大荒原篇'].includes(getvar('stat_data.剧情.当前卷', { defaults: '' }))"
+        - name: 领主期
+          condition: "['博格村与领地初建','翡冷翠领主期'].includes(getvar('stat_data.剧情.当前卷', { defaults: '' }))"
+        - name: 纵横期
+          condition: "getvar('stat_data.剧情.当前卷', { defaults: '' }) === '比蒙王国纵横'"
+    - name: 海伦.列娜_性格调色盘
+      complexity: 段落控制
+      stages:
+        - name: 初识期
+          condition: "getvar('stat_data.关系.海伦.好感度', { defaults: 0 }) < 20"
+        - name: 相知期
+          condition: "getvar('stat_data.关系.海伦.好感度', { defaults: 0 }) >= 20 && getvar('stat_data.关系.海伦.好感度', { defaults: 0 }) < 50"
+        - name: 相爱期
+          condition: "getvar('stat_data.关系.海伦.好感度', { defaults: 0 }) >= 50 && getvar('stat_data.关系.海伦.好感度', { defaults: 0 }) < 80"
+        - name: 妻子期
+          condition: "getvar('stat_data.关系.海伦.好感度', { defaults: 0 }) >= 80"
+    - name: 凝玉_性格调色盘
+      complexity: 段落控制
+      stages:
+        - name: 初识期
+          condition: "getvar('stat_data.关系.凝玉.好感度', { defaults: 0 }) < 20"
+        - name: 相知期
+          condition: "getvar('stat_data.关系.凝玉.好感度', { defaults: 0 }) >= 20 && getvar('stat_data.关系.凝玉.好感度', { defaults: 0 }) < 50"
+        - name: 相爱期
+          condition: "getvar('stat_data.关系.凝玉.好感度', { defaults: 0 }) >= 50 && getvar('stat_data.关系.凝玉.好感度', { defaults: 0 }) < 80"
+        - name: 妻子期
+          condition: "getvar('stat_data.关系.凝玉.好感度', { defaults: 0 }) >= 80"
+    - name: 艾薇尔_性格调色盘
+      complexity: 段落控制
+      stages:
+        - name: 初识期
+          condition: "getvar('stat_data.关系.艾薇尔.好感度', { defaults: 0 }) < 20"
+        - name: 相知期
+          condition: "getvar('stat_data.关系.艾薇尔.好感度', { defaults: 0 }) >= 20 && getvar('stat_data.关系.艾薇尔.好感度', { defaults: 0 }) < 50"
+        - name: 相爱期
+          condition: "getvar('stat_data.关系.艾薇尔.好感度', { defaults: 0 }) >= 50 && getvar('stat_data.关系.艾薇尔.好感度', { defaults: 0 }) < 80"
+        - name: 妻子期
+          condition: "getvar('stat_data.关系.艾薇尔.好感度', { defaults: 0 }) >= 80"
+    - name: 荒岛·醒来与斗狼
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 0 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 2"
+    - name: 荒岛·救狐与退烧
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 3 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 5"
+    - name: 荒岛·望乡与魔宠
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 6 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 8"
+    - name: 胸罩岛·被困与果果发威
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 9 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 13"
+    - name: 胸罩岛·血之祭奠的诅咒
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 14 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 17"
+    - name: 胸罩岛·自创战歌与受封
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 18 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 20"
+    - name: 海上·艰难航程与凝玉
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 21 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 25"
+    - name: 海上·拿仑角海峡对峙
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 26 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 28"
+    - name: 海上·想唱就唱与靠岸
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 29 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 30"
+    - name: 荒原·前倨后恭与比蒙社会
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 31 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 36"
+    - name: 荒原·部族周旋与神庙
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 37 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 40"
+    - name: 荒原·不厚道的妹夫
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 41 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 42"
+    - name: 博格村·劫狱与救出海伦
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 43 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 48"
+    - name: 博格村·受封红土高坡
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 49 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 52"
+    - name: 博格村·闷棍一般的竹杠
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 53 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 58"
+    - name: 领主期·以自由的名义
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 59 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 64"
+    - name: 领主期·剑桥祭祀学院
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 65 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 68"
+    - name: 领主期·建国与外交
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 69 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 72"
+    - name: 纵横·领主班底与铁扫帚
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 73 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 83"
+    - name: 纵横·猎龙与藤甲创意
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 84 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 93"
+    - name: 纵横·巨象过河与骷髅旗
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 94 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 104"
+    - name: 纵横·渡口恩仇与奴隶贸易
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 105 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 114"
+    - name: 纵横·剃刀山与预备队之战
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 115 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 124"
+    - name: 纵横·点土成金与空军构想
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 125 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 134"
+    - name: 纵横·喋血桑干河
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 135 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 144"
+    - name: 纵横·双龙祭祀与尖啸死神
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 145 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 154"
+    - name: 纵横·神圣诅咒与陌生海族
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 155 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 164"
+    - name: 纵横·绝对力量与破阵子
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 165 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 174"
+    - name: 纵横·圣女和流氓与龙鳞道
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 175 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 184"
+    - name: 纵横·血案迷情与遭遇不祥
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 185 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 194"
+    - name: 纵横·珊瑚美人与卷土重来
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 195 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 204"
+    - name: 纵横·巨人之心与两岸连通
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 205 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 214"
+    - name: 纵横·守望者与裂缝的种子
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 215 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 224"
+    - name: 纵横·电影传奇与屠魔
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 225 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 234"
+    - name: 纵横·祭祀之血与圣奇奥
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 235 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 244"
+    - name: 纵横·驿马迫火行与分赃大会
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 245 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 254"
+    - name: 纵横·淫亵战歌的后人
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 255 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 274"
+    - name: 纵横·众星耀沙城
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 275 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 294"
+    - name: 纵横·全线突击与地底突袭
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 295 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 334"
+    - name: 纵横·弑神与流氓的办法
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 335 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 394"
+    - name: 纵横·龙人拜访与史前巨蚌
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 395 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 434"
+    - name: 纵横·霸王餐与语言陷阱
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 435 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 484"
+    - name: 纵横·花相出世与战争来临
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 485 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 554"
+    - name: 纵横·风潜火匿与假逢真时
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 555 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 594"
+    - name: 纵横·铁血狂化与晴天霹雳
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 595 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 634"
+    - name: 纵横·炮打司令部与底牌尽出
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 635 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 704"
+    - name: 纵横·马蜂窝与决战倒计时
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 705 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 744"
+    - name: 纵横·终极决战与大结局
+      complexity: 条目显隐
+      condition: "getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 745 && getvar('stat_data.剧情.章节序号', { defaults: 0 }) <= 763"
+first_messages:
+  - format: 说明式
+    output_path: 开场白/0.md
+    scene: 卡牌前置说明页
+    opening_situation: |
+      向玩家交代本卡的玩法、前置插件（酒馆助手、提示词模板）、控制中心各面板用途、
+      四项体验与 NSFW 开关，结尾提示翻到下一页开始游戏。
+  - format: 表单式
+    output_path: 开场白/1.txt
+    scene: 开局选择表单
+    opening_situation: |
+      叙事 + 表单组合：先用一小段文字把玩家带到爱琴大陆的门槛前，
+      再由交互表单让玩家选择开局点（荒岛求生 / 翡冷翠领主 / 多瑙荒原外来者 /
+      海族人鱼线 / 魔族入侵终盘 / 自定义），并填写姓名、种族、身份与出身。
+      自定义开局即由玩家自行填写全部字段。
+  - format: 叙事式
+    word_count: 600~900
+    output_path: 开场白/2.txt
+    initvar_override: 开场白/initvar/2.yaml
+    scene: 荒岛海滩，刘震撼刚从昏迷中醒来
+    opening_situation: |
+      最忠于原作的入口。刘震撼穿越落点为匹格族猪头人的身体，在荒岛上被魔狼袭击，
+      鼻腔被风刃打成两个窟窿，果果即将登场，海伦也在这座岛上。
+  - format: 叙事式
+    word_count: 600~900
+    output_path: 开场白/3.txt
+    initvar_override: 开场白/initvar/3.yaml
+    scene: 翡冷翠领主府，晨会议事
+    opening_situation: |
+      领地经营入口。玩家已是翡冷翠领主，海伦、凝玉、古德、罗比等人列席，
+      案头堆着桑干河防线的军报、地底兵工厂的产量表与三份待决的招揽申请。
+  - format: 叙事式
+    word_count: 600~900
+    output_path: 开场白/4.txt
+    initvar_override: 开场白/initvar/4.yaml
+    scene: 多瑙大荒原，威瑟斯庞城外的荒道上
+    opening_situation: |
+      自由冒险入口。玩家作为外来者（可自定种族与身份）进入比蒙王国境内，
+      在荒道上遇到比蒙巡逻队盘查，同时远处有沙漠人类的斥候出没。
+  - format: 叙事式
+    word_count: 600~900
+    output_path: 开场白/5.txt
+    initvar_override: 开场白/initvar/5.yaml
+    scene: 西雅海域，蓬莱号甲板上
+    opening_situation: |
+      海族线入口。玩家随船队进入西雅海国海域，人鱼公主艾薇尔在水面下窥视，
+      凝玉以幻术师的姿态出现在甲板上，海族的封锁舰队正在逼近。
+  - format: 叙事式
+    word_count: 600~900
+    output_path: 开场白/6.txt
+    initvar_override: 开场白/initvar/6.yaml
+    scene: 桑干河前线，决战前夜的大营
+    opening_situation: |
+      终盘高潮入口。魔族、海族与冥族组成的侵略者联盟压境，
+      玩家已是神曲萨满与翡冷翠领主，需要在此夜决定明日的会战打法。
