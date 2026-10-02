@@ -199,14 +199,44 @@
           <button class="sb-btn sb-btn-song" @click="下一回合">
             <i class="fa-solid fa-forward" /> 推进一回合
           </button>
-          <button class="sb-btn" @click="结算('我方')">
-            <i class="fa-solid fa-calculator" /> 结算我方行动
-          </button>
-          <button class="sb-btn" @click="结算('敌方')">
-            <i class="fa-solid fa-calculator" /> 结算敌方行动
-          </button>
           <button class="sb-btn sb-btn-life" @click="结束战斗">
             <i class="fa-solid fa-flag-checkered" /> 结束战斗
+          </button>
+        </div>
+        <div class="ctl">
+          <select v-model="我攻选择" class="ipt" style="max-width: 130px">
+            <option value="" disabled>我方单位</option>
+            <option v-for="u in 我方列表" :key="u.名称" :value="u.名称">{{ u.名称 }}</option>
+          </select>
+          <span class="sb-dim">攻 →</span>
+          <select v-model="我目标选择" class="ipt" style="max-width: 130px">
+            <option value="" disabled>敌方目标</option>
+            <option v-for="u in 敌方列表" :key="u.名称" :value="u.名称">{{ u.名称 }}</option>
+          </select>
+          <select v-model="我方式" class="ipt" style="max-width: 84px">
+            <option value="物理">物理</option>
+            <option value="法术">法术</option>
+          </select>
+          <button class="sb-btn sb-btn-song" @click="结算攻击('我方')">
+            <i class="fa-solid fa-calculator" /> 结算我方行动
+          </button>
+        </div>
+        <div class="ctl">
+          <select v-model="敌攻选择" class="ipt" style="max-width: 130px">
+            <option value="" disabled>敌方单位</option>
+            <option v-for="u in 敌方列表" :key="u.名称" :value="u.名称">{{ u.名称 }}</option>
+          </select>
+          <span class="sb-dim">攻 →</span>
+          <select v-model="敌目标选择" class="ipt" style="max-width: 130px">
+            <option value="" disabled>我方目标</option>
+            <option v-for="u in 我方列表" :key="u.名称" :value="u.名称">{{ u.名称 }}</option>
+          </select>
+          <select v-model="敌方式" class="ipt" style="max-width: 84px">
+            <option value="物理">物理</option>
+            <option value="法术">法术</option>
+          </select>
+          <button class="sb-btn sb-btn-life" @click="结算攻击('敌方')">
+            <i class="fa-solid fa-calculator" /> 结算敌方行动
           </button>
         </div>
         <div class="rules sb-dim">
@@ -305,14 +335,59 @@ function 下一回合() {
 }
 
 // 前端结算入口：只算数值并写战报，由 AI 依战报写成正文
-function 结算(side: '我方' | '敌方') {
-  const atk = side === '我方' ? 我方列表.value : 敌方列表.value;
-  const def = side === '我方' ? 敌方列表.value : 我方列表.value;
-  if (!atk.length || !def.length) {
-    log(`${side}结算缺少单位数据。`);
+// 结算引擎：命中＝攻方敏捷对守方敏捷（地形与天气修正），伤害＝攻方力量或魔法强度减守方体质与护甲的一半
+const 我攻选择 = ref('');
+const 我目标选择 = ref('');
+const 我方式 = ref('物理');
+const 敌攻选择 = ref('');
+const 敌目标选择 = ref('');
+const 敌方式 = ref('物理');
+
+function 天气修正(): number {
+  const w = 战斗.环境.天气;
+  if (w === '风暴') return -0.25;
+  if (w === '雨' || w === '雪' || w === '沙尘') return -0.15;
+  if (w === '雾') return -0.1;
+  return 0;
+}
+
+function 地形修正(): number {
+  const t = 战斗.环境.地形;
+  if (/沼泽|湿地|水网/.test(t)) return -0.1;
+  if (/密林|森林/.test(t)) return 0.05;
+  return 0;
+}
+
+function 结算攻击(atkSide: '我方' | '敌方') {
+  const defSide = atkSide === '我方' ? '敌方' : '我方';
+  const atkName = atkSide === '我方' ? 我攻选择.value : 敌攻选择.value;
+  const defName = atkSide === '我方' ? 我目标选择.value : 敌目标选择.value;
+  const 方式 = atkSide === '我方' ? 我方式.value : 敌方式.value;
+  const atkList = atkSide === '我方' ? 我方列表.value : 敌方列表.value;
+  const defList = defSide === '我方' ? 我方列表.value : 敌方列表.value;
+  const atk = atkList.find(u => u.名称 === atkName);
+  const def = defList.find(u => u.名称 === defName);
+  if (!atk) { log(`${atkSide}未选择攻击单位。`); return; }
+  if (!def) { log('未选择目标单位。'); return; }
+  if (def.生命 <= 0) { log(`${defName}已丧失战斗能力，无法作为目标。`); return; }
+  const a = atk.属性 ?? { 力量: 0, 敏捷: 0, 体质: 0, 感知: 0, 护甲: 0, 魔法强度: 0 };
+  const dv = def.属性 ?? { 力量: 0, 敏捷: 0, 体质: 0, 感知: 0, 护甲: 0, 魔法强度: 0 };
+  const hitRate = Math.max(0.1, Math.min(0.95, 0.5 + (a.敏捷 - dv.敏捷) * 0.05 + 天气修正() + 地形修正()));
+  if (Math.random() > hitRate) {
+    log(`${atkName} 对 ${defName} 的${方式}攻击落空（命中 ${Math.round(hitRate * 100)}%）。`, {
+      [atkSide === '我方' ? '敌方' : '我方']: '无损失',
+    });
     return;
   }
-  log(`触发${side}行动结算（数值由前端算定，叙述不得改动）。`);
+  const base = 方式 === '法术' ? a.魔法强度 || a.力量 : a.力量;
+  const dmg = Math.max(1, Math.round(base - dv.体质 * 0.5 - dv.护甲 * 0.5));
+  def.生命 = Math.max(0, def.生命 - dmg);
+  const fallen = def.生命 === 0;
+  if (fallen) def.状态 = (def.状态 ? `${def.状态}、` : '') + '丧失战斗能力';
+  log(
+    `${atkName} 的${方式}攻击命中 ${defName}，造成 ${dmg} 点伤害。${fallen ? ' 目标丧失战斗能力！' : ''}`,
+    { [defSide]: fallen ? `${defName} 丧失战斗能力` : `${defName} 承受 ${dmg} 点伤害` },
+  );
 }
 
 function 结束战斗() {
