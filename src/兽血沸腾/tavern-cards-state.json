@@ -130,7 +130,10 @@
     "abstract": "战神坎帕斯、摩尼神教与各族的信仰格局",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "神系与信仰"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -147,7 +150,10 @@
     "abstract": "货币、主要商品、商路与贸易规则",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "经济与贸易"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -181,7 +187,10 @@
     "abstract": "比蒙兵种谱系与军事编制",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "兵种树与军事"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -197,7 +206,10 @@
     "abstract": "翡冷翠领地的科技解锁路径",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "领地科技树"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -213,7 +225,10 @@
     "abstract": "龙力系、花系与金刚伏魔之力的成长路线",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "异体原成长线"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -270,7 +285,10 @@
     "abstract": "血婴的诞生原理与驮都这一武装体系的运作方式",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "血婴与驮都"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -291,7 +309,10 @@
     "abstract": "巨龙、七彩龙、仙女龙与龙城的阶层与关系",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "龙族体系"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -312,7 +333,10 @@
     "abstract": "西雅海族、摩韶族、娜迦与海国的构成",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "海族体系"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -331,7 +355,10 @@
     "abstract": "月精灵、暗精灵、血精灵与德鲁伊的教义分歧",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "精灵与德鲁伊体系"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -351,7 +378,10 @@
     "abstract": "矮人各支与附庸族的生存法则",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "矮人与附庸族体系"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -371,7 +401,10 @@
     "abstract": "巫妖、冥族、死亡领主与冥界的权力结构",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "亡灵与冥界体系"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -391,7 +424,10 @@
     "abstract": "魔族的族别、军制与魔界的地理政治",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "魔族与魔界体系"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -412,7 +448,10 @@
     "abstract": "唐藏与云秦的方士、金人、花衔与修行路线",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "东方修行体系"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -432,7 +471,10 @@
     "abstract": "花界的权力结构、花衔与花王即青帝的由来",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "花界与花衔体系"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -452,7 +494,10 @@
     "abstract": "火铳、镜炮、战车与炼金术的工艺水平与产能",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "军工与炼金"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -472,7 +517,10 @@
     "abstract": "法器、药剂、卷轴的品级与流通规则",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "法器与物品总纲"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -555,7 +603,10 @@
     "abstract": "爵位、军职、神庙头衔与荣誉徽章的规则",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "称号与爵位"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -576,7 +627,10 @@
     "abstract": "祭祀法典、异端判定与人兽通婚的禁忌",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "禁忌与律法"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -596,7 +650,10 @@
     "abstract": "各族的婚配制度、处女花冠与侍寝习俗",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "婚俗与性俗"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -616,7 +673,10 @@
     "abstract": "时空大裂缝的成因、异界通道与跨界代价",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "时空大裂缝与异界"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -637,7 +697,10 @@
     "abstract": "比蒙战舞、圣坛仪轨与祭祀的日常功课",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "战舞与祭祀仪轨"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -970,7 +1033,10 @@
     "abstract": "教廷从城邦教派到大陆第一宗教的历程",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "圣保罗教廷扩张纪"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -992,7 +1058,10 @@
     "abstract": "人类龙骑士的崛起、称霸与制度崩坏",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "龙骑士时代与衰落纪"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -1013,7 +1082,10 @@
     "abstract": "巫妖女王嘉宝的上位与魔界的内战",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "魔界·嘉宝夺位纪"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -1034,7 +1106,10 @@
     "abstract": "冥界权力结构与死亡领主的更迭",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "冥界·三统领纪"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -1055,7 +1130,10 @@
     "abstract": "精灵王国的分裂与德鲁伊教义的独立",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "精灵与德鲁伊纪"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -1076,7 +1154,10 @@
     "abstract": "矮人工业传统与地底世界的形成",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "矮人与地底纪元"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -1096,7 +1177,10 @@
     "abstract": "卓尔地底商城与奴隶贸易的兴起",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "采玉城与卓尔纪"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -1118,7 +1202,10 @@
     "abstract": "唐藏帝国与花廷的传承脉络",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "唐藏花衔纪"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -1138,7 +1225,10 @@
     "abstract": "云秦方士集团的东迁与金人工艺的源流",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "云秦方士纪"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -1160,7 +1250,10 @@
     "abstract": "海族封海、对陆纳贡与西雅海国的扩张",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "海族与西雅海国纪"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -1182,7 +1275,10 @@
     "abstract": "战神坎帕斯与摩尼神教等信仰的传播路径",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective",
+     "keys": [
+      "神系与信仰纪"
+     ]
     },
     "position": {
      "type": "before_character_definition",
@@ -1203,12 +1299,20 @@
     "abstract": "第一至九章的逐节点事件序列",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective"
     },
     "position": {
      "type": "before_character_definition",
      "order": 240
-    }
+    },
+    "contents": [
+     {
+      "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 0"
+     },
+     {
+      "file": "世界书/时间线/荒岛篇编年.yaml"
+     }
+    ]
    },
    "胸罩岛篇编年": {
     "path": "世界书/时间线/胸罩岛篇编年.yaml",
@@ -1224,12 +1328,20 @@
     "abstract": "第十至二十一章的逐节点事件序列",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective"
     },
     "position": {
      "type": "before_character_definition",
      "order": 250
-    }
+    },
+    "contents": [
+     {
+      "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 9"
+     },
+     {
+      "file": "世界书/时间线/胸罩岛篇编年.yaml"
+     }
+    ]
    },
    "海上篇编年": {
     "path": "世界书/时间线/海上篇编年.yaml",
@@ -1245,12 +1357,20 @@
     "abstract": "第二十二至三十一章的逐节点事件序列",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective"
     },
     "position": {
      "type": "before_character_definition",
      "order": 260
-    }
+    },
+    "contents": [
+     {
+      "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 21"
+     },
+     {
+      "file": "世界书/时间线/海上篇编年.yaml"
+     }
+    ]
    },
    "多瑙大荒原篇编年": {
     "path": "世界书/时间线/多瑙大荒原篇编年.yaml",
@@ -1266,12 +1386,20 @@
     "abstract": "第三十二至四十三章的逐节点事件序列",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective"
     },
     "position": {
      "type": "before_character_definition",
      "order": 270
-    }
+    },
+    "contents": [
+     {
+      "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 31"
+     },
+     {
+      "file": "世界书/时间线/多瑙大荒原篇编年.yaml"
+     }
+    ]
    },
    "博格村与领地初建编年": {
     "path": "世界书/时间线/博格村与领地初建编年.yaml",
@@ -1287,12 +1415,20 @@
     "abstract": "第四十四至五十九章的逐节点事件序列",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective"
     },
     "position": {
      "type": "before_character_definition",
      "order": 280
-    }
+    },
+    "contents": [
+     {
+      "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 43"
+     },
+     {
+      "file": "世界书/时间线/博格村与领地初建编年.yaml"
+     }
+    ]
    },
    "翡冷翠领主期编年": {
     "path": "世界书/时间线/翡冷翠领主期编年.yaml",
@@ -1308,12 +1444,20 @@
     "abstract": "第六十至七十三章的逐节点事件序列",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective"
     },
     "position": {
      "type": "before_character_definition",
      "order": 290
-    }
+    },
+    "contents": [
+     {
+      "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 59"
+     },
+     {
+      "file": "世界书/时间线/翡冷翠领主期编年.yaml"
+     }
+    ]
    },
    "纵横篇编年": {
     "path": "世界书/时间线/纵横篇编年.yaml",
@@ -1329,12 +1473,20 @@
     "abstract": "第七十四至七百六十四章的分段节点序列",
     "enabled": true,
     "strategy": {
-     "type": "constant"
+     "type": "selective"
     },
     "position": {
      "type": "before_character_definition",
      "order": 291
-    }
+    },
+    "contents": [
+     {
+      "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 73"
+     },
+     {
+      "file": "世界书/时间线/纵横篇编年.yaml"
+     }
+    ]
    },
    "当前剧情进度": {
     "path": "世界书/时间线/当前剧情进度.yaml",

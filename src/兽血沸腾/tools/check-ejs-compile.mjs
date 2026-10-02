@@ -1,5 +1,6 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 function toFnBody(content) {
   let js = '';
   let last = 0;
@@ -32,6 +33,6 @@ function scan(root) {
   walk(root);
   return bad;
 }
-const bad = scan('世界书');
+const bad = scan(fileURLToPath(new URL('../世界书', import.meta.url)));
 console.log('EJS 编译失败条目:', bad.length);
 bad.forEach(b => console.log(' ', b.p, '->', b.msg));
