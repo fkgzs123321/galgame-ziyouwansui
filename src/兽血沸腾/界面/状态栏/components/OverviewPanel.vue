@@ -38,7 +38,7 @@
     <div class="sb-sec">
       <div class="sb-sec-title">当前状态与近期事务</div>
       <div class="kv">
-        <div><span class="sb-dim">扮演</span>{{ 主角.名称 || '<user>' }}</div>
+        <div><span class="sb-dim">扮演</span>{{ 主角.名称 || 玩家名 }}</div>
         <div><span class="sb-dim">身份</span>{{ 主角.身份 }}</div>
         <div><span class="sb-dim">阶位</span>{{ 主角.阶位 }}</div>
         <div><span class="sb-dim">阵营声望</span>{{ 声望摘要 }}</div>
@@ -193,6 +193,9 @@ defineEmits<{ go: [tab: string] }>();
 
 const store = useDataStore();
 const { 世界, 剧情, 主角, 战斗, 系统 } = store.data;
+
+// 玩家名：未选扮演角色时回落到酒馆 persona 名
+const 玩家名 = computed(() => window.SillyTavern?.getContext?.().name1 || '玩家');
 
 const 诅咒开 = computed(() => 主角.诅咒?.血之祭奠 === true);
 

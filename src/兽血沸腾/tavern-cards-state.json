@@ -1286,7 +1286,6 @@
     }
    },
    "荒岛篇编年": {
-    "path": "世界书/时间线/荒岛篇编年.yaml",
     "scope": "specific",
     "part": "history",
     "keywords": [
@@ -1315,7 +1314,6 @@
     ]
    },
    "胸罩岛篇编年": {
-    "path": "世界书/时间线/胸罩岛篇编年.yaml",
     "scope": "specific",
     "part": "history",
     "keywords": [
@@ -1344,7 +1342,6 @@
     ]
    },
    "海上篇编年": {
-    "path": "世界书/时间线/海上篇编年.yaml",
     "scope": "specific",
     "part": "history",
     "keywords": [
@@ -1373,7 +1370,6 @@
     ]
    },
    "多瑙大荒原篇编年": {
-    "path": "世界书/时间线/多瑙大荒原篇编年.yaml",
     "scope": "specific",
     "part": "history",
     "keywords": [
@@ -1402,7 +1398,6 @@
     ]
    },
    "博格村与领地初建编年": {
-    "path": "世界书/时间线/博格村与领地初建编年.yaml",
     "scope": "specific",
     "part": "history",
     "keywords": [
@@ -1431,7 +1426,6 @@
     ]
    },
    "翡冷翠领主期编年": {
-    "path": "世界书/时间线/翡冷翠领主期编年.yaml",
     "scope": "specific",
     "part": "history",
     "keywords": [
@@ -1460,7 +1454,6 @@
     ]
    },
    "纵横篇编年": {
-    "path": "世界书/时间线/纵横篇编年.yaml",
     "scope": "specific",
     "part": "history",
     "keywords": [

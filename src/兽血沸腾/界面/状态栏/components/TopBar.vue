@@ -5,7 +5,7 @@
 
       <div class="who">
         <div class="name">
-          {{ 主角.名称 ? `${主角.名称}（<user>）` : '<user>' }} · {{ 主角.身份 || '无名者' }}
+          {{ 扮演名 }} · {{ 主角.身份 || '无名者' }}
           <span v-if="诅咒开" class="sb-curse" title="血之祭奠：战歌不再有神奇效果">血之祭奠</span>
         </div>
         <div class="sub sb-dim">
@@ -63,6 +63,9 @@ import { 列 } from '../../工具';
 
 const store = useDataStore();
 const { 世界, 剧情, 主角, 战斗 } = store.data;
+
+// 玩家名：优先取所选角色的名称, 未定则回落到酒馆 persona 名
+const 扮演名 = computed(() => 主角.名称 || window.SillyTavern?.getContext?.().name1 || '玩家');
 
 // 阶位取尾字做石刻徽记：风语祭祀 → 风
 const 阶位字 = computed(() => {

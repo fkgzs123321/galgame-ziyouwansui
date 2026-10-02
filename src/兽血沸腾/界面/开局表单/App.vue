@@ -47,15 +47,15 @@
         <div class="frow">
           <label>扮演视角</label>
           <select v-model="form.视角">
-            <option value="刘震撼">&lt;user&gt; → 刘震撼（原作主角，已备完整设定）</option>
-            <option value="海伦.列娜">&lt;user&gt; → 海伦.列娜（福克斯族狐人祭祀）</option>
-            <option value="凝玉">&lt;user&gt; → 凝玉（摩韶族蚌人幻术师）</option>
-            <option value="艾薇尔">&lt;user&gt; → 艾薇尔（西雅海国美人鱼公主）</option>
-            <option value="自定义">&lt;user&gt; → 自定义角色（外来客 / 原创人物）</option>
+            <option value="刘震撼">刘震撼（原作主角，已备完整设定）</option>
+            <option value="海伦.列娜">海伦.列娜（福克斯族狐人祭祀）</option>
+            <option value="凝玉">凝玉（摩韶族蚌人幻术师）</option>
+            <option value="艾薇尔">艾薇尔（西雅海国美人鱼公主）</option>
+            <option value="自定义">自定义角色（外来客 / 原创人物）</option>
           </select>
         </div>
         <div class="frow" v-if="form.视角 !== '自定义'">
-          <span class="sb-dim">选谁，谁的世界书设定就是 &lt;user&gt; 本人的设定：性格底色照演，不写成道德完人。未被扮演的角色（含刘震撼）一律按各自条目作为 NPC 行动。</span>
+          <span class="sb-dim">由 {{ 玩家名 }} 扮演所选角色：谁被选中，谁的世界书设定就是玩家本人的设定，性格底色照演，不写成道德完人。未被扮演的角色（含刘震撼）一律按各自条目作为 NPC 行动。</span>
         </div>
 
         <template v-if="form.视角 === '自定义'">
@@ -142,10 +142,13 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue';
+import { computed, reactive } from 'vue';
 import { useDataStore } from '../store';
 
 const store = useDataStore();
+
+// 玩家名：取酒馆 persona 名（表单文案里指代玩家本人）
+const 玩家名 = computed(() => window.SillyTavern?.getContext?.().name1 || '玩家');
 
 // 与 开场白/2~6.txt 一一对应；表单提交后把玩家选择写回变量，再由 AI 按对应落点铺开
 const OPENINGS = [
@@ -281,7 +284,7 @@ async function 提交() {
     d.世界.当前区域 = form.区域 || p.区域;
     d.世界.当前场景 = form.场景 || p.场景;
 
-    // 主角身份：<user> 扮演谁由 名称 给出；核心角色的具体身份以世界书条目按当前章节为准
+    // 主角身份：玩家扮演谁由 名称 给出；核心角色的具体身份以世界书条目按当前章节为准
     const 核心角色 = ['刘震撼', '海伦.列娜', '凝玉', '艾薇尔'];
     const 角色默认阶位: Record<string, string> = { '海伦.列娜': '灵魂祭祀', 凝玉: '无', 艾薇尔: '无' };
     if (form.视角 === '自定义') {
@@ -291,7 +294,7 @@ async function 提交() {
     } else {
       d.主角.名称 = form.视角;
       d.主角.阶位 = form.视角 === '刘震撼' ? p.阶位 : 角色默认阶位[form.视角] ?? '无';
-      d.主角.身份 = `${form.视角}（<user> 扮演），当前身份与处境以世界书条目按章节序号 ${d.剧情.章节序号} 的分档为准`;
+      d.主角.身份 = `${form.视角}（由玩家扮演），当前身份与处境以世界书条目按章节序号 ${d.剧情.章节序号} 的分档为准`;
     }
 
     // 玩法偏好写入开关与难度
@@ -315,7 +318,7 @@ async function 提交() {
     const 摘要 = [
       `开局点：${OPENINGS.find(o => o.id === form.opening)?.name ?? form.opening}`,
       `起始：${d.剧情.当前卷} 第 ${d.剧情.章节序号} 章 · ${d.世界.当前区域} · ${d.世界.当前场景}`,
-      `扮演：<user> 即 ${d.主角.名称 || '自定义角色'}，其世界书设定就是 <user> 本人的设定`,
+      `扮演：{{user}} 即 ${d.主角.名称 || '自定义角色'}，其世界书设定就是 {{user}} 本人的设定`,
       `阶位：${d.主角.阶位}`,
       `侧重：${form.侧重}`,
       `难度：${form.难度}`,
