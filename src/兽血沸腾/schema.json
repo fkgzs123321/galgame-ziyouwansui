@@ -1115,6 +1115,66 @@
         },
         "站位": {
           "$ref": "#/$defs/__schema0"
+        },
+        "属性": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "力量": {
+              "default": 0,
+              "type": "number"
+            },
+            "敏捷": {
+              "default": 0,
+              "type": "number"
+            },
+            "体质": {
+              "default": 0,
+              "type": "number"
+            },
+            "感知": {
+              "default": 0,
+              "type": "number"
+            },
+            "护甲": {
+              "default": 0,
+              "type": "number"
+            },
+            "魔法强度": {
+              "default": 0,
+              "type": "number"
+            }
+          }
+        },
+        "技能": {
+          "default": {},
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "default": {},
+            "type": "object",
+            "properties": {
+              "名称": {
+                "$ref": "#/$defs/__schema0"
+              },
+              "类型": {
+                "default": "其他",
+                "type": "string",
+                "enum": [
+                  "战歌",
+                  "法术",
+                  "武技",
+                  "异能",
+                  "其他"
+                ]
+              },
+              "效果": {
+                "$ref": "#/$defs/__schema0"
+              }
+            }
+          }
         }
       }
     },

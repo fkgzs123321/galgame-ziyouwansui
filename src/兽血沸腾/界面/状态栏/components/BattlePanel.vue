@@ -115,6 +115,12 @@
             <div class="st">
               <span v-for="s in 标签(u.状态)" :key="s" class="sb-tag sb-tag-song">{{ s }}</span>
             </div>
+            <div v-if="u.属性" class="sb-dim" style="font-size: 11px; margin-top: 4px">
+              力 {{ u.属性.力量 ?? 0 }} · 敏 {{ u.属性.敏捷 ?? 0 }} · 体 {{ u.属性.体质 ?? 0 }} · 感 {{ u.属性.感知 ?? 0 }} · 甲 {{ u.属性.护甲 ?? 0 }} · 魔强 {{ u.属性.魔法强度 ?? 0 }}
+            </div>
+            <div v-if="列(u.技能).length" style="margin-top: 4px">
+              <span v-for="sk in 列(u.技能)" :key="sk.名称" class="sb-tag" :title="sk.效果">{{ sk.名称 }}</span>
+            </div>
           </div>
           <div v-if="!我方列表.length" class="sb-empty">无我方单位记录。</div>
         </div>
@@ -126,6 +132,12 @@
             <input v-model.number="我表单.生命" type="number" class="ipt num" placeholder="生命" />
             <input v-model="我表单.站位" class="ipt" placeholder="站位" />
             <input v-model="我表单.状态" class="ipt" placeholder="状态" />
+            <input v-model.number="我表单.力量" type="number" class="ipt num" placeholder="力量" />
+            <input v-model.number="我表单.敏捷" type="number" class="ipt num" placeholder="敏捷" />
+            <input v-model.number="我表单.体质" type="number" class="ipt num" placeholder="体质" />
+            <input v-model.number="我表单.护甲" type="number" class="ipt num" placeholder="护甲" />
+            <input v-model.number="我表单.魔法强度" type="number" class="ipt num" placeholder="魔法强度" />
+            <input v-model.number="我表单.感知" type="number" class="ipt num" placeholder="感知" />
             <button class="sb-btn sb-btn-song" :disabled="!我表单.名.trim()" @click="新增单位('我方')">
               新增
             </button>
@@ -147,6 +159,12 @@
             <div class="st">
               <span v-for="s in 标签(u.状态)" :key="s" class="sb-tag sb-tag-life">{{ s }}</span>
             </div>
+            <div v-if="u.属性" class="sb-dim" style="font-size: 11px; margin-top: 4px">
+              力 {{ u.属性.力量 ?? 0 }} · 敏 {{ u.属性.敏捷 ?? 0 }} · 体 {{ u.属性.体质 ?? 0 }} · 感 {{ u.属性.感知 ?? 0 }} · 甲 {{ u.属性.护甲 ?? 0 }} · 魔强 {{ u.属性.魔法强度 ?? 0 }}
+            </div>
+            <div v-if="列(u.技能).length" style="margin-top: 4px">
+              <span v-for="sk in 列(u.技能)" :key="sk.名称" class="sb-tag" :title="sk.效果">{{ sk.名称 }}</span>
+            </div>
           </div>
           <div v-if="!敌方列表.length" class="sb-empty">无敌方单位记录。</div>
         </div>
@@ -158,6 +176,12 @@
             <input v-model.number="敌表单.生命" type="number" class="ipt num" placeholder="生命" />
             <input v-model="敌表单.站位" class="ipt" placeholder="站位" />
             <input v-model="敌表单.状态" class="ipt" placeholder="状态" />
+            <input v-model.number="敌表单.力量" type="number" class="ipt num" placeholder="力量" />
+            <input v-model.number="敌表单.敏捷" type="number" class="ipt num" placeholder="敏捷" />
+            <input v-model.number="敌表单.体质" type="number" class="ipt num" placeholder="体质" />
+            <input v-model.number="敌表单.护甲" type="number" class="ipt num" placeholder="护甲" />
+            <input v-model.number="敌表单.魔法强度" type="number" class="ipt num" placeholder="魔法强度" />
+            <input v-model.number="敌表单.感知" type="number" class="ipt num" placeholder="感知" />
             <button class="sb-btn sb-btn-life" :disabled="!敌表单.名.trim()" @click="新增单位('敌方')">
               新增
             </button>
@@ -232,8 +256,8 @@ type 阶段 = (typeof STAGES)[number];
 
 // 结界/单位的新增表单留空即不写入，避免脏键
 const 结界表单 = ref({ 施放者: '', 范围: '', 效果: '' });
-const 我表单 = ref({ 名: '', 兵种: '', 生命: 0, 站位: '', 状态: '' });
-const 敌表单 = ref({ 名: '', 兵种: '', 生命: 0, 站位: '', 状态: '' });
+const 我表单 = ref({ 名: '', 兵种: '', 生命: 0, 站位: '', 状态: '', 力量: 0, 敏捷: 0, 体质: 0, 感知: 0, 护甲: 0, 魔法强度: 0 });
+const 敌表单 = ref({ 名: '', 兵种: '', 生命: 0, 站位: '', 状态: '', 力量: 0, 敏捷: 0, 体质: 0, 感知: 0, 护甲: 0, 魔法强度: 0 });
 
 const 结界列表 = computed(() => 列(战斗.环境.结界));
 const 加持列表 = computed(() => 列(战斗.战歌加持));
@@ -337,6 +361,15 @@ function 新增单位(side: '我方' | '敌方') {
     生命: Math.max(0, Math.min(999999, Number(f.生命) || 0)),
     状态: f.状态.trim(),
     站位: f.站位.trim(),
+    属性: {
+      力量: Math.max(0, Number(f.力量) || 0),
+      敏捷: Math.max(0, Number(f.敏捷) || 0),
+      体质: Math.max(0, Number(f.体质) || 0),
+      感知: Math.max(0, Number(f.感知) || 0),
+      护甲: Math.max(0, Number(f.护甲) || 0),
+      魔法强度: Math.max(0, Number(f.魔法强度) || 0),
+    },
+    技能: {},
   };
   log(`${side}新增单位「${名}」。`);
   f.名 = '';
