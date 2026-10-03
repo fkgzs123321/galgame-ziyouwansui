@@ -133,3 +133,9 @@
 - **前端状态栏（Vue 3）**：`界面/状态栏/`（App + TopBar/TabNav/OverviewPanel/RoleCards/PlotPanel/DicePanel 五面板，含进度条、锚点十环追踪、判定骰子展示）；vue-tsc 零错误，pnpm build 产物全量内联进「正则/状态栏界面.html」；ui_mode 已切换 frontend
 - **PNG 卡**：`avatar.png`（酒红渐变倾杯泼酒主题，纯像素绘制，生成脚本 `_gen_avatar.cjs`）；artifact 切换为 .png，打包产物 `src/自由万岁/自由万岁.png`（chara_card_v3 嵌入头像，65 条世界书、37 条 EJS、MVU+Zod 含判定变量、5 正则、3 段开场白全部验证通过）
 - 原有 JSON 产物仍保留，与 PNG 内容一致，可任选导入
+
+## 交付记录（v3.1：GitHub 部署）
+
+- **前端 CDN**：状态栏构建产物推送至 `github.com/fkgzs123321/galgame-ziyouwansui`（main 分支，提交 cbbb186，根级「状态栏/index.html」布局）；「正则/状态栏界面.html」已切换为 jsDelivr 固定提交链接（testingcf 镜像），已验证 200 可达，CDN 缓存不随后续推送漂移
+- **工程源码备份**：同一仓库「工程源码」分支（02a91e1，含 65 条目、MVU 判定骰子、前端源码、开场白与打包配置的完整提交历史）
+- **说明**：origin（galgame-kefouwoxuzaishaonian）main 分支由并行会话使用中，本卡工程未合入该分支以避免冲突；本地 main 与其分叉，后续同步需先 fetch 评估
