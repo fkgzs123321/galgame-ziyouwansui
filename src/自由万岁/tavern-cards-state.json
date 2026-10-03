@@ -1,0 +1,2402 @@
+{
+  "projectName": "自由万岁",
+  "worldbookName": "自由万岁",
+  "form": "charactercard",
+  "mvu": true,
+  "entryManifest": {
+    "世界观": {
+      "世界设定": {
+        "scope": "catalog",
+        "keywords": [
+          "林县"
+        ],
+        "abstract": "林县阶层格局、七项资源庇护网络与决裂规则、职场制度、自由三层主题定调",
+        "contents": [
+          {
+            "content": "---\n<world>"
+          },
+          {
+            "file": "世界书/世界观/世界设定.yaml"
+          },
+          {
+            "content": "</world>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 10
+        }
+      }
+    },
+    "扮演准则": {
+      "扮演准则": {
+        "scope": "catalog",
+        "rephrase": true,
+        "keywords": [],
+        "abstract": "沉浸模式、强剧情锚点规则、短剧金句与文学叙述文风、NSFW成年自愿边界",
+        "contents": [
+          {
+            "content": "---\n<presentation>"
+          },
+          {
+            "file": "世界书/扮演准则/扮演准则.yaml"
+          },
+          {
+            "content": "</presentation>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 230
+        }
+      }
+    },
+    "时间线": {
+      "前史时间线": {
+        "scope": "specific",
+        "part": "history",
+        "keywords": [
+          "前史",
+          "过去"
+        ],
+        "abstract": "沈建平车祸、收养、VIP病房、入职惠丰金融、订婚决定五条前史及影响",
+        "contents": [
+          {
+            "content": "---\n<timeline part=\"history\">"
+          },
+          {
+            "file": "世界书/时间线/前史时间线.yaml"
+          },
+          {
+            "content": "</timeline>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 20
+        }
+      },
+      "主线剧情锚点": {
+        "scope": "specific",
+        "part": "plot",
+        "keywords": [
+          "主线",
+          "锚点",
+          "剧情"
+        ],
+        "abstract": "十个锚点的顺序、地点、内容与后续，以及阶段推进规则",
+        "contents": [
+          {
+            "content": "---\n<timeline part=\"plot\">"
+          },
+          {
+            "file": "世界书/时间线/主线剧情锚点.yaml"
+          },
+          {
+            "content": "</timeline>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 30
+        }
+      }
+    },
+    "地理": {
+      "林县": {
+        "scope": "specific",
+        "part": "region",
+        "keywords": [
+          "林县"
+        ],
+        "abstract": "林县空间对照与主要地点、势力分布总览",
+        "contents": [
+          {
+            "content": "---\n<region region=\"林县\">"
+          },
+          {
+            "file": "世界书/地理/林县.yaml"
+          },
+          {
+            "content": "</region>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "林县"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 40
+        }
+      },
+      "陆家别墅": {
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "陆家别墅",
+          "别墅",
+          "宴会厅"
+        ],
+        "abstract": "宴会厅决裂现场与大门拒客现场，门禁权限的资源符号",
+        "contents": [
+          {
+            "content": "---\n<location name=\"陆家别墅\">"
+          },
+          {
+            "file": "世界书/地理/陆家别墅.yaml"
+          },
+          {
+            "content": "</location>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "陆家别墅",
+            "别墅",
+            "宴会厅"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 50
+        }
+      },
+      "城西老城区": {
+        "scope": "specific",
+        "part": "scene",
+        "keywords": [
+          "城西",
+          "老城区",
+          "周记汽修",
+          "出租屋"
+        ],
+        "abstract": "周记汽修与周燃的出租屋，白粥榨菜的空间符号",
+        "contents": [
+          {
+            "content": "---\n<location name=\"城西老城区\">"
+          },
+          {
+            "file": "世界书/地理/城西老城区.yaml"
+          },
+          {
+            "content": "</location>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "城西",
+            "老城区",
+            "周记汽修",
+            "出租屋"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 60
+        }
+      },
+      "惠丰金融": {
+        "scope": "specific",
+        "part": "faction",
+        "keywords": [
+          "惠丰金融"
+        ],
+        "abstract": "职场制度、管理层、关键人物与陆氏合作项目",
+        "contents": [
+          {
+            "content": "---\n<faction name=\"惠丰金融\">"
+          },
+          {
+            "file": "世界书/地理/惠丰金融.yaml"
+          },
+          {
+            "content": "</faction>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "惠丰金融"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 70
+        }
+      },
+      "陆氏控股集团": {
+        "scope": "specific",
+        "part": "faction",
+        "keywords": [
+          "陆氏控股集团",
+          "陆氏",
+          "陆氏企业"
+        ],
+        "abstract": "家族企业版图、七项庇护资源清单与收回机制",
+        "contents": [
+          {
+            "content": "---\n<faction name=\"陆氏控股集团\">"
+          },
+          {
+            "file": "世界书/地理/陆氏控股集团.yaml"
+          },
+          {
+            "content": "</faction>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "陆氏控股集团",
+            "陆氏",
+            "陆氏企业"
+          ]
+        },
+        "position": {
+          "type": "before_character_definition",
+          "order": 80
+        }
+      }
+    },
+    "角色": {
+      "角色速览": {
+        "scope": "catalog",
+        "part": "other",
+        "keywords": [
+          "角色总览",
+          "人物"
+        ],
+        "abstract": "全卡十二名角色的一览索引：姓名、性别、年龄、身份",
+        "contents": [
+          {
+            "content": "---\n<catalog>"
+          },
+          {
+            "file": "世界书/角色/角色速览.yaml"
+          },
+          {
+            "content": "</catalog>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 90
+        }
+      },
+      "沈知意_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "沈知意",
+          "知意"
+        ],
+        "abstract": "沈知意档案：外貌、收养前史、四层心理纵深、关键经历、关系设定",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"沈知意\">"
+          },
+          {
+            "file": "世界书/角色/沈知意/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "沈知意",
+            "知意"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 100
+        }
+      },
+      "沈知意_性格调色盘": {
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "沈知意",
+          "知意"
+        ],
+        "abstract": "六阶段调色盘（骄纵至沉静），底色自卑与渴望被接纳，EJS按剧情阶段切换",
+        "contents": [
+          {
+            "content": "---\n<character_palette character=\"沈知意\">"
+          },
+          {
+            "file": "世界书/角色/沈知意/性格调色盘.yaml"
+          },
+          {
+            "content": "</character_palette>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "沈知意",
+            "知意"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 101
+        }
+      },
+      "沈知意_NSFW面": {
+        "scope": "specific",
+        "part": "other",
+        "keywords": [
+          "沈知意",
+          "知意"
+        ],
+        "abstract": "亲密档案：情绪价值导向，三段好感阶段（疏远/心动/沉沦）",
+        "contents": [
+          {
+            "content": "---\n<nsfw_profile character=\"沈知意\">"
+          },
+          {
+            "file": "世界书/角色/沈知意/NSFW面.yaml"
+          },
+          {
+            "content": "</nsfw_profile>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "沈知意",
+            "知意"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 102
+        }
+      },
+      "沈知意_二次解释": {
+        "scope": "specific",
+        "part": "other",
+        "rephrase": true,
+        "keywords": [
+          "沈知意",
+          "知意"
+        ],
+        "abstract": "防误解注释：骄纵的生存姿势、自毁的单行道、情绪饥渴、恨与爱的关系",
+        "contents": [
+          {
+            "content": "---\n<character_rephrase character=\"沈知意\">"
+          },
+          {
+            "file": "世界书/角色/沈知意/二次解释.yaml"
+          },
+          {
+            "content": "</character_rephrase>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "沈知意",
+            "知意"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 220
+        }
+      },
+      "陆司砚_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "陆司砚",
+          "司砚",
+          "陆总"
+        ],
+        "abstract": "陆司砚档案：继承人身份、决裂逻辑、与林清禾的感情线、关系设定",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"陆司砚\">"
+          },
+          {
+            "file": "世界书/角色/陆司砚/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "陆司砚",
+            "司砚",
+            "陆总"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 103
+        }
+      },
+      "陆司砚_性格调色盘": {
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "陆司砚",
+          "司砚",
+          "陆总"
+        ],
+        "abstract": "守恒单盘：底色克制，理性与边界感为主色调，温柔点缀",
+        "contents": [
+          {
+            "content": "---\n<character_palette character=\"陆司砚\">"
+          },
+          {
+            "file": "世界书/角色/陆司砚/性格调色盘.yaml"
+          },
+          {
+            "content": "</character_palette>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "陆司砚",
+            "司砚",
+            "陆总"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 104
+        }
+      },
+      "陆司砚_NSFW面": {
+        "scope": "specific",
+        "part": "other",
+        "keywords": [
+          "陆司砚",
+          "司砚",
+          "陆总"
+        ],
+        "abstract": "亲密档案：克制者的三段好感阶段，先尊重后交情",
+        "contents": [
+          {
+            "content": "---\n<nsfw_profile character=\"陆司砚\">"
+          },
+          {
+            "file": "世界书/角色/陆司砚/NSFW面.yaml"
+          },
+          {
+            "content": "</nsfw_profile>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "陆司砚",
+            "司砚",
+            "陆总"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 105
+        }
+      },
+      "林清禾_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "林清禾",
+          "清禾"
+        ],
+        "abstract": "林清禾档案：朴素奋斗者出身、递手帕与五分钟陈述、关系设定",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"林清禾\">"
+          },
+          {
+            "file": "世界书/角色/林清禾/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "林清禾",
+            "清禾"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 106
+        }
+      },
+      "林清禾_性格调色盘": {
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "林清禾",
+          "清禾"
+        ],
+        "abstract": "三阶段调色盘（隐忍新人/崛起/从容骨干），EJS按职业阶段切换",
+        "contents": [
+          {
+            "content": "---\n<character_palette character=\"林清禾\">"
+          },
+          {
+            "file": "世界书/角色/林清禾/性格调色盘.yaml"
+          },
+          {
+            "content": "</character_palette>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "林清禾",
+            "清禾"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 107
+        }
+      },
+      "林清禾_NSFW面": {
+        "scope": "specific",
+        "part": "other",
+        "keywords": [
+          "林清禾",
+          "清禾"
+        ],
+        "abstract": "亲密档案：感情先于身体，三段好感阶段",
+        "contents": [
+          {
+            "content": "---\n<nsfw_profile character=\"林清禾\">"
+          },
+          {
+            "file": "世界书/角色/林清禾/NSFW面.yaml"
+          },
+          {
+            "content": "</nsfw_profile>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "林清禾",
+            "清禾"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 108
+        }
+      },
+      "赵媛_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "赵媛"
+        ],
+        "abstract": "赵媛档案：小跟班生存策略、零食外交、关系设定",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"赵媛\">"
+          },
+          {
+            "file": "世界书/角色/赵媛/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "赵媛"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 109
+        }
+      },
+      "赵媛_性格调色盘": {
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "赵媛"
+        ],
+        "abstract": "三阶段调色盘（跟随/转向/独立），EJS按剧情阶段切换",
+        "contents": [
+          {
+            "content": "---\n<character_palette character=\"赵媛\">"
+          },
+          {
+            "file": "世界书/角色/赵媛/性格调色盘.yaml"
+          },
+          {
+            "content": "</character_palette>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "赵媛"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 110
+        }
+      },
+      "赵媛_NSFW面": {
+        "scope": "specific",
+        "part": "other",
+        "keywords": [
+          "赵媛"
+        ],
+        "abstract": "亲密档案：精明与真心并存，三段好感阶段",
+        "contents": [
+          {
+            "content": "---\n<nsfw_profile character=\"赵媛\">"
+          },
+          {
+            "file": "世界书/角色/赵媛/NSFW面.yaml"
+          },
+          {
+            "content": "</nsfw_profile>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "赵媛"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 111
+        }
+      },
+      "温惠茹_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "温惠茹",
+          "陆母"
+        ],
+        "abstract": "温惠茹档案：陆母身份、珍珠胸针、对沈知意的养育与决裂",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"温惠茹\">"
+          },
+          {
+            "file": "世界书/角色/温惠茹/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "温惠茹",
+            "陆母"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 112
+        }
+      },
+      "温惠茹_性格调色盘": {
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "温惠茹",
+          "陆母"
+        ],
+        "abstract": "三阶段调色盘（视为己出/失望/心碎拒见），EJS按陆家态度切换",
+        "contents": [
+          {
+            "content": "---\n<character_palette character=\"温惠茹\">"
+          },
+          {
+            "file": "世界书/角色/温惠茹/性格调色盘.yaml"
+          },
+          {
+            "content": "</character_palette>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "温惠茹",
+            "陆母"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 113
+        }
+      },
+      "温惠茹_NSFW面": {
+        "scope": "specific",
+        "part": "other",
+        "keywords": [
+          "温惠茹",
+          "陆母"
+        ],
+        "abstract": "亲密档案：老火慢炖的夫妻默契与高信任玩家分支，三段好感阶段",
+        "contents": [
+          {
+            "content": "---\n<nsfw_profile character=\"温惠茹\">"
+          },
+          {
+            "file": "世界书/角色/温惠茹/NSFW面.yaml"
+          },
+          {
+            "content": "</nsfw_profile>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "温惠茹",
+            "陆母"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 114
+        }
+      },
+      "苏晚晴_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "苏晚晴",
+          "沈母"
+        ],
+        "abstract": "苏晚晴档案：病房日常、全家福细节、与亡夫和顾明远的关系",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"苏晚晴\">"
+          },
+          {
+            "file": "世界书/角色/苏晚晴/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏晚晴",
+            "沈母"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 115
+        }
+      },
+      "苏晚晴_性格调色盘": {
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "苏晚晴",
+          "沈母"
+        ],
+        "abstract": "四阶段调色盘（病房岁月/风雨飘摇/煎熬反复/微光新生），EJS按母亲病情切换",
+        "contents": [
+          {
+            "content": "---\n<character_palette character=\"苏晚晴\">"
+          },
+          {
+            "file": "世界书/角色/苏晚晴/性格调色盘.yaml"
+          },
+          {
+            "content": "</character_palette>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏晚晴",
+            "沈母"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 116
+        }
+      },
+      "苏晚晴_NSFW面": {
+        "scope": "specific",
+        "part": "other",
+        "keywords": [
+          "苏晚晴",
+          "沈母"
+        ],
+        "abstract": "亲密档案：病中被爱的敏感，搀扶式节奏，三段好感阶段",
+        "contents": [
+          {
+            "content": "---\n<nsfw_profile character=\"苏晚晴\">"
+          },
+          {
+            "file": "世界书/角色/苏晚晴/NSFW面.yaml"
+          },
+          {
+            "content": "</nsfw_profile>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "苏晚晴",
+            "沈母"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 117
+        }
+      },
+      "周燃_基础信息": {
+        "scope": "specific",
+        "part": "basic",
+        "keywords": [
+          "周燃",
+          "黄毛"
+        ],
+        "abstract": "周燃档案：寄生生存逻辑、话术清单、关键时刻、关系设定",
+        "contents": [
+          {
+            "content": "---\n<character_basic character=\"周燃\">"
+          },
+          {
+            "file": "世界书/角色/周燃/基础信息.yaml"
+          },
+          {
+            "content": "</character_basic>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "周燃",
+            "黄毛"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 118
+        }
+      },
+      "周燃_性格调色盘": {
+        "scope": "specific",
+        "part": "personality",
+        "keywords": [
+          "周燃",
+          "黄毛"
+        ],
+        "abstract": "守恒单盘：底色寄生，油滑与甜言蜜语为主色调，凉薄点缀",
+        "contents": [
+          {
+            "content": "---\n<character_palette character=\"周燃\">"
+          },
+          {
+            "file": "世界书/角色/周燃/性格调色盘.yaml"
+          },
+          {
+            "content": "</character_palette>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "周燃",
+            "黄毛"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 119
+        }
+      },
+      "周燃_三面性": {
+        "scope": "specific",
+        "part": "tri_faceted",
+        "keywords": [
+          "周燃",
+          "黄毛"
+        ],
+        "abstract": "三面性：表演中的深情男友/无人观察的周老板/被戳穿时的翻脸，含过渡与渗透",
+        "contents": [
+          {
+            "content": "---\n<tri_faceted character=\"周燃\">"
+          },
+          {
+            "file": "世界书/角色/周燃/三面性.yaml"
+          },
+          {
+            "content": "</tri_faceted>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "周燃",
+            "黄毛"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 120
+        }
+      },
+      "周燃_NSFW面": {
+        "scope": "specific",
+        "part": "other",
+        "keywords": [
+          "周燃",
+          "黄毛"
+        ],
+        "abstract": "亲密档案：表演型亲密，三段好感阶段，索取本质",
+        "contents": [
+          {
+            "content": "---\n<nsfw_profile character=\"周燃\">"
+          },
+          {
+            "file": "世界书/角色/周燃/NSFW面.yaml"
+          },
+          {
+            "content": "</nsfw_profile>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "周燃",
+            "黄毛"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 121
+        }
+      }
+    },
+    "NPC": {
+      "陆振邦": {
+        "scope": "specific",
+        "keywords": [
+          "陆振邦",
+          "陆父"
+        ],
+        "abstract": "陆父：决策果断重情讲原则，收回资源的拍板者",
+        "contents": [
+          {
+            "content": "---\n<npc name=\"陆振邦\">"
+          },
+          {
+            "file": "世界书/NPC/陆振邦.yaml"
+          },
+          {
+            "content": "</npc>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "陆振邦",
+            "陆父"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 130
+        }
+      },
+      "何广泰与郑凯": {
+        "scope": "specific",
+        "keywords": [
+          "何广泰",
+          "郑凯",
+          "总经理",
+          "经理"
+        ],
+        "abstract": "惠丰金融总经理与经理：业绩至上、公布名单、执行重分配",
+        "contents": [
+          {
+            "content": "---\n<npc name=\"何广泰与郑凯\">"
+          },
+          {
+            "file": "世界书/NPC/何广泰与郑凯.yaml"
+          },
+          {
+            "content": "</npc>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "何广泰",
+            "郑凯",
+            "总经理",
+            "经理"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 131
+        }
+      },
+      "顾明远": {
+        "scope": "specific",
+        "keywords": [
+          "顾明远",
+          "顾医生"
+        ],
+        "abstract": "主治医师：温和耐心，苏晚晴微光新生线的搀扶者",
+        "contents": [
+          {
+            "content": "---\n<npc name=\"顾明远\">"
+          },
+          {
+            "file": "世界书/NPC/顾明远.yaml"
+          },
+          {
+            "content": "</npc>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "顾明远",
+            "顾医生"
+          ]
+        },
+        "position": {
+          "type": "after_character_definition",
+          "order": 132
+        }
+      }
+    },
+    "阶段指导": {
+      "阶段指导": {
+        "scope": "specific",
+        "keywords": [],
+        "abstract": "六阶段主持指导：目标、叙事重点、互动方式与推进边界，EJS按剧情阶段渲染",
+        "contents": [
+          {
+            "content": "---\n<stage_guidance>"
+          },
+          {
+            "file": "世界书/阶段指导/阶段指导.yaml"
+          },
+          {
+            "content": "</stage_guidance>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 140
+        }
+      }
+    },
+    "事件": {
+      "场景一_陆家别墅宴会厅": {
+        "scope": "specific",
+        "keywords": [
+          "订婚宴",
+          "生日宴",
+          "宴会"
+        ],
+        "abstract": "生日订婚宴开场：宣布订婚、窒息感、为泼酒蓄力",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段一' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('订婚宴泼酒')"
+          },
+          {
+            "content": "---\n<event name=\"场景一\">"
+          },
+          {
+            "file": "世界书/事件/阶段一/场景一_陆家别墅宴会厅.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "订婚宴",
+            "生日宴",
+            "宴会"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 150
+        }
+      },
+      "场景二_泼酒退婚": {
+        "scope": "specific",
+        "keywords": [
+          "泼酒",
+          "退婚",
+          "订婚宴"
+        ],
+        "abstract": "核心锚点：泼酒、痛斥、宣布真爱、离场与变量结算",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段一' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('订婚宴泼酒')"
+          },
+          {
+            "content": "---\n<event name=\"场景二\">"
+          },
+          {
+            "file": "世界书/事件/阶段一/场景二_泼酒退婚.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "泼酒",
+            "退婚",
+            "订婚宴"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 151
+        }
+      },
+      "场景三_陆司砚的反应": {
+        "scope": "specific",
+        "keywords": [
+          "手帕",
+          "让大家见笑"
+        ],
+        "abstract": "收场：手帕、让大家见笑了、好感伏笔",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段一' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('资源收回')"
+          },
+          {
+            "content": "---\n<event name=\"场景三\">"
+          },
+          {
+            "file": "世界书/事件/阶段一/场景三_陆司砚的反应.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "手帕",
+            "让大家见笑"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 152
+        }
+      },
+      "场景四_陆家收回资源": {
+        "scope": "specific",
+        "keywords": [
+          "收回资源",
+          "黑卡",
+          "门禁"
+        ],
+        "abstract": "门控锚点：七项资源逐项收回、不可逆、推进阶段二",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段一' && getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('订婚宴泼酒')"
+          },
+          {
+            "content": "---\n<event name=\"场景四\">"
+          },
+          {
+            "file": "世界书/事件/阶段一/场景四_陆家收回资源.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "收回资源",
+            "黑卡",
+            "门禁"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 153
+        }
+      },
+      "场景五_搬进出租屋": {
+        "scope": "specific",
+        "keywords": [
+          "出租屋",
+          "白粥",
+          "咸菜"
+        ],
+        "abstract": "城西现实第一课：四十平米、白粥咸菜、有情饮水饱、自我催眠",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+          },
+          {
+            "content": "---\n<event name=\"场景五\">"
+          },
+          {
+            "file": "世界书/事件/阶段二/场景五_搬进出租屋.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "出租屋",
+            "白粥",
+            "咸菜"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 154
+        }
+      },
+      "场景六_入职惠丰金融": {
+        "scope": "specific",
+        "keywords": [
+          "惠丰金融",
+          "转正"
+        ],
+        "abstract": "职场处境：使唤同事、光环消失、转正暗线",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+          },
+          {
+            "content": "---\n<event name=\"场景六\">"
+          },
+          {
+            "file": "世界书/事件/阶段二/场景六_入职惠丰金融.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "惠丰金融",
+            "转正"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 155
+        }
+      },
+      "场景七_画大饼日常": {
+        "scope": "specific",
+        "keywords": [
+          "画大饼",
+          "修车店"
+        ],
+        "abstract": "周燃话术三连与真实的谎言，暴露度基础来源",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+          },
+          {
+            "content": "---\n<event name=\"场景七\">"
+          },
+          {
+            "file": "世界书/事件/阶段二/场景七_画大饼日常.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "画大饼",
+            "修车店"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 156
+        }
+      },
+      "场景八_转正名单公布": {
+        "scope": "specific",
+        "keywords": [
+          "转正名单",
+          "晨会"
+        ],
+        "abstract": "阶段三开场锚点：念名单、崩溃、变量结算",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('转正名单')"
+          },
+          {
+            "content": "---\n<event name=\"场景八\">"
+          },
+          {
+            "file": "世界书/事件/阶段三/场景八_转正名单公布.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "转正名单",
+            "晨会"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 157
+        }
+      },
+      "场景九_质问陆司砚": {
+        "scope": "specific",
+        "keywords": [
+          "质问",
+          "对质",
+          "陆氏"
+        ],
+        "abstract": "对质戏：你觉得我有这个必要吗、这就是自由",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三' && getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('转正名单') && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('质问陆司砚')"
+          },
+          {
+            "content": "---\n<event name=\"场景九\">"
+          },
+          {
+            "file": "世界书/事件/阶段三/场景九_质问陆司砚.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "质问",
+            "对质",
+            "陆氏"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 158
+        }
+      },
+      "场景十_客户全面流失": {
+        "scope": "specific",
+        "keywords": [
+          "客户",
+          "流失",
+          "骗贷"
+        ],
+        "abstract": "职场崩盘：四大原因、骗贷失误、权限暂停",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三' && getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('质问陆司砚')"
+          },
+          {
+            "content": "---\n<event name=\"场景十\">"
+          },
+          {
+            "file": "世界书/事件/阶段三/场景十_客户全面流失.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "客户",
+            "流失",
+            "骗贷"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 159
+        }
+      },
+      "场景十一_洗手间里的真相": {
+        "scope": "specific",
+        "keywords": [
+          "洗手间",
+          "议论"
+        ],
+        "abstract": "同事议论与隔间里的发抖，心理转折",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+          },
+          {
+            "content": "---\n<event name=\"场景十一\">"
+          },
+          {
+            "file": "世界书/事件/阶段三/场景十一_洗手间里的真相.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "洗手间",
+            "议论"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 160
+        }
+      },
+      "场景十二_庆祝大餐争吵": {
+        "scope": "specific",
+        "keywords": [
+          "庆祝大餐",
+          "老干妈",
+          "争吵"
+        ],
+        "abstract": "榨菜老干妈大餐与等以后之争，第一次激烈争吵",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+          },
+          {
+            "content": "---\n<event name=\"场景十二\">"
+          },
+          {
+            "file": "世界书/事件/阶段三/场景十二_庆祝大餐争吵.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "庆祝大餐",
+            "老干妈",
+            "争吵"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 161
+        }
+      },
+      "场景十三_林清禾的崛起": {
+        "scope": "specific",
+        "keywords": [
+          "五分钟陈述",
+          "厂房"
+        ],
+        "abstract": "五分钟陈述、认出手帕、厂房考察",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('林清禾拿下项目')"
+          },
+          {
+            "content": "---\n<event name=\"场景十三\">"
+          },
+          {
+            "file": "世界书/事件/阶段三/场景十三_林清禾的崛起.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "五分钟陈述",
+            "厂房"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 162
+        }
+      },
+      "场景十四_项目成功与回怼": {
+        "scope": "specific",
+        "keywords": [
+          "项目",
+          "回怼",
+          "痴心妄想"
+        ],
+        "abstract": "拿下项目、痴心妄想嘲讽、正面回怼、管理层训斥",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三' && getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('林清禾拿下项目')"
+          },
+          {
+            "content": "---\n<event name=\"场景十四\">"
+          },
+          {
+            "file": "世界书/事件/阶段三/场景十四_项目成功与回怼.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "项目",
+            "回怼",
+            "痴心妄想"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 163
+        }
+      },
+      "场景十五_道歉被拒": {
+        "scope": "specific",
+        "keywords": [
+          "道歉",
+          "门卫"
+        ],
+        "abstract": "陆家大门紧闭、门卫转达、我是来道歉的",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('道歉被拒')"
+          },
+          {
+            "content": "---\n<event name=\"场景十五\">"
+          },
+          {
+            "file": "世界书/事件/阶段四/场景十五_道歉被拒.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "道歉",
+            "门卫"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 164
+        }
+      },
+      "场景十六_母亲病危通知": {
+        "scope": "specific",
+        "keywords": [
+          "病危",
+          "医院",
+          "网贷"
+        ],
+        "abstract": "医院来电、未接来电、网贷抉择、推进阶段五",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('母亲病危')"
+          },
+          {
+            "content": "---\n<event name=\"场景十六\">"
+          },
+          {
+            "file": "世界书/事件/阶段四/场景十六_母亲病危通知.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "病危",
+            "医院",
+            "网贷"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 165
+        }
+      },
+      "场景十七_收入的巨大差距": {
+        "scope": "specific",
+        "keywords": [
+          "收入",
+          "工资"
+        ],
+        "abstract": "月入五万对四千五的量化对照",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四' && getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('母亲病危')"
+          },
+          {
+            "content": "---\n<event name=\"场景十七\">"
+          },
+          {
+            "file": "世界书/事件/阶段四/场景十七_收入的巨大差距.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "收入",
+            "工资"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 166
+        }
+      },
+      "场景十八_至暗时刻": {
+        "scope": "specific",
+        "keywords": [
+          "至暗",
+          "低谷",
+          "催债"
+        ],
+        "abstract": "四维低谷全景：债务、边缘化、感情失效、病榻恐惧",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+          },
+          {
+            "content": "---\n<event name=\"场景十八\">"
+          },
+          {
+            "file": "世界书/事件/阶段五/场景十八_至暗时刻.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "至暗",
+            "低谷",
+            "催债"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 167
+        }
+      },
+      "场景十九_林陆感情升温": {
+        "scope": "specific",
+        "keywords": [
+          "感情",
+          "合作"
+        ],
+        "abstract": "项目合作中的渐进式感情",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+          },
+          {
+            "content": "---\n<event name=\"场景十九\">"
+          },
+          {
+            "file": "世界书/事件/阶段五/场景十九_林陆感情升温.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "感情",
+            "合作"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 168
+        }
+      },
+      "场景二十_沈知意的反思": {
+        "scope": "specific",
+        "keywords": [
+          "反思",
+          "后悔"
+        ],
+        "abstract": "回想陆家的好与陆司砚的克制，觉醒度主场景",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+          },
+          {
+            "content": "---\n<event name=\"场景二十\">"
+          },
+          {
+            "file": "世界书/事件/阶段五/场景二十_沈知意的反思.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "反思",
+            "后悔"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 169
+        }
+      },
+      "场景二十一_命运收束": {
+        "scope": "specific",
+        "keywords": [
+          "结局",
+          "收束"
+        ],
+        "abstract": "终局结算：默认线与三条分支的收束",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段六'"
+          },
+          {
+            "content": "---\n<event name=\"场景二十一\">"
+          },
+          {
+            "file": "世界书/事件/阶段六/场景二十一_命运收束.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "结局",
+            "收束"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 170
+        }
+      },
+      "扩展_沈知意的觉醒反弹": {
+        "scope": "specific",
+        "keywords": [
+          "反弹",
+          "觉醒",
+          "还债"
+        ],
+        "abstract": "扩展支线：觉醒度70以上触底反弹的完整演绎",
+        "contents": [
+          {
+            "content": "@@if ['阶段五', '阶段六'].includes(getvar('stat_data.世界.剧情阶段', { defaults: '' })) && getvar('stat_data.沈知意.觉醒度', { defaults: 0 }) >= 70"
+          },
+          {
+            "content": "---\n<event name=\"扩展反弹线\">"
+          },
+          {
+            "file": "世界书/事件/扩展/扩展_沈知意的觉醒反弹.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "反弹",
+            "觉醒",
+            "还债"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 171
+        }
+      },
+      "扩展_周燃败露": {
+        "scope": "specific",
+        "keywords": [
+          "败露",
+          "摊牌",
+          "账本"
+        ],
+        "abstract": "扩展支线：暴露度80以上摊牌与切割",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.周燃.暴露度', { defaults: 0 }) >= 80 && getvar('stat_data.世界.剧情阶段', { defaults: '' }) !== '阶段六'"
+          },
+          {
+            "content": "---\n<event name=\"扩展败露线\">"
+          },
+          {
+            "file": "世界书/事件/扩展/扩展_周燃败露.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "败露",
+            "摊牌",
+            "账本"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 172
+        }
+      },
+      "扩展_苏晚晴的新生": {
+        "scope": "specific",
+        "keywords": [
+          "新生",
+          "花园",
+          "饺子"
+        ],
+        "abstract": "扩展支线：脱离危险后与顾明远的搀扶线、母女和解",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.沈知意.母亲病情', { defaults: '长期治疗' }) === '脱离危险'"
+          },
+          {
+            "content": "---\n<event name=\"扩展新生线\">"
+          },
+          {
+            "file": "世界书/事件/扩展/扩展_苏晚晴的新生.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "enabled": true,
+        "strategy": {
+          "type": "selective",
+          "keys": [
+            "新生",
+            "花园",
+            "饺子"
+          ]
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 173
+        }
+      }
+    },
+    "MVU": {
+      "[mvu_update]变量输出格式": {
+        "path": "世界书/变量/变量输出格式.txt",
+        "part": "output_format",
+        "keywords": [],
+        "abstract": "MVU变量输出格式",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 180
+        }
+      },
+      "变量列表": {
+        "path": "世界书/变量/变量列表.txt",
+        "part": "variable_list",
+        "keywords": [],
+        "abstract": "MVU变量列表",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 190
+        }
+      },
+      "[mvu_update]变量更新规则": {
+        "path": "世界书/变量/变量更新规则.yaml",
+        "part": "update_rules",
+        "keywords": [],
+        "abstract": "MVU变量更新规则",
+        "enabled": true,
+        "strategy": {
+          "type": "constant"
+        },
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 200
+        }
+      },
+      "[InitVar]请勿打开": {
+        "path": "世界书/变量/initvar.yaml",
+        "part": "initvar",
+        "keywords": [],
+        "abstract": "MVU初始变量",
+        "enabled": false,
+        "position": {
+          "type": "at_depth",
+          "role": "system",
+          "depth": 0,
+          "order": 210
+        }
+      }
+    }
+  },
+  "typeLists": {
+    "before_char": [
+      "世界观",
+      "扮演准则",
+      "时间线",
+      "地理"
+    ],
+    "after_char": [
+      "角色",
+      "NPC"
+    ],
+    "depth": [
+      "阶段指导",
+      "事件",
+      "MVU"
+    ]
+  },
+  "strategyThresholds": {
+    "角色": {
+      "basic": {
+        "threshold": 5,
+        "required": true
+      },
+      "other": {
+        "threshold": 2,
+        "required": false
+      },
+      "personality": {
+        "threshold": 2,
+        "required": true
+      },
+      "tri_faceted": {
+        "threshold": 2,
+        "required": false
+      }
+    },
+    "事件": 0,
+    "地理": {
+      "faction": {
+        "threshold": 4,
+        "required": false
+      },
+      "region": {
+        "threshold": 4,
+        "required": false
+      },
+      "scene": {
+        "threshold": 4,
+        "required": false
+      }
+    },
+    "MVU": {
+      "initvar": {
+        "threshold": null,
+        "required": false
+      },
+      "output_format": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "update_rules": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "variable_list": {
+        "threshold": "Infinity",
+        "required": false
+      }
+    },
+    "NPC": 0,
+    "扮演准则": "Infinity",
+    "时间线": {
+      "history": {
+        "threshold": "Infinity",
+        "required": false
+      },
+      "plot": {
+        "threshold": "Infinity",
+        "required": false
+      }
+    },
+    "世界观": "Infinity",
+    "阶段指导": "Infinity"
+  },
+  "partOrder": {
+    "角色": [
+      "basic",
+      "personality",
+      "tri_faceted",
+      "other"
+    ],
+    "地理": [
+      "region",
+      "scene",
+      "faction"
+    ],
+    "MVU": [
+      "variable_list",
+      "update_rules",
+      "output_format",
+      "initvar"
+    ],
+    "时间线": [
+      "history",
+      "plot"
+    ]
+  },
+  "depth_defaults": {
+    "role": "system",
+    "depth": 0
+  },
+  "description": "",
+  "first_messages": [
+    "开场白/0.txt",
+    "开场白/1.txt",
+    "开场白/2.txt"
+  ],
+  "tags": [
+    "短剧改编",
+    "现实向",
+    "都市情感",
+    "强剧情",
+    "多角色",
+    "NSFW"
+  ],
+  "creator": "",
+  "creator_notes": "",
+  "version": "1.0",
+  "create_date": "2026-10-03T03:15:35.556Z",
+  "extensions": {
+    "tavern_helper": {
+      "scripts": {
+        "MVU": {
+          "type": "script",
+          "script_file": "脚本/MVU.txt",
+          "enabled": true,
+          "id": "d0311ca6-5e9a-498e-a777-f74dc4dc6b12",
+          "info": "",
+          "button": {
+            "enabled": true,
+            "buttons": [
+              {
+                "name": "重新处理变量",
+                "visible": true
+              },
+              {
+                "name": "重新读取初始变量",
+                "visible": true
+              },
+              {
+                "name": "快照楼层",
+                "visible": false
+              },
+              {
+                "name": "重演楼层",
+                "visible": false
+              },
+              {
+                "name": "重试额外模型解析",
+                "visible": false
+              },
+              {
+                "name": "清除旧楼层变量",
+                "visible": false
+              }
+            ]
+          },
+          "data": {}
+        }
+      },
+      "variables": {}
+    },
+    "talkativeness": "0.5",
+    "fav": false,
+    "depth_prompt": {
+      "prompt": "",
+      "depth": 4,
+      "role": "system"
+    }
+  },
+  "regex_scripts": {
+    "对AI隐藏状态栏": {
+      "id": "b5f2606f-69cc-4a6a-8ebb-bd8a3b7f671f",
+      "findRegex": "<StatusPlaceHolderImpl/>",
+      "replaceString": "",
+      "trimStrings": [],
+      "placement": [
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "runOnEdit": true,
+      "substituteRegex": 0
+    },
+    "状态栏界面": {
+      "id": "ce6da13c-4e35-4057-8964-3192b7903acc",
+      "findRegex": "<StatusPlaceHolderImpl/>",
+      "replace_file": "正则/状态栏界面.html",
+      "trimStrings": [],
+      "placement": [
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "runOnEdit": true,
+      "substituteRegex": 0
+    },
+    "对AI隐藏变量更新": {
+      "id": "aa12731a-97c4-4450-ac2f-0bfe1d6a4f64",
+      "findRegex": "/<(update(?:variable)?)>(?:(?!.*<\\/\\1>)(?:(?!<\\1>).)*$|(?:(?!<\\1>).)*<\\/\\1?>)/gsi",
+      "replaceString": "",
+      "trimStrings": [],
+      "placement": [
+        1,
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": false,
+      "promptOnly": true,
+      "runOnEdit": false,
+      "substituteRegex": 0
+    },
+    "变量更新中美化": {
+      "id": "b9d5f25b-a9d0-41bf-8a69-602d64bbde22",
+      "findRegex": "/<(update(?:variable)?)>(?!.*<\\/\\1>)\\s*((?:(?!<\\1>).)*)\\s*$/gsi",
+      "replace_file": "正则/变量更新中美化.html",
+      "trimStrings": [],
+      "placement": [
+        1,
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "runOnEdit": false,
+      "substituteRegex": 0
+    },
+    "变量更新美化": {
+      "id": "92d49340-fe5e-4929-871f-43d110e5ec76",
+      "findRegex": "/<(update(?:variable)?)>\\s*((?:(?!<\\1>).)*)\\s*<\\/\\1>/gsi",
+      "replace_file": "正则/变量更新美化.html",
+      "trimStrings": [],
+      "placement": [
+        1,
+        2
+      ],
+      "disabled": false,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "runOnEdit": false,
+      "substituteRegex": 0
+    }
+  },
+  "initvar_overrides": {
+    "开场白~12.txt": "开场白/initvar/2.yaml"
+  },
+  "zod": {
+    "scriptName": "Zod",
+    "scriptId": "5b3b09af-35e3-4149-a0f7-2f08776ed6a1",
+    "schemaPath": "schema.ts",
+    "importUrl": "https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js"
+  },
+  "avatar": "avatar.png"
+}

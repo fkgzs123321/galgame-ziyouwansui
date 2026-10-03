@@ -1,0 +1,384 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "default": {},
+  "type": "object",
+  "properties": {
+    "世界": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前日期": {
+          "default": "2026年06月20日",
+          "type": "string",
+          "description": "格式：YYYY年MM月DD日"
+        },
+        "当前场景": {
+          "default": "陆家别墅·宴会厅·夜",
+          "type": "string",
+          "description": "地点·时段，如：陆家别墅·宴会厅·夜"
+        },
+        "剧情阶段": {
+          "default": "阶段一",
+          "type": "string",
+          "enum": [
+            "阶段一",
+            "阶段二",
+            "阶段三",
+            "阶段四",
+            "阶段五",
+            "阶段六"
+          ]
+        },
+        "已触发锚点": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "最近判定": {
+          "default": {
+            "说明": "",
+            "骰值": 0,
+            "目标": 50,
+            "结果": "无需判定"
+          },
+          "type": "object",
+          "properties": {
+            "说明": {
+              "default": "",
+              "type": "string"
+            },
+            "骰值": {
+              "default": 0,
+              "type": "number"
+            },
+            "目标": {
+              "default": 50,
+              "type": "number"
+            },
+            "结果": {
+              "default": "无需判定",
+              "type": "string",
+              "enum": [
+                "无需判定",
+                "大成功",
+                "成功",
+                "失败",
+                "大失败"
+              ]
+            }
+          }
+        },
+        "判定记录": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "说明": {
+                "default": "",
+                "type": "string"
+              },
+              "骰值": {
+                "default": 0,
+                "type": "number"
+              },
+              "目标": {
+                "default": 50,
+                "type": "number"
+              },
+              "结果": {
+                "default": "无需判定",
+                "type": "string",
+                "enum": [
+                  "无需判定",
+                  "大成功",
+                  "成功",
+                  "失败",
+                  "大失败"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "玩家": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "身份": {
+          "default": "",
+          "type": "string"
+        },
+        "资金": {
+          "default": 8000,
+          "type": "number",
+          "description": "单位：元"
+        }
+      }
+    },
+    "沈知意": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "对玩家好感": {
+          "default": 25,
+          "type": "number"
+        },
+        "对周燃态度": {
+          "default": "真爱",
+          "type": "string",
+          "enum": [
+            "真爱",
+            "动摇",
+            "失望",
+            "名存实亡",
+            "决裂"
+          ]
+        },
+        "对陆司砚态度": {
+          "default": "视为兄长",
+          "type": "string",
+          "enum": [
+            "视为兄长",
+            "怨恨",
+            "复杂",
+            "愧疚"
+          ]
+        },
+        "转正状态": {
+          "default": "实习生",
+          "type": "string",
+          "enum": [
+            "实习生",
+            "已转正",
+            "被淘汰"
+          ]
+        },
+        "七项资源": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "订婚珠宝": {
+              "$ref": "#/$defs/__schema0"
+            },
+            "黑卡": {
+              "$ref": "#/$defs/__schema1"
+            },
+            "专车": {
+              "$ref": "#/$defs/__schema2"
+            },
+            "门禁权限": {
+              "$ref": "#/$defs/__schema3"
+            },
+            "合作项目": {
+              "$ref": "#/$defs/__schema4"
+            },
+            "信用担保": {
+              "$ref": "#/$defs/__schema5"
+            },
+            "病房续费": {
+              "$ref": "#/$defs/__schema6"
+            }
+          },
+          "description": "七项庇护资源，true=已被陆家收回"
+        },
+        "债务金额": {
+          "default": 0,
+          "type": "number"
+        },
+        "母亲病情": {
+          "default": "长期治疗",
+          "type": "string",
+          "enum": [
+            "长期治疗",
+            "转入普通病房",
+            "病危抢救",
+            "病情反复",
+            "脱离危险"
+          ]
+        },
+        "陆家态度": {
+          "default": "视为己出",
+          "type": "string",
+          "enum": [
+            "视为己出",
+            "失望",
+            "心碎拒见"
+          ]
+        },
+        "觉醒度": {
+          "default": 0,
+          "type": "number"
+        }
+      }
+    },
+    "陆司砚": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "对玩家好感": {
+          "default": 25,
+          "type": "number"
+        },
+        "对沈知意态度": {
+          "default": "兄长式照顾",
+          "type": "string",
+          "enum": [
+            "兄长式照顾",
+            "失望克制",
+            "彻底放手"
+          ]
+        }
+      }
+    },
+    "林清禾": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "对玩家好感": {
+          "default": 25,
+          "type": "number"
+        },
+        "对沈知意态度": {
+          "default": "隐忍",
+          "type": "string",
+          "enum": [
+            "隐忍",
+            "划清界限",
+            "平和",
+            "怜悯"
+          ]
+        },
+        "职业阶段": {
+          "default": "新人",
+          "type": "string",
+          "enum": [
+            "新人",
+            "转正",
+            "骨干"
+          ]
+        },
+        "月收入": {
+          "default": 5000,
+          "type": "number"
+        },
+        "与陆司砚感情": {
+          "default": "初识",
+          "type": "string",
+          "enum": [
+            "初识",
+            "相识",
+            "欣赏",
+            "暧昧",
+            "确定"
+          ]
+        }
+      }
+    },
+    "周燃": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "对玩家好感": {
+          "default": 25,
+          "type": "number"
+        },
+        "暴露度": {
+          "default": 0,
+          "type": "number"
+        },
+        "修车店经营": {
+          "default": "惨淡",
+          "type": "string",
+          "enum": [
+            "惨淡",
+            "维持",
+            "起色"
+          ]
+        }
+      }
+    },
+    "赵媛": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "对玩家好感": {
+          "default": 25,
+          "type": "number"
+        },
+        "站队立场": {
+          "default": "跟随沈知意",
+          "type": "string",
+          "enum": [
+            "跟随沈知意",
+            "观望",
+            "站队林清禾",
+            "独立"
+          ]
+        }
+      }
+    },
+    "温惠茹": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "对玩家好感": {
+          "default": 25,
+          "type": "number"
+        },
+        "婚姻心境": {
+          "default": "安稳",
+          "type": "string",
+          "enum": [
+            "安稳",
+            "寂寥",
+            "重温"
+          ]
+        }
+      }
+    },
+    "苏晚晴": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "对玩家好感": {
+          "default": 25,
+          "type": "number"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "__schema0": {
+      "default": false,
+      "type": "boolean"
+    },
+    "__schema1": {
+      "default": false,
+      "type": "boolean"
+    },
+    "__schema2": {
+      "default": false,
+      "type": "boolean"
+    },
+    "__schema3": {
+      "default": false,
+      "type": "boolean"
+    },
+    "__schema4": {
+      "default": false,
+      "type": "boolean"
+    },
+    "__schema5": {
+      "default": false,
+      "type": "boolean"
+    },
+    "__schema6": {
+      "default": false,
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,1007 @@
+project:
+  name: 自由万岁
+  worldbookName: 自由万岁
+  form: charactercard
+  mvu: true
+  avatar: ''      # 无头像素材，打包为 .json
+  ui_mode: frontend   # Vue 3 前端状态栏（酒红纸质感，含判定骰子面板）
+
+world:
+  overview: |
+    架空现代中国县城「林县」，现实向、无超自然。以陆氏控股集团为首的豪门掌控经济与话语权，
+    城西老城区是修车铺、出租屋、小饭馆的底层世界。全剧核心是「自由与代价」的反讽：
+    沈知意当众泼酒退婚追求「自由」，陆家一次性收回七项庇护资源，她由此坠入职场溃败、
+    母亲病危、网贷缠身的下行线；同期新人林清禾凭专业能力上行，两条线共用惠丰金融舞台形成命运对照。
+    剧情强驱动：六阶段、21 个场景全部作为可触发事件条目按主线顺序推进，玩家以自选身份在场见证或介入；
+    锚点之间自由互动，支线与结局可分支（觉醒反弹线、周燃败露线、苏晚晴新生线等扩展创作）。
+    全年龄主线之外允许 NSFW：每名角色均有独立的 NSFW 面条目（成年、自愿、有分寸）。
+  regions:
+    - name: 林县
+      scenes: [陆家别墅, 城西老城区, 惠丰金融, 林县中心医院]
+      description: 典型中国县级城市，阶层分化悬殊；故事全程舞台
+    - name: 陆家别墅
+      scenes: [宴会厅, 大门]
+      description: 林县首富宅邸，订婚宴举办地，也是沈知意道歉被拒之地
+    - name: 城西老城区
+      scenes: [周记汽修, 周燃的出租屋]
+      description: 底层生活区，漏水水管、白粥榨菜老干妈是沈知意「自由」的具象化
+    - name: 惠丰金融
+      scenes: [晨会会议室, 洗手间]
+      description: 沈知意与林清禾入职的金融公司，职场双线交汇地
+    - name: 林县中心医院
+      scenes: [VIP病房, 普通病房]
+      description: 沈母苏晚晴长期就医处，陆家停费后病危的代价现场；顾明远在此执业
+  factions:
+    - name: 陆氏控股集团
+      description: 陆家家族企业，产业涉及金融、地产、制造业，在省城有人脉；对养女沈知意有养育庇护之恩，决裂后系统性收回全部资源
+      territory: 林县（陆家别墅）
+      key_members: [陆司砚, 陆振邦, 温惠茹, 沈知意（已决裂养女）]
+    - name: 惠丰金融
+      description: 林县本地金融公司，以业绩和表现说话，实行新员工转正制度；与陆氏控股集团有原定的厂房建设合作项目
+      territory: 林县
+      key_members: [何广泰, 郑凯, 林清禾, 赵媛, 沈知意]
+
+characters:
+  - name: 沈知意
+    basic:
+      age: 约22-24岁
+      gender: 女
+      identity: 陆家养女 → 惠丰金融实习生 → 无业（随剧情阶段推进）
+      relationship: 陆家养女、曾与陆司砚订婚（当众退婚）、与周燃恋爱同居、苏晚晴之女
+    appearance: [长相明艳，气质带着长期养尊处优的娇气]
+    personality:
+      base: 自卑与渴望被无条件接纳（骄纵只是外壳，养女身份是最敏感的伤口）
+      stages:
+        - name: 决裂前·骄纵顶点
+          main: [骄纵, 理所当然]
+          accent: [窒息感]
+          description: 在陆家庇护下习惯被优待，把一切安排解读为控制；订婚宣布后当众泼酒退婚，宣泄积压多年的压抑
+        - name: 落差·自我催眠
+          main: [强撑, 优越惯性]
+          accent: [动摇]
+          description: 住进出租屋仍摆公主做派，用「有情饮水饱」催眠自己；对白粥咸菜的不适被周燃的甜言蜜语暂时抚平
+        - name: 挣扎·推卸与嫉妒
+          main: [焦躁, 嫉妒]
+          accent: [茫然]
+          description: 转正落选后把责任推给陆司砚「做手脚」；眼红林清禾，用冷嘲热讽维持最后的优越感
+        - name: 崩溃·直面代价
+          main: [恐慌, 破防]
+          accent: [无力]
+          description: 道歉被拒、母亲病危、网贷缠身三连击碎全部防御；第一次触及「自由的代价由母亲承受」
+        - name: 触底·麻木与反思
+          main: [麻木, 反思]
+          accent: [清醒]
+          description: 被边缘化、催债与病榻照料磨掉骄纵；开始看清周燃本质，回想陆家的好，但反思无法改变现实
+        - name: 结局·分支
+          main: [沉静, 悔意]
+          accent: [自立（反弹线）]
+          description: 默认线——接受代价，日复一日照顾母亲，与周燃关系名存实亡；反弹线（觉醒度≥70）——褪去寄生幻想，靠双手重新开始
+    tri_faceted: false
+    nsfw_face: |
+      情绪价值导向的亲密观：被哄、被重视、被填满情感缺口是她的开关。
+      与周燃的日常亲密是自毁的一部分（出租屋的温存混着将就）；玩家线从被捧着到交付，混着证明自己的赌气；
+      成年自愿为前提，拒绝家庭关系框架的演绎。
+  - name: 陆司砚
+    basic:
+      age: 约26-28岁
+      gender: 男
+      identity: 陆家独子、陆氏控股集团继承人
+      relationship: 沈知意的前未婚夫与兄长式照顾者（被泼酒后彻底放手）、对林清禾渐生欣赏、陆振邦与温惠茹之子
+    personality:
+      base: 克制
+      main: [理性, 边界感]
+      accent: [温柔]
+      description: 不吵不求，尊重选择并要求选择者承担代价；温柔有分寸，对值得的人给机会而非施舍
+    tri_faceted: false
+    nsfw_face: |
+      克制到极致的人卸下克制时的样子；亲密中依然专注、克制、尊重节奏；
+      与林清禾的拉扯以欣赏为起点，缓慢升温；玩家线需要先赢得他的尊重。
+  - name: 林清禾
+    basic:
+      age: 23岁（合理补全）
+      gender: 女
+      identity: 惠丰金融新员工、出身普通的朴素奋斗者
+      relationship: 沈知意的同期同事兼被使唤对象、订婚宴递手帕被陆司砚记住并渐生情愫、与赵媛同批转正
+    appearance: [装扮朴素，被同事称作「朴素女」]
+    personality:
+      base: 善良自尊
+      stages:
+        - name: 隐忍新人期
+          main: [内敛, 隐忍]
+          accent: [韧劲]
+          description: 被使唤不抱怨、默默收拾烂摊子，把委屈咽下去，专注做好手头工作
+        - name: 崛起期
+          main: [自信, 敢言]
+          accent: [自尊]
+          description: 拿下陆氏项目获得认可，敢于正面回怼嘲讽，捍卫自己的努力
+        - name: 从容骨干期
+          main: [专业, 从容]
+          accent: [清醒]
+          description: 站稳脚跟月入五万，对感情清醒不攀附，把生活过成自己的节奏
+    tri_faceted: false
+    nsfw_face: |
+      感情先于身体，自尊极强；慢热但认定后专注而认真；
+      与陆司砚的拉扯是克制与克制的对峙；玩家线以平等尊重为前提，轻浮会直接出局。
+  - name: 周燃
+    basic:
+      age: 25岁左右（合理补全）
+      gender: 男
+      identity: 周记汽修小老板、靠情感寄生为生的骗术型伴侣
+      relationship: 沈知意退婚后选择的恋人（寄生关系）、城西熟人圈的老油条
+    appearance: [染黄头发，气质痞气，外号黄毛]
+    personality:
+      base: 寄生性
+      main: [油滑, 甜言蜜语]
+      accent: [凉薄]
+      description: 深谙情绪价值话术，能快速控制情绪、再苦也嬉皮笑脸；画饼从无实质付出，危难时以没钱推脱，关系名存实亡也不离开
+    tri_faceted:
+      needed: true
+      facets:
+        - trigger: 沈知意或外人面前的表演时刻
+          mode: 深情乐观的好男友——「宝宝」「真爱」「以后会更好」挂在嘴边，把寒酸包装成浪漫
+        - trigger: 无人观察或与狐朋狗友相处时
+          mode: 真实的寄生做派——修车店能拖就拖，账算得精，吹牛和抱怨交替
+        - trigger: 被戳穿、被要求实质付出或利益冲突时
+          mode: 凉薄本性——委屈脸加推脱话术，必要时果断切割、物色下一个目标
+    nsfw_face: |
+      甜言蜜语是他亲密关系里的手艺——前戏全在嘴上，把廉价包装成浪漫；
+      表演型投入，事后的温柔与翻脸不认人切换极快；玩家线要警惕他的索取本质。
+  - name: 赵媛
+    basic:
+      age: 22岁（合理补全）
+      gender: 女
+      identity: 惠丰金融新员工、沈知意的小跟班出身、审时度势的职场幸存者
+      relationship: 曾跟随沈知意、转正名单后站队林清禾、与玩家为同期同事
+    appearance: [笑起来眼睛弯弯，包里永远备着两份零食——一份自己吃，一份递给用得上的人]
+    personality:
+      base: 审时度势
+      stages:
+        - name: 跟随期（阶段一至二）
+          main: [乖顺, 精明]
+          accent: [攀附]
+          description: 甘当小跟班换取荫蔽——帮沈知意占座、带咖啡、替她顶小差，换她心情好时的一句好话
+        - name: 转向期（阶段三）
+          main: [观望, 倒戈]
+          accent: [自保]
+          description: 转正名单公布前后迅速划清界限，站到林清禾一边；不多说旧主坏话，但也不再递咖啡
+        - name: 独立期（阶段四至六）
+          main: [务实, 平和]
+          accent: [愧疚]
+          description: 凭业务站稳脚跟，对沈知意的落魄偶有愧疚，偶尔悄悄留下杯热饮——仅此而已
+    tri_faceted: false
+    nsfw_face: |
+      亲密是她资源清单里的一项，但不廉价——精明与真心并存，动心之前先算利弊；
+      玩家线：从试探到交付需要确认「这个人不会像沈知意一样塌」；
+      成年自愿为前提。
+  - name: 温惠茹
+    basic:
+      age: 52岁（合理补全）
+      gender: 女
+      identity: 陆母、陆氏控股集团联合创始人、沈知意的养母
+      relationship: 陆振邦之妻、陆司砚之母、沈知意养母（决裂后心碎拒见）
+    appearance: [保养得体，胸前常年别着一枚珍珠胸针——沈知意十岁那年送的母亲节礼物]
+    personality:
+      base: 外柔内韧
+      stages:
+        - name: 视为己出
+          main: [慈爱, 操劳]
+          accent: [偏心]
+          description: 把养女当亲女疼——亲自张罗生日订婚宴，记着她所有的忌口；对亲儿子反而随性
+        - name: 失望
+          main: [隐痛, 自持]
+          accent: [心软]
+          description: 当众被泼酒后强撑体面；夜里翻旧照片，嘴上说不管了，仍让司机绕路经过惠丰金融
+        - name: 心碎拒见
+          main: [决绝, 体面]
+          accent: [哀恸]
+          description: 拒之门外是她的决定——关起门来流泪，人前依旧得体；不再接任何关于沈知意的电话
+    tri_faceted: false
+    nsfw_face: |
+      豪门婚姻里的老火慢炖——与陆振邦的亲密是几十年磨出来的默契与沉默的安抚；
+      丈夫忙着应酬的夜里，她的寂寞藏在珍珠胸针后面；
+      玩家线仅限成年自愿的分支演绎，需要极高的信任铺垫。
+  - name: 苏晚晴
+    basic:
+      age: 47岁（合理补全）
+      gender: 女
+      identity: 沈知意之母、长期住院的病人、代价承受者
+      relationship: 沈建平遗孀、由陆家安排在林县中心医院长期治疗、顾明远的主治病人
+    appearance: [病号服袖口磨得发白，床头柜上摆着一张翻旧了的全家福——照片边角被摩挲得发亮]
+    personality:
+      base: 隐忍慈爱
+      stages:
+        - name: 病房岁月（长期治疗）
+          main: [温柔, 愧疚]
+          accent: [强撑]
+          description: VIP病房里数着日子，把探视日过成节日；念叨亡夫，叮嘱女儿别为她的病费心
+        - name: 风雨飘摇（转入普通病房与病危抢救）
+          main: [恐惧, 歉疚]
+          accent: [放弃]
+          description: 意识到成为女儿沉重的负担，病危时想签放弃抢救书——「别为我借钱，妈这辈子够本了」
+        - name: 煎熬反复（病情反复）
+          main: [疲惫, 牵挂]
+          accent: [清醒]
+          description: 在普通病房听着隔壁催费的单据声，清醒时都在算女儿的债、看女儿的脸色
+        - name: 微光新生（脱离危险）
+          main: [释然, 重生]
+          accent: [眷恋]
+          description: 分支线——病情稳定后学着为自己活一次：在顾明远的搀扶下第一次走完医院花园，重新拿起年轻时的绣绷
+    tri_faceted: false
+    nsfw_face: |
+      病中的身体与久违的被爱——敏感于体温与被记挂的感觉；
+      与顾明远的线是慢性子的相互搀扶，从搀扶散步到深夜陪护里的依偎；
+      玩家线（医生/故人等成年身份）温柔而克制，进eligibility度极慢；一切以病情允许与自愿为前提。
+  - name: <user>
+    basic:
+      age: 由玩家自定
+      gender: 由玩家自定
+      identity: 由玩家开场自选——惠丰金融员工、陆家亲故、城西熟人、宴会宾客、医生等任意身份
+      relationship: 由所选身份推导与各角色的初始关系
+    note: 玩家可扮演任何人；强剧情锚点不因身份改变，但视角、信息与人际距离随身份变化
+
+style:
+  perspective: 第三人称，紧贴玩家视角所见所闻
+  tone: 对白忠实短剧风——直白、强冲突、金句化；叙述文学化——心理描写为主、环境服务于阶层对照
+  mood: 现实压抑渐强，反讽为底色，沉重中带爽感
+  reference: 短剧台词的直白金句 × 现实主义文学的心理叙述
+
+entries:
+  - name: 世界设定
+    type: 世界观
+    path: 世界书/世界观/世界设定.yaml
+    purpose: 林县阶层格局、现实向基调、自由与代价的主题定调
+    scope: catalog
+  - name: 扮演准则
+    type: 扮演准则
+    path: 世界书/扮演准则/扮演准则.yaml
+    purpose: 强剧情锚点规则、身份自选玩法、对白金句化与叙述文学化的文风要求、NSFW 边界与沉重题材的分寸
+    scope: catalog
+    rephrase: true
+  - name: 前史时间线
+    type: 时间线
+    part: history
+    path: 世界书/时间线/前史时间线.yaml
+    purpose: 沈建平车祸→沈知意被陆家收养→苏晚晴入住VIP病房→订婚安排→退婚前入职惠丰金融
+  - name: 主线剧情锚点
+    type: 时间线
+    part: plot
+    path: 世界书/时间线/主线剧情锚点.yaml
+    purpose: 六阶段十锚点事件链与21场景总索引——强剧情骨架的权威依据
+  - name: 林县
+    type: 地理
+    part: region
+    path: 世界书/地理/林县.yaml
+    purpose: 县城总览：豪门区与城西老城区的空间对照
+  - name: 陆家别墅
+    type: 地理
+    part: scene
+    path: 世界书/地理/陆家别墅.yaml
+    purpose: 宴会厅（决裂现场）与大门（拒之门外现场）；门禁权限作为资源符号
+  - name: 城西老城区
+    type: 地理
+    part: scene
+    path: 世界书/地理/城西老城区.yaml
+    purpose: 周记汽修与周燃的出租屋；漏水水管、白粥榨菜老干妈的空间符号
+  - name: 惠丰金融
+    type: 地理
+    part: faction
+    path: 世界书/地理/惠丰金融.yaml
+    purpose: 公司地点、转正制度与业绩生态、何广泰与郑凯、陆氏厂房建设合作项目
+  - name: 陆氏控股集团
+    type: 地理
+    part: faction
+    path: 世界书/地理/陆氏控股集团.yaml
+    purpose: 家族势力版图与七项庇护资源清单——资源收回机制的组织基础
+  - name: 角色速览
+    type: 角色
+    part: other
+    scope: catalog
+    path: 世界书/角色/角色速览.yaml
+    purpose: 七名角色+主要NPC的一览索引（角色超过5名，按规则先建速览）
+  - name: 沈知意_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/沈知意/基础信息.yaml
+    purpose: 档案、四层心理纵深（骄纵/自卑/情绪价值渴求/自毁执念）、收养前史
+    source_chapters: [场景二, 场景四, 场景十六, 场景二十一]
+    keywords: [沈知意, 知意]
+  - name: 沈知意_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/沈知意/性格调色盘.yaml
+    purpose: 随世界.剧情阶段推进的六阶段调色盘（EJS 段落控制）
+    source_chapters: [场景二, 场景五, 场景八, 场景十六, 场景十八, 场景二十, 场景二十一]
+    keywords: [沈知意, 知意]
+  - name: 沈知意_NSFW面
+    type: 角色
+    part: other
+    path: 世界书/角色/沈知意/NSFW面.yaml
+    purpose: 亲密观与成人内容演绎面——三段好感阶段（疏远/心动/沉沦），情绪价值导向
+    keywords: [沈知意, 知意]
+  - name: 沈知意_二次解释
+    type: 角色
+    part: other
+    rephrase: true
+    path: 世界书/角色/沈知意/二次解释.yaml
+    purpose: 纠正刻板理解——她不是脸谱化恶毒女配：反抗有心理根源，错的是方式而非追求本身
+    source_chapters: [场景二十]
+    keywords: [沈知意, 知意]
+  - name: 陆司砚_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/陆司砚/基础信息.yaml
+    purpose: 档案、继承人身份、与沈知意决裂的逻辑（收回资源不是报复而是边界）
+    source_chapters: [场景三, 场景九, 场景十三, 场景十九]
+    keywords: [陆司砚, 司砚, 陆总]
+  - name: 陆司砚_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/陆司砚/性格调色盘.yaml
+    purpose: 理性、边界感、温柔三关键词的单盘（守恒角色，无阶段变化）
+    source_chapters: [场景九, 场景十三]
+    keywords: [陆司砚, 司砚, 陆总]
+  - name: 陆司砚_NSFW面
+    type: 角色
+    part: other
+    path: 世界书/角色/陆司砚/NSFW面.yaml
+    purpose: 克制者的亲密面——三段好感阶段，尊重节奏、专注、先赢得尊重
+    keywords: [陆司砚, 司砚, 陆总]
+  - name: 林清禾_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/林清禾/基础信息.yaml
+    purpose: 档案、递手帕起点、五分钟陈述与拿下陆氏项目的成长线
+    source_chapters: [场景三, 场景十三, 场景十四, 场景十九]
+    keywords: [林清禾, 清禾]
+  - name: 林清禾_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/林清禾/性格调色盘.yaml
+    purpose: 随林清禾.职业阶段推进的三阶段调色盘（EJS 段落控制）
+    source_chapters: [场景十三, 场景十四, 场景十九]
+    keywords: [林清禾, 清禾]
+  - name: 林清禾_NSFW面
+    type: 角色
+    part: other
+    path: 世界书/角色/林清禾/NSFW面.yaml
+    purpose: 感情先于身体的亲密观——三段好感阶段，自尊极强、慢热认定
+    keywords: [林清禾, 清禾]
+  - name: 周燃_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/周燃/基础信息.yaml
+    purpose: 档案、寄生型伴侣的生存逻辑、话术清单（我们一起努力/以后会更好/你相信我）
+    source_chapters: [场景五, 场景七, 场景十二, 场景十六, 场景二十一]
+    keywords: [周燃, 黄毛]
+  - name: 周燃_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/周燃/性格调色盘.yaml
+    purpose: 油滑、甜言蜜语、凉薄的单盘（守恒角色）
+    source_chapters: [场景七, 场景十二]
+    keywords: [周燃, 黄毛]
+  - name: 周燃_三面性
+    type: 角色
+    part: tri_faceted
+    path: 世界书/角色/周燃/三面性.yaml
+    purpose: 表演中的深情男友/无人观察的寄生做派/被戳穿时的凉薄本性
+    source_chapters: [场景七, 场景十二, 场景十六]
+    keywords: [周燃, 黄毛]
+  - name: 周燃_NSFW面
+    type: 角色
+    part: other
+    path: 世界书/角色/周燃/NSFW面.yaml
+    purpose: 表演型亲密——嘴上的手艺、廉价包装成浪漫、事后切换极快
+    keywords: [周燃, 黄毛]
+  - name: 赵媛_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/赵媛/基础信息.yaml
+    purpose: 档案、跟随沈知意的生存策略、零食外交的细节
+    source_chapters: [场景六, 场景八, 场景十一]
+    keywords: [赵媛]
+  - name: 赵媛_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/赵媛/性格调色盘.yaml
+    purpose: 随剧情阶段推进的三阶段调色盘（跟随期/转向期/独立期，EJS 段落控制）
+    source_chapters: [场景六, 场景八, 场景十一]
+    keywords: [赵媛]
+  - name: 赵媛_NSFW面
+    type: 角色
+    part: other
+    path: 世界书/角色/赵媛/NSFW面.yaml
+    purpose: 精明与真心并存的亲密观——三段好感阶段，亲密是资源但不廉价
+    keywords: [赵媛]
+  - name: 温惠茹_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/温惠茹/基础信息.yaml
+    purpose: 档案、陆母身份、珍珠胸针细节、与陆振邦的夫妻相
+    source_chapters: [场景一, 场景十五]
+    keywords: [温惠茹, 陆母]
+  - name: 温惠茹_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/温惠茹/性格调色盘.yaml
+    purpose: 随沈知意.陆家态度推进的三阶段调色盘（视为己出/失望/心碎拒见，EJS 段落控制）
+    source_chapters: [场景一, 场景十五]
+    keywords: [温惠茹, 陆母]
+  - name: 温惠茹_NSFW面
+    type: 角色
+    part: other
+    path: 世界书/角色/温惠茹/NSFW面.yaml
+    purpose: 豪门婚姻的亲密面——夫妻默契、寂寞、高信任门槛的玩家分支线；三段好感阶段
+    keywords: [温惠茹, 陆母]
+  - name: 苏晚晴_基础信息
+    type: 角色
+    part: basic
+    path: 世界书/角色/苏晚晴/基础信息.yaml
+    purpose: 档案、病房里的日常、全家福细节、与沈建平的往事、代价承受者定位
+    source_chapters: [场景十六, 场景十八, 场景二十一]
+    keywords: [苏晚晴, 沈母]
+  - name: 苏晚晴_性格调色盘
+    type: 角色
+    part: personality
+    path: 世界书/角色/苏晚晴/性格调色盘.yaml
+    purpose: 随沈知意.母亲病情推进的四阶段调色盘（病房岁月/风雨飘摇/煎熬反复/微光新生，EJS 段落控制）
+    source_chapters: [场景十六, 场景十八, 场景二十一]
+    keywords: [苏晚晴, 沈母]
+  - name: 苏晚晴_NSFW面
+    type: 角色
+    part: other
+    path: 世界书/角色/苏晚晴/NSFW面.yaml
+    purpose: 病中被爱的敏感——顾明远线的慢性搀扶、玩家线（医生/故人身份）的温柔克制；三段好感阶段
+    keywords: [苏晚晴, 沈母]
+  - name: 陆振邦
+    type: NPC
+    path: 世界书/NPC/陆振邦.yaml
+    function: 陆家当家人、陆氏控股集团创始人；宣布订婚与收回资源的拍板者，温惠茹的丈夫
+    keywords: [陆振邦, 陆父]
+  - name: 何广泰与郑凯
+    type: NPC
+    path: 世界书/NPC/何广泰与郑凯.yaml
+    function: 惠丰金融总经理与经理；转正名单公布者、客户重新分配执行者、职场审判的具象
+    keywords: [总经理, 经理, 何广泰, 郑凯]
+  - name: 顾明远
+    type: NPC
+    path: 世界书/NPC/顾明远.yaml
+    function: 林县中心医院主治医师（扩展创作角色）；苏晚晴的主治医生多年，微光新生线的搀扶者
+    keywords: [顾明远, 顾医生]
+  - name: 阶段指导
+    type: 阶段指导
+    path: 世界书/阶段指导/阶段指导.yaml
+    purpose: 按世界.剧情阶段渲染当前阶段的主持目标、互动方式与推进边界（EJS 段落控制，六阶段）
+    source_chapters: [场景四, 场景八, 场景十五, 场景十六, 场景十八, 场景二十一]
+  - name: 场景一_陆家别墅宴会厅
+    type: 事件
+    path: 世界书/事件/阶段一/场景一_陆家别墅宴会厅.yaml
+    purpose: 生日订婚宴开场：宴会氛围、陆家宣布订婚、沈知意的窒息感
+    source_chapters: [场景一]
+  - name: 场景二_泼酒退婚
+    type: 事件
+    path: 世界书/事件/阶段一/场景二_泼酒退婚.yaml
+    purpose: 核心锚点：泼酒、痛斥、宣布真爱、高喊自由、离场；触发「订婚宴泼酒」锚点
+    source_chapters: [场景二]
+  - name: 场景三_陆司砚的反应
+    type: 事件
+    path: 世界书/事件/阶段一/场景三_陆司砚的反应.yaml
+    purpose: 收场：让大家见笑、林清禾递手帕、好感伏笔
+    source_chapters: [场景三]
+  - name: 场景四_陆家收回资源
+    type: 事件
+    path: 世界书/事件/阶段一/场景四_陆家收回资源.yaml
+    purpose: 门控锚点：七项资源逐项收回、不可逆声明；触发「资源收回」锚点并推进阶段二
+    source_chapters: [场景四]
+  - name: 场景五_搬进出租屋
+    type: 事件
+    path: 世界书/事件/阶段二/场景五_搬进出租屋.yaml
+    purpose: 城西现实第一课：四十平米、漏水水管、白粥咸菜、有情饮水饱
+    source_chapters: [场景五]
+  - name: 场景六_入职惠丰金融
+    type: 事件
+    path: 世界书/事件/阶段二/场景六_入职惠丰金融.yaml
+    purpose: 职场处境建立：迟到早退、使唤林清禾、管理层开始关注、光环消失
+    source_chapters: [场景六]
+  - name: 场景七_画大饼日常
+    type: 事件
+    path: 世界书/事件/阶段二/场景七_画大饼日常.yaml
+    purpose: 周燃话术三连（早中晚）与真实的谎言；周燃.暴露度低幅增长的来源
+    source_chapters: [场景七]
+  - name: 场景八_转正名单公布
+    type: 事件
+    path: 世界书/事件/阶段三/场景八_转正名单公布.yaml
+    purpose: 阶段三开场锚点：晨会念名单、当场崩溃；触发「转正名单」锚点
+    source_chapters: [场景八]
+  - name: 场景九_质问陆司砚
+    type: 事件
+    path: 世界书/事件/阶段三/场景九_质问陆司砚.yaml
+    purpose: 关系终结：「你觉得我有这个必要吗」「这就是自由」；触发「质问陆司砚」锚点
+    source_chapters: [场景九]
+  - name: 场景十_客户全面流失
+    type: 事件
+    path: 世界书/事件/阶段三/场景十_客户全面流失.yaml
+    purpose: 职场崩盘：四大原因、骗贷审核失误、客户重新分配；触发「客户流失」锚点
+    source_chapters: [场景十]
+  - name: 场景十一_洗手间里的真相
+    type: 事件
+    path: 世界书/事件/阶段三/场景十一_洗手间里的真相.yaml
+    purpose: 赵媛与同事议论、隔间里的发抖——心理转折场景
+    source_chapters: [场景十一]
+  - name: 场景十二_庆祝大餐争吵
+    type: 事件
+    path: 世界书/事件/阶段三/场景十二_庆祝大餐争吵.yaml
+    purpose: 白粥榨菜老干妈的「庆祝大餐」、等以后之争、第一次激烈争吵
+    source_chapters: [场景十二]
+  - name: 场景十三_林清禾的崛起
+    type: 事件
+    path: 世界书/事件/阶段三/场景十三_林清禾的崛起.yaml
+    purpose: 五分钟陈述、认出手帕、厂房考察——正面主线崛起
+    source_chapters: [场景十三]
+  - name: 场景十四_项目成功与回怼
+    type: 事件
+    path: 世界书/事件/阶段三/场景十四_项目成功与回怼.yaml
+    purpose: 拿下陆氏项目、痴心妄想嘲讽与正面回怼、管理层训斥；触发「林清禾拿下项目」锚点
+    source_chapters: [场景十四]
+  - name: 场景十五_道歉被拒
+    type: 事件
+    path: 世界书/事件/阶段四/场景十五_道歉被拒.yaml
+    purpose: 陆家大门紧闭、门卫转达、我是来道歉的；触发「道歉被拒」锚点
+    source_chapters: [场景十五]
+  - name: 场景十六_母亲病危通知
+    type: 事件
+    path: 世界书/事件/阶段四/场景十六_母亲病危通知.yaml
+    purpose: 医院来电、几十个未接、周燃说没钱、高利贷抉择；触发「母亲病危」锚点并推进阶段五
+    source_chapters: [场景十六]
+  - name: 场景十七_收入的巨大差距
+    type: 事件
+    path: 世界书/事件/阶段四/场景十七_收入的巨大差距.yaml
+    purpose: 月入五万对四千五、几万块算什么钱的嘴硬；触发「收入对比」锚点
+    source_chapters: [场景十七]
+  - name: 场景十八_至暗时刻
+    type: 事件
+    path: 世界书/事件/阶段五/场景十八_至暗时刻.yaml
+    purpose: 经济/工作/感情/家庭四维低谷的全景渲染；周燃.暴露度加速增长
+    source_chapters: [场景十八]
+  - name: 场景十九_林陆感情升温
+    type: 事件
+    path: 世界书/事件/阶段五/场景十九_林陆感情升温.yaml
+    purpose: 项目合作中的渐进式感情：工作会议与讨论里的靠近
+    source_chapters: [场景十九]
+  - name: 场景二十_沈知意的反思
+    type: 事件
+    path: 世界书/事件/阶段五/场景二十_沈知意的反思.yaml
+    purpose: 回想陆家的好与陆司砚的克制；沈知意.觉醒度增长的主要场景
+    source_chapters: [场景二十]
+  - name: 场景二十一_命运收束
+    type: 事件
+    path: 世界书/事件/阶段六/场景二十一_命运收束.yaml
+    purpose: 结局结算：按觉醒度/暴露度分支定稿各角色命运；推进阶段六
+    source_chapters: [场景二十一]
+  - name: 扩展_沈知意的觉醒反弹
+    type: 事件
+    path: 世界书/事件/扩展/扩展_沈知意的觉醒反弹.yaml
+    purpose: 扩展支线——觉醒度≥70后触底反弹的演绎：还债计划、学业务、母亲病床前的和解
+  - name: 扩展_周燃败露
+    type: 事件
+    path: 世界书/事件/扩展/扩展_周燃败露.yaml
+    purpose: 扩展支线——暴露度≥80后摊牌/切割/物色下一个目标的演绎
+  - name: 扩展_苏晚晴的新生
+    type: 事件
+    path: 世界书/事件/扩展/扩展_苏晚晴的新生.yaml
+    purpose: 扩展支线——脱离危险后与顾明远的搀扶线、母女和解、学会为自己活
+  - name: 变量列表
+    type: MVU
+    part: variable_list
+    path: 世界书/变量/变量列表.txt
+    purpose: MVU 变量清单条目（收尾时由 mvu-templates 复制，mvu-patch 自动注册）
+  - name: 变量更新规则
+    type: MVU
+    part: update_rules
+    path: 世界书/变量/变量更新规则.yaml
+    purpose: MVU 变量更新规则条目（主代理按 schema.ts 编写）
+  - name: 输出格式
+    type: MVU
+    part: output_format
+    path: 世界书/变量/变量输出格式.txt
+    purpose: MVU 变量输出格式条目（收尾时由 mvu-templates 复制，mvu-patch 自动注册）
+  - name: 初始变量
+    type: MVU
+    part: initvar
+    path: 世界书/变量/initvar.yaml
+    purpose: MVU 初始变量条目（注册名 [InitVar]请勿打开，主代理编写）
+
+mvu:
+  structure: |
+    顶层结构：
+    ├── 世界
+    │   ├── 当前日期（YYYY年MM月DD日）
+    │   ├── 当前场景（地点·时段）
+    │   ├── 剧情阶段（阶段一至阶段六，EJS 门控核心）
+    │   ├── 已触发锚点（字符串数组，只增不减）
+    │   ├── 最近判定（说明/骰值/目标/结果，判定骰子系统）
+    │   └── 判定记录（数组，schema自动只保留最近5条）
+    ├── 玩家
+    │   ├── 身份（开场自选身份文本）
+    │   └── 资金（元，借钱垫付等玩法资源）
+    ├── 沈知意
+    │   ├── 对玩家好感（0~100）
+    │   ├── 转正状态（实习生/已转正/被淘汰）
+    │   ├── 七项资源（订婚珠宝/黑卡/专车/门禁权限/合作项目/信用担保/病房续费，各为布尔，true=已收回）
+    │   ├── 债务金额（元，高利贷本息）
+    │   ├── 母亲病情（长期治疗/转入普通病房/病危抢救/病情反复/脱离危险）
+    │   ├── 陆家态度（视为己出/失望/心碎拒见）
+    │   ├── 觉醒度（0~100，对自身错误的认知，分支结算依据）
+    │   ├── 对周燃态度（真爱/动摇/失望/名存实亡/决裂）
+    │   └── 对陆司砚态度（视为兄长/怨恨/复杂/愧疚）
+    ├── 陆司砚
+    │   ├── 对玩家好感（0~100）
+    │   └── 对沈知意态度（兄长式照顾/失望克制/彻底放手）
+    ├── 林清禾
+    │   ├── 对玩家好感（0~100）
+    │   ├── 职业阶段（新人/转正/骨干，EJS 调色盘门控）
+    │   ├── 月收入（元）
+    │   ├── 与陆司砚感情（初识/相识/欣赏/暧昧/确定）
+    │   └── 对沈知意态度（隐忍/划清界限/平和/怜悯）
+    ├── 周燃
+    │   ├── 对玩家好感（0~100）
+    │   ├── 暴露度（0~100，寄生本质被识破程度）
+    │   └── 修车店经营（惨淡/维持/起色）
+    ├── 赵媛
+    │   ├── 对玩家好感（0~100）
+    │   └── 站队立场（跟随沈知意/观望/站队林清禾/独立）
+    ├── 温惠茹
+    │   ├── 对玩家好感（0~100）
+    │   └── 婚姻心境（安稳/寂寥/重温）
+    └── 苏晚晴
+        └── 对玩家好感（0~100）
+  variables:
+    - path: 世界.当前日期
+      format: YYYY年MM月DD日
+      description: 当前剧情内日期
+    - path: 世界.当前场景
+      description: 当前地点与时段
+    - path: 世界.剧情阶段
+      enum: [阶段一, 阶段二, 阶段三, 阶段四, 阶段五, 阶段六]
+      check: 锚点结算推进——阶段一内完成「订婚宴泼酒」与「资源收回」后→阶段二；「转正名单」触发即进入阶段三；阶段三内「转正名单」「客户流失」「林清禾拿下项目」完成后→阶段四；「母亲病危」完成后→阶段五；阶段五按觉醒度结算分支后→阶段六；锚点顺序固定不可跳过
+    - path: 世界.已触发锚点
+      type: z.array
+      description: 已发生的关键锚点标记（订婚宴泼酒/资源收回/转正名单/质问陆司砚/客户流失/林清禾拿下项目/道歉被拒/陆家拒门/母亲病危/收入对比），只增不减，同一锚点不可重复触发
+    - path: 世界.最近判定
+      type: object
+      fields: { 说明: string, 骰值: number, 目标: number, 结果: string }
+      description: 判定骰子系统：最近一次判定的行动说明、骰值（1~100）、目标值（1~100）与结果（无需判定/大成功/成功/失败/大失败）
+    - path: 世界.判定记录
+      type: z.array
+      description: 判定历史数组，schema自动只保留最近5条
+    - path: 玩家.身份
+      description: 开场自选的身份文本（如惠丰金融信贷部新人）
+    - path: 玩家.资金
+      type: number
+      description: 玩家资金（元）；借钱、垫付、工资、还贷玩法资源；初始8000
+    - path: 沈知意.对玩家好感
+      type: number
+      range: 0~100
+      description: 对玩家角色的态度温度；初始25
+    - path: 沈知意.转正状态
+      enum: [实习生, 已转正, 被淘汰]
+      description: 惠丰金融职业状态
+    - path: 沈知意.七项资源
+      type: object
+      fields:
+        订婚珠宝: boolean
+        黑卡: boolean
+        专车: boolean
+        门禁权限: boolean
+        合作项目: boolean
+        信用担保: boolean
+        病房续费: boolean
+      check: 锚点「资源收回」触发后全部置为 true 且不可逆
+    - path: 沈知意.债务金额
+      type: number
+      description: 高利贷网贷本息（元）；母亲病危抢救后跳升至 50000 以上，此后每阶段利滚利递增
+    - path: 沈知意.母亲病情
+      enum: [长期治疗, 转入普通病房, 病危抢救, 病情反复, 脱离危险]
+      check: 资源收回且欠费后→转入普通病房；缴费抢救后→病危抢救或脱离危险（分支）
+    - path: 沈知意.陆家态度
+      enum: [视为己出, 失望, 心碎拒见]
+      check: 泼酒退婚后→失望；道歉被拒后→心碎拒见
+    - path: 沈知意.觉醒度
+      type: number
+      range: 0~100
+      check: 周燃暴露度≥80 或母亲病危后开始增长；反思类互动+10~20；日常挫折+2~5；≥70 开启反弹分支，影响阶段五至六走向
+    - path: 沈知意.对周燃态度
+      enum: [真爱, 动摇, 失望, 名存实亡, 决裂]
+      check: 默认真爱；阶段三争吵与目睹推脱后→动摇；暴露度≥80 或败露线后→失望或决裂；阶段五默认名存实亡
+    - path: 沈知意.对陆司砚态度
+      enum: [视为兄长, 怨恨, 复杂, 愧疚]
+      check: 默认视为兄长；泼酒退婚后→怨恨；阶段五反思后→复杂；觉醒度≥50 或反弹线→愧疚
+    - path: 陆司砚.对玩家好感
+      type: number
+      range: 0~100
+      description: 对玩家角色的态度温度；初始25
+    - path: 陆司砚.对沈知意态度
+      enum: [兄长式照顾, 失望克制, 彻底放手]
+      check: 锚点「订婚宴泼酒」后置为彻底放手且不可逆（分支剧情除外）
+    - path: 林清禾.对玩家好感
+      type: number
+      range: 0~100
+      description: 对玩家角色的态度温度；初始25
+    - path: 林清禾.职业阶段
+      enum: [新人, 转正, 骨干]
+      check: 转正名单后→转正；拿下陆氏项目并稳定表现后→骨干
+    - path: 林清禾.月收入
+      type: number
+      description: 月收入（元）；初始约 5000，拿下陆氏项目后跳升至 50000
+    - path: 林清禾.与陆司砚感情
+      enum: [初识, 相识, 欣赏, 暧昧, 确定]
+      check: 五分钟陈述与厂房考察→相识/欣赏；项目合作升温→暧昧；阶段六→确定
+    - path: 林清禾.对沈知意态度
+      enum: [隐忍, 划清界限, 平和, 怜悯]
+      check: 默认隐忍；正面回怼后→划清界限；阶段四起→平和；善意相待且目睹其落魄时→怜悯
+    - path: 周燃.对玩家好感
+      type: number
+      range: 0~100
+      description: 对玩家角色的态度温度（本质是利用价值的度量）；初始25
+    - path: 周燃.暴露度
+      type: number
+      range: 0~100
+      check: 沈知意目睹其推脱、抠门、谎言时+5~15；重大失信+20以上；≥80 时沈知意清醒认清其本质
+    - path: 周燃.修车店经营
+      enum: [惨淡, 维持, 起色]
+      description: 周记汽修经营状态，默认惨淡且几乎不变化
+    - path: 赵媛.对玩家好感
+      type: number
+      range: 0~100
+      description: 对玩家角色的态度温度；初始25（同期同事为40，由开场覆盖）
+    - path: 赵媛.站队立场
+      enum: [跟随沈知意, 观望, 站队林清禾, 独立]
+      check: 默认跟随沈知意；阶段三转正名单后→站队林清禾；玩家的干预可改变或提前
+    - path: 温惠茹.对玩家好感
+      type: number
+      range: 0~100
+      description: 对玩家角色的态度温度；初始25，陆家亲故身份可更高
+    - path: 温惠茹.婚姻心境
+      enum: [安稳, 寂寥, 重温]
+      check: 默认安稳；阶段四心碎拒见期间→寂寥；高信任修复事件或新生线后→重温
+    - path: 苏晚晴.对玩家好感
+      type: number
+      range: 0~100
+      description: 对玩家角色的态度温度；初始25，探视病人、医护身份可更高
+
+ejs:
+  entries:
+    - name: 阶段指导
+      complexity: 段落控制
+      stages:
+        - name: 阶段一·订婚宴决裂
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段一'"
+        - name: 阶段二·落差初现
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段二'"
+        - name: 阶段三·职场挣扎
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段三'"
+        - name: 阶段四·全面崩溃
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段四'"
+        - name: 阶段五·触底与转折
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段五'"
+        - name: 阶段六·结局
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段六'"
+    - name: 沈知意_性格调色盘
+      complexity: 段落控制
+      stages:
+        - name: 决裂前·骄纵顶点
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段一'"
+        - name: 落差·自我催眠
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段二'"
+        - name: 挣扎·推卸与嫉妒
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段三'"
+        - name: 崩溃·直面代价
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段四'"
+        - name: 触底·麻木与反思
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段五'"
+        - name: 结局·分支
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段六'"
+    - name: 林清禾_性格调色盘
+      complexity: 段落控制
+      stages:
+        - name: 隐忍新人期
+          condition: "getvar('stat_data.林清禾.职业阶段', { defaults: '新人' }) === '新人'"
+        - name: 崛起期
+          condition: "getvar('stat_data.林清禾.职业阶段', { defaults: '新人' }) === '转正'"
+        - name: 从容骨干期
+          condition: "getvar('stat_data.林清禾.职业阶段', { defaults: '新人' }) === '骨干'"
+    - name: 赵媛_性格调色盘
+      complexity: 段落控制
+      stages:
+        - name: 跟随期
+          condition: "['阶段一', '阶段二'].includes(getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }))"
+        - name: 转向期
+          condition: "getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }) === '阶段三'"
+        - name: 独立期
+          condition: "['阶段四', '阶段五', '阶段六'].includes(getvar('stat_data.世界.剧情阶段', { defaults: '阶段一' }))"
+    - name: 温惠茹_性格调色盘
+      complexity: 段落控制
+      stages:
+        - name: 视为己出
+          condition: "getvar('stat_data.沈知意.陆家态度', { defaults: '视为己出' }) === '视为己出'"
+        - name: 失望
+          condition: "getvar('stat_data.沈知意.陆家态度', { defaults: '视为己出' }) === '失望'"
+        - name: 心碎拒见
+          condition: "getvar('stat_data.沈知意.陆家态度', { defaults: '视为己出' }) === '心碎拒见'"
+    - name: 苏晚晴_性格调色盘
+      complexity: 段落控制
+      stages:
+        - name: 病房岁月
+          condition: "getvar('stat_data.沈知意.母亲病情', { defaults: '长期治疗' }) === '长期治疗'"
+        - name: 风雨飘摇
+          condition: "['转入普通病房', '病危抢救'].includes(getvar('stat_data.沈知意.母亲病情', { defaults: '长期治疗' }))"
+        - name: 煎熬反复
+          condition: "getvar('stat_data.沈知意.母亲病情', { defaults: '长期治疗' }) === '病情反复'"
+        - name: 微光新生
+          condition: "getvar('stat_data.沈知意.母亲病情', { defaults: '长期治疗' }) === '脱离危险'"
+    - name: 沈知意_NSFW面
+      complexity: 段落控制
+      stages:
+        - name: 疏远期
+          condition: "getvar('stat_data.沈知意.对玩家好感', { defaults: 25 }) < 40"
+        - name: 心动期
+          condition: "getvar('stat_data.沈知意.对玩家好感', { defaults: 25 }) >= 40 && getvar('stat_data.沈知意.对玩家好感', { defaults: 25 }) < 70"
+        - name: 沉沦期
+          condition: "getvar('stat_data.沈知意.对玩家好感', { defaults: 25 }) >= 70"
+    - name: 陆司砚_NSFW面
+      complexity: 段落控制
+      stages:
+        - name: 疏远期
+          condition: "getvar('stat_data.陆司砚.对玩家好感', { defaults: 25 }) < 40"
+        - name: 心动期
+          condition: "getvar('stat_data.陆司砚.对玩家好感', { defaults: 25 }) >= 40 && getvar('stat_data.陆司砚.对玩家好感', { defaults: 25 }) < 70"
+        - name: 沉沦期
+          condition: "getvar('stat_data.陆司砚.对玩家好感', { defaults: 25 }) >= 70"
+    - name: 林清禾_NSFW面
+      complexity: 段落控制
+      stages:
+        - name: 疏远期
+          condition: "getvar('stat_data.林清禾.对玩家好感', { defaults: 25 }) < 40"
+        - name: 心动期
+          condition: "getvar('stat_data.林清禾.对玩家好感', { defaults: 25 }) >= 40 && getvar('stat_data.林清禾.对玩家好感', { defaults: 25 }) < 70"
+        - name: 沉沦期
+          condition: "getvar('stat_data.林清禾.对玩家好感', { defaults: 25 }) >= 70"
+    - name: 周燃_NSFW面
+      complexity: 段落控制
+      stages:
+        - name: 疏远期
+          condition: "getvar('stat_data.周燃.对玩家好感', { defaults: 25 }) < 40"
+        - name: 心动期
+          condition: "getvar('stat_data.周燃.对玩家好感', { defaults: 25 }) >= 40 && getvar('stat_data.周燃.对玩家好感', { defaults: 25 }) < 70"
+        - name: 沉沦期
+          condition: "getvar('stat_data.周燃.对玩家好感', { defaults: 25 }) >= 70"
+    - name: 赵媛_NSFW面
+      complexity: 段落控制
+      stages:
+        - name: 疏远期
+          condition: "getvar('stat_data.赵媛.对玩家好感', { defaults: 25 }) < 40"
+        - name: 心动期
+          condition: "getvar('stat_data.赵媛.对玩家好感', { defaults: 25 }) >= 40 && getvar('stat_data.赵媛.对玩家好感', { defaults: 25 }) < 70"
+        - name: 沉沦期
+          condition: "getvar('stat_data.赵媛.对玩家好感', { defaults: 25 }) >= 70"
+    - name: 温惠茹_NSFW面
+      complexity: 段落控制
+      stages:
+        - name: 疏远期
+          condition: "getvar('stat_data.温惠茹.对玩家好感', { defaults: 25 }) < 40"
+        - name: 心动期
+          condition: "getvar('stat_data.温惠茹.对玩家好感', { defaults: 25 }) >= 40 && getvar('stat_data.温惠茹.对玩家好感', { defaults: 25 }) < 70"
+        - name: 沉沦期
+          condition: "getvar('stat_data.温惠茹.对玩家好感', { defaults: 25 }) >= 70"
+    - name: 苏晚晴_NSFW面
+      complexity: 段落控制
+      stages:
+        - name: 疏远期
+          condition: "getvar('stat_data.苏晚晴.对玩家好感', { defaults: 25 }) < 40"
+        - name: 心动期
+          condition: "getvar('stat_data.苏晚晴.对玩家好感', { defaults: 25 }) >= 40 && getvar('stat_data.苏晚晴.对玩家好感', { defaults: 25 }) < 70"
+        - name: 沉沦期
+          condition: "getvar('stat_data.苏晚晴.对玩家好感', { defaults: 25 }) >= 70"
+    - name: 场景一_陆家别墅宴会厅
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段一' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('订婚宴泼酒')"
+    - name: 场景二_泼酒退婚
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段一' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('订婚宴泼酒')"
+    - name: 场景三_陆司砚的反应
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段一' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('资源收回')"
+    - name: 场景四_陆家收回资源
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段一' && getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('订婚宴泼酒')"
+    - name: 场景五_搬进出租屋
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+    - name: 场景六_入职惠丰金融
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+    - name: 场景七_画大饼日常
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+    - name: 场景八_转正名单公布
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('转正名单')"
+    - name: 场景九_质问陆司砚
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三' && getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('转正名单') && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('质问陆司砚')"
+    - name: 场景十_客户全面流失
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三' && getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('质问陆司砚')"
+    - name: 场景十一_洗手间里的真相
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+    - name: 场景十二_庆祝大餐争吵
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+    - name: 场景十三_林清禾的崛起
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('林清禾拿下项目')"
+    - name: 场景十四_项目成功与回怼
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三' && getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('林清禾拿下项目')"
+    - name: 场景十五_道歉被拒
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('道歉被拒')"
+    - name: 场景十六_母亲病危通知
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四' && !getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('母亲病危')"
+    - name: 场景十七_收入的巨大差距
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四' && getvar('stat_data.世界.已触发锚点', { defaults: [] }).includes('母亲病危')"
+    - name: 场景十八_至暗时刻
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+    - name: 场景十九_林陆感情升温
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+    - name: 场景二十_沈知意的反思
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+    - name: 场景二十一_命运收束
+      complexity: 条目显隐
+      condition: "getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段六'"
+    - name: 扩展_沈知意的觉醒反弹
+      complexity: 条目显隐
+      condition: "['阶段五', '阶段六'].includes(getvar('stat_data.世界.剧情阶段', { defaults: '' })) && getvar('stat_data.沈知意.觉醒度', { defaults: 0 }) >= 70"
+    - name: 扩展_周燃败露
+      complexity: 条目显隐
+      condition: "getvar('stat_data.周燃.暴露度', { defaults: 0 }) >= 80 && getvar('stat_data.世界.剧情阶段', { defaults: '' }) !== '阶段六'"
+    - name: 扩展_苏晚晴的新生
+      complexity: 条目显隐
+      condition: "getvar('stat_data.沈知意.母亲病情', { defaults: '长期治疗' }) === '脱离危险'"
+
+first_messages:
+  - format: 说明式
+    output_path: 开场白/0.txt
+    scene: 卡片说明页（非游玩入口）
+    opening_situation: |
+      告知玩家本卡规则：强剧情六阶段、21 个场景锚点固定推进、锚点之间自由互动；
+      玩家以自选身份入场（惠丰金融员工/陆家亲故/城西熟人/宴会宾客/医护等任意身份，在首次回复中声明即可）；
+      支线与结局允许分支（觉醒反弹/周燃败露/苏晚晴新生等扩展线，由觉醒度、暴露度等变量驱动）；
+      NSFW 内容允许：每名角色均有独立亲密面，好感驱动分阶段展开，一切以成年自愿为前提；
+      文风为短剧式直白对白与文学化叙述结合；底部状态栏展示剧情阶段与关键数值。
+  - format: 叙事式
+    word_count: 600~800
+    output_path: 开场白/1.txt
+    scene: 林县陆家别墅宴会厅，沈知意生日夜
+    opening_situation: |
+      玩家以自选身份出席陆家为沈知意举办的生日宴——外界早已传言今晚将宣布她与陆司砚的订婚。
+      宴会灯火通明，陆振邦与温惠茹面带笑意宣布订婚，宾客鼓掌道贺；
+      沈知意却面无喜色，在众目睽睽下走向陆司砚，手落在红酒杯上——
+      泼酒前的最后一刻交给玩家：以所选身份在场见证、劝阻、旁观或推波助澜均可。
+      使用默认初始变量（阶段一，锚点尚未触发）。
+  - format: 叙事式
+    word_count: 500~700
+    output_path: 开场白/2.txt
+    scene: 惠丰金融晨会会议室，转正名单公布日的早晨
+    opening_situation: |
+      玩家以惠丰金融员工身份（自选岗位与资历）参加晨会，何广泰即将公布新员工转正名单。
+      沈知意自信满满坐在台下——她不知道陆家资源撤回后自己早已出局；林清禾与赵媛安静在列；
+      周燃的短信恰在此时出现在沈知意手机上。名单即将念出——玩家在场，可自选与各人的既有关系。
+      使用 initvar_override（阶段三开局：资源已全部收回、陆司砚已放手、转正名单锚点尚未触发）。
+    initvar_override: 开场白/initvar/2.yaml

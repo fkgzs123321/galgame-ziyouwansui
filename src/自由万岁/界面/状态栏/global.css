@@ -1,0 +1,50 @@
+:root {
+  /* 功能语义色 */
+  --c-primary: #8c2f39;        /* 主色：酒红（坠落与命运） */
+  --c-gold: #c9a15a;           /* 描金（豪门与成功） */
+  --c-surface: #f7f3ea;        /* 纸面底色 */
+  --c-surface-deep: #efe9dc;   /* 深一层的纸面 */
+  --c-ink: #2f2a24;            /* 正文墨色 */
+  --c-muted: #8a8271;          /* 弱化文字 */
+  --c-border: #d8d2c4;         /* 边框 */
+  --c-success: #4a7c59;        /* 成功 */
+  --c-warn: #c07f2d;           /* 失败/警示 */
+  --c-danger: #a4322a;         /* 大失败/危险 */
+  --c-bar-track: #e4ddcf;      /* 进度条轨道 */
+  --c-bar-fill: linear-gradient(90deg, #8c2f39, #c07f2d); /* 进度条填充 */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Sarasa Gothic SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: transparent;
+  color: var(--c-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.sb-root {
+  max-width: 640px;
+  margin: 10px auto;
+  border: 1px solid var(--c-border);
+  border-radius: 12px;
+  background: linear-gradient(180deg, var(--c-surface), var(--c-surface-deep));
+  box-shadow: 0 2px 10px rgba(47, 42, 36, 0.08);
+  overflow: hidden;
+}
+
+.sb-pad { padding: 10px 14px 14px; }
+
+.bar-track {
+  flex: 1;
+  height: 8px;
+  background: var(--c-bar-track);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  background: var(--c-bar-fill);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}

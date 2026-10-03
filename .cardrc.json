@@ -31,6 +31,14 @@
         "兽血沸腾": {
             "state_file": "src/兽血沸腾/tavern-cards-state.json",
             "artifact": "src/兽血沸腾/兽血沸腾.png"
+        },
+        "自由万岁": {
+            "state_file": "src/自由万岁/tavern-cards-state.json",
+            "artifact": "src/自由万岁/自由万岁.png"
+        },
+        "可否许我再少年": {
+            "state_file": "src/可否许我再少年/tavern-cards-state.json",
+            "artifact": "src/可否许我再少年/可否许我再少年.png"
         }
     },
     "default_part_order": {
