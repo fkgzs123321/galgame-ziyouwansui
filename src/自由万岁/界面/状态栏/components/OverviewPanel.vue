@@ -8,6 +8,7 @@
         <span class="cell"><em>职场</em>{{ d.沈知意.转正状态 }}</span>
         <span class="cell"><em>陆家</em>{{ d.沈知意.陆家态度 }}</span>
         <span class="cell"><em>母亲</em>{{ d.沈知意.母亲病情 }}</span>
+        <span class="cell"><em>节拍</em>{{ d.世界.阶段节拍 }}{{ beatGate ? ' / ' + beatGate : '' }}</span>
       </div>
       <div class="row">
         <span class="cell"><em>对周燃</em>{{ d.沈知意.对周燃态度 }}</span>
@@ -50,6 +51,9 @@ const d = computed(() => store.data);
 const pct = (n: number) => `${Math.max(0, Math.min(100, n))}%`;
 const last = computed(() => d.value.世界.最近判定);
 const resultClass = (r: string) => ({ 大成功: 'r-great', 成功: 'r-good', 失败: 'r-bad', 大失败: 'r-awful' })[r] ?? '';
+
+const GATES: Record<string, number> = { 阶段一: 4, 阶段二: 8, 阶段三: 14, 阶段四: 10, 阶段五: 10, 阶段六: 0 };
+const beatGate = computed(() => GATES[d.value.世界.剧情阶段] || 0);
 </script>
 
 <style scoped>

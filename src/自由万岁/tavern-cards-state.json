@@ -116,6 +116,126 @@
           "type": "before_character_definition",
           "order": 30
         }
+      },
+      "群像_阶段一": {
+        "part": "plot",
+        "scope": "specific",
+        "abstract": "阶段一群像：全员外在/经济/心理/行为/语料库（决裂期）",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段一'"
+          },
+          {
+            "content": "---\n<timeline part=\"plot\">"
+          },
+          {
+            "file": "世界书/时间线/群像_阶段一.yaml"
+          },
+          {
+            "content": "</timeline>"
+          }
+        ],
+        "keywords": []
+      },
+      "群像_阶段二": {
+        "part": "plot",
+        "scope": "specific",
+        "abstract": "阶段二群像：全员状态与语料库（落差期）",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+          },
+          {
+            "content": "---\n<timeline part=\"plot\">"
+          },
+          {
+            "file": "世界书/时间线/群像_阶段二.yaml"
+          },
+          {
+            "content": "</timeline>"
+          }
+        ],
+        "keywords": []
+      },
+      "群像_阶段三": {
+        "part": "plot",
+        "scope": "specific",
+        "abstract": "阶段三群像：全员状态与语料库（挣扎期，双线交替）",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+          },
+          {
+            "content": "---\n<timeline part=\"plot\">"
+          },
+          {
+            "file": "世界书/时间线/群像_阶段三.yaml"
+          },
+          {
+            "content": "</timeline>"
+          }
+        ],
+        "keywords": []
+      },
+      "群像_阶段四": {
+        "part": "plot",
+        "scope": "specific",
+        "abstract": "阶段四群像：全员状态与语料库（崩溃期）",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四'"
+          },
+          {
+            "content": "---\n<timeline part=\"plot\">"
+          },
+          {
+            "file": "世界书/时间线/群像_阶段四.yaml"
+          },
+          {
+            "content": "</timeline>"
+          }
+        ],
+        "keywords": []
+      },
+      "群像_阶段五": {
+        "part": "plot",
+        "scope": "specific",
+        "abstract": "阶段五群像：全员状态与语料库（触底期，禁用爆点）",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+          },
+          {
+            "content": "---\n<timeline part=\"plot\">"
+          },
+          {
+            "file": "世界书/时间线/群像_阶段五.yaml"
+          },
+          {
+            "content": "</timeline>"
+          }
+        ],
+        "keywords": []
+      },
+      "群像_阶段六": {
+        "part": "plot",
+        "scope": "specific",
+        "abstract": "阶段六群像：默认/反弹/败露/新生四套结局群像与语料",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段六'"
+          },
+          {
+            "content": "---\n<timeline part=\"plot\">"
+          },
+          {
+            "file": "世界书/时间线/群像_阶段六.yaml"
+          },
+          {
+            "content": "</timeline>"
+          }
+        ],
+        "keywords": []
       }
     },
     "地理": {
@@ -2068,6 +2188,443 @@
           "depth": 0,
           "order": 173
         }
+      },
+      "日常_阶段二_价钱冲击": {
+        "scope": "specific",
+        "abstract": "节拍：菜市场五十块的尊严，觉醒度微涨",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_价钱冲击\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段二/日常_阶段二_价钱冲击.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "菜市场",
+          "买菜",
+          "砍价"
+        ]
+      },
+      "日常_阶段二_人走茶凉": {
+        "scope": "specific",
+        "abstract": "节拍：旧识电话连环被拒，人情冷暖第一课",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_人走茶凉\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段二/日常_阶段二_人走茶凉.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "闺蜜",
+          "管家",
+          "人走茶凉"
+        ]
+      },
+      "日常_阶段二_大单跳票": {
+        "scope": "specific",
+        "abstract": "节拍：八千大单押上牌桌，交车日翻车",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_大单跳票\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段二/日常_阶段二_大单跳票.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "大单",
+          "修车",
+          "交车"
+        ]
+      },
+      "日常_阶段二_职场翻车": {
+        "scope": "specific",
+        "abstract": "节拍：方案发错客户，林清禾收拾残局",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_职场翻车\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段二/日常_阶段二_职场翻车.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "拜访客户",
+          "方案",
+          "道歉函"
+        ]
+      },
+      "日常_阶段二_存款见底": {
+        "scope": "specific",
+        "abstract": "节拍：ATM前四位数余额，房租倒计时",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段二'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_存款见底\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段二/日常_阶段二_存款见底.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "余额",
+          "房租",
+          "ATM"
+        ]
+      },
+      "日常_阶段三_申诉资历": {
+        "scope": "specific",
+        "abstract": "节拍：找何广泰申诉资历被驳回",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_申诉资历\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段三/日常_阶段三_申诉资历.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "申诉",
+          "资历",
+          "办公室"
+        ]
+      },
+      "日常_阶段三_楼下接人": {
+        "scope": "specific",
+        "abstract": "节拍：周燃破面包车楼下接人社死现场",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_楼下接人\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段三/日常_阶段三_楼下接人.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "接人",
+          "面包车",
+          "楼下"
+        ]
+      },
+      "日常_阶段三_催租风波": {
+        "scope": "specific",
+        "abstract": "节拍：房东催租、水电摊派、第一次交房租",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_催租风波\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段三/日常_阶段三_催租风波.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "房东",
+          "催租",
+          "水电费"
+        ]
+      },
+      "日常_阶段三_八卦流转": {
+        "scope": "specific",
+        "abstract": "节拍：落选八卦的三个版本在公司流传",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_八卦流转\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段三/日常_阶段三_八卦流转.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "八卦",
+          "议论",
+          "茶水间"
+        ]
+      },
+      "日常_阶段三_项目攻关夜": {
+        "scope": "specific",
+        "abstract": "节拍：林清禾凌晨四点的三版测算表",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_项目攻关夜\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段三/日常_阶段三_项目攻关夜.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "加班",
+          "攻关",
+          "测算"
+        ]
+      },
+      "日常_阶段三_初次兼职": {
+        "scope": "specific",
+        "abstract": "节拍：奶茶店夜班时薪十八，反弹线伏笔",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段三'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_初次兼职\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段三/日常_阶段三_初次兼职.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "兼职",
+          "奶茶店",
+          "夜班"
+        ]
+      },
+      "日常_阶段四_连环碰壁": {
+        "scope": "specific",
+        "abstract": "节拍：五个可借钱的人挨个碰壁",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_连环碰壁\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段四/日常_阶段四_连环碰壁.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "借钱",
+          "旧友",
+          "碰壁"
+        ]
+      },
+      "日常_阶段四_断舍离": {
+        "scope": "specific",
+        "abstract": "节拍：六万八的包回收两万一，与过去清算",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_断舍离\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段四/日常_阶段四_断舍离.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "回收",
+          "卖包",
+          "首饰"
+        ]
+      },
+      "日常_阶段四_病房众生相": {
+        "scope": "specific",
+        "abstract": "节拍：普通病房一夜与顾明远初识",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_病房众生相\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段四/日常_阶段四_病房众生相.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "陪护",
+          "病房",
+          "热水"
+        ]
+      },
+      "日常_阶段四_债主轰炸": {
+        "scope": "specific",
+        "abstract": "节拍：催收电话与备用机欠条照片",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段四'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_债主轰炸\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段四/日常_阶段四_债主轰炸.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "催收",
+          "逾期",
+          "欠条"
+        ]
+      },
+      "日常_阶段五_三点一线": {
+        "scope": "specific",
+        "abstract": "节拍：医院公司出租屋的麻木循环",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_三点一线\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段五/日常_阶段五_三点一线.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "日常",
+          "循环",
+          "打卡"
+        ]
+      },
+      "日常_阶段五_深夜牌局": {
+        "scope": "specific",
+        "abstract": "节拍：药费压上牌桌，暴露度大涨",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_深夜牌局\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段五/日常_阶段五_深夜牌局.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "牌局",
+          "牌桌",
+          "深夜"
+        ]
+      },
+      "日常_阶段五_旧物反思夜": {
+        "scope": "specific",
+        "abstract": "节拍：金锁与字条，「家里永远有你」的正解",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_旧物反思夜\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段五/日常_阶段五_旧物反思夜.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "旧物",
+          "照片",
+          "字条"
+        ]
+      },
+      "日常_阶段五_庆功宴对比": {
+        "scope": "specific",
+        "abstract": "节拍：同一宴会厅身份互换的镜像场景",
+        "contents": [
+          {
+            "content": "@@if getvar('stat_data.世界.剧情阶段', { defaults: '' }) === '阶段五'"
+          },
+          {
+            "content": "---\n<event name=\"节拍_庆功宴对比\">"
+          },
+          {
+            "file": "世界书/事件/节拍/阶段五/日常_阶段五_庆功宴对比.yaml"
+          },
+          {
+            "content": "</event>"
+          }
+        ],
+        "keywords": [
+          "庆功宴",
+          "酒店",
+          "对比"
+        ]
       }
     },
     "MVU": {
@@ -2245,7 +2802,8 @@
     "role": "system",
     "depth": 0
   },
-  "description": "",
+  "avatar": "avatar.png",
+  "description": "「自由！我要的是自由！」——林县首富养女沈知意在生日宴上泼酒退婚，陆家一夜收回七项庇护，她从云端跌进漏水的出租屋。你以自选身份在场：惠丰金融员工、陆家亲故、城西熟人、宴会宾客、医生……强剧情六阶段十锚点按原剧推进，d100 判定骰子定成败，三条支线可改写命运，所有女性角色均为完整人设与独立亲密面（NSFW，成年自愿）。短剧式直白对白×文学化心理叙述，酒馆助手 MVU 驱动，Vue3 前端状态栏。",
   "first_messages": [
     "开场白/0.txt",
     "开场白/1.txt",
@@ -2260,7 +2818,7 @@
     "NSFW"
   ],
   "creator": "",
-  "creator_notes": "",
+  "creator_notes": "《自由万岁》——短剧改编·现实向阶层寓言·强剧情角色卡\n\n■ 剧情\n林县首富陆家的养女沈知意，在生日宴上被宣布与继承人陆司砚订婚。她感到的不是幸福，是「最后的一层安排也落下了」。她当众泼酒、痛斥陆家把控制当成关心，拉着修车店小老板周燃扬长而去，高喊自由万岁。\n\n自由很快到账：陆家一次性收回七项庇护——订婚珠宝、黑卡、专车、门禁、合作项目、信用担保、母亲的VIP病房。豪门养女搬进四十平米的漏水出租屋，第一晚的庆祝大餐是白粥、榨菜、老干妈；男友的甜言蜜语永远是「等以后」；被她使唤最多的朴素同事林清禾，正用五分钟陈述打动陆司砚、一步步拿下陆氏大项目。\n\n失去一切之后才发现：她追求的自由，代价由最爱的母亲承受。\n\n而你在场。以你选定的任何身份，见证、介入，或者改写。\n\n■ 玩法\n· 强剧情主线：六阶段、十个锚点按固定顺序推进，不可跳过；锚点之间完全自由\n· 判定骰子：质问、摊牌、说服、侦查等关键行动先骰后写（d100 对目标值，大成功/成功/失败/大失败四档），拒绝口胡\n· 三条可改写的支线：觉醒反弹（沈知意.觉醒度≥70）、周燃败露（暴露度≥80）、苏晚晴的新生（脱离危险）\n· 玩家可扮演任何人：首次回复声明身份即可\n· 七名完整角色：全员性格调色盘（沈知意六阶段随剧情演进），全部配独立亲密面（NSFW，成年、自愿、无强迫）\n· 双线对照：沈知意的下行线与林清禾的上行线共用一个舞台，月入五万对四千五\n\n■ 配置需求\n· SillyTavern + 酒馆助手（Tavern Helper）+ MVU 变量框架\n· PNG 直接导入；前端状态栏经 jsDelivr 加载（testingcf 镜像）\n· 建议开启酒馆助手的渲染与脚本权限\n\n■ 开场\n默认开场「订婚宴之夜」：泼酒前的最后十步，由你决定见证什么。\n另有「转正名单公布日」跳入局，直接从阶段三开始。\n\n一句话：她喊自由万岁的时候，坠落已经开始——你能做的，是在场。",
   "version": "1.0",
   "create_date": "2026-10-03T03:15:35.556Z",
   "extensions": {
@@ -2397,6 +2955,5 @@
     "scriptId": "5b3b09af-35e3-4149-a0f7-2f08776ed6a1",
     "schemaPath": "schema.ts",
     "importUrl": "https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/util/mvu_zod.js"
-  },
-  "avatar": "avatar.png"
+  }
 }

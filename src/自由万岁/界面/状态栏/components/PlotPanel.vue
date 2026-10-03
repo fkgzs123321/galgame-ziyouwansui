@@ -10,7 +10,7 @@
 
     <div class="card">
       <div class="card-title">主线锚点 · 十环</div>
-      <p class="hint">锚点按固定顺序触发，不可跳过；锚点之间是你自由行动的区间。</p>
+      <p class="hint">当前阶段节拍 {{ d.世界.阶段节拍 }} / 门槛 {{ gate }} —— 门槛未到，锚点不会触发；用日常节拍把它填满。</p>
       <ol class="anchor-list">
         <li v-for="(a, i) in anchors" :key="a.name" :class="{ done: a.done, current: a.current }">
           <span class="idx">{{ i + 1 }}</span>
@@ -60,6 +60,9 @@ const anchors = computed(() => {
     return { name, done: isDone, current: isCurrent, stage: STAGE_TEXT[i] };
   });
 });
+
+const GATES: Record<string, number> = { 阶段一: 4, 阶段二: 8, 阶段三: 14, 阶段四: 10, 阶段五: 10, 阶段六: 0 };
+const gate = computed(() => GATES[d.value.世界.剧情阶段] || 0);
 </script>
 
 <style scoped>

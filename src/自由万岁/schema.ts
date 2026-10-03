@@ -9,6 +9,11 @@ export const Schema = z
         当前日期: z.string().describe('格式：YYYY年MM月DD日').prefault('2026年06月20日'),
         当前场景: z.string().describe('地点·时段，如：陆家别墅·宴会厅·夜').prefault('陆家别墅·宴会厅·夜'),
         剧情阶段: z.enum(['阶段一', '阶段二', '阶段三', '阶段四', '阶段五', '阶段六']).prefault('阶段一'),
+        阶段节拍: z
+          .coerce.number()
+          .describe('当前阶段已进行的剧情节拍数，进入新阶段时归零；作为锚点触发的节奏门槛')
+          .transform(v => Math.max(v, 0))
+          .prefault(0),
         已触发锚点: z.array(z.string()).prefault([]),
         最近判定: z
           .object({
