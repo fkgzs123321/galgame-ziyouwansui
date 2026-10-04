@@ -1,7 +1,0 @@
-﻿git : fatal: path 'src/兽血沸腾/世界书/角色/艾弗森/基础信息.yaml' exists on disk, but not in 'HEAD'
-所在位置 行:1 字符: 159
-+ ... er_template; git show HEAD:src/兽血沸腾/世界书/角色/艾弗森/基础信息.yaml 2>&1 | Out-F ...
-+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (fatal: path 'sr...t not in 'HEAD':String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 

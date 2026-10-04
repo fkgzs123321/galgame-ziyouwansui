@@ -33,6 +33,7 @@
       },
       "认知边界": {
         "scope": "catalog",
+        "keywords": [],
         "abstract": "认知边界系统：五类信息渠道、九组角色渠道表、叙述边界与内心独白正确用法",
         "contents": [
           {
@@ -43,6 +44,21 @@
           },
           {
             "content": "</knowledge_boundary>"
+          }
+        ]
+      },
+      "幕后动态": {
+        "scope": "catalog",
+        "abstract": "世界运转系统：每阶段全员日程表+幕后事件池，每轮静默推进0-2条",
+        "contents": [
+          {
+            "content": "---\n<offscreen_simulation>"
+          },
+          {
+            "file": "世界书/世界观/幕后动态.yaml"
+          },
+          {
+            "content": "</offscreen_simulation>"
           }
         ],
         "keywords": []

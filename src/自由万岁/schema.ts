@@ -35,6 +35,11 @@ export const Schema = z
           )
           .transform(arr => arr.slice(-5))
           .prefault([]),
+        // 幕后动态：每轮私下推进的各角色幕后事件（0~2条），仅经认知渠道浮现给玩家；保留最近 6 条
+        幕后动态: z
+          .array(z.string().prefault(''))
+          .transform(arr => arr.slice(-6))
+          .prefault([]),
       })
       .prefault({}),
 

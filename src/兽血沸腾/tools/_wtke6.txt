@@ -1,1 +1,0 @@
-﻿角色 | 文泰克莱尔_基础信息 | [{"content":"@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 607"},{"content":"---\n<character_basic character=\"文泰克莱尔\">"},{"file":"世界书/角色/文泰克莱尔/基础信息.yaml"},{"content":"</character_basic>"}]

@@ -22,6 +22,14 @@
     </div>
 
     <div class="card">
+      <div class="card-title">风声 · 你听说的幕后</div>
+      <p v-if="!rumors.length" class="hint">暂无风声。世界在你看不见的地方继续运转。</p>
+      <ul v-else class="rumors">
+        <li v-for="(r, i) in rumors" :key="i">{{ r }}</li>
+      </ul>
+    </div>
+
+    <div class="card">
       <div class="card-title">阶段推进</div>
       <ul class="rules">
         <li>阶段一完成「订婚宴泼酒」「资源收回」后，进入阶段二</li>
@@ -61,6 +69,8 @@ const anchors = computed(() => {
   });
 });
 
+const rumors = computed(() => [...(d.value.世界.幕后动态 ?? [])].reverse());
+
 const GATES: Record<string, number> = { 阶段一: 4, 阶段二: 8, 阶段三: 14, 阶段四: 10, 阶段五: 10, 阶段六: 0 };
 const gate = computed(() => GATES[d.value.世界.剧情阶段] || 0);
 </script>
@@ -97,6 +107,10 @@ li.current .a-name { font-weight: 700; color: var(--c-gold); }
 .rules { list-style: none; font-size: 12px; color: var(--c-ink); }
 .rules li { padding: 2px 0; }
 .rules li::before { content: '·'; color: var(--c-gold); margin-right: 6px; font-weight: 700; }
+.rumors { list-style: none; font-size: 12px; color: var(--c-ink); }
+.rumors li { padding: 3px 0; border-bottom: 1px dashed var(--c-border); }
+.rumors li:last-child { border-bottom: none; }
+.rumors li::before { content: '☾'; color: var(--c-muted); margin-right: 6px; }
 .row { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 5px; }
 .cell { font-size: 12px; }
 .cell em { font-style: normal; color: var(--c-muted); margin-right: 4px; }

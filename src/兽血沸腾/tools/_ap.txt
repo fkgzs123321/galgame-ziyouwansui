@@ -1,3 +1,0 @@
-﻿Precheck: OK
-Applied 194 operations → C:\tavern_helper_template\src\兽血沸腾\tavern-cards-state.json
-Backup: .\.patch-history\兽血沸腾\2026-10-01T07-34-36.json

@@ -106,6 +106,14 @@
               }
             }
           }
+        },
+        "幕后动态": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "default": "",
+            "type": "string"
+          }
         }
       }
     },
