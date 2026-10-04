@@ -2,7 +2,7 @@
   <div>
     <div class="card card-main">
       <div class="card-title">沈知意</div>
-      <div class="bar"><span class="bar-label">对好感</span><span class="bar-track"><span class="bar-fill" :style="{ width: pct(d.沈知意.对玩家好感) }"></span></span><span class="bar-num">{{ d.沈知意.对玩家好感 }}</span></div>
+      <div class="bar"><span class="bar-label">对你的好感</span><span class="bar-track"><span class="bar-fill" :style="{ width: pct(d.沈知意.对玩家好感) }"></span></span><span class="bar-num">{{ d.沈知意.对玩家好感 }} <em class="stage">{{ favStage(d.沈知意.对玩家好感) }}</em></span></div>
       <div class="bar"><span class="bar-label">觉醒度</span><span class="bar-track"><span class="bar-fill" :style="{ width: pct(d.沈知意.觉醒度) }"></span></span><span class="bar-num">{{ d.沈知意.觉醒度 }}</span></div>
       <div class="row">
         <span class="cell"><em>职场</em>{{ d.沈知意.转正状态 }}</span>
@@ -54,6 +54,9 @@ const resultClass = (r: string) => ({ 大成功: 'r-great', 成功: 'r-good', �
 
 const GATES: Record<string, number> = { 阶段一: 4, 阶段二: 8, 阶段三: 14, 阶段四: 10, 阶段五: 10, 阶段六: 0 };
 const beatGate = computed(() => GATES[d.value.世界.剧情阶段] || 0);
+
+// 好感阶段词：与各角色 NSFW 面的三段门槛一致（<40 疏远 / 40~69 心动 / ≥70 沉沦）
+const favStage = (n: number) => (n < 40 ? '疏远' : n < 70 ? '心动' : '沉沦');
 </script>
 
 <style scoped>
@@ -68,8 +71,9 @@ const beatGate = computed(() => GATES[d.value.世界.剧情阶段] || 0);
 .card-title { font-weight: 700; margin-bottom: 6px; color: var(--c-primary); letter-spacing: 1px; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .bar { display: flex; align-items: center; gap: 6px; margin: 4px 0; }
-.bar-label { width: 52px; color: var(--c-muted); font-size: 12px; }
-.bar-num { width: 28px; text-align: right; font-size: 12px; color: var(--c-muted); }
+.bar-label { width: 64px; color: var(--c-muted); font-size: 12px; }
+.bar-num { width: 48px; text-align: right; font-size: 12px; color: var(--c-muted); }
+.stage { font-style: normal; color: var(--c-gold); }
 .warn-fill { background: linear-gradient(90deg, #c07f2d, #a4322a); }
 .row { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 5px; }
 .cell { font-size: 12px; }
