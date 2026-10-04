@@ -251,6 +251,11 @@ entries:
     path: 世界书/世界观/世界设定.yaml
     purpose: 林县阶层格局、现实向基调、自由与代价的主题定调
     scope: catalog
+  - name: 认知边界
+    type: 世界观
+    path: 世界书/世界观/认知边界.yaml
+    purpose: 认知边界系统——五类信息渠道、全员渠道表、叙述边界与内心独白的正确用法（防止上帝视角穿帮）
+    scope: catalog
   - name: 扮演准则
     type: 扮演准则
     path: 世界书/扮演准则/扮演准则.yaml

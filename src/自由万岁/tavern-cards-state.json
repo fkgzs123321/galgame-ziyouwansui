@@ -30,6 +30,22 @@
           "type": "before_character_definition",
           "order": 10
         }
+      },
+      "认知边界": {
+        "scope": "catalog",
+        "abstract": "认知边界系统：五类信息渠道、九组角色渠道表、叙述边界与内心独白正确用法",
+        "contents": [
+          {
+            "content": "---\n<knowledge_boundary>"
+          },
+          {
+            "file": "世界书/世界观/认知边界.yaml"
+          },
+          {
+            "content": "</knowledge_boundary>"
+          }
+        ],
+        "keywords": []
       }
     },
     "扮演准则": {
@@ -118,8 +134,9 @@
         }
       },
       "群像_阶段一": {
-        "part": "plot",
         "scope": "specific",
+        "part": "plot",
+        "keywords": [],
         "abstract": "阶段一群像：全员外在/经济/心理/行为/语料库（决裂期）",
         "contents": [
           {
@@ -134,12 +151,12 @@
           {
             "content": "</timeline>"
           }
-        ],
-        "keywords": []
+        ]
       },
       "群像_阶段二": {
-        "part": "plot",
         "scope": "specific",
+        "part": "plot",
+        "keywords": [],
         "abstract": "阶段二群像：全员状态与语料库（落差期）",
         "contents": [
           {
@@ -154,12 +171,12 @@
           {
             "content": "</timeline>"
           }
-        ],
-        "keywords": []
+        ]
       },
       "群像_阶段三": {
-        "part": "plot",
         "scope": "specific",
+        "part": "plot",
+        "keywords": [],
         "abstract": "阶段三群像：全员状态与语料库（挣扎期，双线交替）",
         "contents": [
           {
@@ -174,12 +191,12 @@
           {
             "content": "</timeline>"
           }
-        ],
-        "keywords": []
+        ]
       },
       "群像_阶段四": {
-        "part": "plot",
         "scope": "specific",
+        "part": "plot",
+        "keywords": [],
         "abstract": "阶段四群像：全员状态与语料库（崩溃期）",
         "contents": [
           {
@@ -194,12 +211,12 @@
           {
             "content": "</timeline>"
           }
-        ],
-        "keywords": []
+        ]
       },
       "群像_阶段五": {
-        "part": "plot",
         "scope": "specific",
+        "part": "plot",
+        "keywords": [],
         "abstract": "阶段五群像：全员状态与语料库（触底期，禁用爆点）",
         "contents": [
           {
@@ -214,12 +231,12 @@
           {
             "content": "</timeline>"
           }
-        ],
-        "keywords": []
+        ]
       },
       "群像_阶段六": {
-        "part": "plot",
         "scope": "specific",
+        "part": "plot",
+        "keywords": [],
         "abstract": "阶段六群像：默认/反弹/败露/新生四套结局群像与语料",
         "contents": [
           {
@@ -234,8 +251,7 @@
           {
             "content": "</timeline>"
           }
-        ],
-        "keywords": []
+        ]
       }
     },
     "地理": {
@@ -2191,6 +2207,11 @@
       },
       "日常_阶段二_价钱冲击": {
         "scope": "specific",
+        "keywords": [
+          "菜市场",
+          "买菜",
+          "砍价"
+        ],
         "abstract": "节拍：菜市场五十块的尊严，觉醒度微涨",
         "contents": [
           {
@@ -2205,15 +2226,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "菜市场",
-          "买菜",
-          "砍价"
         ]
       },
       "日常_阶段二_人走茶凉": {
         "scope": "specific",
+        "keywords": [
+          "闺蜜",
+          "管家",
+          "人走茶凉"
+        ],
         "abstract": "节拍：旧识电话连环被拒，人情冷暖第一课",
         "contents": [
           {
@@ -2228,15 +2249,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "闺蜜",
-          "管家",
-          "人走茶凉"
         ]
       },
       "日常_阶段二_大单跳票": {
         "scope": "specific",
+        "keywords": [
+          "大单",
+          "修车",
+          "交车"
+        ],
         "abstract": "节拍：八千大单押上牌桌，交车日翻车",
         "contents": [
           {
@@ -2251,15 +2272,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "大单",
-          "修车",
-          "交车"
         ]
       },
       "日常_阶段二_职场翻车": {
         "scope": "specific",
+        "keywords": [
+          "拜访客户",
+          "方案",
+          "道歉函"
+        ],
         "abstract": "节拍：方案发错客户，林清禾收拾残局",
         "contents": [
           {
@@ -2274,15 +2295,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "拜访客户",
-          "方案",
-          "道歉函"
         ]
       },
       "日常_阶段二_存款见底": {
         "scope": "specific",
+        "keywords": [
+          "余额",
+          "房租",
+          "ATM"
+        ],
         "abstract": "节拍：ATM前四位数余额，房租倒计时",
         "contents": [
           {
@@ -2297,15 +2318,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "余额",
-          "房租",
-          "ATM"
         ]
       },
       "日常_阶段三_申诉资历": {
         "scope": "specific",
+        "keywords": [
+          "申诉",
+          "资历",
+          "办公室"
+        ],
         "abstract": "节拍：找何广泰申诉资历被驳回",
         "contents": [
           {
@@ -2320,15 +2341,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "申诉",
-          "资历",
-          "办公室"
         ]
       },
       "日常_阶段三_楼下接人": {
         "scope": "specific",
+        "keywords": [
+          "接人",
+          "面包车",
+          "楼下"
+        ],
         "abstract": "节拍：周燃破面包车楼下接人社死现场",
         "contents": [
           {
@@ -2343,15 +2364,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "接人",
-          "面包车",
-          "楼下"
         ]
       },
       "日常_阶段三_催租风波": {
         "scope": "specific",
+        "keywords": [
+          "房东",
+          "催租",
+          "水电费"
+        ],
         "abstract": "节拍：房东催租、水电摊派、第一次交房租",
         "contents": [
           {
@@ -2366,15 +2387,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "房东",
-          "催租",
-          "水电费"
         ]
       },
       "日常_阶段三_八卦流转": {
         "scope": "specific",
+        "keywords": [
+          "八卦",
+          "议论",
+          "茶水间"
+        ],
         "abstract": "节拍：落选八卦的三个版本在公司流传",
         "contents": [
           {
@@ -2389,15 +2410,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "八卦",
-          "议论",
-          "茶水间"
         ]
       },
       "日常_阶段三_项目攻关夜": {
         "scope": "specific",
+        "keywords": [
+          "加班",
+          "攻关",
+          "测算"
+        ],
         "abstract": "节拍：林清禾凌晨四点的三版测算表",
         "contents": [
           {
@@ -2412,15 +2433,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "加班",
-          "攻关",
-          "测算"
         ]
       },
       "日常_阶段三_初次兼职": {
         "scope": "specific",
+        "keywords": [
+          "兼职",
+          "奶茶店",
+          "夜班"
+        ],
         "abstract": "节拍：奶茶店夜班时薪十八，反弹线伏笔",
         "contents": [
           {
@@ -2435,15 +2456,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "兼职",
-          "奶茶店",
-          "夜班"
         ]
       },
       "日常_阶段四_连环碰壁": {
         "scope": "specific",
+        "keywords": [
+          "借钱",
+          "旧友",
+          "碰壁"
+        ],
         "abstract": "节拍：五个可借钱的人挨个碰壁",
         "contents": [
           {
@@ -2458,15 +2479,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "借钱",
-          "旧友",
-          "碰壁"
         ]
       },
       "日常_阶段四_断舍离": {
         "scope": "specific",
+        "keywords": [
+          "回收",
+          "卖包",
+          "首饰"
+        ],
         "abstract": "节拍：六万八的包回收两万一，与过去清算",
         "contents": [
           {
@@ -2481,15 +2502,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "回收",
-          "卖包",
-          "首饰"
         ]
       },
       "日常_阶段四_病房众生相": {
         "scope": "specific",
+        "keywords": [
+          "陪护",
+          "病房",
+          "热水"
+        ],
         "abstract": "节拍：普通病房一夜与顾明远初识",
         "contents": [
           {
@@ -2504,15 +2525,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "陪护",
-          "病房",
-          "热水"
         ]
       },
       "日常_阶段四_债主轰炸": {
         "scope": "specific",
+        "keywords": [
+          "催收",
+          "逾期",
+          "欠条"
+        ],
         "abstract": "节拍：催收电话与备用机欠条照片",
         "contents": [
           {
@@ -2527,15 +2548,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "催收",
-          "逾期",
-          "欠条"
         ]
       },
       "日常_阶段五_三点一线": {
         "scope": "specific",
+        "keywords": [
+          "日常",
+          "循环",
+          "打卡"
+        ],
         "abstract": "节拍：医院公司出租屋的麻木循环",
         "contents": [
           {
@@ -2550,15 +2571,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "日常",
-          "循环",
-          "打卡"
         ]
       },
       "日常_阶段五_深夜牌局": {
         "scope": "specific",
+        "keywords": [
+          "牌局",
+          "牌桌",
+          "深夜"
+        ],
         "abstract": "节拍：药费压上牌桌，暴露度大涨",
         "contents": [
           {
@@ -2573,15 +2594,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "牌局",
-          "牌桌",
-          "深夜"
         ]
       },
       "日常_阶段五_旧物反思夜": {
         "scope": "specific",
+        "keywords": [
+          "旧物",
+          "照片",
+          "字条"
+        ],
         "abstract": "节拍：金锁与字条，「家里永远有你」的正解",
         "contents": [
           {
@@ -2596,15 +2617,15 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "旧物",
-          "照片",
-          "字条"
         ]
       },
       "日常_阶段五_庆功宴对比": {
         "scope": "specific",
+        "keywords": [
+          "庆功宴",
+          "酒店",
+          "对比"
+        ],
         "abstract": "节拍：同一宴会厅身份互换的镜像场景",
         "contents": [
           {
@@ -2619,11 +2640,6 @@
           {
             "content": "</event>"
           }
-        ],
-        "keywords": [
-          "庆功宴",
-          "酒店",
-          "对比"
         ]
       }
     },
