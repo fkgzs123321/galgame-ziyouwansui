@@ -1,0 +1,2879 @@
+[
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/乔治.贝斯特"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/伊瓜因"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/依莎贝拉"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/保罗纽曼"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/克拉克·盖博"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/克虏伯"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/冬五"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/冰肌仙子"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/凌波仙子"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/切赫"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/加内特伯爵"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/加图索·丹泽"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/勃郎宁"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/华金"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/卓别林"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/卡佩罗"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/卡恩亲王"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/卡提比"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/卡萨诺"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/古川"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/古德"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/含香仙子"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/哈什米安"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/哈里发阿卜杜拉"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/四殿下"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/埃托奥"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/基恩"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/塔勒布鲁"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/墨菲斯托"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/奥尼尔"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/奥特加"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/安度兰"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/宫保仙师"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/寇涛"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/小净"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/巢农主母"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/巴克利"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/巴克蒂亚萨德赫"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/巴特尔"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/布吕克纳老公爵"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/布拉特"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/希丁克"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/席尔维斯特"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/德尼尔森"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/戈勒穆罕默迪"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/托蒂·夏尔巴"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/托马西·丹泽"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/拉莫斯"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/文森特"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/斯托克顿"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/斯科拉里"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/明姚"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/易卜拉西莫维奇"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/杰拉德"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/永贝里"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/波利斯"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/海德殿下"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/温格"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/特雷泽盖"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/瑞卡雅顿布"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/瓦尔德内尔"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/科里纳"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/穆托姆博"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/穷困"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/米娅"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/米库"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/紫色霞云"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/维埃里"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/罗德曼"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/罗森博格"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/罗比"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/罗浮仙子"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/罗纳尔迪尼奥"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/罗西"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/老波吉"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/艾玛尔"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/茵格里切宝"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/莱茵克尔"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/菲高"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/萨尔国王"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/萨穆埃尔"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/西尔芙"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/西米里安"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/诺查丹玛斯"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/贝克汉姆"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/贝拉米"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/贝肯鲍尔"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/赞迪"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/辛克莱尔"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/达历桑德罗"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/迦莎"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/迪卡尼奥"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/道根"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/阿加西"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/阿杜"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/阿泰斯特"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/阿迪达斯玛"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/阿里.代伊"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/雷克萨"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/雷耶斯将军"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/雷鸣登"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/霍利尔"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/马拿利"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/齐丹大萨满"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/NPC/保罗·马尔蒂尼"
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/乔治.贝斯特",
+    "value": {
+      "path": "世界书/NPC/乔治.贝斯特.yaml",
+      "scope": "specific",
+      "keywords": [
+        "乔治.贝斯特",
+        "贝斯特"
+      ],
+      "abstract": "魔界恐惧魔王之一",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "乔治.贝斯特",
+          "贝斯特"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/伊瓜因",
+    "value": {
+      "path": "世界书/NPC/伊瓜因.yaml",
+      "scope": "specific",
+      "keywords": [
+        "伊瓜因"
+      ],
+      "abstract": "银色黎明佣兵团的团长",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "伊瓜因"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/依莎贝拉",
+    "value": {
+      "path": "世界书/NPC/依莎贝拉.yaml",
+      "scope": "specific",
+      "keywords": [
+        "依莎贝拉"
+      ],
+      "abstract": "淡水美人鱼一族的长老",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "依莎贝拉"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/保罗·马尔蒂尼",
+    "value": {
+      "path": "世界书/NPC/保罗·马尔蒂尼.yaml",
+      "scope": "specific",
+      "keywords": [
+        "保罗·马尔蒂尼",
+        "保罗二世",
+        "马尔蒂尼"
+      ],
+      "abstract": "圣保罗教廷教皇",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "保罗·马尔蒂尼",
+          "保罗二世",
+          "马尔蒂尼"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/保罗纽曼",
+    "value": {
+      "path": "世界书/NPC/保罗纽曼.yaml",
+      "scope": "specific",
+      "keywords": [
+        "保罗纽曼"
+      ],
+      "abstract": "魔界荷里活之主",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "保罗纽曼"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/克拉克·盖博",
+    "value": {
+      "path": "世界书/NPC/克拉克·盖博.yaml",
+      "scope": "specific",
+      "keywords": [
+        "克拉克·盖博"
+      ],
+      "abstract": "魔界宝莱坞之主",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "克拉克·盖博"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/克虏伯",
+    "value": {
+      "path": "世界书/NPC/克虏伯.yaml",
+      "scope": "specific",
+      "keywords": [
+        "克虏伯"
+      ],
+      "abstract": "黄金矮人部落雷鸣之子部落的族长",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "克虏伯"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/冬五",
+    "value": {
+      "path": "世界书/NPC/冬五.yaml",
+      "scope": "specific",
+      "keywords": [
+        "冬五"
+      ],
+      "abstract": "唐藏帝国第五亲王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "冬五"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/冰肌仙子",
+    "value": {
+      "path": "世界书/NPC/冰肌仙子.yaml",
+      "scope": "specific",
+      "keywords": [
+        "冰肌仙子"
+      ],
+      "abstract": "花廷供奉的四大花仙之一",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "冰肌仙子"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/凌波仙子",
+    "value": {
+      "path": "世界书/NPC/凌波仙子.yaml",
+      "scope": "specific",
+      "keywords": [
+        "凌波仙子"
+      ],
+      "abstract": "花廷供奉的四大花仙之一",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "凌波仙子"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/切赫",
+    "value": {
+      "path": "世界书/NPC/切赫.yaml",
+      "scope": "specific",
+      "keywords": [
+        "切赫"
+      ],
+      "abstract": "花精灵一族的长老",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "切赫"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/加内特伯爵",
+    "value": {
+      "path": "世界书/NPC/加内特伯爵.yaml",
+      "scope": "specific",
+      "keywords": [
+        "加内特伯爵"
+      ],
+      "abstract": "比蒙王国贵族监察院特使",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "加内特伯爵"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/加图索·丹泽",
+    "value": {
+      "path": "世界书/NPC/加图索·丹泽.yaml",
+      "scope": "specific",
+      "keywords": [
+        "加图索·丹泽"
+      ],
+      "abstract": "龙卷风佣兵团的团长",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "加图索·丹泽"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/勃郎宁",
+    "value": {
+      "path": "世界书/NPC/勃郎宁.yaml",
+      "scope": "specific",
+      "keywords": [
+        "勃郎宁"
+      ],
+      "abstract": "黄金矮人部落的女战士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "勃郎宁"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/华金",
+    "value": {
+      "path": "世界书/NPC/华金.yaml",
+      "scope": "specific",
+      "keywords": [
+        "华金"
+      ],
+      "abstract": "宝剑橡叶圣骑士团高阶圣骑士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "华金"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/卓别林",
+    "value": {
+      "path": "世界书/NPC/卓别林.yaml",
+      "scope": "specific",
+      "keywords": [
+        "卓别林"
+      ],
+      "abstract": "魔界魔龙皇帝",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "卓别林"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/卡佩罗",
+    "value": {
+      "path": "世界书/NPC/卡佩罗.yaml",
+      "scope": "specific",
+      "keywords": [
+        "卡佩罗"
+      ],
+      "abstract": "多洛特公国宰相",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "卡佩罗"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/卡恩亲王",
+    "value": {
+      "path": "世界书/NPC/卡恩亲王.yaml",
+      "scope": "specific",
+      "keywords": [
+        "卡恩亲王"
+      ],
+      "abstract": "比蒙王国狮心亲王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "卡恩亲王"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/卡提比",
+    "value": {
+      "path": "世界书/NPC/卡提比.yaml",
+      "scope": "specific",
+      "keywords": [
+        "卡提比"
+      ],
+      "abstract": "沙舟部队的首领",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "卡提比"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/卡萨诺",
+    "value": {
+      "path": "世界书/NPC/卡萨诺.yaml",
+      "scope": "specific",
+      "keywords": [
+        "卡萨诺"
+      ],
+      "abstract": "夏尔巴家族的家主之侄",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "卡萨诺"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/古川",
+    "value": {
+      "path": "世界书/NPC/古川.yaml",
+      "scope": "specific",
+      "keywords": [
+        "古川"
+      ],
+      "abstract": "潘帅的亲生兄弟",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "古川"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/古德",
+    "value": {
+      "path": "世界书/NPC/古德.yaml",
+      "scope": "specific",
+      "keywords": [
+        "古德",
+        "潘塔族熊猫武士",
+        "潘帅"
+      ],
+      "abstract": "潘塔族熊猫武士首领",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "古德",
+          "潘塔族熊猫武士",
+          "潘帅"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/含香仙子",
+    "value": {
+      "path": "世界书/NPC/含香仙子.yaml",
+      "scope": "specific",
+      "keywords": [
+        "含香仙子"
+      ],
+      "abstract": "花廷供奉的四大花仙之一",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "含香仙子"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/哈什米安",
+    "value": {
+      "path": "世界书/NPC/哈什米安.yaml",
+      "scope": "specific",
+      "keywords": [
+        "哈什米安"
+      ],
+      "abstract": "依斯高族秃鹫人的首领",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "哈什米安"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/哈里发阿卜杜拉",
+    "value": {
+      "path": "世界书/NPC/哈里发阿卜杜拉.yaml",
+      "scope": "specific",
+      "keywords": [
+        "哈里发阿卜杜拉"
+      ],
+      "abstract": "加里曼丹城的哈里发",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "哈里发阿卜杜拉"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/四殿下",
+    "value": {
+      "path": "世界书/NPC/四殿下.yaml",
+      "scope": "specific",
+      "keywords": [
+        "唐藏亲王",
+        "唐藏四殿下",
+        "四殿下",
+        "玄奥的壮汉殿下"
+      ],
+      "abstract": "唐藏帝国四殿下",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "唐藏亲王",
+          "唐藏四殿下",
+          "四殿下",
+          "玄奥的壮汉殿下"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/埃托奥",
+    "value": {
+      "path": "世界书/NPC/埃托奥.yaml",
+      "scope": "specific",
+      "keywords": [
+        "埃托奥"
+      ],
+      "abstract": "龙人首领",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "埃托奥"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/基恩",
+    "value": {
+      "path": "世界书/NPC/基恩.yaml",
+      "scope": "specific",
+      "keywords": [
+        "基恩"
+      ],
+      "abstract": "泥足巨人的酋长",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "基恩"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/塔勒布鲁",
+    "value": {
+      "path": "世界书/NPC/塔勒布鲁.yaml",
+      "scope": "specific",
+      "keywords": [
+        "塔勒布鲁"
+      ],
+      "abstract": "飞驼军团的前锋临时统帅",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "塔勒布鲁"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/墨菲斯托",
+    "value": {
+      "path": "世界书/NPC/墨菲斯托.yaml",
+      "scope": "specific",
+      "keywords": [
+        "墨菲斯托"
+      ],
+      "abstract": "魔界的火焰教皇",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "墨菲斯托"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/奥尼尔",
+    "value": {
+      "path": "世界书/NPC/奥尼尔.yaml",
+      "scope": "specific",
+      "keywords": [
+        "奥尼尔",
+        "奥胖",
+        "沙奎尔"
+      ],
+      "abstract": "豪斯族河马诗人",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "奥尼尔",
+          "奥胖",
+          "沙奎尔"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/奥特加",
+    "value": {
+      "path": "世界书/NPC/奥特加.yaml",
+      "scope": "specific",
+      "keywords": [
+        "奥特加"
+      ],
+      "abstract": "魔导士级魔法顾问",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "奥特加"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/安度兰",
+    "value": {
+      "path": "世界书/NPC/安度兰.yaml",
+      "scope": "specific",
+      "keywords": [
+        "安度兰"
+      ],
+      "abstract": "玳瑁族苦行僧侣长老",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "安度兰"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/宫保仙师",
+    "value": {
+      "path": "世界书/NPC/宫保仙师.yaml",
+      "scope": "specific",
+      "keywords": [
+        "宫保仙师"
+      ],
+      "abstract": "唐藏宫廷法师",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "宫保仙师"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/寇涛",
+    "value": {
+      "path": "世界书/NPC/寇涛.yaml",
+      "scope": "specific",
+      "keywords": [
+        "寇涛",
+        "寇涛人鱼"
+      ],
+      "abstract": "寇涛人鱼一族的王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "寇涛",
+          "寇涛人鱼"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/小净",
+    "value": {
+      "path": "世界书/NPC/小净.yaml",
+      "scope": "specific",
+      "keywords": [
+        "小净"
+      ],
+      "abstract": "人类亲王的学徒",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "小净"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/巢农主母",
+    "value": {
+      "path": "世界书/NPC/巢农主母.yaml",
+      "scope": "specific",
+      "keywords": [
+        "巢农主母"
+      ],
+      "abstract": "卓尔八位主母之一",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "巢农主母"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/巴克利",
+    "value": {
+      "path": "世界书/NPC/巴克利.yaml",
+      "scope": "specific",
+      "keywords": [
+        "巴克利"
+      ],
+      "abstract": "另一位灰矮人出身山丘之王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "巴克利"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/巴克蒂亚萨德赫",
+    "value": {
+      "path": "世界书/NPC/巴克蒂亚萨德赫.yaml",
+      "scope": "specific",
+      "keywords": [
+        "巴克蒂亚萨德赫"
+      ],
+      "abstract": "慕兰沙漠美莱茨的红带射手",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "巴克蒂亚萨德赫"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/巴特尔",
+    "value": {
+      "path": "世界书/NPC/巴特尔.yaml",
+      "scope": "specific",
+      "keywords": [
+        "巴特尔"
+      ],
+      "abstract": "灰矮人中罕见的山丘之王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "巴特尔"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/布吕克纳老公爵",
+    "value": {
+      "path": "世界书/NPC/布吕克纳老公爵.yaml",
+      "scope": "specific",
+      "keywords": [
+        "布吕克纳老公爵"
+      ],
+      "abstract": "斯迈族老公爵",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "布吕克纳老公爵"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/布拉特",
+    "value": {
+      "path": "世界书/NPC/布拉特.yaml",
+      "scope": "specific",
+      "keywords": [
+        "布拉特",
+        "红衣大祭司布拉特"
+      ],
+      "abstract": "泰戈族出身的红衣大祭司",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "布拉特",
+          "红衣大祭司布拉特"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/希丁克",
+    "value": {
+      "path": "世界书/NPC/希丁克.yaml",
+      "scope": "specific",
+      "keywords": [
+        "希丁克"
+      ],
+      "abstract": "淡水美人鱼一族的魔法大师",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "希丁克"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/席尔维斯特",
+    "value": {
+      "path": "世界书/NPC/席尔维斯特.yaml",
+      "scope": "specific",
+      "keywords": [
+        "席尔维斯特"
+      ],
+      "abstract": "铜蜃领主",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "席尔维斯特"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/德尼尔森",
+    "value": {
+      "path": "世界书/NPC/德尼尔森.yaml",
+      "scope": "specific",
+      "keywords": [
+        "德尼尔森"
+      ],
+      "abstract": "圣弗郎西斯科帝国的白龙骑士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "德尼尔森"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/戈勒穆罕默迪",
+    "value": {
+      "path": "世界书/NPC/戈勒穆罕默迪.yaml",
+      "scope": "specific",
+      "keywords": [
+        "戈勒穆罕默迪"
+      ],
+      "abstract": "慕兰苏丹近卫军的统帅",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "戈勒穆罕默迪"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/托蒂·夏尔巴",
+    "value": {
+      "path": "世界书/NPC/托蒂·夏尔巴.yaml",
+      "scope": "specific",
+      "keywords": [
+        "托蒂·夏尔巴"
+      ],
+      "abstract": "多洛特公国大驸马",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "托蒂·夏尔巴"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/托马西·丹泽",
+    "value": {
+      "path": "世界书/NPC/托马西·丹泽.yaml",
+      "scope": "specific",
+      "keywords": [
+        "托马西·丹泽"
+      ],
+      "abstract": "圣保罗教廷金棕榈骑士团的圣骑士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "托马西·丹泽"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/拉莫斯",
+    "value": {
+      "path": "世界书/NPC/拉莫斯.yaml",
+      "scope": "specific",
+      "keywords": [
+        "拉莫斯"
+      ],
+      "abstract": "花精灵",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "拉莫斯"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/文森特",
+    "value": {
+      "path": "世界书/NPC/文森特.yaml",
+      "scope": "specific",
+      "keywords": [
+        "文森特"
+      ],
+      "abstract": "科里纳的同胞兽亲弟弟",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "文森特"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/斯托克顿",
+    "value": {
+      "path": "世界书/NPC/斯托克顿.yaml",
+      "scope": "specific",
+      "keywords": [
+        "斯托克顿"
+      ],
+      "abstract": "魔界六翼天王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "斯托克顿"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/斯科拉里",
+    "value": {
+      "path": "世界书/NPC/斯科拉里.yaml",
+      "scope": "specific",
+      "keywords": [
+        "斯科拉里"
+      ],
+      "abstract": "上一代的巫妖王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "斯科拉里"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/明姚",
+    "value": {
+      "path": "世界书/NPC/明姚.yaml",
+      "scope": "specific",
+      "keywords": [
+        "明姚"
+      ],
+      "abstract": "佛巨人",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "明姚"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/易卜拉西莫维奇",
+    "value": {
+      "path": "世界书/NPC/易卜拉西莫维奇.yaml",
+      "scope": "specific",
+      "keywords": [
+        "易卜拉西莫维奇"
+      ],
+      "abstract": "七彩龙",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "易卜拉西莫维奇"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/杰拉德",
+    "value": {
+      "path": "世界书/NPC/杰拉德.yaml",
+      "scope": "specific",
+      "keywords": [
+        "杰拉德"
+      ],
+      "abstract": "潘塔族熊猫武士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "杰拉德"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/永贝里",
+    "value": {
+      "path": "世界书/NPC/永贝里.yaml",
+      "scope": "specific",
+      "keywords": [
+        "永贝里"
+      ],
+      "abstract": "黄颌美杜莎",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "永贝里"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/波利斯",
+    "value": {
+      "path": "世界书/NPC/波利斯.yaml",
+      "scope": "specific",
+      "keywords": [
+        "波利斯"
+      ],
+      "abstract": "海娜迦法师团的团长",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "波利斯"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/海德殿下",
+    "value": {
+      "path": "世界书/NPC/海德殿下.yaml",
+      "scope": "specific",
+      "keywords": [
+        "海德殿下"
+      ],
+      "abstract": "被遗忘国度的首席元老",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "海德殿下"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/温格",
+    "value": {
+      "path": "世界书/NPC/温格.yaml",
+      "scope": "specific",
+      "keywords": [
+        "温格"
+      ],
+      "abstract": "远古巨龙",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "温格"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/特雷泽盖",
+    "value": {
+      "path": "世界书/NPC/特雷泽盖.yaml",
+      "scope": "specific",
+      "keywords": [
+        "特雷泽盖"
+      ],
+      "abstract": "美杜莎新城采玉城的领主兼现任族长",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "特雷泽盖"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/瑞卡雅顿布",
+    "value": {
+      "path": "世界书/NPC/瑞卡雅顿布.yaml",
+      "scope": "specific",
+      "keywords": [
+        "瑞卡雅顿布"
+      ],
+      "abstract": "冥界第二大统领",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "瑞卡雅顿布"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/瓦尔德内尔",
+    "value": {
+      "path": "世界书/NPC/瓦尔德内尔.yaml",
+      "scope": "specific",
+      "keywords": [
+        "瓦尔德内尔"
+      ],
+      "abstract": "魔界海岸贡献大陆的滴血十字骑士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "瓦尔德内尔"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/科里纳",
+    "value": {
+      "path": "世界书/NPC/科里纳.yaml",
+      "scope": "specific",
+      "keywords": [
+        "科里纳"
+      ],
+      "abstract": "泰穆尔拉雅猛犸族第一勇士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "科里纳"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/穆托姆博",
+    "value": {
+      "path": "世界书/NPC/穆托姆博.yaml",
+      "scope": "specific",
+      "keywords": [
+        "穆托姆博"
+      ],
+      "abstract": "泰穆尔拉雅猛犸族大力士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "穆托姆博"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/穷困",
+    "value": {
+      "path": "世界书/NPC/穷困.yaml",
+      "scope": "specific",
+      "keywords": [
+        "穷困"
+      ],
+      "abstract": "唐藏帝国第一神羿手",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "穷困"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/米娅",
+    "value": {
+      "path": "世界书/NPC/米娅.yaml",
+      "scope": "specific",
+      "keywords": [
+        "米娅",
+        "米娅·哈姆"
+      ],
+      "abstract": "猛虎佣兵团团长罗西的妻子",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "米娅",
+          "米娅·哈姆"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/米库",
+    "value": {
+      "path": "世界书/NPC/米库.yaml",
+      "scope": "specific",
+      "keywords": [
+        "米库"
+      ],
+      "abstract": "花精灵一族的守护武士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "米库"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/紫色霞云",
+    "value": {
+      "path": "世界书/NPC/紫色霞云.yaml",
+      "scope": "specific",
+      "keywords": [
+        "紫色霞云"
+      ],
+      "abstract": "花廷的花娼",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "紫色霞云"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/维埃里",
+    "value": {
+      "path": "世界书/NPC/维埃里.yaml",
+      "scope": "specific",
+      "keywords": [
+        "维埃里",
+        "维黑子"
+      ],
+      "abstract": "彼尔族熊人",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "维埃里",
+          "维黑子"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/罗德曼",
+    "value": {
+      "path": "世界书/NPC/罗德曼.yaml",
+      "scope": "specific",
+      "keywords": [
+        "罗德曼"
+      ],
+      "abstract": "俄勒芬族猛犸大力士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "罗德曼"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/罗森博格",
+    "value": {
+      "path": "世界书/NPC/罗森博格.yaml",
+      "scope": "specific",
+      "keywords": [
+        "罗森博格"
+      ],
+      "abstract": "威瑟斯庞总督",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "罗森博格"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/罗比",
+    "value": {
+      "path": "世界书/NPC/罗比.yaml",
+      "scope": "specific",
+      "keywords": [
+        "罗比"
+      ],
+      "abstract": "狈族狈人",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "罗比"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/罗浮仙子",
+    "value": {
+      "path": "世界书/NPC/罗浮仙子.yaml",
+      "scope": "specific",
+      "keywords": [
+        "罗浮仙子"
+      ],
+      "abstract": "花廷供奉的四大花仙之一",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "罗浮仙子"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/罗纳尔迪尼奥",
+    "value": {
+      "path": "世界书/NPC/罗纳尔迪尼奥.yaml",
+      "scope": "specific",
+      "keywords": [
+        "罗纳尔迪尼奥"
+      ],
+      "abstract": "地狱黑龙族族长",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "罗纳尔迪尼奥"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/罗西",
+    "value": {
+      "path": "世界书/NPC/罗西.yaml",
+      "scope": "specific",
+      "keywords": [
+        "罗西"
+      ],
+      "abstract": "猛虎佣兵团的团长",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "罗西"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/老波吉",
+    "value": {
+      "path": "世界书/NPC/老波吉.yaml",
+      "scope": "specific",
+      "keywords": [
+        "老波吉"
+      ],
+      "abstract": "泰穆尔拉雅猛犸族长老",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "老波吉"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/艾玛尔",
+    "value": {
+      "path": "世界书/NPC/艾玛尔.yaml",
+      "scope": "specific",
+      "keywords": [
+        "艾玛尔"
+      ],
+      "abstract": "人类大魔寻师",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "艾玛尔"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/茵格里切宝",
+    "value": {
+      "path": "世界书/NPC/茵格里切宝.yaml",
+      "scope": "specific",
+      "keywords": [
+        "茵格里切宝"
+      ],
+      "abstract": "冥界第一大统领",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "茵格里切宝"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/莱茵克尔",
+    "value": {
+      "path": "世界书/NPC/莱茵克尔.yaml",
+      "scope": "specific",
+      "keywords": [
+        "莱茵克尔"
+      ],
+      "abstract": "西雅海国世袭珊瑚顶亲王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "莱茵克尔"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/菲高",
+    "value": {
+      "path": "世界书/NPC/菲高.yaml",
+      "scope": "specific",
+      "keywords": [
+        "菲高",
+        "路易斯.菲利浦.菲高"
+      ],
+      "abstract": "班尼路族逆戟鲸武士",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "菲高",
+          "路易斯.菲利浦.菲高"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/萨尔国王",
+    "value": {
+      "path": "世界书/NPC/萨尔国王.yaml",
+      "scope": "specific",
+      "keywords": [
+        "萨尔国王"
+      ],
+      "abstract": "比蒙王国国王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "萨尔国王"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/萨穆埃尔",
+    "value": {
+      "path": "世界书/NPC/萨穆埃尔.yaml",
+      "scope": "specific",
+      "keywords": [
+        "萨穆埃尔"
+      ],
+      "abstract": "魔界死亡领主",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "萨穆埃尔"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/西尔芙",
+    "value": {
+      "path": "世界书/NPC/西尔芙.yaml",
+      "scope": "specific",
+      "keywords": [
+        "西尔芙"
+      ],
+      "abstract": "梦界的追梦人",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "西尔芙"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/西米里安",
+    "value": {
+      "path": "世界书/NPC/西米里安.yaml",
+      "scope": "specific",
+      "keywords": [
+        "西米里安"
+      ],
+      "abstract": "西雅海国美人鱼储君",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "西米里安"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/诺查丹玛斯",
+    "value": {
+      "path": "世界书/NPC/诺查丹玛斯.yaml",
+      "scope": "specific",
+      "keywords": [
+        "诺查丹玛斯"
+      ],
+      "abstract": "匹格族巫医",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "诺查丹玛斯"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/贝克汉姆",
+    "value": {
+      "path": "世界书/NPC/贝克汉姆.yaml",
+      "scope": "specific",
+      "keywords": [
+        "万人迷",
+        "大卫·贝克汉姆",
+        "小贝",
+        "贝克汉姆"
+      ],
+      "abstract": "斯蒂法诺大师的学徒",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "万人迷",
+          "大卫·贝克汉姆",
+          "小贝",
+          "贝克汉姆"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/贝拉米",
+    "value": {
+      "path": "世界书/NPC/贝拉米.yaml",
+      "scope": "specific",
+      "keywords": [
+        "贝拉米"
+      ],
+      "abstract": "道格族獒人",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "贝拉米"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/贝肯鲍尔",
+    "value": {
+      "path": "世界书/NPC/贝肯鲍尔.yaml",
+      "scope": "specific",
+      "keywords": [
+        "波赛东",
+        "贝肯鲍尔"
+      ],
+      "abstract": "西雅海国的美人鱼皇帝",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "波赛东",
+          "贝肯鲍尔"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/赞迪",
+    "value": {
+      "path": "世界书/NPC/赞迪.yaml",
+      "scope": "specific",
+      "keywords": [
+        "赞迪"
+      ],
+      "abstract": "亡灵法师",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "赞迪"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/辛克莱尔",
+    "value": {
+      "path": "世界书/NPC/辛克莱尔.yaml",
+      "scope": "specific",
+      "keywords": [
+        "辛克莱尔"
+      ],
+      "abstract": "魔界宝莱坞的六翼天王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "辛克莱尔"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/达历桑德罗",
+    "value": {
+      "path": "世界书/NPC/达历桑德罗.yaml",
+      "scope": "specific",
+      "keywords": [
+        "达历桑德罗"
+      ],
+      "abstract": "星界的至高主宰",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "达历桑德罗"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/迦莎",
+    "value": {
+      "path": "世界书/NPC/迦莎.yaml",
+      "scope": "specific",
+      "keywords": [
+        "迦莎"
+      ],
+      "abstract": "花精灵一族的祭司",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "迦莎"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/迪卡尼奥",
+    "value": {
+      "path": "世界书/NPC/迪卡尼奥.yaml",
+      "scope": "specific",
+      "keywords": [
+        "迪卡尼奥"
+      ],
+      "abstract": "猛虎佣兵团的副团长",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "迪卡尼奥"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/道根",
+    "value": {
+      "path": "世界书/NPC/道根.yaml",
+      "scope": "specific",
+      "keywords": [
+        "道根"
+      ],
+      "abstract": "矮人大贤者",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "道根"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/阿加西",
+    "value": {
+      "path": "世界书/NPC/阿加西.yaml",
+      "scope": "specific",
+      "keywords": [
+        "阿加西"
+      ],
+      "abstract": "辰星龙城城主",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "阿加西"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/阿杜",
+    "value": {
+      "path": "世界书/NPC/阿杜.yaml",
+      "scope": "specific",
+      "keywords": [
+        "迪尔族麝头人",
+        "阿杜",
+        "麝人阿杜"
+      ],
+      "abstract": "迪尔族麝头人首领",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "迪尔族麝头人",
+          "阿杜",
+          "麝人阿杜"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/阿泰斯特",
+    "value": {
+      "path": "世界书/NPC/阿泰斯特.yaml",
+      "scope": "specific",
+      "keywords": [
+        "阿泰斯特"
+      ],
+      "abstract": "魔界第一天王",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "阿泰斯特"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/阿迪达斯玛",
+    "value": {
+      "path": "世界书/NPC/阿迪达斯玛.yaml",
+      "scope": "specific",
+      "keywords": [
+        "阿迪达斯玛"
+      ],
+      "abstract": "冥界守卫者",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "阿迪达斯玛"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/阿里.代伊",
+    "value": {
+      "path": "世界书/NPC/阿里.代伊.yaml",
+      "scope": "specific",
+      "keywords": [
+        "阿里.代伊"
+      ],
+      "abstract": "慕兰帝国的金刀魔羯",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "阿里.代伊"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/雷克萨",
+    "value": {
+      "path": "世界书/NPC/雷克萨.yaml",
+      "scope": "specific",
+      "keywords": [
+        "雷克萨"
+      ],
+      "abstract": "比蒙史上的三宠英雄",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "雷克萨"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/雷耶斯将军",
+    "value": {
+      "path": "世界书/NPC/雷耶斯将军.yaml",
+      "scope": "specific",
+      "keywords": [
+        "雷耶斯将军"
+      ],
+      "abstract": "威瑟斯庞城军事主帅",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "雷耶斯将军"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/雷鸣登",
+    "value": {
+      "path": "世界书/NPC/雷鸣登.yaml",
+      "scope": "specific",
+      "keywords": [
+        "雷鸣登"
+      ],
+      "abstract": "黄金矮人部落雷鸣之子部落的先行探路者",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "雷鸣登"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/霍利尔",
+    "value": {
+      "path": "世界书/NPC/霍利尔.yaml",
+      "scope": "specific",
+      "keywords": [
+        "霍利尔"
+      ],
+      "abstract": "美杜莎一族的老族长兼长老",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "霍利尔"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/马拿利",
+    "value": {
+      "path": "世界书/NPC/马拿利.yaml",
+      "scope": "specific",
+      "keywords": [
+        "马拿利"
+      ],
+      "abstract": "慕兰仅有两位宝典阿訇之一",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "马拿利"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/NPC/齐丹大萨满",
+    "value": {
+      "path": "世界书/NPC/齐丹大萨满.yaml",
+      "scope": "specific",
+      "keywords": [
+        "齐丹大萨满"
+      ],
+      "abstract": "东北行省神庙的老主祭",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "齐丹大萨满"
+        ]
+      },
+      "position": {
+        "type": "after_character_definition",
+        "order": 1440
+      }
+    }
+  }
+]

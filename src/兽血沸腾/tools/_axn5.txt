@@ -1,0 +1,12 @@
+﻿TYPE 角色 KEY 阿仙奴_基础信息
+{"scope":"specific","part":"basic","keywords":["阿仙奴"],"abstract":"主角麾下的女将","contents":[{"content":"@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 105"},{"content":"---\n<character_basic character=\"阿仙奴\">"},{"file":"世界书/角色/阿仙奴/基础信息.yaml"},{"content":"</character_basic>"}],"enabled":true,"strategy":{"type":"selective","keys":["阿仙奴"]},"position":{"type":"after_character_definition","order":1317}}
+---
+TYPE 角色 KEY 阿仙奴_私密档案
+{"scope":"specific","part":"other","keywords":["阿仙奴","仙女龙"],"abstract":"阿仙奴的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖","contents":[{"content":"@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 105"},{"content":"---\n<character_other character=\"阿仙奴\">"},{"file":"世界书/角色/阿仙奴/私密.yaml"},{"content":"</character_other>"}],"enabled":true,"strategy":{"type":"selective","keys":["阿仙奴","仙女龙"]},"position":{"type":"after_character_definition","order":1360}}
+---
+TYPE 角色 KEY 阿仙奴_私密阶段
+{"path":"世界书/角色/阿仙奴/私密阶段.yaml","scope":"specific","part":"other","keywords":["阿仙奴","仙女龙"],"abstract":"阿仙奴的私密阶段：随剧情轴递进的分档表现","enabled":true,"strategy":{"type":"selective","keys":["阿仙奴","仙女龙"]},"position":{"type":"after_character_definition","order":1361}}
+---
+TYPE 角色 KEY 阿仙奴_性格调色盘
+{"path":"世界书/角色/阿仙奴/性格调色盘.yaml","scope":"specific","part":"personality","keywords":["阿仙奴","仙女龙"],"abstract":"章节分阶段调色盘","enabled":true,"strategy":{"type":"selective","keys":["阿仙奴","仙女龙"]},"position":{"type":"after_character_definition","order":1431}}
+---

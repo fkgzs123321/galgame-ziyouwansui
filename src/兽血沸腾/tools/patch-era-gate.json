@@ -1,0 +1,6591 @@
+[
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/海伦.列娜_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "海伦.列娜",
+    "海伦",
+    "列娜",
+    "海伦祭祀",
+    "小狐狸精"
+   ],
+   "abstract": "狐人少女、战争祭祀，情感主线核心",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 6"
+    },
+    {
+     "content": "---\n<character_basic character=\"海伦.列娜\">"
+    },
+    {
+     "file": "世界书/角色/海伦.列娜/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "海伦.列娜",
+     "海伦",
+     "列娜",
+     "海伦祭祀",
+     "小狐狸精"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1253
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/凝玉_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "凝玉"
+   ],
+   "abstract": "摩韶族人鱼、海族公主",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 27"
+    },
+    {
+     "content": "---\n<character_basic character=\"凝玉\">"
+    },
+    {
+     "file": "世界书/角色/凝玉/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "凝玉"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1255
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/艾薇尔_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "艾薇尔",
+    "美人鱼公主",
+    "西雅海国"
+   ],
+   "abstract": "西雅帝国公主与人质身份",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 24"
+    },
+    {
+     "content": "---\n<character_basic character=\"艾薇尔\">"
+    },
+    {
+     "file": "世界书/角色/艾薇尔/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "艾薇尔",
+     "美人鱼公主",
+     "西雅海国"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1257
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/穆里尼奥_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "穆里尼奥"
+   ],
+   "abstract": "天鹅主祭、政治盟友与导师",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 53"
+    },
+    {
+     "content": "---\n<character_basic character=\"穆里尼奥\">"
+    },
+    {
+     "file": "世界书/角色/穆里尼奥/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "穆里尼奥"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1259
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/穆里尼奥_性格调色盘",
+  "value": {
+   "scope": "specific",
+   "part": "personality",
+   "keywords": [
+    "穆里尼奥"
+   ],
+   "abstract": "好感度分阶段调色盘",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 53"
+    },
+    {
+     "content": "---\n<character_personality character=\"穆里尼奥\">"
+    },
+    {
+     "file": "世界书/角色/穆里尼奥/性格调色盘.yaml"
+    },
+    {
+     "content": "</character_personality>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "穆里尼奥"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1260
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/隆美尔_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "隆美尔",
+    "无敌美帅"
+   ],
+   "abstract": "慕兰无敌美帅、战场死敌与妹夫",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 331"
+    },
+    {
+     "content": "---\n<character_basic character=\"隆美尔\">"
+    },
+    {
+     "file": "世界书/角色/隆美尔/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "隆美尔",
+     "无敌美帅"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1261
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/隆美尔_三面性",
+  "value": {
+   "scope": "specific",
+   "part": "tri_faceted",
+   "keywords": [
+    "隆美尔",
+    "无敌美帅"
+   ],
+   "abstract": "军中统帅、家族兄长与私交三重面目",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 331"
+    },
+    {
+     "content": "---\n<character_facets character=\"隆美尔\">"
+    },
+    {
+     "file": "世界书/角色/隆美尔/三面性.yaml"
+    },
+    {
+     "content": "</character_facets>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "隆美尔",
+     "无敌美帅"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1262
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/隆美尔_性格调色盘",
+  "value": {
+   "scope": "specific",
+   "part": "personality",
+   "keywords": [
+    "隆美尔",
+    "慕兰帝国",
+    "美帅"
+   ],
+   "abstract": "隆美尔的性格调色盘：单阶段的底色、主色调、点缀与衍生",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "隆美尔",
+     "慕兰帝国",
+     "美帅"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1263
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 331"
+    },
+    {
+     "file": "世界书/角色/隆美尔/性格调色盘.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/李察王子_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "李察王子"
+   ],
+   "abstract": "狮虎人混血王子与终盘幕后真相",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 47"
+    },
+    {
+     "content": "---\n<character_basic character=\"李察王子\">"
+    },
+    {
+     "file": "世界书/角色/李察王子/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "李察王子"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1264
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/李察王子_三面性",
+  "value": {
+   "scope": "specific",
+   "part": "tri_faceted",
+   "keywords": [
+    "李察王子"
+   ],
+   "abstract": "表面纨绔、幕后操盘与面对<user>时的三面",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 47"
+    },
+    {
+     "content": "---\n<character_facets character=\"李察王子\">"
+    },
+    {
+     "file": "世界书/角色/李察王子/三面性.yaml"
+    },
+    {
+     "content": "</character_facets>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "李察王子"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1265
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/李察王子_性格调色盘",
+  "value": {
+   "scope": "specific",
+   "part": "personality",
+   "keywords": [
+    "李察王子",
+    "圣殿骑士",
+    "格雷克.萨尔"
+   ],
+   "abstract": "李察王子的性格调色盘：单阶段的底色、主色调、点缀与衍生",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "李察王子",
+     "圣殿骑士",
+     "格雷克.萨尔"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1266
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 47"
+    },
+    {
+     "file": "世界书/角色/李察王子/性格调色盘.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/崔蓓茜_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "崔蓓茜",
+    "崔蓓西",
+    "妮可"
+   ],
+   "abstract": "采玉城美杜莎、主角的战歌导师",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 15"
+    },
+    {
+     "content": "---\n<character_basic character=\"崔蓓茜\">"
+    },
+    {
+     "file": "世界书/角色/崔蓓茜/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "崔蓓茜",
+     "崔蓓西",
+     "妮可"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1267
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/安度兰长老_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "安度兰长老",
+    "安度兰"
+   ],
+   "abstract": "伪装苦行僧的冰霜巨龙，长辈与后盾",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 85"
+    },
+    {
+     "content": "---\n<character_basic character=\"安度兰长老\">"
+    },
+    {
+     "file": "世界书/角色/安度兰长老/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "安度兰长老",
+     "安度兰"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1269
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/安度兰长老_性格调色盘",
+  "value": {
+   "scope": "specific",
+   "part": "personality",
+   "keywords": [
+    "安度兰长老",
+    "安度兰",
+    "冰霜巨龙",
+    "玳瑁族"
+   ],
+   "abstract": "安度兰长老的性格调色盘：单阶段的底色、主色调、点缀与衍生",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "安度兰长老",
+     "安度兰",
+     "冰霜巨龙",
+     "玳瑁族"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1270
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 85"
+    },
+    {
+     "file": "世界书/角色/安度兰长老/性格调色盘.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/歌坦妮_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "歌坦妮",
+    "天鹅女骑士"
+   ],
+   "abstract": "天鹅族女子、神庙与军部间的纽带",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 95"
+    },
+    {
+     "content": "---\n<character_basic character=\"歌坦妮\">"
+    },
+    {
+     "file": "世界书/角色/歌坦妮/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "歌坦妮",
+     "天鹅女骑士"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1271
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/壹条_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "壹条",
+    "流氓鹤"
+   ],
+   "abstract": "果果召唤的博浪沙火鹤，魔宠兼坐骑",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 150"
+    },
+    {
+     "content": "---\n<character_basic character=\"壹条\">"
+    },
+    {
+     "file": "世界书/角色/壹条/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "壹条",
+     "流氓鹤"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1275
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/嘉宝_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "嘉宝"
+   ],
+   "abstract": "巫妖女王、宿敌兼交易对象",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 512"
+    },
+    {
+     "content": "---\n<character_basic character=\"嘉宝\">"
+    },
+    {
+     "file": "世界书/角色/嘉宝/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "嘉宝"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1277
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/茉儿_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "茉儿"
+   ],
+   "abstract": "雷藏珍珠化生的少女与主角的贴身侍女",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 166"
+    },
+    {
+     "content": "---\n<character_basic character=\"茉儿\">"
+    },
+    {
+     "file": "世界书/角色/茉儿/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "茉儿"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1279
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/黛丝_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "黛丝",
+    "仙女龙"
+   ],
+   "abstract": "仙女龙，因断臂事件倾心",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 134"
+    },
+    {
+     "content": "---\n<character_basic character=\"黛丝\">"
+    },
+    {
+     "file": "世界书/角色/黛丝/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "黛丝",
+     "仙女龙"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1281
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/若尔娜_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "若尔娜",
+    "仙女龙"
+   ],
+   "abstract": "仙女龙，因断臂事件倾心",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 146"
+    },
+    {
+     "content": "---\n<character_basic character=\"若尔娜\">"
+    },
+    {
+     "file": "世界书/角色/若尔娜/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "若尔娜",
+     "仙女龙"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1283
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/普斯卡什_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "普斯卡什",
+    "普斯卡什大师"
+   ],
+   "abstract": "人类传奇法师、主角的魔法导师与盟友",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 175"
+    },
+    {
+     "content": "---\n<character_basic character=\"普斯卡什\">"
+    },
+    {
+     "file": "世界书/角色/普斯卡什/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "普斯卡什",
+     "普斯卡什大师"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1285
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/艾莉婕_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "艾莉婕",
+    "花中皇后"
+   ],
+   "abstract": "花中皇后、花精灵的领袖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 463"
+    },
+    {
+     "content": "---\n<character_basic character=\"艾莉婕\">"
+    },
+    {
+     "file": "世界书/角色/艾莉婕/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "艾莉婕",
+     "花中皇后"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1287
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/贞德_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "贞德",
+    "圣女贞德"
+   ],
+   "abstract": "教廷圣女与人类侧的信仰象征",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 175"
+    },
+    {
+     "content": "---\n<character_basic character=\"贞德\">"
+    },
+    {
+     "file": "世界书/角色/贞德/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "贞德",
+     "圣女贞德"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1289
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/喀秋莎_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "喀秋莎",
+    "小猪崽"
+   ],
+   "abstract": "匹格族遗孤，主角的养女",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 71"
+    },
+    {
+     "content": "---\n<character_basic character=\"喀秋莎\">"
+    },
+    {
+     "file": "世界书/角色/喀秋莎/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "喀秋莎",
+     "小猪崽"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1291
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/唐蓓尔金娜_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "唐蓓尔金娜"
+   ],
+   "abstract": "冰凰，孪生血婴的生母",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 246"
+    },
+    {
+     "content": "---\n<character_basic character=\"唐蓓尔金娜\">"
+    },
+    {
+     "file": "世界书/角色/唐蓓尔金娜/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "唐蓓尔金娜"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1292
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/唐家二少_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "唐家二少"
+   ],
+   "abstract": "霜雪皮丘兽模样的血婴",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 247"
+    },
+    {
+     "content": "---\n<character_basic character=\"唐家二少\">"
+    },
+    {
+     "file": "世界书/角色/唐家二少/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "唐家二少"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1293
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/唐家三少_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "唐家三少"
+   ],
+   "abstract": "酷似穆里尼奥的血婴，与二少为鹣鲽",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 247"
+    },
+    {
+     "content": "---\n<character_basic character=\"唐家三少\">"
+    },
+    {
+     "file": "世界书/角色/唐家三少/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "唐家三少"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1294
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/小空_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "小空",
+    "九太子",
+    "九郎"
+   ],
+   "abstract": "唐藏花王九太子，控金与品玉的双系神恩者",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 70"
+    },
+    {
+     "content": "---\n<character_basic character=\"小空\">"
+    },
+    {
+     "file": "世界书/角色/小空/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "小空",
+     "九太子",
+     "九郎"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1295
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/邪眼暴君_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "邪眼暴君"
+   ],
+   "abstract": "地底强敌与主角的早期苦主",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 188"
+    },
+    {
+     "content": "---\n<character_basic character=\"邪眼暴君\">"
+    },
+    {
+     "file": "世界书/角色/邪眼暴君/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "邪眼暴君"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1296
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/革瑞恩_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "革瑞恩"
+   ],
+   "abstract": "潮汐领主，海族侧的强敌与转圜者",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 162"
+    },
+    {
+     "content": "---\n<character_basic character=\"革瑞恩\">"
+    },
+    {
+     "file": "世界书/角色/革瑞恩/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "革瑞恩"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1297
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/许德拉_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "许德拉"
+   ],
+   "abstract": "九头蛇，与革瑞恩并肩的海族战力",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 161"
+    },
+    {
+     "content": "---\n<character_basic character=\"许德拉\">"
+    },
+    {
+     "file": "世界书/角色/许德拉/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "许德拉"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1298
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/安瑞达_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "安瑞达"
+   ],
+   "abstract": "魔族侧的强敌与侵略者联盟成员",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 465"
+    },
+    {
+     "content": "---\n<character_basic character=\"安瑞达\">"
+    },
+    {
+     "file": "世界书/角色/安瑞达/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "安瑞达"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1299
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/白素青_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "白素青",
+    "青雅",
+    "青雅.白玉"
+   ],
+   "abstract": "东方来客，云秦侧的修行者",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 242"
+    },
+    {
+     "content": "---\n<character_basic character=\"白素青\">"
+    },
+    {
+     "file": "世界书/角色/白素青/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "白素青",
+     "青雅",
+     "青雅.白玉"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1300
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/梦露_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "梦露",
+    "玛丽莲",
+    "梦露陛下",
+    "梦露女王"
+   ],
+   "abstract": "巫妖女王嘉宝之女，宝莱坞公证殿下，终盘魔族空军统帅",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 175"
+    },
+    {
+     "content": "---\n<character_basic character=\"梦露\">"
+    },
+    {
+     "file": "世界书/角色/梦露/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "梦露",
+     "玛丽莲",
+     "梦露陛下",
+     "梦露女王"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1302
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/塞壬_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "塞壬"
+   ],
+   "abstract": "朝河兰之外的海族女王与歌者",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 115"
+    },
+    {
+     "content": "---\n<character_basic character=\"塞壬\">"
+    },
+    {
+     "file": "世界书/角色/塞壬/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "塞壬"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1304
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/海华丝_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "海华丝"
+   ],
+   "abstract": "貂蝉美人，采玉城的头牌与情报源",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 575"
+    },
+    {
+     "content": "---\n<character_basic character=\"海华丝\">"
+    },
+    {
+     "file": "世界书/角色/海华丝/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "海华丝"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1305
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/小鹦鹉_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "小鹦鹉"
+   ],
+   "abstract": "鹦鹉学舌螺化生的少女",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 197"
+    },
+    {
+     "content": "---\n<character_basic character=\"小鹦鹉\">"
+    },
+    {
+     "file": "世界书/角色/小鹦鹉/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "小鹦鹉"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1306
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/歌莉妮_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "歌莉妮"
+   ],
+   "abstract": "天鹅族女子与比蒙侧的配角",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 172"
+    },
+    {
+     "content": "---\n<character_basic character=\"歌莉妮\">"
+    },
+    {
+     "file": "世界书/角色/歌莉妮/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "歌莉妮"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1307
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/姬丝凯碧_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "姬丝凯碧"
+   ],
+   "abstract": "卓尔主母，采玉城的掌权者",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 401"
+    },
+    {
+     "content": "---\n<character_basic character=\"姬丝凯碧\">"
+    },
+    {
+     "file": "世界书/角色/姬丝凯碧/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "姬丝凯碧"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1308
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/文泰克莱尔_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "文泰克莱尔"
+   ],
+   "abstract": "人类龙骑士与教廷侧的强者",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 607"
+    },
+    {
+     "content": "---\n<character_basic character=\"文泰克莱尔\">"
+    },
+    {
+     "file": "世界书/角色/文泰克莱尔/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "文泰克莱尔"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1309
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/摩尔亲王_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "摩尔亲王",
+    "摩尔"
+   ],
+   "abstract": "海族王族与西雅海国的权贵",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 171"
+    },
+    {
+     "content": "---\n<character_basic character=\"摩尔亲王\">"
+    },
+    {
+     "file": "世界书/角色/摩尔亲王/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "摩尔亲王",
+     "摩尔"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1310
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/玉皇_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "玉皇"
+   ],
+   "abstract": "唐藏皇权核心",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 597"
+    },
+    {
+     "content": "---\n<character_basic character=\"玉皇\">"
+    },
+    {
+     "file": "世界书/角色/玉皇/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "玉皇"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1311
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/耐温尔因克_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "耐温尔因克",
+    "冥界大统领"
+   ],
+   "abstract": "冥界大统领、血河的主宰",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 455"
+    },
+    {
+     "content": "---\n<character_basic character=\"耐温尔因克\">"
+    },
+    {
+     "file": "世界书/角色/耐温尔因克/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "耐温尔因克",
+     "冥界大统领"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1312
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/卡卡_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "卡卡"
+   ],
+   "abstract": "主角班底中的里手与战场主力",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 177"
+    },
+    {
+     "content": "---\n<character_basic character=\"卡卡\">"
+    },
+    {
+     "file": "世界书/角色/卡卡/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "卡卡"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1313
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/内德维德_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "内德维德"
+   ],
+   "abstract": "主角班底中的猛将",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 174"
+    },
+    {
+     "content": "---\n<character_basic character=\"内德维德\">"
+    },
+    {
+     "file": "世界书/角色/内德维德/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "内德维德"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1314
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/卡鲁_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "卡鲁"
+   ],
+   "abstract": "主角班底中的斥候与射手",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 60"
+    },
+    {
+     "content": "---\n<character_basic character=\"卡鲁\">"
+    },
+    {
+     "file": "世界书/角色/卡鲁/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "卡鲁"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1315
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/伊布_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "伊布"
+   ],
+   "abstract": "七彩龙，主角的龙族伙伴",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 279"
+    },
+    {
+     "content": "---\n<character_basic character=\"伊布\">"
+    },
+    {
+     "file": "世界书/角色/伊布/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "伊布"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1316
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/阿仙奴_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "阿仙奴"
+   ],
+   "abstract": "主角麾下的女将",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 105"
+    },
+    {
+     "content": "---\n<character_basic character=\"阿仙奴\">"
+    },
+    {
+     "file": "世界书/角色/阿仙奴/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "阿仙奴"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1317
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/茜茜_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "茜茜"
+   ],
+   "abstract": "主角身边的小妹与吉祥物",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 273"
+    },
+    {
+     "content": "---\n<character_basic character=\"茜茜\">"
+    },
+    {
+     "file": "世界书/角色/茜茜/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "茜茜"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1318
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/兰帕德_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "兰帕德"
+   ],
+   "abstract": "人类龙骑士与战场对手",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 128"
+    },
+    {
+     "content": "---\n<character_basic character=\"兰帕德\">"
+    },
+    {
+     "file": "世界书/角色/兰帕德/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "兰帕德"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1319
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/福格森.徐_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "福格森.徐",
+    "福格森"
+   ],
+   "abstract": "人类侧的权谋者与老练政客",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 26"
+    },
+    {
+     "content": "---\n<character_basic character=\"福格森.徐\">"
+    },
+    {
+     "file": "世界书/角色/福格森.徐/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "福格森.徐",
+     "福格森"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1320
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/托蒂伯爵_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "托蒂伯爵"
+   ],
+   "abstract": "人类贵族与地方实权人物",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 100"
+    },
+    {
+     "content": "---\n<character_basic character=\"托蒂伯爵\">"
+    },
+    {
+     "file": "世界书/角色/托蒂伯爵/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "托蒂伯爵"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1321
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/德塞利_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "德塞利"
+   ],
+   "abstract": "沙漠酋长与慕兰侧的盟友",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 394"
+    },
+    {
+     "content": "---\n<character_basic character=\"德塞利\">"
+    },
+    {
+     "file": "世界书/角色/德塞利/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "德塞利"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1322
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/艾弗森_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "艾弗森"
+   ],
+   "abstract": "人类侧的战士与同伴",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 172"
+    },
+    {
+     "content": "---\n<character_basic character=\"艾弗森\">"
+    },
+    {
+     "file": "世界书/角色/艾弗森/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "艾弗森"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1323
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/克鲁伊夫_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "克鲁伊夫"
+   ],
+   "abstract": "人类长老与元老院成员",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 308"
+    },
+    {
+     "content": "---\n<character_basic character=\"克鲁伊夫\">"
+    },
+    {
+     "file": "世界书/角色/克鲁伊夫/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "克鲁伊夫"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1324
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/谭雅_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "谭雅",
+    "珊瑚美人"
+   ],
+   "abstract": "谭雅（珊瑚美人）的基础信息：水晶人起源、石化长生、进贡与命名、财神玉盂与镜面搜索引擎、宇宙来历的推断",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "谭雅",
+     "珊瑚美人"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1325
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 193"
+    },
+    {
+     "file": "世界书/角色/谭雅/基础信息.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/凝玉_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "凝玉",
+    "蚌女"
+   ],
+   "abstract": "凝玉的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 27"
+    },
+    {
+     "content": "---\n<character_other character=\"凝玉\">"
+    },
+    {
+     "file": "世界书/角色/凝玉/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "凝玉",
+     "蚌女"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1326
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/艾薇尔_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "艾薇尔",
+    "美人鱼公主"
+   ],
+   "abstract": "艾薇尔的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 24"
+    },
+    {
+     "content": "---\n<character_other character=\"艾薇尔\">"
+    },
+    {
+     "file": "世界书/角色/艾薇尔/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "艾薇尔",
+     "美人鱼公主"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1328
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/崔蓓茜_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "崔蓓茜",
+    "美杜莎"
+   ],
+   "abstract": "崔蓓茜的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 15"
+    },
+    {
+     "content": "---\n<character_other character=\"崔蓓茜\">"
+    },
+    {
+     "file": "世界书/角色/崔蓓茜/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "崔蓓茜",
+     "美杜莎"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1330
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/歌坦妮_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "歌坦妮",
+    "天鹅女骑士"
+   ],
+   "abstract": "歌坦妮的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 95"
+    },
+    {
+     "content": "---\n<character_other character=\"歌坦妮\">"
+    },
+    {
+     "file": "世界书/角色/歌坦妮/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "歌坦妮",
+     "天鹅女骑士"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1332
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/若尔娜_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "若尔娜",
+    "仙女龙"
+   ],
+   "abstract": "若尔娜的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 146"
+    },
+    {
+     "content": "---\n<character_other character=\"若尔娜\">"
+    },
+    {
+     "file": "世界书/角色/若尔娜/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "若尔娜",
+     "仙女龙"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1334
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/黛丝_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "黛丝",
+    "龙族"
+   ],
+   "abstract": "黛丝的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 134"
+    },
+    {
+     "content": "---\n<character_other character=\"黛丝\">"
+    },
+    {
+     "file": "世界书/角色/黛丝/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "黛丝",
+     "龙族"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1336
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/贞德_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "贞德",
+    "圣女贞德"
+   ],
+   "abstract": "贞德的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 175"
+    },
+    {
+     "content": "---\n<character_other character=\"贞德\">"
+    },
+    {
+     "file": "世界书/角色/贞德/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "贞德",
+     "圣女贞德"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1338
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/白素青_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "白素青",
+    "青玉灵蟒",
+    "青雅",
+    "青雅.白玉"
+   ],
+   "abstract": "白素青的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 242"
+    },
+    {
+     "content": "---\n<character_other character=\"白素青\">"
+    },
+    {
+     "file": "世界书/角色/白素青/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "白素青",
+     "青玉灵蟒",
+     "青雅",
+     "青雅.白玉"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1340
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/谭雅_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "谭雅",
+    "珊瑚美人"
+   ],
+   "abstract": "谭雅的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 193"
+    },
+    {
+     "content": "---\n<character_other character=\"谭雅\">"
+    },
+    {
+     "file": "世界书/角色/谭雅/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "谭雅",
+     "珊瑚美人"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1342
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/阿仙奴_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "阿仙奴",
+    "仙女龙"
+   ],
+   "abstract": "阿仙奴的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 105"
+    },
+    {
+     "content": "---\n<character_other character=\"阿仙奴\">"
+    },
+    {
+     "file": "世界书/角色/阿仙奴/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "阿仙奴",
+     "仙女龙"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1360
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/许德拉_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "许德拉",
+    "九头蛇怪"
+   ],
+   "abstract": "许德拉的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 161"
+    },
+    {
+     "content": "---\n<character_other character=\"许德拉\">"
+    },
+    {
+     "file": "世界书/角色/许德拉/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "许德拉",
+     "九头蛇怪"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1362
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/歌莉妮_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "歌莉妮",
+    "莉莉"
+   ],
+   "abstract": "歌莉妮的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 172"
+    },
+    {
+     "content": "---\n<character_other character=\"歌莉妮\">"
+    },
+    {
+     "file": "世界书/角色/歌莉妮/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "歌莉妮",
+     "莉莉"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1380
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/唐蓓尔金娜_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "唐蓓尔金娜",
+    "冰凰"
+   ],
+   "abstract": "唐蓓尔金娜的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 246"
+    },
+    {
+     "content": "---\n<character_other character=\"唐蓓尔金娜\">"
+    },
+    {
+     "file": "世界书/角色/唐蓓尔金娜/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "唐蓓尔金娜",
+     "冰凰"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1382
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/梦露_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "梦露",
+    "玛丽莲",
+    "梦露陛下",
+    "梦露女王"
+   ],
+   "abstract": "梦露的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 175"
+    },
+    {
+     "content": "---\n<character_other character=\"梦露\">"
+    },
+    {
+     "file": "世界书/角色/梦露/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "梦露",
+     "玛丽莲",
+     "梦露陛下",
+     "梦露女王"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1400
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/嘉宝_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "嘉宝",
+    "巫妖女王"
+   ],
+   "abstract": "嘉宝的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 512"
+    },
+    {
+     "content": "---\n<character_other character=\"嘉宝\">"
+    },
+    {
+     "file": "世界书/角色/嘉宝/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "嘉宝",
+     "巫妖女王"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1402
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/艾莉婕_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "艾莉婕",
+    "花中皇后"
+   ],
+   "abstract": "艾莉婕的私密档案：私密档案。外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 463"
+    },
+    {
+     "content": "---\n<character_other character=\"艾莉婕\">"
+    },
+    {
+     "file": "世界书/角色/艾莉婕/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "艾莉婕",
+     "花中皇后"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1420
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/幽月儿_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "幽月儿",
+    "幽月儿·杜垩登"
+   ],
+   "abstract": "魔索布拉达城的萝丝主母",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 204"
+    },
+    {
+     "content": "---\n<character_basic character=\"幽月儿\">"
+    },
+    {
+     "file": "世界书/角色/幽月儿/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "幽月儿",
+     "幽月儿·杜垩登"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1440
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/加茜娅_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "加茜娅"
+   ],
+   "abstract": "圣保罗教廷的碧玉龙骑士",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 176"
+    },
+    {
+     "content": "---\n<character_basic character=\"加茜娅\">"
+    },
+    {
+     "file": "世界书/角色/加茜娅/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "加茜娅"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1442
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/伦娜_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "伦娜"
+   ],
+   "abstract": "龙城女使节",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 279"
+    },
+    {
+     "content": "---\n<character_basic character=\"伦娜\">"
+    },
+    {
+     "file": "世界书/角色/伦娜/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "伦娜"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1444
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/费雯丽_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "费雯丽"
+   ],
+   "abstract": "蛇人长老霍利尔之女",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 235"
+    },
+    {
+     "content": "---\n<character_basic character=\"费雯丽\">"
+    },
+    {
+     "file": "世界书/角色/费雯丽/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "费雯丽"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1446
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/朝河兰_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "朝河兰"
+   ],
+   "abstract": "亚力士海国的塞壬女王",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 709"
+    },
+    {
+     "content": "---\n<character_basic character=\"朝河兰\">"
+    },
+    {
+     "file": "世界书/角色/朝河兰/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "朝河兰"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1448
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/珍妮佛_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "珍妮佛"
+   ],
+   "abstract": "金属蔷薇佣兵团的女团长",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 134"
+    },
+    {
+     "content": "---\n<character_basic character=\"珍妮佛\">"
+    },
+    {
+     "file": "世界书/角色/珍妮佛/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "珍妮佛"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1450
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/波姬小丝_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "波姬小丝"
+   ],
+   "abstract": "彩虹龙城城主",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 624"
+    },
+    {
+     "content": "---\n<character_basic character=\"波姬小丝\">"
+    },
+    {
+     "file": "世界书/角色/波姬小丝/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "波姬小丝"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1452
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/赫莲娜_基础信息",
+  "value": {
+   "scope": "specific",
+   "part": "basic",
+   "keywords": [
+    "赫莲娜"
+   ],
+   "abstract": "卓尔魔索亚细亚城的主母",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 211"
+    },
+    {
+     "content": "---\n<character_basic character=\"赫莲娜\">"
+    },
+    {
+     "file": "世界书/角色/赫莲娜/基础信息.yaml"
+    },
+    {
+     "content": "</character_basic>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "赫莲娜"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1454
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/幽月儿_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "幽月儿",
+    "幽月儿·杜垩登"
+   ],
+   "abstract": "幽月儿的私密档案：外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 204"
+    },
+    {
+     "content": "---\n<character_other character=\"幽月儿\">"
+    },
+    {
+     "file": "世界书/角色/幽月儿/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "幽月儿",
+     "幽月儿·杜垩登"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1460
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/加茜娅_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "加茜娅"
+   ],
+   "abstract": "加茜娅的私密档案：外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 176"
+    },
+    {
+     "content": "---\n<character_other character=\"加茜娅\">"
+    },
+    {
+     "file": "世界书/角色/加茜娅/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "加茜娅"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1462
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/伦娜_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "伦娜"
+   ],
+   "abstract": "伦娜的私密档案：外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 279"
+    },
+    {
+     "content": "---\n<character_other character=\"伦娜\">"
+    },
+    {
+     "file": "世界书/角色/伦娜/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "伦娜"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1464
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/费雯丽_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "费雯丽"
+   ],
+   "abstract": "费雯丽的私密档案：外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 235"
+    },
+    {
+     "content": "---\n<character_other character=\"费雯丽\">"
+    },
+    {
+     "file": "世界书/角色/费雯丽/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "费雯丽"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1466
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/朝河兰_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "朝河兰"
+   ],
+   "abstract": "朝河兰的私密档案：外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 709"
+    },
+    {
+     "content": "---\n<character_other character=\"朝河兰\">"
+    },
+    {
+     "file": "世界书/角色/朝河兰/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "朝河兰"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1468
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/珍妮佛_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "珍妮佛"
+   ],
+   "abstract": "珍妮佛的私密档案：外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 134"
+    },
+    {
+     "content": "---\n<character_other character=\"珍妮佛\">"
+    },
+    {
+     "file": "世界书/角色/珍妮佛/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "珍妮佛"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1470
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/波姬小丝_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "波姬小丝"
+   ],
+   "abstract": "波姬小丝的私密档案：外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 624"
+    },
+    {
+     "content": "---\n<character_other character=\"波姬小丝\">"
+    },
+    {
+     "file": "世界书/角色/波姬小丝/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "波姬小丝"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1472
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/赫莲娜_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "赫莲娜"
+   ],
+   "abstract": "赫莲娜的私密档案：外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 211"
+    },
+    {
+     "content": "---\n<character_other character=\"赫莲娜\">"
+    },
+    {
+     "file": "世界书/角色/赫莲娜/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "赫莲娜"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1474
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/角色/安瑞达_私密档案",
+  "value": {
+   "scope": "specific",
+   "part": "other",
+   "keywords": [
+    "安瑞达"
+   ],
+   "abstract": "安瑞达的私密档案：外观逐部位、气味、分泌物、敏感带、名器、性癖",
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 465"
+    },
+    {
+     "content": "---\n<character_other character=\"安瑞达\">"
+    },
+    {
+     "file": "世界书/角色/安瑞达/私密.yaml"
+    },
+    {
+     "content": "</character_other>"
+    }
+   ],
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "安瑞达"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1476
+   }
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/乔治.贝斯特",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "乔治",
+    "乔治.贝斯特",
+    "贝斯特"
+   ],
+   "abstract": "魔界恐惧魔王之一",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "乔治",
+     "乔治.贝斯特",
+     "贝斯特"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1490
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 672"
+    },
+    {
+     "file": "世界书/NPC/乔治.贝斯特.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/伊瓜因",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "伊瓜因"
+   ],
+   "abstract": "银色黎明佣兵团的团长",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "伊瓜因"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1491
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 672"
+    },
+    {
+     "file": "世界书/NPC/伊瓜因.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/依莎贝拉",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "依莎贝拉"
+   ],
+   "abstract": "淡水美人鱼一族的长老",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "依莎贝拉"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1492
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 588"
+    },
+    {
+     "file": "世界书/NPC/依莎贝拉.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/保罗纽曼",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "保罗纽曼"
+   ],
+   "abstract": "魔界荷里活之主",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "保罗纽曼"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1494
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 512"
+    },
+    {
+     "file": "世界书/NPC/保罗纽曼.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/克拉克·盖博",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "克拉克",
+    "克拉克·盖博"
+   ],
+   "abstract": "魔界宝莱坞之主",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "克拉克",
+     "克拉克·盖博"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1495
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 541"
+    },
+    {
+     "file": "世界书/NPC/克拉克·盖博.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/克虏伯",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "克虏伯"
+   ],
+   "abstract": "黄金矮人部落雷鸣之子部落的族长",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "克虏伯"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1496
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 445"
+    },
+    {
+     "file": "世界书/NPC/克虏伯.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/冬五",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "冬五"
+   ],
+   "abstract": "唐藏帝国第五亲王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "冬五"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1497
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 645"
+    },
+    {
+     "file": "世界书/NPC/冬五.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/冰肌仙子",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "冰肌仙子"
+   ],
+   "abstract": "花廷供奉的四大花仙之一",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "冰肌仙子"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1498
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 597"
+    },
+    {
+     "file": "世界书/NPC/冰肌仙子.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/凌波仙子",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "凌波仙子"
+   ],
+   "abstract": "花廷供奉的四大花仙之一",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "凌波仙子"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1499
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 597"
+    },
+    {
+     "file": "世界书/NPC/凌波仙子.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/切赫",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "切赫"
+   ],
+   "abstract": "花精灵一族的长老",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "切赫"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1500
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 465"
+    },
+    {
+     "file": "世界书/NPC/切赫.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/加内特伯爵",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "加内特伯爵"
+   ],
+   "abstract": "比蒙王国贵族监察院特使",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "加内特伯爵"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1501
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 235"
+    },
+    {
+     "file": "世界书/NPC/加内特伯爵.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/加图索·丹泽",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "加图索",
+    "加图索·丹泽"
+   ],
+   "abstract": "龙卷风佣兵团的团长",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "加图索",
+     "加图索·丹泽"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1502
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 149"
+    },
+    {
+     "file": "世界书/NPC/加图索·丹泽.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/勃郎宁",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "勃郎宁"
+   ],
+   "abstract": "黄金矮人部落的女战士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "勃郎宁"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1503
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 445"
+    },
+    {
+     "file": "世界书/NPC/勃郎宁.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/华金",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "华金"
+   ],
+   "abstract": "宝剑橡叶圣骑士团高阶圣骑士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "华金"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1504
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 175"
+    },
+    {
+     "file": "世界书/NPC/华金.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/卓别林",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "卓别林"
+   ],
+   "abstract": "魔界魔龙皇帝",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "卓别林"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1505
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 671"
+    },
+    {
+     "file": "世界书/NPC/卓别林.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/卡佩罗",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "卡佩罗"
+   ],
+   "abstract": "多洛特公国宰相",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "卡佩罗"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1506
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 132"
+    },
+    {
+     "file": "世界书/NPC/卡佩罗.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/卡恩亲王",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "卡恩亲王"
+   ],
+   "abstract": "比蒙王国狮心亲王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "卡恩亲王"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1507
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 259"
+    },
+    {
+     "file": "世界书/NPC/卡恩亲王.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/卡提比",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "卡提比"
+   ],
+   "abstract": "沙舟部队的首领",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "卡提比"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1508
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 339"
+    },
+    {
+     "file": "世界书/NPC/卡提比.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/卡萨诺",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "卡萨诺"
+   ],
+   "abstract": "夏尔巴家族的家主之侄",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "卡萨诺"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1509
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 132"
+    },
+    {
+     "file": "世界书/NPC/卡萨诺.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/古川",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "古川"
+   ],
+   "abstract": "潘帅的亲生兄弟",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "古川"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1510
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 413"
+    },
+    {
+     "file": "世界书/NPC/古川.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/古德",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "古德",
+    "潘塔族熊猫武士",
+    "潘帅"
+   ],
+   "abstract": "潘塔族熊猫武士首领",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "古德",
+     "潘塔族熊猫武士",
+     "潘帅"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1511
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 25"
+    },
+    {
+     "file": "世界书/NPC/古德.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/含香仙子",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "含香仙子"
+   ],
+   "abstract": "花廷供奉的四大花仙之一",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "含香仙子"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1512
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 597"
+    },
+    {
+     "file": "世界书/NPC/含香仙子.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/哈什米安",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "哈什米安"
+   ],
+   "abstract": "依斯高族秃鹫人的首领",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "哈什米安"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1513
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 339"
+    },
+    {
+     "file": "世界书/NPC/哈什米安.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/哈里发阿卜杜拉",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "哈里发阿卜杜拉"
+   ],
+   "abstract": "加里曼丹城的哈里发",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "哈里发阿卜杜拉"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1514
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 383"
+    },
+    {
+     "file": "世界书/NPC/哈里发阿卜杜拉.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/四殿下",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "唐藏亲王",
+    "唐藏四殿下",
+    "四殿下",
+    "玄奥的壮汉殿下"
+   ],
+   "abstract": "唐藏帝国四殿下",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "唐藏亲王",
+     "唐藏四殿下",
+     "四殿下",
+     "玄奥的壮汉殿下"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1515
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 645"
+    },
+    {
+     "file": "世界书/NPC/四殿下.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/埃托奥",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "埃托奥"
+   ],
+   "abstract": "龙人首领",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "埃托奥"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1516
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 406"
+    },
+    {
+     "file": "世界书/NPC/埃托奥.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/基恩",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "基恩"
+   ],
+   "abstract": "泥足巨人的酋长",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "基恩"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1517
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 395"
+    },
+    {
+     "file": "世界书/NPC/基恩.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/塔勒布鲁",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "塔勒布鲁"
+   ],
+   "abstract": "飞驼军团的前锋临时统帅",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "塔勒布鲁"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1518
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 339"
+    },
+    {
+     "file": "世界书/NPC/塔勒布鲁.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/墨菲斯托",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "墨菲斯托"
+   ],
+   "abstract": "魔界的火焰教皇",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "墨菲斯托"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1519
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 677"
+    },
+    {
+     "file": "世界书/NPC/墨菲斯托.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/奥尼尔",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "奥尼尔",
+    "沙奎尔",
+    "奥胖"
+   ],
+   "abstract": "豪斯族河马诗人",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "奥尼尔",
+     "沙奎尔",
+     "奥胖"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1520
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 93"
+    },
+    {
+     "file": "世界书/NPC/奥尼尔.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/奥特加",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "奥特加"
+   ],
+   "abstract": "魔导士级魔法顾问",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "奥特加"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1521
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 134"
+    },
+    {
+     "file": "世界书/NPC/奥特加.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/安度兰",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "安度兰"
+   ],
+   "abstract": "玳瑁族苦行僧侣长老",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "安度兰"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1522
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 80"
+    },
+    {
+     "file": "世界书/NPC/安度兰.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/宫保仙师",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "宫保仙师"
+   ],
+   "abstract": "唐藏宫廷法师",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "宫保仙师"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1523
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 652"
+    },
+    {
+     "file": "世界书/NPC/宫保仙师.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/寇涛",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "寇涛",
+    "寇涛人鱼"
+   ],
+   "abstract": "寇涛人鱼一族的王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "寇涛",
+     "寇涛人鱼"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1524
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 191"
+    },
+    {
+     "file": "世界书/NPC/寇涛.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/小净",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "小净"
+   ],
+   "abstract": "唐藏亲王的学徒",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "小净"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1525
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 70"
+    },
+    {
+     "file": "世界书/NPC/小净.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/巢农主母",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "巢农主母"
+   ],
+   "abstract": "卓尔八位主母之一",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "巢农主母"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1526
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 205"
+    },
+    {
+     "file": "世界书/NPC/巢农主母.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/巴克利",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "巴克利"
+   ],
+   "abstract": "另一位灰矮人出身山丘之王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "巴克利"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1527
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 341"
+    },
+    {
+     "file": "世界书/NPC/巴克利.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/巴克蒂亚萨德赫",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "巴克蒂亚萨德赫"
+   ],
+   "abstract": "慕兰沙漠美莱茨的红带射手",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "巴克蒂亚萨德赫"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1528
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 382"
+    },
+    {
+     "file": "世界书/NPC/巴克蒂亚萨德赫.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/巴特尔",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "巴特尔"
+   ],
+   "abstract": "灰矮人中罕见的山丘之王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "巴特尔"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1529
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 341"
+    },
+    {
+     "file": "世界书/NPC/巴特尔.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/布吕克纳老公爵",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "布吕克纳老公爵"
+   ],
+   "abstract": "斯迈族老公爵",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "布吕克纳老公爵"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1530
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 560"
+    },
+    {
+     "file": "世界书/NPC/布吕克纳老公爵.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/布拉特",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "布拉特",
+    "红衣大祭司布拉特"
+   ],
+   "abstract": "比蒙神庙最高领袖",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "布拉特",
+     "红衣大祭司布拉特"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1531
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 144"
+    },
+    {
+     "file": "世界书/NPC/布拉特.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/希丁克",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "希丁克"
+   ],
+   "abstract": "淡水美人鱼一族的魔法大师",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "希丁克"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1532
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 326"
+    },
+    {
+     "file": "世界书/NPC/希丁克.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/席尔维斯特",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "席尔维斯特"
+   ],
+   "abstract": "铜蜃领主",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "席尔维斯特"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1533
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 483"
+    },
+    {
+     "file": "世界书/NPC/席尔维斯特.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/德尼尔森",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "德尼尔森"
+   ],
+   "abstract": "圣弗郎西斯科帝国的白龙骑士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "德尼尔森"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1534
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 177"
+    },
+    {
+     "file": "世界书/NPC/德尼尔森.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/戈勒穆罕默迪",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "戈勒穆罕默迪"
+   ],
+   "abstract": "慕兰苏丹近卫军的统帅",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "戈勒穆罕默迪"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1535
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 383"
+    },
+    {
+     "file": "世界书/NPC/戈勒穆罕默迪.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/托蒂·夏尔巴",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "托蒂",
+    "托蒂·夏尔巴"
+   ],
+   "abstract": "多洛特公国大驸马",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "托蒂",
+     "托蒂·夏尔巴"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1536
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 100"
+    },
+    {
+     "file": "世界书/NPC/托蒂·夏尔巴.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/托马西·丹泽",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "托马西",
+    "托马西·丹泽"
+   ],
+   "abstract": "圣保罗教廷金棕榈骑士团的圣骑士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "托马西",
+     "托马西·丹泽"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1537
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 151"
+    },
+    {
+     "file": "世界书/NPC/托马西·丹泽.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/拉莫斯",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "拉莫斯"
+   ],
+   "abstract": "花精灵",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "拉莫斯"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1538
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 436"
+    },
+    {
+     "file": "世界书/NPC/拉莫斯.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/文森特",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "文森特"
+   ],
+   "abstract": "科里纳的同胞兽亲弟弟",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "文森特"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1539
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 75"
+    },
+    {
+     "file": "世界书/NPC/文森特.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/斯托克顿",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "斯托克顿"
+   ],
+   "abstract": "魔界六翼天王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "斯托克顿"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1540
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 518"
+    },
+    {
+     "file": "世界书/NPC/斯托克顿.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/斯科拉里",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "斯科拉里"
+   ],
+   "abstract": "上一代的巫妖王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "斯科拉里"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1541
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 304"
+    },
+    {
+     "file": "世界书/NPC/斯科拉里.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/明姚",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "明姚"
+   ],
+   "abstract": "佛巨人",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "明姚"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1542
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 427"
+    },
+    {
+     "file": "世界书/NPC/明姚.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/易卜拉西莫维奇",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "易卜拉西莫维奇"
+   ],
+   "abstract": "七彩龙",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "易卜拉西莫维奇"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1543
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 279"
+    },
+    {
+     "file": "世界书/NPC/易卜拉西莫维奇.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/杰拉德",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "杰拉德"
+   ],
+   "abstract": "潘塔族熊猫武士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "杰拉德"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1544
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 31"
+    },
+    {
+     "file": "世界书/NPC/杰拉德.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/永贝里",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "永贝里"
+   ],
+   "abstract": "黄颌美杜莎",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "永贝里"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1545
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 106"
+    },
+    {
+     "file": "世界书/NPC/永贝里.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/波利斯",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "波利斯"
+   ],
+   "abstract": "海娜迦法师团的团长",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "波利斯"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1546
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 716"
+    },
+    {
+     "file": "世界书/NPC/波利斯.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/海德殿下",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "海德殿下"
+   ],
+   "abstract": "被遗忘国度的首席元老",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "海德殿下"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1547
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 728"
+    },
+    {
+     "file": "世界书/NPC/海德殿下.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/温格",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "温格"
+   ],
+   "abstract": "远古巨龙",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "温格"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1548
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 448"
+    },
+    {
+     "file": "世界书/NPC/温格.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/特雷泽盖",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "特雷泽盖"
+   ],
+   "abstract": "美杜莎新城采玉城的领主兼现任族长",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "特雷泽盖"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1549
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 235"
+    },
+    {
+     "file": "世界书/NPC/特雷泽盖.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/瑞卡雅顿布",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "瑞卡雅顿布"
+   ],
+   "abstract": "冥界第二大统领",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "瑞卡雅顿布"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1550
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 668"
+    },
+    {
+     "file": "世界书/NPC/瑞卡雅顿布.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/瓦尔德内尔",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "瓦尔德内尔"
+   ],
+   "abstract": "魔界海岸贡献大陆的滴血十字骑士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "瓦尔德内尔"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1551
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 657"
+    },
+    {
+     "file": "世界书/NPC/瓦尔德内尔.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/科里纳",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "科里纳"
+   ],
+   "abstract": "泰穆尔拉雅猛犸族第一勇士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "科里纳"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1552
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 75"
+    },
+    {
+     "file": "世界书/NPC/科里纳.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/穆托姆博",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "穆托姆博"
+   ],
+   "abstract": "泰穆尔拉雅猛犸族大力士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "穆托姆博"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1553
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 122"
+    },
+    {
+     "file": "世界书/NPC/穆托姆博.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/穷困",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "穷困"
+   ],
+   "abstract": "唐藏帝国第一神羿手",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "穷困"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1554
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 224"
+    },
+    {
+     "file": "世界书/NPC/穷困.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/米娅",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "米娅",
+    "米娅·哈姆"
+   ],
+   "abstract": "猛虎佣兵团团长罗西的妻子",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "米娅",
+     "米娅·哈姆"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1555
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 245"
+    },
+    {
+     "file": "世界书/NPC/米娅.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/米库",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "米库"
+   ],
+   "abstract": "花精灵一族的守护武士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "米库"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1556
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 490"
+    },
+    {
+     "file": "世界书/NPC/米库.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/紫色霞云",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "紫色霞云"
+   ],
+   "abstract": "花廷的花娼",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "紫色霞云"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1557
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 651"
+    },
+    {
+     "file": "世界书/NPC/紫色霞云.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/维埃里",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "维埃里"
+   ],
+   "abstract": "彼尔族熊人",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "维埃里"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1558
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 68"
+    },
+    {
+     "file": "世界书/NPC/维埃里.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/罗德曼",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "罗德曼"
+   ],
+   "abstract": "俄勒芬族猛犸大力士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "罗德曼"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1559
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 122"
+    },
+    {
+     "file": "世界书/NPC/罗德曼.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/罗森博格",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "罗森博格"
+   ],
+   "abstract": "威瑟斯庞总督",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "罗森博格"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1560
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 72"
+    },
+    {
+     "file": "世界书/NPC/罗森博格.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/罗比",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "罗比"
+   ],
+   "abstract": "狈族狈人",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "罗比"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1561
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 131"
+    },
+    {
+     "file": "世界书/NPC/罗比.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/罗浮仙子",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "罗浮仙子"
+   ],
+   "abstract": "花廷供奉的四大花仙之一",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "罗浮仙子"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1562
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 597"
+    },
+    {
+     "file": "世界书/NPC/罗浮仙子.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/罗纳尔迪尼奥",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "罗纳尔迪尼奥"
+   ],
+   "abstract": "地狱黑龙族族长",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "罗纳尔迪尼奥"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1563
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 226"
+    },
+    {
+     "file": "世界书/NPC/罗纳尔迪尼奥.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/罗西",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "罗西"
+   ],
+   "abstract": "猛虎佣兵团的团长",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "罗西"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1564
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 175"
+    },
+    {
+     "file": "世界书/NPC/罗西.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/老波吉",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "老波吉"
+   ],
+   "abstract": "泰穆尔拉雅猛犸族长老",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "老波吉"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1565
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 76"
+    },
+    {
+     "file": "世界书/NPC/老波吉.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/艾玛尔",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "艾玛尔"
+   ],
+   "abstract": "人类大魔寻师",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "艾玛尔"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1566
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 118"
+    },
+    {
+     "file": "世界书/NPC/艾玛尔.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/茵格里切宝",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "茵格里切宝"
+   ],
+   "abstract": "冥界第一大统领",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "茵格里切宝"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1567
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 668"
+    },
+    {
+     "file": "世界书/NPC/茵格里切宝.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/莱茵克尔",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "莱茵克尔"
+   ],
+   "abstract": "西雅海国世袭珊瑚顶亲王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "莱茵克尔"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1568
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 696"
+    },
+    {
+     "file": "世界书/NPC/莱茵克尔.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/菲高",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "菲高",
+    "路易斯.菲利浦.菲高"
+   ],
+   "abstract": "班尼路族逆戟鲸武士",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "菲高",
+     "路易斯.菲利浦.菲高"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1569
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 28"
+    },
+    {
+     "file": "世界书/NPC/菲高.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/萨尔国王",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "萨尔国王"
+   ],
+   "abstract": "比蒙王国国王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "萨尔国王"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1570
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 259"
+    },
+    {
+     "file": "世界书/NPC/萨尔国王.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/萨穆埃尔",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "萨穆埃尔"
+   ],
+   "abstract": "魔界死亡领主",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "萨穆埃尔"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1571
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 424"
+    },
+    {
+     "file": "世界书/NPC/萨穆埃尔.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/西尔芙",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "西尔芙"
+   ],
+   "abstract": "梦界的追梦人",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "西尔芙"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1572
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 420"
+    },
+    {
+     "file": "世界书/NPC/西尔芙.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/西米里安",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "西米里安"
+   ],
+   "abstract": "西雅海国美人鱼储君",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "西米里安"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1573
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 37"
+    },
+    {
+     "file": "世界书/NPC/西米里安.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/诺查丹玛斯",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "诺查丹玛斯"
+   ],
+   "abstract": "匹格族巫医",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "诺查丹玛斯"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1574
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 60"
+    },
+    {
+     "file": "世界书/NPC/诺查丹玛斯.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/贝克汉姆",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "贝克汉姆",
+    "大卫·贝克汉姆",
+    "小贝",
+    "万人迷"
+   ],
+   "abstract": "斯蒂法诺大师的学徒",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "贝克汉姆",
+     "大卫·贝克汉姆",
+     "小贝",
+     "万人迷"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1575
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 456"
+    },
+    {
+     "file": "世界书/NPC/贝克汉姆.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/贝拉米",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "贝拉米"
+   ],
+   "abstract": "道格族獒人",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "贝拉米"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1576
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 59"
+    },
+    {
+     "file": "世界书/NPC/贝拉米.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/贝肯鲍尔",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "贝肯鲍尔",
+    "波赛东"
+   ],
+   "abstract": "西雅海国的美人鱼皇帝",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "贝肯鲍尔",
+     "波赛东"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1577
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 160"
+    },
+    {
+     "file": "世界书/NPC/贝肯鲍尔.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/赞迪",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "赞迪"
+   ],
+   "abstract": "亡灵法师",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "赞迪"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1578
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 339"
+    },
+    {
+     "file": "世界书/NPC/赞迪.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/辛克莱尔",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "辛克莱尔"
+   ],
+   "abstract": "魔界宝莱坞的六翼天王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "辛克莱尔"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1579
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 568"
+    },
+    {
+     "file": "世界书/NPC/辛克莱尔.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/达历桑德罗",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "达历桑德罗"
+   ],
+   "abstract": "星界的至高主宰",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "达历桑德罗"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1580
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 748"
+    },
+    {
+     "file": "世界书/NPC/达历桑德罗.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/迦莎",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "迦莎"
+   ],
+   "abstract": "花精灵一族的祭司",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "迦莎"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1581
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 477"
+    },
+    {
+     "file": "世界书/NPC/迦莎.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/迪卡尼奥",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "迪卡尼奥"
+   ],
+   "abstract": "猛虎佣兵团的副团长",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "迪卡尼奥"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1582
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 175"
+    },
+    {
+     "file": "世界书/NPC/迪卡尼奥.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/道根",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "道根"
+   ],
+   "abstract": "矮人大贤者",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "道根"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1583
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 57"
+    },
+    {
+     "file": "世界书/NPC/道根.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/阿加西",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "阿加西"
+   ],
+   "abstract": "辰星龙城城主",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "阿加西"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1584
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 624"
+    },
+    {
+     "file": "世界书/NPC/阿加西.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/阿杜",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "迪尔族麝头人",
+    "阿杜",
+    "麝人阿杜"
+   ],
+   "abstract": "迪尔族麝头人首领",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "迪尔族麝头人",
+     "阿杜",
+     "麝人阿杜"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1585
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 107"
+    },
+    {
+     "file": "世界书/NPC/阿杜.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/阿泰斯特",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "阿泰斯特"
+   ],
+   "abstract": "魔界第一天王",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "阿泰斯特"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1586
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 543"
+    },
+    {
+     "file": "世界书/NPC/阿泰斯特.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/阿迪达斯玛",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "阿迪达斯玛"
+   ],
+   "abstract": "冥界守卫者",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "阿迪达斯玛"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1587
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 453"
+    },
+    {
+     "file": "世界书/NPC/阿迪达斯玛.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/阿里.代伊",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "阿里",
+    "阿里.代伊"
+   ],
+   "abstract": "慕兰帝国的金刀魔羯",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "阿里",
+     "阿里.代伊"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1588
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 331"
+    },
+    {
+     "file": "世界书/NPC/阿里.代伊.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/雷克萨",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "雷克萨"
+   ],
+   "abstract": "比蒙史上的三宠英雄",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "雷克萨"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1589
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 424"
+    },
+    {
+     "file": "世界书/NPC/雷克萨.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/雷耶斯将军",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "雷耶斯将军"
+   ],
+   "abstract": "威瑟斯庞城军事主帅",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "雷耶斯将军"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1590
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 329"
+    },
+    {
+     "file": "世界书/NPC/雷耶斯将军.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/雷鸣登",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "雷鸣登"
+   ],
+   "abstract": "黄金矮人部落雷鸣之子部落的先行探路者",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "雷鸣登"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1591
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 437"
+    },
+    {
+     "file": "世界书/NPC/雷鸣登.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/霍利尔",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "霍利尔"
+   ],
+   "abstract": "采玉城的老族长兼长老",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "霍利尔"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1592
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 171"
+    },
+    {
+     "file": "世界书/NPC/霍利尔.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/马拿利",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "马拿利"
+   ],
+   "abstract": "慕兰仅有两位宝典阿訇之一",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "马拿利"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1593
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 396"
+    },
+    {
+     "file": "世界书/NPC/马拿利.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/齐丹大萨满",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "齐丹大萨满"
+   ],
+   "abstract": "东北行省威瑟斯庞神庙的维安大萨满",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "齐丹大萨满"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1594
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 50"
+    },
+    {
+     "file": "世界书/NPC/齐丹大萨满.yaml"
+    }
+   ]
+  }
+ },
+ {
+  "op": "add",
+  "path": "/entryManifest/NPC/保罗·马尔蒂尼",
+  "value": {
+   "scope": "specific",
+   "keywords": [
+    "保罗二世",
+    "马尔蒂尼",
+    "保罗·马尔蒂尼"
+   ],
+   "abstract": "圣保罗教廷教皇",
+   "enabled": true,
+   "strategy": {
+    "type": "selective",
+    "keys": [
+     "保罗二世",
+     "马尔蒂尼",
+     "保罗·马尔蒂尼"
+    ]
+   },
+   "position": {
+    "type": "after_character_definition",
+    "order": 1493
+   },
+   "contents": [
+    {
+     "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 185"
+    },
+    {
+     "file": "世界书/NPC/保罗·马尔蒂尼.yaml"
+    }
+   ]
+  }
+ }
+]

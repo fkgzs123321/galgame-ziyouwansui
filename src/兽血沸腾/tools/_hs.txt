@@ -1,0 +1,83 @@
+﻿
+════ 角色/海伦.列娜_基础信息 ════
+{
+ "scope": "specific",
+ "part": "basic",
+ "keywords": [
+  "海伦.列娜",
+  "海伦",
+  "列娜",
+  "海伦祭祀",
+  "小狐狸精"
+ ],
+ "abstract": "狐人少女、战争祭祀，情感主线核心",
+ "contents": [
+  {
+   "content": "@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 6"
+  },
+  {
+   "content": "---\n<character_basic character=\"海伦.列娜\">"
+  },
+  {
+   "file": "世界书/角色/海伦.列娜/基础信息.yaml"
+  },
+  {
+   "content": "</character_basic>"
+  }
+ ],
+ "enabled": true,
+ "strategy": {
+  "type": "selective",
+  "keys": [
+   "海伦.列娜",
+   "海伦",
+   "列娜",
+   "海伦祭祀",
+   "小狐狸精"
+  ]
+ },
+ "position": {
+  "type": "after_character_definition",
+  "order": 1253
+ }
+}
+
+════ 角色/刘震撼_基础信息 ════
+{
+ "scope": "specific",
+ "part": "basic",
+ "keywords": [
+  "刘震撼",
+  "李察",
+  "老刘",
+  "匹格",
+  "猪头人"
+ ],
+ "abstract": "主角完整基础档案：身份、外貌、背景、能力与关系",
+ "contents": [
+  {
+   "content": "---\n<character_basic character=\"刘震撼\">"
+  },
+  {
+   "file": "世界书/角色/刘震撼/基础信息.yaml"
+  },
+  {
+   "content": "</character_basic>"
+  }
+ ],
+ "enabled": true,
+ "strategy": {
+  "type": "selective",
+  "keys": [
+   "刘震撼",
+   "李察",
+   "老刘",
+   "匹格",
+   "猪头人"
+  ]
+ },
+ "position": {
+  "type": "after_character_definition",
+  "order": 1250
+ }
+}

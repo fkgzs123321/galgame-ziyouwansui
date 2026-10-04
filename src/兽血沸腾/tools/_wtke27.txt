@@ -1,0 +1,6 @@
+﻿=== demote-queue.json  size=38636  hasChar=false
+=== era-demote-plan.json  size=25795  hasChar=false
+=== demote-thresholds.json  size=44472  hasChar=false
+=== npc-leak-fields.json  size=6696  hasChar=false
+=== era-faces.json  size=41595  hasChar=true
+  {"名":"文泰克莱尔","登场":607,"顶层":["基本信息","外貌特征","背景设定","能力体系","关系设定"],"命中":[{"键":"指芒","缩进":2,"行":35,"文":"单手境界，最高可以释放四级剑芒。他另外一只手留着掌握武器。后来战阵上他使的是六指剑芒","段":[],"节":"能力体系","锚":[],"未来":true}],"小节数":42}

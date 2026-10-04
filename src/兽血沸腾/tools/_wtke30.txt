@@ -1,0 +1,14 @@
+﻿node : [eval]:7
+所在位置 行:1 字符: 129
++ ...  $OutputEncoding = [System.Text.UTF8Encoding]::new($false); node -e "
++                                                                 ~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([eval]:7:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+const words=process.argv[4].split('|');
+                            ^
+
+TypeError: Cannot read properties of undefined (reading 'split')
+    at [eval]:7:29
+
+Node.js v24.15.0

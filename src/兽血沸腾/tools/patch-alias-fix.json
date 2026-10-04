@@ -1,0 +1,88 @@
+[
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/巢农主母/keywords",
+    "value": [
+      "巢农主母"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/巢农主母/strategy/keys",
+    "value": [
+      "巢农主母"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/幽月儿/keywords",
+    "value": [
+      "幽月儿"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/幽月儿/strategy/keys",
+    "value": [
+      "幽月儿"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/明姚/keywords",
+    "value": [
+      "明姚"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/明姚/strategy/keys",
+    "value": [
+      "明姚"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/费雯丽/keywords",
+    "value": [
+      "费雯丽"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/费雯丽/strategy/keys",
+    "value": [
+      "费雯丽"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/赫莲娜/keywords",
+    "value": [
+      "赫莲娜"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/赫莲娜/strategy/keys",
+    "value": [
+      "赫莲娜"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/米娅/keywords",
+    "value": [
+      "米娅",
+      "米娅·哈姆"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/entryManifest/NPC/米娅/strategy/keys",
+    "value": [
+      "米娅",
+      "米娅·哈姆"
+    ]
+  }
+]

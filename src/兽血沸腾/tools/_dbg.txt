@@ -1,0 +1,37 @@
+﻿L8  匹配=true
+     code="if (getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 427) {"
+     if匹配=true
+     elseif=false  else=false
+     closes=0
+L9  匹配=false
+L10  匹配=true
+     code="} else if (getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 342) {"
+     if匹配=true
+     elseif=true  else=false
+     closes=1
+L11  匹配=false
+L12  匹配=true
+     code="} else if (getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 255) {"
+     if匹配=true
+     elseif=true  else=false
+     closes=1
+L13  匹配=false
+L14  匹配=true
+     code="} else if (getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 73) {"
+     if匹配=true
+     elseif=true  else=false
+     closes=1
+L15  匹配=false
+L16  匹配=true
+     code="} else {"
+     if匹配=false
+     elseif=false  else=true
+     closes=1
+L17  匹配=false
+L18  匹配=true
+     code="}"
+     if匹配=false
+     elseif=false  else=false
+     closes=1
+L19  匹配=false
+L20  匹配=false

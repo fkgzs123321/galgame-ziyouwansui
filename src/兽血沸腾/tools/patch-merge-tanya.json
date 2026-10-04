@@ -1,0 +1,66 @@
+[
+  {
+    "op": "remove",
+    "path": "/entryManifest/角色/珊瑚美人_基础信息"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/角色/珊瑚美人_私密档案"
+  },
+  {
+    "op": "remove",
+    "path": "/entryManifest/角色/珊瑚美人_私密阶段"
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/角色/谭雅_基础信息",
+    "value": {
+      "scope": "specific",
+      "part": "basic",
+      "keywords": [
+        "谭雅",
+        "珊瑚美人"
+      ],
+      "abstract": "谭雅（珊瑚美人）的基础信息：水晶人起源、石化长生、进贡与命名、财神玉盂与镜面搜索引擎、宇宙来历的推断",
+      "path": "世界书/角色/谭雅/基础信息.yaml"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/角色/谭雅_私密档案",
+    "value": {
+      "scope": "specific",
+      "part": "other",
+      "keywords": [
+        "谭雅",
+        "珊瑚美人"
+      ],
+      "abstract": "谭雅（珊瑚美人）的私密档案：胶体珊瑚形体、外观逐部位、气味、分泌物、敏感带、名器卧绵藏潮、性癖",
+      "contents": [
+        {
+          "content": "---\n<character_other character=\"谭雅\">"
+        },
+        {
+          "file": "世界书/角色/谭雅/私密.yaml"
+        },
+        {
+          "content": "</character_other>"
+        }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/entryManifest/角色/谭雅_私密阶段",
+    "value": {
+      "scope": "specific",
+      "part": "other",
+      "keywords": [
+        "谭雅",
+        "珊瑚美人"
+      ],
+      "abstract": "谭雅（珊瑚美人）的私密阶段：库房藏品 / 认下她是活的 / 定了型当家的老板娘，按章节序号分档",
+      "path": "世界书/角色/谭雅/私密阶段.yaml"
+    }
+  }
+]

@@ -1,0 +1,4 @@
+﻿角色 刘震撼_基础信息 ["---\n<character_basic character=\"刘震撼\">","世界书/角色/刘震撼/基础信息.yaml","</character_basic>"]
+角色 刘震撼_三面性 ["---\n<character_facets character=\"刘震撼\">","世界书/角色/刘震撼/三面性.yaml","</character_facets>"]
+角色 刘震撼_二次解释 ["---\n<character_personality character=\"刘震撼\">","世界书/角色/刘震撼/二次解释.yaml","</character_personality>"]
+角色 海伦.列娜_基础信息 ["@@if getvar('stat_data.剧情.章节序号', { defaults: 0 }) >= 6","---\n<character_basic character=\"海伦.列娜\">","世界书/角色/海伦.列娜/基础信息.yaml","</character_basic>"]
